@@ -1,0 +1,19 @@
+{
+  "annotations": {
+    "QUESTION_ID": {
+      "knowledge": {"primary_concept": "concept name", "secondary_concepts": [], "prerequisites": []},
+      "reasoning": {
+        "steps": [
+          {"id": "s1", "type": "read_given"},
+          {"id": "s2", "type": "select_relation", "description": "relation used"},
+          {"id": "s3", "type": "apply_mathematics"},
+          {"id": "s4", "type": "derive_result"}
+        ],
+        "edges": [["s1", "s2"], ["s2", "s3"], ["s3", "s4"]]
+      },
+      "representation": {"input": ["verbal"], "context": "context label"},
+      "constraints": {"explicit": [], "implicit": [], "boundary": []},
+      "assessment": {"difficulty_features": {"math_complexity": 1}}
+    }
+  }
+}

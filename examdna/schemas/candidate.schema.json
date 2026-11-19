@@ -1,0 +1,59 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://examdna.local/schemas/candidate.schema.json",
+  "title": "ExamDNA mutation candidate",
+  "description": "Schema version 0.1.0. A question written by the agent in response to one mutation spec. 'question' must also satisfy question.schema.json and 'genome' genome.schema.json.",
+  "type": "object",
+  "required": ["candidate_id", "spec_id", "parent_id", "operator", "question", "genome"],
+  "additionalProperties": false,
+  "properties": {
+    "candidate_id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"},
+    "spec_id": {"type": "string"},
+    "parent_id": {"type": "string"},
+    "operator": {"type": "string"},
+    "question": {"type": "object"},
+    "genome": {"type": "object"},
+    "verification": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "properties": {
+        "kind": {"enum": ["numeric", "choice", "qualitative", "none"]},
+        "expression": {"type": ["string", "null"], "maxLength": 500},
+        "variables": {"type": "object", "additionalProperties": {"type": "number"}},
+        "claimed_value": {"type": ["number", "null"]},
+        "claimed_unit": {"type": ["string", "null"], "maxLength": 40},
+        "relative_tolerance": {"type": ["number", "null"], "minimum": 0, "maximum": 0.5},
+        "domain": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["var"],
+            "additionalProperties": false,
+            "properties": {
+              "var": {"type": "string"},
+              "min": {"type": ["number", "null"]},
+              "max": {"type": ["number", "null"]},
+              "exclusive": {"type": "boolean"}
+            }
+          }
+        },
+        "answer_uniqueness": {"enum": ["unique", "multiple", "unknown"]}
+      }
+    },
+    "invariant_judgements": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["property", "preserved"],
+        "additionalProperties": false,
+        "properties": {
+          "property": {"type": "string"},
+          "preserved": {"type": "boolean"},
+          "rationale": {"type": ["string", "null"], "maxLength": 1000}
+        }
+      }
+    },
+    "change_summary": {"type": ["string", "null"], "maxLength": 2000},
+    "notes": {"type": ["string", "null"], "maxLength": 2000}
+  }
+}

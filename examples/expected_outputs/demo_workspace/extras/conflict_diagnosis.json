@@ -1,0 +1,47 @@
+{
+  "message": "no combination of section selections satisfies all hard constraints",
+  "total_marks": 30,
+  "eligible_questions": 17,
+  "eligible_marks": 72,
+  "excluded": {
+    "review_required": 1
+  },
+  "sections": [
+    {
+      "label": "A",
+      "target_marks": 10,
+      "eligible_questions": 12,
+      "eligible_marks": 37,
+      "target_reachable": true,
+      "nearest_reachable_below": 10,
+      "nearest_reachable_above": 10,
+      "types_available": {
+        "calculation": 11,
+        "multiple_choice": 1
+      }
+    },
+    {
+      "label": "B",
+      "target_marks": 20,
+      "eligible_questions": 16,
+      "eligible_marks": 71,
+      "target_reachable": true,
+      "nearest_reachable_below": 20,
+      "nearest_reachable_above": 20,
+      "types_available": {
+        "calculation": 11,
+        "mixed": 5
+      }
+    }
+  ],
+  "missing_required_topics": [],
+  "missing_required_types": [
+    "extended_response"
+  ],
+  "suggestions": [
+    "1 REVIEW_REQUIRED question(s) could be allowed with include_review_required (they stay flagged).",
+    "Generate validated questions of type(s): extended_response, or drop them from required_types.",
+    "Raising max_per_family allows several variants of the same source question."
+  ],
+  "search_budget_exhausted": false
+}

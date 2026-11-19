@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "examdna"
+version = "0.1.0"
+description = "Reverse-engineer exams, mutate questions, compile new assessments — the deterministic engine of the ExamDNA Agent Skill."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "ExamDNA contributors" }]
+keywords = ["assessment", "education", "exam", "question-generation", "agent-skills", "claude"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Intended Audience :: Education",
+  "Topic :: Education :: Testing",
+]
+dependencies = []
+
+[project.optional-dependencies]
+pdf = ["pypdf>=3.0"]
+dev = ["pytest>=7", "coverage>=7"]
+
+[project.scripts]
+examdna = "examdna.cli:main"
+
+[tool.setuptools]
+packages = [
+  "examdna",
+  "examdna.compiler",
+  "examdna.extraction",
+  "examdna.fingerprint",
+  "examdna.genome",
+  "examdna.models",
+  "examdna.mutation",
+  "examdna.reporting",
+  "examdna.utilities",
+  "examdna.validation",
+]
+
+[tool.setuptools.package-data]
+examdna = ["schemas/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

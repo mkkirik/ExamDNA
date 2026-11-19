@@ -1,0 +1,602 @@
+{
+  "schema_version": "0.1.0",
+  "bank_id": "bank-6f4fd078c0",
+  "title": null,
+  "source_documents": [
+    {
+      "name": "paper1.md",
+      "kind": "exam"
+    }
+  ],
+  "questions": [
+    {
+      "id": "paper1-a1",
+      "schema_version": "0.1.0",
+      "language": null,
+      "source": {
+        "document": "paper1.md",
+        "page": null,
+        "section": "A",
+        "position": 0,
+        "origin": "agent_extracted"
+      },
+      "subject": "Introductory Physics",
+      "topic": null,
+      "subtopic": null,
+      "text": "Which of the following quantities is a vector?\nA. Speed\nB. Distance\nC. Displacement\nD. Time",
+      "question_type": null,
+      "marks": 1,
+      "section": "A",
+      "learning_objectives": [],
+      "cognitive_level": null,
+      "given": [],
+      "required_output": null,
+      "constraints": [],
+      "options": [],
+      "parts": [],
+      "table": null,
+      "diagram_description": null,
+      "marking": null,
+      "difficulty_features": null,
+      "extraction_confidence": "medium",
+      "evidence": [
+        {
+          "document": "paper1.md",
+          "page": null,
+          "quote": "Which of the following quantities is a vector?"
+        }
+      ],
+      "review_status": "unreviewed",
+      "provenance": {
+        "text": "explicit",
+        "subject": "inferred",
+        "marks": "explicit",
+        "section": "explicit"
+      },
+      "missing_fields": [
+        "topic",
+        "subtopic",
+        "question_type",
+        "learning_objectives",
+        "cognitive_level",
+        "given",
+        "required_output",
+        "constraints",
+        "marking"
+      ],
+      "security_flags": [],
+      "lineage": null,
+      "validation": null
+    },
+    {
+      "id": "paper1-a2",
+      "schema_version": "0.1.0",
+      "language": null,
+      "source": {
+        "document": "paper1.md",
+        "page": null,
+        "section": "A",
+        "position": 1,
+        "origin": "agent_extracted"
+      },
+      "subject": "Introductory Physics",
+      "topic": null,
+      "subtopic": null,
+      "text": "A cyclist accelerates uniformly from rest to a speed of 8.0 m/s in 4.0 s. Calculate the acceleration of the cyclist.",
+      "question_type": null,
+      "marks": 2,
+      "section": "A",
+      "learning_objectives": [],
+      "cognitive_level": null,
+      "given": [],
+      "required_output": null,
+      "constraints": [],
+      "options": [],
+      "parts": [],
+      "table": null,
+      "diagram_description": null,
+      "marking": null,
+      "difficulty_features": null,
+      "extraction_confidence": "medium",
+      "evidence": [
+        {
+          "document": "paper1.md",
+          "page": null,
+          "quote": "A cyclist accelerates uniformly from rest to a speed of 8.0 m/s in 4.0 s. Calculate the acceleration of the cyclist."
+        }
+      ],
+      "review_status": "unreviewed",
+      "provenance": {
+        "text": "explicit",
+        "subject": "inferred",
+        "marks": "explicit",
+        "section": "explicit"
+      },
+      "missing_fields": [
+        "topic",
+        "subtopic",
+        "question_type",
+        "learning_objectives",
+        "cognitive_level",
+        "given",
+        "required_output",
+        "constraints",
+        "marking"
+      ],
+      "security_flags": [],
+      "lineage": null,
+      "validation": null
+    },
+    {
+      "id": "paper1-a3",
+      "schema_version": "0.1.0",
+      "language": null,
+      "source": {
+        "document": "paper1.md",
+        "page": null,
+        "section": "A",
+        "position": 2,
+        "origin": "agent_extracted"
+      },
+      "subject": "Introductory Physics",
+      "topic": null,
+      "subtopic": null,
+      "text": "A resultant force of 6.0 N acts on a trolley of mass 2.0 kg. Calculate the acceleration of the trolley.",
+      "question_type": null,
+      "marks": 2,
+      "section": "A",
+      "learning_objectives": [],
+      "cognitive_level": null,
+      "given": [],
+      "required_output": null,
+      "constraints": [],
+      "options": [],
+      "parts": [],
+      "table": null,
+      "diagram_description": null,
+      "marking": null,
+      "difficulty_features": null,
+      "extraction_confidence": "medium",
+      "evidence": [
+        {
+          "document": "paper1.md",
+          "page": null,
+          "quote": "A resultant force of 6.0 N acts on a trolley of mass 2.0 kg. Calculate the acceleration of the trolley."
+        }
+      ],
+      "review_status": "unreviewed",
+      "provenance": {
+        "text": "explicit",
+        "subject": "inferred",
+        "marks": "explicit",
+        "section": "explicit"
+      },
+      "missing_fields": [
+        "topic",
+        "subtopic",
+        "question_type",
+        "learning_objectives",
+        "cognitive_level",
+        "given",
+        "required_output",
+        "constraints",
+        "marking"
+      ],
+      "security_flags": [],
+      "lineage": null,
+      "validation": null
+    },
+    {
+      "id": "paper1-a4",
+      "schema_version": "0.1.0",
+      "language": null,
+      "source": {
+        "document": "paper1.md",
+        "page": null,
+        "section": "A",
+        "position": 3,
+        "origin": "agent_extracted"
+      },
+      "subject": "Introductory Physics",
+      "topic": null,
+      "subtopic": null,
+      "text": "A lamp transfers 120 J of energy in 4.0 s. Calculate the power of the lamp.",
+      "question_type": null,
+      "marks": 2,
+      "section": "A",
+      "learning_objectives": [],
+      "cognitive_level": null,
+      "given": [],
+      "required_output": null,
+      "constraints": [],
+      "options": [],
+      "parts": [],
+      "table": null,
+      "diagram_description": null,
+      "marking": null,
+      "difficulty_features": null,
+      "extraction_confidence": "medium",
+      "evidence": [
+        {
+          "document": "paper1.md",
+          "page": null,
+          "quote": "A lamp transfers 120 J of energy in 4.0 s. Calculate the power of the lamp."
+        }
+      ],
+      "review_status": "unreviewed",
+      "provenance": {
+        "text": "explicit",
+        "subject": "inferred",
+        "marks": "explicit",
+        "section": "explicit"
+      },
+      "missing_fields": [
+        "topic",
+        "subtopic",
+        "question_type",
+        "learning_objectives",
+        "cognitive_level",
+        "given",
+        "required_output",
+        "constraints",
+        "marking"
+      ],
+      "security_flags": [],
+      "lineage": null,
+      "validation": null
+    },
+    {
+      "id": "paper1-a5",
+      "schema_version": "0.1.0",
+      "language": null,
+      "source": {
+        "document": "paper1.md",
+        "page": null,
+        "section": "A",
+        "position": 4,
+        "origin": "agent_extracted"
+      },
+      "subject": "Introductory Physics",
+      "topic": null,
+      "subtopic": null,
+      "text": "A wave has a frequency of 50 Hz and a wavelength of 2.0 m. What is the speed of the wave?\nA. 25 m/s\nB. 52 m/s\nC. 100 m/s\nD. 0.04 m/s",
+      "question_type": null,
+      "marks": 1,
+      "section": "A",
+      "learning_objectives": [],
+      "cognitive_level": null,
+      "given": [],
+      "required_output": null,
+      "constraints": [],
+      "options": [],
+      "parts": [],
+      "table": null,
+      "diagram_description": null,
+      "marking": null,
+      "difficulty_features": null,
+      "extraction_confidence": "medium",
+      "evidence": [
+        {
+          "document": "paper1.md",
+          "page": null,
+          "quote": "A wave has a frequency of 50 Hz and a wavelength of 2.0 m. What is the speed of the wave?"
+        }
+      ],
+      "review_status": "unreviewed",
+      "provenance": {
+        "text": "explicit",
+        "subject": "inferred",
+        "marks": "explicit",
+        "section": "explicit"
+      },
+      "missing_fields": [
+        "topic",
+        "subtopic",
+        "question_type",
+        "learning_objectives",
+        "cognitive_level",
+        "given",
+        "required_output",
+        "constraints",
+        "marking"
+      ],
+      "security_flags": [],
+      "lineage": null,
+      "validation": null
+    },
+    {
+      "id": "paper1-a6",
+      "schema_version": "0.1.0",
+      "language": null,
+      "source": {
+        "document": "paper1.md",
+        "page": null,
+        "section": "A",
+        "position": 5,
+        "origin": "agent_extracted"
+      },
+      "subject": "Introductory Physics",
+      "topic": null,
+      "subtopic": null,
+      "text": "A current of 0.50 A flows through a 12 Ω resistor. Calculate the potential difference across the resistor.",
+      "question_type": null,
+      "marks": 2,
+      "section": "A",
+      "learning_objectives": [],
+      "cognitive_level": null,
+      "given": [],
+      "required_output": null,
+      "constraints": [],
+      "options": [],
+      "parts": [],
+      "table": null,
+      "diagram_description": null,
+      "marking": null,
+      "difficulty_features": null,
+      "extraction_confidence": "medium",
+      "evidence": [
+        {
+          "document": "paper1.md",
+          "page": null,
+          "quote": "A current of 0.50 A flows through a 12 Ω resistor. Calculate the potential difference across the resistor."
+        }
+      ],
+      "review_status": "unreviewed",
+      "provenance": {
+        "text": "explicit",
+        "subject": "inferred",
+        "marks": "explicit",
+        "section": "explicit"
+      },
+      "missing_fields": [
+        "topic",
+        "subtopic",
+        "question_type",
+        "learning_objectives",
+        "cognitive_level",
+        "given",
+        "required_output",
+        "constraints",
+        "marking"
+      ],
+      "security_flags": [],
+      "lineage": null,
+      "validation": null
+    },
+    {
+      "id": "paper1-b1",
+      "schema_version": "0.1.0",
+      "language": null,
+      "source": {
+        "document": "paper1.md",
+        "page": null,
+        "section": "B",
+        "position": 6,
+        "origin": "agent_extracted"
+      },
+      "subject": "Introductory Physics",
+      "topic": null,
+      "subtopic": null,
+      "text": "A car travelling at 20 m/s brakes with uniform deceleration and comes to rest in a distance of 50 m.",
+      "question_type": null,
+      "marks": 7,
+      "section": "B",
+      "learning_objectives": [],
+      "cognitive_level": null,
+      "given": [],
+      "required_output": null,
+      "constraints": [],
+      "options": [],
+      "parts": [
+        {
+          "label": "a",
+          "text": "Calculate the magnitude of the deceleration of the car.",
+          "marks": 3
+        },
+        {
+          "label": "b",
+          "text": "Calculate the time taken for the car to stop.",
+          "marks": 2
+        },
+        {
+          "label": "c",
+          "text": "Explain why the braking distance would be larger on a wet road.",
+          "marks": 2
+        }
+      ],
+      "table": null,
+      "diagram_description": null,
+      "marking": null,
+      "difficulty_features": null,
+      "extraction_confidence": "medium",
+      "evidence": [
+        {
+          "document": "paper1.md",
+          "page": null,
+          "quote": "A car travelling at 20 m/s brakes with uniform deceleration and comes to rest in a distance of 50 m."
+        }
+      ],
+      "review_status": "unreviewed",
+      "provenance": {
+        "text": "explicit",
+        "marks": "calculated",
+        "subject": "inferred",
+        "section": "explicit"
+      },
+      "missing_fields": [
+        "topic",
+        "subtopic",
+        "question_type",
+        "learning_objectives",
+        "cognitive_level",
+        "given",
+        "required_output",
+        "constraints",
+        "marking"
+      ],
+      "security_flags": [],
+      "lineage": null,
+      "validation": null
+    },
+    {
+      "id": "paper1-b2",
+      "schema_version": "0.1.0",
+      "language": null,
+      "source": {
+        "document": "paper1.md",
+        "page": null,
+        "section": "B",
+        "position": 7,
+        "origin": "agent_extracted"
+      },
+      "subject": "Introductory Physics",
+      "topic": null,
+      "subtopic": null,
+      "text": "A ball of mass 0.50 kg is dropped from rest from a height of 3.2 m. Air resistance is negligible. Take g = 9.8 m/s².",
+      "question_type": null,
+      "marks": 7,
+      "section": "B",
+      "learning_objectives": [],
+      "cognitive_level": null,
+      "given": [],
+      "required_output": null,
+      "constraints": [],
+      "options": [],
+      "parts": [
+        {
+          "label": "a",
+          "text": "Calculate the gravitational potential energy lost by the ball as it falls to the ground.",
+          "marks": 2
+        },
+        {
+          "label": "b",
+          "text": "Calculate the speed of the ball just before it hits the ground.",
+          "marks": 3
+        },
+        {
+          "label": "c",
+          "text": "Explain how the speed just before impact would change if air resistance were not negligible.",
+          "marks": 2
+        }
+      ],
+      "table": null,
+      "diagram_description": null,
+      "marking": null,
+      "difficulty_features": null,
+      "extraction_confidence": "medium",
+      "evidence": [
+        {
+          "document": "paper1.md",
+          "page": null,
+          "quote": "A ball of mass 0.50 kg is dropped from rest from a height of 3.2 m. Air resistance is negligible. Take g = 9.8 m/s²."
+        }
+      ],
+      "review_status": "unreviewed",
+      "provenance": {
+        "text": "explicit",
+        "marks": "calculated",
+        "subject": "inferred",
+        "section": "explicit"
+      },
+      "missing_fields": [
+        "topic",
+        "subtopic",
+        "question_type",
+        "learning_objectives",
+        "cognitive_level",
+        "given",
+        "required_output",
+        "constraints",
+        "marking"
+      ],
+      "security_flags": [],
+      "lineage": null,
+      "validation": null
+    },
+    {
+      "id": "paper1-b3",
+      "schema_version": "0.1.0",
+      "language": null,
+      "source": {
+        "document": "paper1.md",
+        "page": null,
+        "section": "B",
+        "position": 8,
+        "origin": "agent_extracted"
+      },
+      "subject": "Introductory Physics",
+      "topic": null,
+      "subtopic": null,
+      "text": "A 4.0 Ω resistor and a 6.0 Ω resistor are connected in series with a 12 V battery of negligible internal resistance.",
+      "question_type": null,
+      "marks": 6,
+      "section": "B",
+      "learning_objectives": [],
+      "cognitive_level": null,
+      "given": [],
+      "required_output": null,
+      "constraints": [],
+      "options": [],
+      "parts": [
+        {
+          "label": "a",
+          "text": "Calculate the total resistance of the circuit.",
+          "marks": 1
+        },
+        {
+          "label": "b",
+          "text": "Calculate the current in the circuit.",
+          "marks": 2
+        },
+        {
+          "label": "c",
+          "text": "Calculate the potential difference across the 6.0 Ω resistor.",
+          "marks": 3
+        }
+      ],
+      "table": null,
+      "diagram_description": null,
+      "marking": null,
+      "difficulty_features": null,
+      "extraction_confidence": "medium",
+      "evidence": [
+        {
+          "document": "paper1.md",
+          "page": null,
+          "quote": "A 4.0 Ω resistor and a 6.0 Ω resistor are connected in series with a 12 V battery of negligible internal resistance."
+        }
+      ],
+      "review_status": "unreviewed",
+      "provenance": {
+        "text": "explicit",
+        "marks": "calculated",
+        "subject": "inferred",
+        "section": "explicit"
+      },
+      "missing_fields": [
+        "topic",
+        "subtopic",
+        "question_type",
+        "learning_objectives",
+        "cognitive_level",
+        "given",
+        "required_output",
+        "constraints",
+        "marking"
+      ],
+      "security_flags": [],
+      "lineage": null,
+      "validation": null
+    }
+  ],
+  "normalization_report": {
+    "question_count": 9,
+    "issues": [
+      "paper1-b1: total marks calculated from part marks (7)",
+      "paper1-b2: total marks calculated from part marks (7)",
+      "paper1-b3: total marks calculated from part marks (6)"
+    ],
+    "missing_marks": [],
+    "security_flagged": []
+  }
+}

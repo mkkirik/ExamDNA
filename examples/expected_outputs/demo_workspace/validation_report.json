@@ -1,0 +1,3797 @@
+{
+  "schema_version": "0.1.0",
+  "report_id": "validation-c954cb358a",
+  "plan_id": "plan-ffe39f7e33",
+  "summary": {
+    "candidates": 22,
+    "PASS": 17,
+    "REVIEW_REQUIRED": 1,
+    "FAIL": 4
+  },
+  "results": [
+    {
+      "candidate_id": "c01",
+      "question_id": "m-p1-a2-rep",
+      "spec_id": "spec-f69f5eba0d",
+      "parent_id": "p1-a2",
+      "operator": "representation",
+      "state": "PASS",
+      "summary": "all checks passed",
+      "model_assisted": true,
+      "numeric_verified": true,
+      "distance": {
+        "dimensions": {
+          "surface": {
+            "distance": 0.76,
+            "label": "high",
+            "method": "difflib SequenceMatcher ratio over lower-cased word tokens of the full question text"
+          },
+          "concept": {
+            "distance": 0.33,
+            "label": "low",
+            "method": "Jaccard overlap of {primary_concept} ∪ secondary_concepts (case-insensitive)"
+          },
+          "reasoning": {
+            "distance": 0.25,
+            "label": "low",
+            "method": "1 − normalized edit distance between step-type sequences in topological order, multiplied by 0.5 if the graph shape (linear vs branched) differs"
+          },
+          "representation": {
+            "distance": 0.5,
+            "label": "moderate",
+            "method": "Jaccard overlap of input representation sets"
+          },
+          "constraint": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "Jaccard overlap of content words in explicit+domain+boundary constraints"
+          },
+          "answer": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "0.5 if answer types are equal + 0.5 if the answer units have the same physical dimension (or both are absent)"
+          }
+        },
+        "novelty": "structural_novelty",
+        "conceptual_equivalence": {
+          "status": "model_assisted",
+          "conceptually_equivalent": true
+        },
+        "note": "Distances are transparent set/sequence measures; they do not establish psychometric equivalence."
+      },
+      "checks": [
+        {
+          "stage": "lineage",
+          "check": "lineage_consistent",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "representation of p1-a2"
+        },
+        {
+          "stage": "schema",
+          "check": "genome_schema",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "genome schema and reasoning graph valid"
+        },
+        {
+          "stage": "structural",
+          "check": "marks_present",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "2 marks"
+        },
+        {
+          "stage": "answer_marking",
+          "check": "marking_total",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "marking points match marks"
+        },
+        {
+          "stage": "numeric",
+          "check": "recompute",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "claimed 1.8 matches recomputed 1.8 (exact rational arithmetic, tolerance 0.01)"
+        },
+        {
+          "stage": "answer_marking",
+          "check": "final_answer_matches",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "final answer text contains the verified value"
+        },
+        {
+          "stage": "numeric",
+          "check": "units",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "dimensions of the expression match 'm/s^2'"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:primary_concept",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "primary_concept preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:learning_objectives",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "learning_objectives preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:topic",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "topic preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:answer_type",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "answer_type preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "change:representation",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "representation changed as required"
+        },
+        {
+          "stage": "invariants",
+          "check": "judgement:target_skill",
+          "status": "PASS",
+          "method": "model_assisted",
+          "message": "agent judgement on target_skill"
+        },
+        {
+          "stage": "distance",
+          "check": "novelty",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "structural_novelty"
+        }
+      ]
+    },
+    {
+      "candidate_id": "c02",
+      "question_id": "m-p1-a3-path",
+      "spec_id": "spec-c4d1222a01",
+      "parent_id": "p1-a3",
+      "operator": "reasoning_path",
+      "state": "PASS",
+      "summary": "all checks passed",
+      "model_assisted": true,
+      "numeric_verified": true,
+      "distance": {
+        "dimensions": {
+          "surface": {
+            "distance": 0.62,
+            "label": "moderate",
+            "method": "difflib SequenceMatcher ratio over lower-cased word tokens of the full question text"
+          },
+          "concept": {
+            "distance": 0.33,
+            "label": "low",
+            "method": "Jaccard overlap of {primary_concept} ∪ secondary_concepts (case-insensitive)"
+          },
+          "reasoning": {
+            "distance": 0.33,
+            "label": "low",
+            "method": "1 − normalized edit distance between step-type sequences in topological order, multiplied by 0.5 if the graph shape (linear vs branched) differs"
+          },
+          "representation": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "Jaccard overlap of input representation sets"
+          },
+          "constraint": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "Jaccard overlap of content words in explicit+domain+boundary constraints"
+          },
+          "answer": {
+            "distance": 0.5,
+            "label": "moderate",
+            "method": "0.5 if answer types are equal + 0.5 if the answer units have the same physical dimension (or both are absent)"
+          }
+        },
+        "novelty": "structural_novelty",
+        "conceptual_equivalence": {
+          "status": "model_assisted",
+          "conceptually_equivalent": true
+        },
+        "note": "Distances are transparent set/sequence measures; they do not establish psychometric equivalence."
+      },
+      "checks": [
+        {
+          "stage": "lineage",
+          "check": "lineage_consistent",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "reasoning_path of p1-a3"
+        },
+        {
+          "stage": "schema",
+          "check": "genome_schema",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "genome schema and reasoning graph valid"
+        },
+        {
+          "stage": "structural",
+          "check": "marks_present",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "3 marks"
+        },
+        {
+          "stage": "answer_marking",
+          "check": "marking_total",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "marking points match marks"
+        },
+        {
+          "stage": "numeric",
+          "check": "recompute",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "claimed 6 matches recomputed 6 (exact rational arithmetic, tolerance 0.01)"
+        },
+        {
+          "stage": "answer_marking",
+          "check": "final_answer_matches",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "final answer text contains the verified value"
+        },
+        {
+          "stage": "numeric",
+          "check": "units",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "dimensions of the expression match 'N'"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:primary_concept",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "primary_concept preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:learning_objectives",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "learning_objectives preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:topic",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "topic preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:answer_type",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "answer_type preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "change:reasoning_structure",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "reasoning_structure changed as required"
+        },
+        {
+          "stage": "invariants",
+          "check": "judgement:target_skill",
+          "status": "PASS",
+          "method": "model_assisted",
+          "message": "agent judgement on target_skill"
+        },
+        {
+          "stage": "distance",
+          "check": "novelty",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "structural_novelty"
+        }
+      ]
+    },
+    {
+      "candidate_id": "c03",
+      "question_id": "m-p1-a4-con",
+      "spec_id": "spec-c08bf35e3c",
+      "parent_id": "p1-a4",
+      "operator": "constraint",
+      "state": "PASS",
+      "summary": "all checks passed",
+      "model_assisted": true,
+      "numeric_verified": true,
+      "distance": {
+        "dimensions": {
+          "surface": {
+            "distance": 0.46,
+            "label": "moderate",
+            "method": "difflib SequenceMatcher ratio over lower-cased word tokens of the full question text"
+          },
+          "concept": {
+            "distance": 0.33,
+            "label": "low",
+            "method": "Jaccard overlap of {primary_concept} ∪ secondary_concepts (case-insensitive)"
+          },
+          "reasoning": {
+            "distance": 0.2,
+            "label": "low",
+            "method": "1 − normalized edit distance between step-type sequences in topological order, multiplied by 0.5 if the graph shape (linear vs branched) differs"
+          },
+          "representation": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "Jaccard overlap of input representation sets"
+          },
+          "constraint": {
+            "distance": 1.0,
+            "label": "high",
+            "method": "Jaccard overlap of content words in explicit+domain+boundary constraints"
+          },
+          "answer": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "0.5 if answer types are equal + 0.5 if the answer units have the same physical dimension (or both are absent)"
+          }
+        },
+        "novelty": "structural_novelty",
+        "conceptual_equivalence": {
+          "status": "model_assisted",
+          "conceptually_equivalent": true
+        },
+        "note": "Distances are transparent set/sequence measures; they do not establish psychometric equivalence."
+      },
+      "checks": [
+        {
+          "stage": "lineage",
+          "check": "lineage_consistent",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "constraint of p1-a4"
+        },
+        {
+          "stage": "schema",
+          "check": "genome_schema",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "genome schema and reasoning graph valid"
+        },
+        {
+          "stage": "structural",
+          "check": "marks_present",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "3 marks"
+        },
+        {
+          "stage": "answer_marking",
+          "check": "marking_total",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "marking points match marks"
+        },
+        {
+          "stage": "ambiguity",
+          "check": "unused_given",
+          "status": "INFO",
+          "method": "deterministic",
+          "message": "given value(s) not used by the final expression: Pmax"
+        },
+        {
+          "stage": "numeric",
+          "check": "recompute",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "claimed 30 matches recomputed 30 (exact rational arithmetic, tolerance 0.01)"
+        },
+        {
+          "stage": "answer_marking",
+          "check": "final_answer_matches",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "final answer text contains the verified value"
+        },
+        {
+          "stage": "numeric",
+          "check": "units",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "dimensions of the expression match 'W'"
+        },
+        {
+          "stage": "numeric",
+          "check": "domain",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "result within domain"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:primary_concept",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "primary_concept preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:learning_objectives",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "learning_objectives preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:topic",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "topic preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:answer_type",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "answer_type preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "change:constraints",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "constraints changed as required"
+        },
+        {
+          "stage": "invariants",
+          "check": "judgement:target_skill",
+          "status": "PASS",
+          "method": "model_assisted",
+          "message": "agent judgement on target_skill"
+        },
+        {
+          "stage": "distance",
+          "check": "novelty",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "structural_novelty"
+        }
+      ]
+    },
+    {
+      "candidate_id": "c04-try1",
+      "question_id": "m-p1-a6-surf-t1",
+      "spec_id": "spec-f69c97ba43",
+      "parent_id": "p1-a6",
+      "operator": "surface",
+      "state": "FAIL",
+      "summary": "FAIL: preserve:numeric_parameters: numeric_parameters was supposed to be preserved but changed",
+      "model_assisted": true,
+      "numeric_verified": true,
+      "distance": {
+        "dimensions": {
+          "surface": {
+            "distance": 0.78,
+            "label": "high",
+            "method": "difflib SequenceMatcher ratio over lower-cased word tokens of the full question text"
+          },
+          "concept": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "Jaccard overlap of {primary_concept} ∪ secondary_concepts (case-insensitive)"
+          },
+          "reasoning": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "1 − normalized edit distance between step-type sequences in topological order, multiplied by 0.5 if the graph shape (linear vs branched) differs"
+          },
+          "representation": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "Jaccard overlap of input representation sets"
+          },
+          "constraint": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "Jaccard overlap of content words in explicit+domain+boundary constraints"
+          },
+          "answer": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "0.5 if answer types are equal + 0.5 if the answer units have the same physical dimension (or both are absent)"
+          }
+        },
+        "novelty": "parameter_novelty",
+        "conceptual_equivalence": {
+          "status": "model_assisted",
+          "conceptually_equivalent": true
+        },
+        "note": "Distances are transparent set/sequence measures; they do not establish psychometric equivalence."
+      },
+      "checks": [
+        {
+          "stage": "lineage",
+          "check": "lineage_consistent",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "surface of p1-a6"
+        },
+        {
+          "stage": "schema",
+          "check": "genome_schema",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "genome schema and reasoning graph valid"
+        },
+        {
+          "stage": "structural",
+          "check": "marks_present",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "2 marks"
+        },
+        {
+          "stage": "answer_marking",
+          "check": "marking_total",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "marking points match marks"
+        },
+        {
+          "stage": "numeric",
+          "check": "recompute",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "claimed 4.8 matches recomputed 4.8 (exact rational arithmetic, tolerance 0.01)"
+        },
+        {
+          "stage": "answer_marking",
+          "check": "final_answer_matches",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "final answer text contains the verified value"
+        },
+        {
+          "stage": "numeric",
+          "check": "units",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "dimensions of the expression match 'V'"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:primary_concept",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "primary_concept preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:learning_objectives",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "learning_objectives preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:topic",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "topic preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:question_type",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "question_type preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:answer_type",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "answer_type preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:marks",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "marks preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:reasoning_structure",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "reasoning_structure preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:representation",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "representation preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:numeric_parameters",
+          "status": "FAIL",
+          "method": "deterministic",
+          "message": "numeric_parameters was supposed to be preserved but changed"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:constraints",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "constraints preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "change:wording",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "wording changed as required"
+        },
+        {
+          "stage": "invariants",
+          "check": "judgement:target_skill",
+          "status": "PASS",
+          "method": "model_assisted",
+          "message": "agent judgement on target_skill"
+        },
+        {
+          "stage": "distance",
+          "check": "novelty",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "parameter_novelty"
+        }
+      ]
+    },
+    {
+      "candidate_id": "c04-try2",
+      "question_id": "m-p1-a6-surf",
+      "spec_id": "spec-f69c97ba43",
+      "parent_id": "p1-a6",
+      "operator": "surface",
+      "state": "PASS",
+      "summary": "all checks passed",
+      "model_assisted": true,
+      "numeric_verified": true,
+      "distance": {
+        "dimensions": {
+          "surface": {
+            "distance": 0.68,
+            "label": "high",
+            "method": "difflib SequenceMatcher ratio over lower-cased word tokens of the full question text"
+          },
+          "concept": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "Jaccard overlap of {primary_concept} ∪ secondary_concepts (case-insensitive)"
+          },
+          "reasoning": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "1 − normalized edit distance between step-type sequences in topological order, multiplied by 0.5 if the graph shape (linear vs branched) differs"
+          },
+          "representation": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "Jaccard overlap of input representation sets"
+          },
+          "constraint": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "Jaccard overlap of content words in explicit+domain+boundary constraints"
+          },
+          "answer": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "0.5 if answer types are equal + 0.5 if the answer units have the same physical dimension (or both are absent)"
+          }
+        },
+        "novelty": "surface_novelty",
+        "conceptual_equivalence": {
+          "status": "model_assisted",
+          "conceptually_equivalent": true
+        },
+        "note": "Distances are transparent set/sequence measures; they do not establish psychometric equivalence."
+      },
+      "checks": [
+        {
+          "stage": "lineage",
+          "check": "lineage_consistent",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "surface of p1-a6"
+        },
+        {
+          "stage": "schema",
+          "check": "genome_schema",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "genome schema and reasoning graph valid"
+        },
+        {
+          "stage": "structural",
+          "check": "marks_present",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "2 marks"
+        },
+        {
+          "stage": "answer_marking",
+          "check": "marking_total",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "marking points match marks"
+        },
+        {
+          "stage": "numeric",
+          "check": "recompute",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "claimed 6 matches recomputed 6 (exact rational arithmetic, tolerance 0.01)"
+        },
+        {
+          "stage": "answer_marking",
+          "check": "final_answer_matches",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "final answer text contains the verified value"
+        },
+        {
+          "stage": "numeric",
+          "check": "units",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "dimensions of the expression match 'V'"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:primary_concept",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "primary_concept preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:learning_objectives",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "learning_objectives preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:topic",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "topic preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:question_type",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "question_type preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:answer_type",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "answer_type preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:marks",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "marks preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:reasoning_structure",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "reasoning_structure preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:representation",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "representation preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:numeric_parameters",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "numeric_parameters preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:constraints",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "constraints preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "change:wording",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "wording changed as required"
+        },
+        {
+          "stage": "invariants",
+          "check": "judgement:target_skill",
+          "status": "PASS",
+          "method": "model_assisted",
+          "message": "agent judgement on target_skill"
+        },
+        {
+          "stage": "distance",
+          "check": "novelty",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "surface_novelty"
+        }
+      ]
+    },
+    {
+      "candidate_id": "c05",
+      "question_id": "m-p2-a2-diff",
+      "spec_id": "spec-5757edbca7",
+      "parent_id": "p2-a2",
+      "operator": "difficulty",
+      "state": "PASS",
+      "summary": "all checks passed",
+      "model_assisted": true,
+      "numeric_verified": true,
+      "distance": {
+        "dimensions": {
+          "surface": {
+            "distance": 0.52,
+            "label": "moderate",
+            "method": "difflib SequenceMatcher ratio over lower-cased word tokens of the full question text"
+          },
+          "concept": {
+            "distance": 0.33,
+            "label": "low",
+            "method": "Jaccard overlap of {primary_concept} ∪ secondary_concepts (case-insensitive)"
+          },
+          "reasoning": {
+            "distance": 0.5,
+            "label": "moderate",
+            "method": "1 − normalized edit distance between step-type sequences in topological order, multiplied by 0.5 if the graph shape (linear vs branched) differs"
+          },
+          "representation": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "Jaccard overlap of input representation sets"
+          },
+          "constraint": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "Jaccard overlap of content words in explicit+domain+boundary constraints"
+          },
+          "answer": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "0.5 if answer types are equal + 0.5 if the answer units have the same physical dimension (or both are absent)"
+          }
+        },
+        "novelty": "structural_novelty",
+        "conceptual_equivalence": {
+          "status": "model_assisted",
+          "conceptually_equivalent": true
+        },
+        "note": "Distances are transparent set/sequence measures; they do not establish psychometric equivalence."
+      },
+      "checks": [
+        {
+          "stage": "lineage",
+          "check": "lineage_consistent",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "difficulty of p2-a2"
+        },
+        {
+          "stage": "schema",
+          "check": "genome_schema",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "genome schema and reasoning graph valid"
+        },
+        {
+          "stage": "structural",
+          "check": "marks_present",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "3 marks"
+        },
+        {
+          "stage": "answer_marking",
+          "check": "marking_total",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "marking points match marks"
+        },
+        {
+          "stage": "ambiguity",
+          "check": "unused_given",
+          "status": "INFO",
+          "method": "deterministic",
+          "message": "given value(s) not used by the final expression: m1, v1"
+        },
+        {
+          "stage": "numeric",
+          "check": "recompute",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "claimed 20000 matches recomputed 20000 (exact rational arithmetic, tolerance 0.01)"
+        },
+        {
+          "stage": "answer_marking",
+          "check": "final_answer_matches",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "final answer text contains the verified value"
+        },
+        {
+          "stage": "numeric",
+          "check": "units",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "dimensions of the expression match 'kg m/s'"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:primary_concept",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "primary_concept preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:learning_objectives",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "learning_objectives preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:topic",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "topic preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "change:difficulty_features",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "heuristic difficulty points changed by +3 (up)"
+        },
+        {
+          "stage": "invariants",
+          "check": "judgement:target_skill",
+          "status": "PASS",
+          "method": "model_assisted",
+          "message": "agent judgement on target_skill"
+        },
+        {
+          "stage": "distance",
+          "check": "novelty",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "structural_novelty"
+        }
+      ]
+    },
+    {
+      "candidate_id": "c06-try1",
+      "question_id": "m-p2-a3-par-t1",
+      "spec_id": "spec-247e52b245",
+      "parent_id": "p2-a3",
+      "operator": "parameter",
+      "state": "FAIL",
+      "summary": "FAIL: novelty: candidate is a near-duplicate of its parent; source_copy: near-verbatim copy of source question p2-a3 (surface similarity 0.95)",
+      "model_assisted": true,
+      "numeric_verified": true,
+      "distance": {
+        "dimensions": {
+          "surface": {
+            "distance": 0.05,
+            "label": "low",
+            "method": "difflib SequenceMatcher ratio over lower-cased word tokens of the full question text"
+          },
+          "concept": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "Jaccard overlap of {primary_concept} ∪ secondary_concepts (case-insensitive)"
+          },
+          "reasoning": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "1 − normalized edit distance between step-type sequences in topological order, multiplied by 0.5 if the graph shape (linear vs branched) differs"
+          },
+          "representation": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "Jaccard overlap of input representation sets"
+          },
+          "constraint": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "Jaccard overlap of content words in explicit+domain+boundary constraints"
+          },
+          "answer": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "0.5 if answer types are equal + 0.5 if the answer units have the same physical dimension (or both are absent)"
+          }
+        },
+        "novelty": "near_duplicate",
+        "conceptual_equivalence": {
+          "status": "model_assisted",
+          "conceptually_equivalent": true
+        },
+        "note": "Distances are transparent set/sequence measures; they do not establish psychometric equivalence."
+      },
+      "checks": [
+        {
+          "stage": "lineage",
+          "check": "lineage_consistent",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "parameter of p2-a3"
+        },
+        {
+          "stage": "schema",
+          "check": "genome_schema",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "genome schema and reasoning graph valid"
+        },
+        {
+          "stage": "structural",
+          "check": "marks_present",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "2 marks"
+        },
+        {
+          "stage": "answer_marking",
+          "check": "marking_total",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "marking points match marks"
+        },
+        {
+          "stage": "numeric",
+          "check": "recompute",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "claimed 7.6 matches recomputed 7.6 (exact rational arithmetic, tolerance 0.01)"
+        },
+        {
+          "stage": "answer_marking",
+          "check": "final_answer_matches",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "final answer text contains the verified value"
+        },
+        {
+          "stage": "numeric",
+          "check": "units",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "dimensions of the expression match 'N'"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:primary_concept",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "primary_concept preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:learning_objectives",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "learning_objectives preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:topic",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "topic preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:question_type",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "question_type preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:answer_type",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "answer_type preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:marks",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "marks preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:reasoning_structure",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "reasoning_structure preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:representation",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "representation preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:constraints",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "constraints preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "change:numeric_parameters",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "numeric_parameters changed as required"
+        },
+        {
+          "stage": "invariants",
+          "check": "judgement:target_skill",
+          "status": "PASS",
+          "method": "model_assisted",
+          "message": "agent judgement on target_skill"
+        },
+        {
+          "stage": "distance",
+          "check": "novelty",
+          "status": "FAIL",
+          "method": "deterministic",
+          "message": "candidate is a near-duplicate of its parent"
+        },
+        {
+          "stage": "duplicates",
+          "check": "source_copy",
+          "status": "FAIL",
+          "method": "deterministic",
+          "message": "near-verbatim copy of source question p2-a3 (surface similarity 0.95)"
+        }
+      ]
+    },
+    {
+      "candidate_id": "c06-try2",
+      "question_id": "m-p2-a3-par",
+      "spec_id": "spec-247e52b245",
+      "parent_id": "p2-a3",
+      "operator": "parameter",
+      "state": "PASS",
+      "summary": "all checks passed",
+      "model_assisted": true,
+      "numeric_verified": true,
+      "distance": {
+        "dimensions": {
+          "surface": {
+            "distance": 0.61,
+            "label": "moderate",
+            "method": "difflib SequenceMatcher ratio over lower-cased word tokens of the full question text"
+          },
+          "concept": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "Jaccard overlap of {primary_concept} ∪ secondary_concepts (case-insensitive)"
+          },
+          "reasoning": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "1 − normalized edit distance between step-type sequences in topological order, multiplied by 0.5 if the graph shape (linear vs branched) differs"
+          },
+          "representation": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "Jaccard overlap of input representation sets"
+          },
+          "constraint": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "Jaccard overlap of content words in explicit+domain+boundary constraints"
+          },
+          "answer": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "0.5 if answer types are equal + 0.5 if the answer units have the same physical dimension (or both are absent)"
+          }
+        },
+        "novelty": "parameter_novelty",
+        "conceptual_equivalence": {
+          "status": "model_assisted",
+          "conceptually_equivalent": true
+        },
+        "note": "Distances are transparent set/sequence measures; they do not establish psychometric equivalence."
+      },
+      "checks": [
+        {
+          "stage": "lineage",
+          "check": "lineage_consistent",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "parameter of p2-a3"
+        },
+        {
+          "stage": "schema",
+          "check": "genome_schema",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "genome schema and reasoning graph valid"
+        },
+        {
+          "stage": "structural",
+          "check": "marks_present",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "2 marks"
+        },
+        {
+          "stage": "answer_marking",
+          "check": "marking_total",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "marking points match marks"
+        },
+        {
+          "stage": "numeric",
+          "check": "recompute",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "claimed 7.6 matches recomputed 7.6 (exact rational arithmetic, tolerance 0.01)"
+        },
+        {
+          "stage": "answer_marking",
+          "check": "final_answer_matches",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "final answer text contains the verified value"
+        },
+        {
+          "stage": "numeric",
+          "check": "units",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "dimensions of the expression match 'N'"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:primary_concept",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "primary_concept preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:learning_objectives",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "learning_objectives preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:topic",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "topic preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:question_type",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "question_type preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:answer_type",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "answer_type preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:marks",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "marks preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:reasoning_structure",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "reasoning_structure preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:representation",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "representation preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:constraints",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "constraints preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "change:numeric_parameters",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "numeric_parameters changed as required"
+        },
+        {
+          "stage": "invariants",
+          "check": "judgement:target_skill",
+          "status": "PASS",
+          "method": "model_assisted",
+          "message": "agent judgement on target_skill"
+        },
+        {
+          "stage": "distance",
+          "check": "novelty",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "parameter_novelty"
+        }
+      ]
+    },
+    {
+      "candidate_id": "c07",
+      "question_id": "m-p2-a4-rev",
+      "spec_id": "spec-31dad5c71b",
+      "parent_id": "p2-a4",
+      "operator": "reverse",
+      "state": "PASS",
+      "summary": "all checks passed",
+      "model_assisted": true,
+      "numeric_verified": true,
+      "distance": {
+        "dimensions": {
+          "surface": {
+            "distance": 0.74,
+            "label": "high",
+            "method": "difflib SequenceMatcher ratio over lower-cased word tokens of the full question text"
+          },
+          "concept": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "Jaccard overlap of {primary_concept} ∪ secondary_concepts (case-insensitive)"
+          },
+          "reasoning": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "1 − normalized edit distance between step-type sequences in topological order, multiplied by 0.5 if the graph shape (linear vs branched) differs"
+          },
+          "representation": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "Jaccard overlap of input representation sets"
+          },
+          "constraint": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "Jaccard overlap of content words in explicit+domain+boundary constraints"
+          },
+          "answer": {
+            "distance": 0.5,
+            "label": "moderate",
+            "method": "0.5 if answer types are equal + 0.5 if the answer units have the same physical dimension (or both are absent)"
+          }
+        },
+        "novelty": "structural_novelty",
+        "conceptual_equivalence": {
+          "status": "model_assisted",
+          "conceptually_equivalent": true
+        },
+        "note": "Distances are transparent set/sequence measures; they do not establish psychometric equivalence."
+      },
+      "checks": [
+        {
+          "stage": "lineage",
+          "check": "lineage_consistent",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "reverse of p2-a4"
+        },
+        {
+          "stage": "schema",
+          "check": "genome_schema",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "genome schema and reasoning graph valid"
+        },
+        {
+          "stage": "structural",
+          "check": "marks_present",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "1 marks"
+        },
+        {
+          "stage": "answer_marking",
+          "check": "marking_total",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "marking points match marks"
+        },
+        {
+          "stage": "structural",
+          "check": "mc_options",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "4 options"
+        },
+        {
+          "stage": "answer_marking",
+          "check": "mc_key",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "answer key B"
+        },
+        {
+          "stage": "numeric",
+          "check": "recompute",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "claimed 340 matches recomputed 340 (exact rational arithmetic, tolerance 0.01)"
+        },
+        {
+          "stage": "answer_marking",
+          "check": "final_answer_matches",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "final answer text contains the verified value"
+        },
+        {
+          "stage": "numeric",
+          "check": "units",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "dimensions of the expression match 'm/s'"
+        },
+        {
+          "stage": "answer_marking",
+          "check": "mc_key_correct",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "keyed option B matches the verified value"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:primary_concept",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "primary_concept preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:learning_objectives",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "learning_objectives preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:topic",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "topic preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "change:reasoning_direction",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "reasoning_direction changed as required"
+        },
+        {
+          "stage": "invariants",
+          "check": "judgement:target_skill",
+          "status": "PASS",
+          "method": "model_assisted",
+          "message": "agent judgement on target_skill"
+        },
+        {
+          "stage": "distance",
+          "check": "novelty",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "structural_novelty"
+        }
+      ]
+    },
+    {
+      "candidate_id": "c08",
+      "question_id": "m-p2-a5-ctx",
+      "spec_id": "spec-4347c5eb2c",
+      "parent_id": "p2-a5",
+      "operator": "context_transfer",
+      "state": "PASS",
+      "summary": "all checks passed",
+      "model_assisted": true,
+      "numeric_verified": true,
+      "distance": {
+        "dimensions": {
+          "surface": {
+            "distance": 0.62,
+            "label": "moderate",
+            "method": "difflib SequenceMatcher ratio over lower-cased word tokens of the full question text"
+          },
+          "concept": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "Jaccard overlap of {primary_concept} ∪ secondary_concepts (case-insensitive)"
+          },
+          "reasoning": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "1 − normalized edit distance between step-type sequences in topological order, multiplied by 0.5 if the graph shape (linear vs branched) differs"
+          },
+          "representation": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "Jaccard overlap of input representation sets"
+          },
+          "constraint": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "Jaccard overlap of content words in explicit+domain+boundary constraints"
+          },
+          "answer": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "0.5 if answer types are equal + 0.5 if the answer units have the same physical dimension (or both are absent)"
+          }
+        },
+        "novelty": "parameter_novelty",
+        "conceptual_equivalence": {
+          "status": "model_assisted",
+          "conceptually_equivalent": true
+        },
+        "note": "Distances are transparent set/sequence measures; they do not establish psychometric equivalence."
+      },
+      "checks": [
+        {
+          "stage": "lineage",
+          "check": "lineage_consistent",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "context_transfer of p2-a5"
+        },
+        {
+          "stage": "schema",
+          "check": "genome_schema",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "genome schema and reasoning graph valid"
+        },
+        {
+          "stage": "structural",
+          "check": "marks_present",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "2 marks"
+        },
+        {
+          "stage": "answer_marking",
+          "check": "marking_total",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "marking points match marks"
+        },
+        {
+          "stage": "numeric",
+          "check": "recompute",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "claimed 3 matches recomputed 3 (exact rational arithmetic, tolerance 0.01)"
+        },
+        {
+          "stage": "answer_marking",
+          "check": "final_answer_matches",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "final answer text contains the verified value"
+        },
+        {
+          "stage": "numeric",
+          "check": "units",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "dimensions of the expression match 'A'"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:primary_concept",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "primary_concept preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:learning_objectives",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "learning_objectives preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:topic",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "topic preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:answer_type",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "answer_type preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:reasoning_structure",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "reasoning_structure preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:question_type",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "question_type preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:marks",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "marks preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "change:context",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "context changed as required"
+        },
+        {
+          "stage": "invariants",
+          "check": "change:wording",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "wording changed as required"
+        },
+        {
+          "stage": "invariants",
+          "check": "judgement:target_skill",
+          "status": "PASS",
+          "method": "model_assisted",
+          "message": "agent judgement on target_skill"
+        },
+        {
+          "stage": "distance",
+          "check": "novelty",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "parameter_novelty"
+        }
+      ]
+    },
+    {
+      "candidate_id": "c09",
+      "question_id": "m-p3-a2-diff",
+      "spec_id": "spec-8794acaa91",
+      "parent_id": "p3-a2",
+      "operator": "difficulty",
+      "state": "PASS",
+      "summary": "all checks passed",
+      "model_assisted": true,
+      "numeric_verified": true,
+      "distance": {
+        "dimensions": {
+          "surface": {
+            "distance": 0.31,
+            "label": "low",
+            "method": "difflib SequenceMatcher ratio over lower-cased word tokens of the full question text"
+          },
+          "concept": {
+            "distance": 0.5,
+            "label": "moderate",
+            "method": "Jaccard overlap of {primary_concept} ∪ secondary_concepts (case-insensitive)"
+          },
+          "reasoning": {
+            "distance": 0.5,
+            "label": "moderate",
+            "method": "1 − normalized edit distance between step-type sequences in topological order, multiplied by 0.5 if the graph shape (linear vs branched) differs"
+          },
+          "representation": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "Jaccard overlap of input representation sets"
+          },
+          "constraint": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "Jaccard overlap of content words in explicit+domain+boundary constraints"
+          },
+          "answer": {
+            "distance": 0.5,
+            "label": "moderate",
+            "method": "0.5 if answer types are equal + 0.5 if the answer units have the same physical dimension (or both are absent)"
+          }
+        },
+        "novelty": "structural_novelty",
+        "conceptual_equivalence": {
+          "status": "model_assisted",
+          "conceptually_equivalent": true
+        },
+        "note": "Distances are transparent set/sequence measures; they do not establish psychometric equivalence."
+      },
+      "checks": [
+        {
+          "stage": "lineage",
+          "check": "lineage_consistent",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "difficulty of p3-a2"
+        },
+        {
+          "stage": "schema",
+          "check": "genome_schema",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "genome schema and reasoning graph valid"
+        },
+        {
+          "stage": "structural",
+          "check": "marks_present",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "3 marks"
+        },
+        {
+          "stage": "answer_marking",
+          "check": "marking_total",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "marking points match marks"
+        },
+        {
+          "stage": "numeric",
+          "check": "recompute",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "claimed 161.7 matches recomputed 161.7 (exact rational arithmetic, tolerance 0.01)"
+        },
+        {
+          "stage": "answer_marking",
+          "check": "final_answer_matches",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "final answer text contains the verified value"
+        },
+        {
+          "stage": "numeric",
+          "check": "units",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "dimensions of the expression match 'W'"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:primary_concept",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "primary_concept preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:learning_objectives",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "learning_objectives preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:topic",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "topic preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "change:difficulty_features",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "heuristic difficulty points changed by +3 (up)"
+        },
+        {
+          "stage": "invariants",
+          "check": "judgement:target_skill",
+          "status": "PASS",
+          "method": "model_assisted",
+          "message": "agent judgement on target_skill"
+        },
+        {
+          "stage": "distance",
+          "check": "novelty",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "structural_novelty"
+        }
+      ]
+    },
+    {
+      "candidate_id": "c10",
+      "question_id": "m-p3-a3-ctx",
+      "spec_id": "spec-9cde7791d5",
+      "parent_id": "p3-a3",
+      "operator": "context_transfer",
+      "state": "PASS",
+      "summary": "all checks passed",
+      "model_assisted": true,
+      "numeric_verified": true,
+      "distance": {
+        "dimensions": {
+          "surface": {
+            "distance": 0.32,
+            "label": "low",
+            "method": "difflib SequenceMatcher ratio over lower-cased word tokens of the full question text"
+          },
+          "concept": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "Jaccard overlap of {primary_concept} ∪ secondary_concepts (case-insensitive)"
+          },
+          "reasoning": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "1 − normalized edit distance between step-type sequences in topological order, multiplied by 0.5 if the graph shape (linear vs branched) differs"
+          },
+          "representation": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "Jaccard overlap of input representation sets"
+          },
+          "constraint": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "Jaccard overlap of content words in explicit+domain+boundary constraints"
+          },
+          "answer": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "0.5 if answer types are equal + 0.5 if the answer units have the same physical dimension (or both are absent)"
+          }
+        },
+        "novelty": "parameter_novelty",
+        "conceptual_equivalence": {
+          "status": "model_assisted",
+          "conceptually_equivalent": true
+        },
+        "note": "Distances are transparent set/sequence measures; they do not establish psychometric equivalence."
+      },
+      "checks": [
+        {
+          "stage": "lineage",
+          "check": "lineage_consistent",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "context_transfer of p3-a3"
+        },
+        {
+          "stage": "schema",
+          "check": "genome_schema",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "genome schema and reasoning graph valid"
+        },
+        {
+          "stage": "structural",
+          "check": "marks_present",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "3 marks"
+        },
+        {
+          "stage": "answer_marking",
+          "check": "marking_total",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "marking points match marks"
+        },
+        {
+          "stage": "numeric",
+          "check": "recompute",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "claimed 0.505 matches recomputed 0.505076 (floating point, tolerance 0.01)"
+        },
+        {
+          "stage": "answer_marking",
+          "check": "final_answer_matches",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "final answer text contains the verified value"
+        },
+        {
+          "stage": "numeric",
+          "check": "units",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "dimensions of the expression match 's'"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:primary_concept",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "primary_concept preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:learning_objectives",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "learning_objectives preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:topic",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "topic preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:answer_type",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "answer_type preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:reasoning_structure",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "reasoning_structure preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:question_type",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "question_type preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:marks",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "marks preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "change:context",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "context changed as required"
+        },
+        {
+          "stage": "invariants",
+          "check": "change:wording",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "wording changed as required"
+        },
+        {
+          "stage": "invariants",
+          "check": "judgement:target_skill",
+          "status": "PASS",
+          "method": "model_assisted",
+          "message": "agent judgement on target_skill"
+        },
+        {
+          "stage": "distance",
+          "check": "novelty",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "parameter_novelty"
+        }
+      ]
+    },
+    {
+      "candidate_id": "c11",
+      "question_id": "m-p3-a4-rep",
+      "spec_id": "spec-5a5fb5a89a",
+      "parent_id": "p3-a4",
+      "operator": "representation",
+      "state": "REVIEW_REQUIRED",
+      "summary": "REVIEW_REQUIRED: judgement:target_skill: no agent judgement supplied for target_skill",
+      "model_assisted": false,
+      "numeric_verified": true,
+      "distance": {
+        "dimensions": {
+          "surface": {
+            "distance": 0.5,
+            "label": "moderate",
+            "method": "difflib SequenceMatcher ratio over lower-cased word tokens of the full question text"
+          },
+          "concept": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "Jaccard overlap of {primary_concept} ∪ secondary_concepts (case-insensitive)"
+          },
+          "reasoning": {
+            "distance": 0.25,
+            "label": "low",
+            "method": "1 − normalized edit distance between step-type sequences in topological order, multiplied by 0.5 if the graph shape (linear vs branched) differs"
+          },
+          "representation": {
+            "distance": 0.5,
+            "label": "moderate",
+            "method": "Jaccard overlap of input representation sets"
+          },
+          "constraint": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "Jaccard overlap of content words in explicit+domain+boundary constraints"
+          },
+          "answer": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "0.5 if answer types are equal + 0.5 if the answer units have the same physical dimension (or both are absent)"
+          }
+        },
+        "novelty": "structural_novelty",
+        "conceptual_equivalence": {
+          "status": "unverified"
+        },
+        "note": "Distances are transparent set/sequence measures; they do not establish psychometric equivalence."
+      },
+      "checks": [
+        {
+          "stage": "lineage",
+          "check": "lineage_consistent",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "representation of p3-a4"
+        },
+        {
+          "stage": "schema",
+          "check": "genome_schema",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "genome schema and reasoning graph valid"
+        },
+        {
+          "stage": "structural",
+          "check": "marks_present",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "2 marks"
+        },
+        {
+          "stage": "answer_marking",
+          "check": "marking_total",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "marking points match marks"
+        },
+        {
+          "stage": "numeric",
+          "check": "recompute",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "claimed 25 matches recomputed 25 (exact rational arithmetic, tolerance 0.01)"
+        },
+        {
+          "stage": "answer_marking",
+          "check": "final_answer_matches",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "final answer text contains the verified value"
+        },
+        {
+          "stage": "numeric",
+          "check": "units",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "dimensions of the expression match 'Hz'"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:primary_concept",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "primary_concept preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:learning_objectives",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "learning_objectives preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:topic",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "topic preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:answer_type",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "answer_type preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "change:representation",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "representation changed as required"
+        },
+        {
+          "stage": "invariants",
+          "check": "judgement:target_skill",
+          "status": "NOT_VERIFIED",
+          "method": "deterministic",
+          "message": "no agent judgement supplied for target_skill"
+        },
+        {
+          "stage": "distance",
+          "check": "novelty",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "structural_novelty"
+        }
+      ]
+    },
+    {
+      "candidate_id": "c12-try1",
+      "question_id": "m-p1-b1-par-t1",
+      "spec_id": "spec-1dda8598d2",
+      "parent_id": "p1-b1",
+      "operator": "parameter",
+      "state": "FAIL",
+      "summary": "FAIL: recompute: claimed 4 but recomputed 3.22581 (exact rational arithmetic)",
+      "model_assisted": true,
+      "numeric_verified": false,
+      "distance": {
+        "dimensions": {
+          "surface": {
+            "distance": 0.62,
+            "label": "moderate",
+            "method": "difflib SequenceMatcher ratio over lower-cased word tokens of the full question text"
+          },
+          "concept": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "Jaccard overlap of {primary_concept} ∪ secondary_concepts (case-insensitive)"
+          },
+          "reasoning": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "1 − normalized edit distance between step-type sequences in topological order, multiplied by 0.5 if the graph shape (linear vs branched) differs"
+          },
+          "representation": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "Jaccard overlap of input representation sets"
+          },
+          "constraint": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "Jaccard overlap of content words in explicit+domain+boundary constraints"
+          },
+          "answer": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "0.5 if answer types are equal + 0.5 if the answer units have the same physical dimension (or both are absent)"
+          }
+        },
+        "novelty": "parameter_novelty",
+        "conceptual_equivalence": {
+          "status": "model_assisted",
+          "conceptually_equivalent": true
+        },
+        "note": "Distances are transparent set/sequence measures; they do not establish psychometric equivalence."
+      },
+      "checks": [
+        {
+          "stage": "lineage",
+          "check": "lineage_consistent",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "parameter of p1-b1"
+        },
+        {
+          "stage": "schema",
+          "check": "genome_schema",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "genome schema and reasoning graph valid"
+        },
+        {
+          "stage": "structural",
+          "check": "marks_present",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "7 marks"
+        },
+        {
+          "stage": "structural",
+          "check": "part_marks",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "part marks consistent"
+        },
+        {
+          "stage": "answer_marking",
+          "check": "marking_total",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "marking points match marks"
+        },
+        {
+          "stage": "numeric",
+          "check": "recompute",
+          "status": "FAIL",
+          "method": "deterministic",
+          "message": "claimed 4 but recomputed 3.22581 (exact rational arithmetic)"
+        },
+        {
+          "stage": "answer_marking",
+          "check": "final_answer_matches",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "final answer text contains the verified value"
+        },
+        {
+          "stage": "numeric",
+          "check": "units",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "dimensions of the expression match 'm/s^2'"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:primary_concept",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "primary_concept preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:learning_objectives",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "learning_objectives preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:topic",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "topic preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:question_type",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "question_type preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:answer_type",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "answer_type preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:marks",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "marks preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:reasoning_structure",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "reasoning_structure preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:representation",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "representation preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:constraints",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "constraints preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "change:numeric_parameters",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "numeric_parameters changed as required"
+        },
+        {
+          "stage": "invariants",
+          "check": "judgement:target_skill",
+          "status": "PASS",
+          "method": "model_assisted",
+          "message": "agent judgement on target_skill"
+        },
+        {
+          "stage": "distance",
+          "check": "novelty",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "parameter_novelty"
+        }
+      ]
+    },
+    {
+      "candidate_id": "c12-try2",
+      "question_id": "m-p1-b1-par",
+      "spec_id": "spec-1dda8598d2",
+      "parent_id": "p1-b1",
+      "operator": "parameter",
+      "state": "PASS",
+      "summary": "all checks passed",
+      "model_assisted": true,
+      "numeric_verified": true,
+      "distance": {
+        "dimensions": {
+          "surface": {
+            "distance": 0.62,
+            "label": "moderate",
+            "method": "difflib SequenceMatcher ratio over lower-cased word tokens of the full question text"
+          },
+          "concept": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "Jaccard overlap of {primary_concept} ∪ secondary_concepts (case-insensitive)"
+          },
+          "reasoning": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "1 − normalized edit distance between step-type sequences in topological order, multiplied by 0.5 if the graph shape (linear vs branched) differs"
+          },
+          "representation": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "Jaccard overlap of input representation sets"
+          },
+          "constraint": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "Jaccard overlap of content words in explicit+domain+boundary constraints"
+          },
+          "answer": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "0.5 if answer types are equal + 0.5 if the answer units have the same physical dimension (or both are absent)"
+          }
+        },
+        "novelty": "parameter_novelty",
+        "conceptual_equivalence": {
+          "status": "model_assisted",
+          "conceptually_equivalent": true
+        },
+        "note": "Distances are transparent set/sequence measures; they do not establish psychometric equivalence."
+      },
+      "checks": [
+        {
+          "stage": "lineage",
+          "check": "lineage_consistent",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "parameter of p1-b1"
+        },
+        {
+          "stage": "schema",
+          "check": "genome_schema",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "genome schema and reasoning graph valid"
+        },
+        {
+          "stage": "structural",
+          "check": "marks_present",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "7 marks"
+        },
+        {
+          "stage": "structural",
+          "check": "part_marks",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "part marks consistent"
+        },
+        {
+          "stage": "answer_marking",
+          "check": "marking_total",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "marking points match marks"
+        },
+        {
+          "stage": "numeric",
+          "check": "recompute",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "claimed 3.226 matches recomputed 3.22581 (exact rational arithmetic, tolerance 0.01)"
+        },
+        {
+          "stage": "answer_marking",
+          "check": "final_answer_matches",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "final answer text contains the verified value"
+        },
+        {
+          "stage": "numeric",
+          "check": "units",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "dimensions of the expression match 'm/s^2'"
+        },
+        {
+          "stage": "numeric",
+          "check": "domain",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "result within domain"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:primary_concept",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "primary_concept preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:learning_objectives",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "learning_objectives preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:topic",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "topic preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:question_type",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "question_type preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:answer_type",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "answer_type preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:marks",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "marks preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:reasoning_structure",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "reasoning_structure preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:representation",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "representation preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:constraints",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "constraints preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "change:numeric_parameters",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "numeric_parameters changed as required"
+        },
+        {
+          "stage": "invariants",
+          "check": "judgement:target_skill",
+          "status": "PASS",
+          "method": "model_assisted",
+          "message": "agent judgement on target_skill"
+        },
+        {
+          "stage": "distance",
+          "check": "novelty",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "parameter_novelty"
+        }
+      ]
+    },
+    {
+      "candidate_id": "c13",
+      "question_id": "m-p1-b2-surf",
+      "spec_id": "spec-ac7053b6a8",
+      "parent_id": "p1-b2",
+      "operator": "surface",
+      "state": "PASS",
+      "summary": "all checks passed",
+      "model_assisted": true,
+      "numeric_verified": true,
+      "distance": {
+        "dimensions": {
+          "surface": {
+            "distance": 0.5,
+            "label": "moderate",
+            "method": "difflib SequenceMatcher ratio over lower-cased word tokens of the full question text"
+          },
+          "concept": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "Jaccard overlap of {primary_concept} ∪ secondary_concepts (case-insensitive)"
+          },
+          "reasoning": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "1 − normalized edit distance between step-type sequences in topological order, multiplied by 0.5 if the graph shape (linear vs branched) differs"
+          },
+          "representation": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "Jaccard overlap of input representation sets"
+          },
+          "constraint": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "Jaccard overlap of content words in explicit+domain+boundary constraints"
+          },
+          "answer": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "0.5 if answer types are equal + 0.5 if the answer units have the same physical dimension (or both are absent)"
+          }
+        },
+        "novelty": "surface_novelty",
+        "conceptual_equivalence": {
+          "status": "model_assisted",
+          "conceptually_equivalent": true
+        },
+        "note": "Distances are transparent set/sequence measures; they do not establish psychometric equivalence."
+      },
+      "checks": [
+        {
+          "stage": "lineage",
+          "check": "lineage_consistent",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "surface of p1-b2"
+        },
+        {
+          "stage": "schema",
+          "check": "genome_schema",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "genome schema and reasoning graph valid"
+        },
+        {
+          "stage": "structural",
+          "check": "marks_present",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "7 marks"
+        },
+        {
+          "stage": "structural",
+          "check": "part_marks",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "part marks consistent"
+        },
+        {
+          "stage": "answer_marking",
+          "check": "marking_total",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "marking points match marks"
+        },
+        {
+          "stage": "numeric",
+          "check": "recompute",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "claimed 15.68 matches recomputed 15.68 (exact rational arithmetic, tolerance 0.01)"
+        },
+        {
+          "stage": "answer_marking",
+          "check": "final_answer_matches",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "final answer text contains the verified value"
+        },
+        {
+          "stage": "numeric",
+          "check": "units",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "dimensions of the expression match 'J'"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:primary_concept",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "primary_concept preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:learning_objectives",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "learning_objectives preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:topic",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "topic preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:question_type",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "question_type preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:answer_type",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "answer_type preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:marks",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "marks preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:reasoning_structure",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "reasoning_structure preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:representation",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "representation preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:numeric_parameters",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "numeric_parameters preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:constraints",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "constraints preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "change:wording",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "wording changed as required"
+        },
+        {
+          "stage": "invariants",
+          "check": "judgement:target_skill",
+          "status": "PASS",
+          "method": "model_assisted",
+          "message": "agent judgement on target_skill"
+        },
+        {
+          "stage": "distance",
+          "check": "novelty",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "surface_novelty"
+        }
+      ]
+    },
+    {
+      "candidate_id": "c14-try1",
+      "question_id": "m-p1-b3-rev-t1",
+      "spec_id": "spec-ee59079dda",
+      "parent_id": "p1-b3",
+      "operator": "reverse",
+      "state": "FAIL",
+      "summary": "FAIL: uniqueness: several answers are valid but no marking accept_rule is defined",
+      "model_assisted": true,
+      "numeric_verified": true,
+      "distance": {
+        "dimensions": {
+          "surface": {
+            "distance": 0.4,
+            "label": "moderate",
+            "method": "difflib SequenceMatcher ratio over lower-cased word tokens of the full question text"
+          },
+          "concept": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "Jaccard overlap of {primary_concept} ∪ secondary_concepts (case-insensitive)"
+          },
+          "reasoning": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "1 − normalized edit distance between step-type sequences in topological order, multiplied by 0.5 if the graph shape (linear vs branched) differs"
+          },
+          "representation": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "Jaccard overlap of input representation sets"
+          },
+          "constraint": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "Jaccard overlap of content words in explicit+domain+boundary constraints"
+          },
+          "answer": {
+            "distance": 0.5,
+            "label": "moderate",
+            "method": "0.5 if answer types are equal + 0.5 if the answer units have the same physical dimension (or both are absent)"
+          }
+        },
+        "novelty": "structural_novelty",
+        "conceptual_equivalence": {
+          "status": "model_assisted",
+          "conceptually_equivalent": true
+        },
+        "note": "Distances are transparent set/sequence measures; they do not establish psychometric equivalence."
+      },
+      "checks": [
+        {
+          "stage": "lineage",
+          "check": "lineage_consistent",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "reverse of p1-b3"
+        },
+        {
+          "stage": "schema",
+          "check": "genome_schema",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "genome schema and reasoning graph valid"
+        },
+        {
+          "stage": "structural",
+          "check": "marks_present",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "6 marks"
+        },
+        {
+          "stage": "structural",
+          "check": "part_marks",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "part marks consistent"
+        },
+        {
+          "stage": "answer_marking",
+          "check": "marking_total",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "marking points match marks"
+        },
+        {
+          "stage": "ambiguity",
+          "check": "vague_terms",
+          "status": "INFO",
+          "method": "deterministic",
+          "message": "vague wording: suitable value"
+        },
+        {
+          "stage": "numeric",
+          "check": "recompute",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "claimed 4 matches recomputed 4 (exact rational arithmetic, tolerance 0.01)"
+        },
+        {
+          "stage": "answer_marking",
+          "check": "final_answer_matches",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "final answer text contains the verified value"
+        },
+        {
+          "stage": "numeric",
+          "check": "units",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "dimensions of the expression match 'ohm'"
+        },
+        {
+          "stage": "ambiguity",
+          "check": "uniqueness",
+          "status": "FAIL",
+          "method": "deterministic",
+          "message": "several answers are valid but no marking accept_rule is defined"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:primary_concept",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "primary_concept preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:learning_objectives",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "learning_objectives preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:topic",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "topic preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "change:reasoning_direction",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "reasoning_direction changed as required"
+        },
+        {
+          "stage": "invariants",
+          "check": "judgement:target_skill",
+          "status": "PASS",
+          "method": "model_assisted",
+          "message": "agent judgement on target_skill"
+        },
+        {
+          "stage": "distance",
+          "check": "novelty",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "structural_novelty"
+        }
+      ]
+    },
+    {
+      "candidate_id": "c14-try2",
+      "question_id": "m-p1-b3-rev",
+      "spec_id": "spec-ee59079dda",
+      "parent_id": "p1-b3",
+      "operator": "reverse",
+      "state": "PASS",
+      "summary": "all checks passed",
+      "model_assisted": true,
+      "numeric_verified": true,
+      "distance": {
+        "dimensions": {
+          "surface": {
+            "distance": 0.31,
+            "label": "low",
+            "method": "difflib SequenceMatcher ratio over lower-cased word tokens of the full question text"
+          },
+          "concept": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "Jaccard overlap of {primary_concept} ∪ secondary_concepts (case-insensitive)"
+          },
+          "reasoning": {
+            "distance": 0.33,
+            "label": "low",
+            "method": "1 − normalized edit distance between step-type sequences in topological order, multiplied by 0.5 if the graph shape (linear vs branched) differs"
+          },
+          "representation": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "Jaccard overlap of input representation sets"
+          },
+          "constraint": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "Jaccard overlap of content words in explicit+domain+boundary constraints"
+          },
+          "answer": {
+            "distance": 0.5,
+            "label": "moderate",
+            "method": "0.5 if answer types are equal + 0.5 if the answer units have the same physical dimension (or both are absent)"
+          }
+        },
+        "novelty": "structural_novelty",
+        "conceptual_equivalence": {
+          "status": "model_assisted",
+          "conceptually_equivalent": true
+        },
+        "note": "Distances are transparent set/sequence measures; they do not establish psychometric equivalence."
+      },
+      "checks": [
+        {
+          "stage": "lineage",
+          "check": "lineage_consistent",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "reverse of p1-b3"
+        },
+        {
+          "stage": "schema",
+          "check": "genome_schema",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "genome schema and reasoning graph valid"
+        },
+        {
+          "stage": "structural",
+          "check": "marks_present",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "6 marks"
+        },
+        {
+          "stage": "structural",
+          "check": "part_marks",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "part marks consistent"
+        },
+        {
+          "stage": "answer_marking",
+          "check": "marking_total",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "marking points match marks"
+        },
+        {
+          "stage": "numeric",
+          "check": "recompute",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "claimed 4 matches recomputed 4 (exact rational arithmetic, tolerance 0.01)"
+        },
+        {
+          "stage": "answer_marking",
+          "check": "final_answer_matches",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "final answer text contains the verified value"
+        },
+        {
+          "stage": "numeric",
+          "check": "units",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "dimensions of the expression match 'ohm'"
+        },
+        {
+          "stage": "numeric",
+          "check": "domain",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "result within domain"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:primary_concept",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "primary_concept preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:learning_objectives",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "learning_objectives preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:topic",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "topic preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "change:reasoning_direction",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "reasoning_direction changed as required"
+        },
+        {
+          "stage": "invariants",
+          "check": "judgement:target_skill",
+          "status": "PASS",
+          "method": "model_assisted",
+          "message": "agent judgement on target_skill"
+        },
+        {
+          "stage": "distance",
+          "check": "novelty",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "structural_novelty"
+        }
+      ]
+    },
+    {
+      "candidate_id": "c15",
+      "question_id": "m-p2-b1-path",
+      "spec_id": "spec-2bd2a84744",
+      "parent_id": "p2-b1",
+      "operator": "reasoning_path",
+      "state": "PASS",
+      "summary": "all checks passed",
+      "model_assisted": true,
+      "numeric_verified": true,
+      "distance": {
+        "dimensions": {
+          "surface": {
+            "distance": 0.36,
+            "label": "moderate",
+            "method": "difflib SequenceMatcher ratio over lower-cased word tokens of the full question text"
+          },
+          "concept": {
+            "distance": 0.25,
+            "label": "low",
+            "method": "Jaccard overlap of {primary_concept} ∪ secondary_concepts (case-insensitive)"
+          },
+          "reasoning": {
+            "distance": 0.81,
+            "label": "high",
+            "method": "1 − normalized edit distance between step-type sequences in topological order, multiplied by 0.5 if the graph shape (linear vs branched) differs"
+          },
+          "representation": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "Jaccard overlap of input representation sets"
+          },
+          "constraint": {
+            "distance": 0.5,
+            "label": "moderate",
+            "method": "Jaccard overlap of content words in explicit+domain+boundary constraints"
+          },
+          "answer": {
+            "distance": 0.5,
+            "label": "moderate",
+            "method": "0.5 if answer types are equal + 0.5 if the answer units have the same physical dimension (or both are absent)"
+          }
+        },
+        "novelty": "structural_novelty",
+        "conceptual_equivalence": {
+          "status": "model_assisted",
+          "conceptually_equivalent": true
+        },
+        "note": "Distances are transparent set/sequence measures; they do not establish psychometric equivalence."
+      },
+      "checks": [
+        {
+          "stage": "lineage",
+          "check": "lineage_consistent",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "reasoning_path of p2-b1"
+        },
+        {
+          "stage": "schema",
+          "check": "genome_schema",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "genome schema and reasoning graph valid"
+        },
+        {
+          "stage": "structural",
+          "check": "marks_present",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "8 marks"
+        },
+        {
+          "stage": "structural",
+          "check": "part_marks",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "part marks consistent"
+        },
+        {
+          "stage": "answer_marking",
+          "check": "marking_total",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "marking points match marks"
+        },
+        {
+          "stage": "numeric",
+          "check": "recompute",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "claimed 1.5 matches recomputed 1.5 (exact rational arithmetic, tolerance 0.01)"
+        },
+        {
+          "stage": "answer_marking",
+          "check": "final_answer_matches",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "final answer text contains the verified value"
+        },
+        {
+          "stage": "numeric",
+          "check": "units",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "dimensions of the expression match 'm/s'"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:primary_concept",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "primary_concept preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:learning_objectives",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "learning_objectives preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:topic",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "topic preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:answer_type",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "answer_type preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "change:reasoning_structure",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "reasoning_structure changed as required"
+        },
+        {
+          "stage": "invariants",
+          "check": "judgement:target_skill",
+          "status": "PASS",
+          "method": "model_assisted",
+          "message": "agent judgement on target_skill"
+        },
+        {
+          "stage": "distance",
+          "check": "novelty",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "structural_novelty"
+        }
+      ]
+    },
+    {
+      "candidate_id": "c16",
+      "question_id": "m-p2-b3-con",
+      "spec_id": "spec-f5e687e9f0",
+      "parent_id": "p2-b3",
+      "operator": "constraint",
+      "state": "PASS",
+      "summary": "all checks passed",
+      "model_assisted": true,
+      "numeric_verified": true,
+      "distance": {
+        "dimensions": {
+          "surface": {
+            "distance": 0.46,
+            "label": "moderate",
+            "method": "difflib SequenceMatcher ratio over lower-cased word tokens of the full question text"
+          },
+          "concept": {
+            "distance": 0.33,
+            "label": "low",
+            "method": "Jaccard overlap of {primary_concept} ∪ secondary_concepts (case-insensitive)"
+          },
+          "reasoning": {
+            "distance": 0.29,
+            "label": "low",
+            "method": "1 − normalized edit distance between step-type sequences in topological order, multiplied by 0.5 if the graph shape (linear vs branched) differs"
+          },
+          "representation": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "Jaccard overlap of input representation sets"
+          },
+          "constraint": {
+            "distance": 1.0,
+            "label": "high",
+            "method": "Jaccard overlap of content words in explicit+domain+boundary constraints"
+          },
+          "answer": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "0.5 if answer types are equal + 0.5 if the answer units have the same physical dimension (or both are absent)"
+          }
+        },
+        "novelty": "structural_novelty",
+        "conceptual_equivalence": {
+          "status": "model_assisted",
+          "conceptually_equivalent": true
+        },
+        "note": "Distances are transparent set/sequence measures; they do not establish psychometric equivalence."
+      },
+      "checks": [
+        {
+          "stage": "lineage",
+          "check": "lineage_consistent",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "constraint of p2-b3"
+        },
+        {
+          "stage": "schema",
+          "check": "genome_schema",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "genome schema and reasoning graph valid"
+        },
+        {
+          "stage": "structural",
+          "check": "marks_present",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "6 marks"
+        },
+        {
+          "stage": "structural",
+          "check": "part_marks",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "part marks consistent"
+        },
+        {
+          "stage": "answer_marking",
+          "check": "marking_total",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "marking points match marks"
+        },
+        {
+          "stage": "ambiguity",
+          "check": "unused_given",
+          "status": "INFO",
+          "method": "deterministic",
+          "message": "given value(s) not used by the final expression: I2, t"
+        },
+        {
+          "stage": "numeric",
+          "check": "recompute",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "claimed 1840 matches recomputed 1840 (exact rational arithmetic, tolerance 0.01)"
+        },
+        {
+          "stage": "answer_marking",
+          "check": "final_answer_matches",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "final answer text contains the verified value"
+        },
+        {
+          "stage": "numeric",
+          "check": "units",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "dimensions of the expression match 'W'"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:primary_concept",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "primary_concept preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:learning_objectives",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "learning_objectives preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:topic",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "topic preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:answer_type",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "answer_type preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "change:constraints",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "constraints changed as required"
+        },
+        {
+          "stage": "invariants",
+          "check": "judgement:target_skill",
+          "status": "PASS",
+          "method": "model_assisted",
+          "message": "agent judgement on target_skill"
+        },
+        {
+          "stage": "distance",
+          "check": "novelty",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "structural_novelty"
+        }
+      ]
+    },
+    {
+      "candidate_id": "c17",
+      "question_id": "m-p3-b1-diff",
+      "spec_id": "spec-0d5d276b4e",
+      "parent_id": "p3-b1",
+      "operator": "difficulty",
+      "state": "PASS",
+      "summary": "all checks passed",
+      "model_assisted": true,
+      "numeric_verified": true,
+      "distance": {
+        "dimensions": {
+          "surface": {
+            "distance": 0.58,
+            "label": "moderate",
+            "method": "difflib SequenceMatcher ratio over lower-cased word tokens of the full question text"
+          },
+          "concept": {
+            "distance": 0.5,
+            "label": "moderate",
+            "method": "Jaccard overlap of {primary_concept} ∪ secondary_concepts (case-insensitive)"
+          },
+          "reasoning": {
+            "distance": 0.25,
+            "label": "low",
+            "method": "1 − normalized edit distance between step-type sequences in topological order, multiplied by 0.5 if the graph shape (linear vs branched) differs"
+          },
+          "representation": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "Jaccard overlap of input representation sets"
+          },
+          "constraint": {
+            "distance": 0.73,
+            "label": "high",
+            "method": "Jaccard overlap of content words in explicit+domain+boundary constraints"
+          },
+          "answer": {
+            "distance": 0.5,
+            "label": "moderate",
+            "method": "0.5 if answer types are equal + 0.5 if the answer units have the same physical dimension (or both are absent)"
+          }
+        },
+        "novelty": "structural_novelty",
+        "conceptual_equivalence": {
+          "status": "model_assisted",
+          "conceptually_equivalent": true
+        },
+        "note": "Distances are transparent set/sequence measures; they do not establish psychometric equivalence."
+      },
+      "checks": [
+        {
+          "stage": "lineage",
+          "check": "lineage_consistent",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "difficulty of p3-b1"
+        },
+        {
+          "stage": "schema",
+          "check": "genome_schema",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "genome schema and reasoning graph valid"
+        },
+        {
+          "stage": "structural",
+          "check": "marks_present",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "7 marks"
+        },
+        {
+          "stage": "structural",
+          "check": "part_marks",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "part marks consistent"
+        },
+        {
+          "stage": "answer_marking",
+          "check": "marking_total",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "marking points match marks"
+        },
+        {
+          "stage": "ambiguity",
+          "check": "constraint_consistency",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "constraints on 'Tmax' are satisfiable"
+        },
+        {
+          "stage": "ambiguity",
+          "check": "unused_given",
+          "status": "INFO",
+          "method": "deterministic",
+          "message": "given value(s) not used by the final expression: a"
+        },
+        {
+          "stage": "numeric",
+          "check": "recompute",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "claimed 2.42 matches recomputed 2.42222 (exact rational arithmetic, tolerance 0.01)"
+        },
+        {
+          "stage": "answer_marking",
+          "check": "final_answer_matches",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "final answer text contains the verified value"
+        },
+        {
+          "stage": "numeric",
+          "check": "units",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "dimensions of the expression match 'm/s^2'"
+        },
+        {
+          "stage": "numeric",
+          "check": "domain",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "result within domain"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:primary_concept",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "primary_concept preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:learning_objectives",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "learning_objectives preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:topic",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "topic preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "change:difficulty_features",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "heuristic difficulty points changed by +3 (up)"
+        },
+        {
+          "stage": "invariants",
+          "check": "judgement:target_skill",
+          "status": "PASS",
+          "method": "model_assisted",
+          "message": "agent judgement on target_skill"
+        },
+        {
+          "stage": "distance",
+          "check": "novelty",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "structural_novelty"
+        }
+      ]
+    },
+    {
+      "candidate_id": "c18",
+      "question_id": "m-p3-b2-rep",
+      "spec_id": "spec-c96ea599ae",
+      "parent_id": "p3-b2",
+      "operator": "representation",
+      "state": "PASS",
+      "summary": "all checks passed",
+      "model_assisted": true,
+      "numeric_verified": true,
+      "distance": {
+        "dimensions": {
+          "surface": {
+            "distance": 0.33,
+            "label": "low",
+            "method": "difflib SequenceMatcher ratio over lower-cased word tokens of the full question text"
+          },
+          "concept": {
+            "distance": 0.25,
+            "label": "low",
+            "method": "Jaccard overlap of {primary_concept} ∪ secondary_concepts (case-insensitive)"
+          },
+          "reasoning": {
+            "distance": 0.14,
+            "label": "low",
+            "method": "1 − normalized edit distance between step-type sequences in topological order, multiplied by 0.5 if the graph shape (linear vs branched) differs"
+          },
+          "representation": {
+            "distance": 0.5,
+            "label": "moderate",
+            "method": "Jaccard overlap of input representation sets"
+          },
+          "constraint": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "Jaccard overlap of content words in explicit+domain+boundary constraints"
+          },
+          "answer": {
+            "distance": 0.5,
+            "label": "moderate",
+            "method": "0.5 if answer types are equal + 0.5 if the answer units have the same physical dimension (or both are absent)"
+          }
+        },
+        "novelty": "structural_novelty",
+        "conceptual_equivalence": {
+          "status": "model_assisted",
+          "conceptually_equivalent": true
+        },
+        "note": "Distances are transparent set/sequence measures; they do not establish psychometric equivalence."
+      },
+      "checks": [
+        {
+          "stage": "lineage",
+          "check": "lineage_consistent",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "representation of p3-b2"
+        },
+        {
+          "stage": "schema",
+          "check": "genome_schema",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "genome schema and reasoning graph valid"
+        },
+        {
+          "stage": "structural",
+          "check": "marks_present",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "7 marks"
+        },
+        {
+          "stage": "structural",
+          "check": "part_marks",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "part marks consistent"
+        },
+        {
+          "stage": "answer_marking",
+          "check": "marking_total",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "marking points match marks"
+        },
+        {
+          "stage": "ambiguity",
+          "check": "unused_given",
+          "status": "INFO",
+          "method": "deterministic",
+          "message": "given value(s) not used by the final expression: t"
+        },
+        {
+          "stage": "numeric",
+          "check": "recompute",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "claimed 0.49 matches recomputed 0.49 (exact rational arithmetic, tolerance 0.01)"
+        },
+        {
+          "stage": "answer_marking",
+          "check": "final_answer_matches",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "final answer text contains the verified value"
+        },
+        {
+          "stage": "numeric",
+          "check": "units",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "dimensions of the expression match '1'"
+        },
+        {
+          "stage": "numeric",
+          "check": "domain",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "result within domain"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:primary_concept",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "primary_concept preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:learning_objectives",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "learning_objectives preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:topic",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "topic preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:answer_type",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "answer_type preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "change:representation",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "representation changed as required"
+        },
+        {
+          "stage": "invariants",
+          "check": "judgement:target_skill",
+          "status": "PASS",
+          "method": "model_assisted",
+          "message": "agent judgement on target_skill"
+        },
+        {
+          "stage": "distance",
+          "check": "novelty",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "structural_novelty"
+        }
+      ]
+    }
+  ],
+  "assurance_note": "PASS means every applicable deterministic check passed and every required semantic judgement was supplied and affirmative. Checks marked model_assisted rely on the agent's judgement, not on independent verification."
+}

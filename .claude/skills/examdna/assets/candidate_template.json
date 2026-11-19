@@ -1,0 +1,50 @@
+{
+  "candidate_id": "c01",
+  "spec_id": "COPY spec_id FROM mutation_plan.json",
+  "parent_id": "COPY parent_id FROM THE SPEC",
+  "operator": "COPY operator FROM THE SPEC",
+  "question": {
+    "id": "m-PARENT-OPERATOR",
+    "subject": null,
+    "topic": "SAME AS PARENT",
+    "subtopic": null,
+    "text": "Original wording of the new question.",
+    "question_type": "calculation",
+    "marks": 2,
+    "section": "SAME AS PARENT",
+    "learning_objectives": ["PARENT OBJECTIVES (you may add more)"],
+    "cognitive_level": "application",
+    "given": [{"symbol": "x", "value": 1.0, "unit": "m", "description": "what x is"}],
+    "constraints": [],
+    "marking": {
+      "scheme_available": true,
+      "final_answer": "2.0 m",
+      "worked_solution": "Step-by-step solution.",
+      "points": [{"description": "Method", "marks": 1}, {"description": "Answer with unit", "marks": 1}],
+      "accept_rule": null
+    }
+  },
+  "genome": {
+    "schema_version": "0.1.0",
+    "genome_id": "g-m-PARENT-OPERATOR",
+    "question_id": "m-PARENT-OPERATOR",
+    "knowledge": {"primary_concept": "SAME AS PARENT unless the operator allows a change", "secondary_concepts": [], "prerequisites": [], "learning_objectives": []},
+    "reasoning": {"steps": [{"id": "s1", "type": "read_given"}, {"id": "s2", "type": "select_relation"}, {"id": "s3", "type": "apply_mathematics"}], "edges": [["s1", "s2"], ["s2", "s3"]]},
+    "representation": {"input": ["verbal"], "context": "short context label"},
+    "constraints": {"explicit": [], "implicit": [], "boundary": []},
+    "assessment": {"answer_type": "numeric", "difficulty_features": {"math_complexity": 1}},
+    "validation": {}
+  },
+  "verification": {
+    "kind": "numeric",
+    "expression": "2*x",
+    "variables": {"x": 1.0},
+    "claimed_value": 2.0,
+    "claimed_unit": "m",
+    "answer_uniqueness": "unique"
+  },
+  "invariant_judgements": [
+    {"property": "target_skill", "preserved": true, "rationale": "Why the same skill is assessed."}
+  ],
+  "change_summary": "What changed and why."
+}

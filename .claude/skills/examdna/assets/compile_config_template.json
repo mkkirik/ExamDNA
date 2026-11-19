@@ -1,0 +1,14 @@
+{
+  "title": "Practice Examination",
+  "subject": "Physics",
+  "language": "en",
+  "total_marks": 40,
+  "time_minutes": null,
+  "max_per_family": 1,
+  "include_review_required": false,
+  "include_source_questions": false,
+  "required_topics": [],
+  "excluded_topics": [],
+  "difficulty_shift": 0,
+  "seed": 0
+}

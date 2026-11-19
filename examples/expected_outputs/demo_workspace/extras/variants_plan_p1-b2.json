@@ -1,0 +1,313 @@
+{
+  "schema_version": "0.1.0",
+  "plan_id": "plan-3cb971408a",
+  "seed": 7,
+  "mode": "exploratory",
+  "specs": [
+    {
+      "spec_id": "spec-5c813a03d6",
+      "parent_id": "p1-b2",
+      "parent_genome_id": "g-p1-b2",
+      "operator": "fusion",
+      "operator_name": "Concept Fusion",
+      "mode": "exploratory",
+      "generation": 1,
+      "parameters": {
+        "partner_question_id": "p3-b2",
+        "partner_concept": "efficiency"
+      },
+      "preserve": [
+        "learning_objectives",
+        "topic"
+      ],
+      "may_change": [
+        "primary_concept",
+        "reasoning_structure",
+        "constraints",
+        "marks",
+        "numeric_parameters",
+        "wording",
+        "representation",
+        "answer_type",
+        "question_type"
+      ],
+      "must_change": [
+        "concept_set"
+      ],
+      "invariants": [
+        "Both concepts are needed to answer",
+        "Combination is educationally meaningful (shared topic or prerequisite link)"
+      ],
+      "required_judgements": [
+        "target_skill",
+        "both_concepts_required"
+      ],
+      "instructions": [
+        "Combine the parent's objective with 'efficiency' (from p3-b2) so that both are needed.",
+        "Include both concepts in genome.knowledge (primary + secondary) and keep the parent's learning objectives.",
+        "Preserve: learning_objectives, topic.",
+        "Must change: concept_set.",
+        "Write an original question; do not copy sentences from the parent or any source paper.",
+        "Return one JSON object matching candidate.schema.json (question + genome + verification + invariant_judgements)."
+      ],
+      "expected_difficulty_effect": "increase",
+      "validation_checks": [
+        "schema",
+        "concept_set_grew",
+        "numeric_recompute",
+        "marks_consistent"
+      ],
+      "known_failure_modes": [
+        "arbitrary combination",
+        "one concept decorative only",
+        "excessive length"
+      ],
+      "output_contract": "candidate.schema.json"
+    },
+    {
+      "spec_id": "spec-6ba2f290f6",
+      "parent_id": "p1-b2",
+      "parent_genome_id": "g-p1-b2",
+      "operator": "reverse",
+      "operator_name": "Reverse Reasoning Mutation",
+      "mode": "exploratory",
+      "generation": 1,
+      "parameters": {
+        "new_unknown": "h",
+        "new_unknown_description": "height",
+        "original_output": null
+      },
+      "preserve": [
+        "primary_concept",
+        "learning_objectives",
+        "topic"
+      ],
+      "may_change": [
+        "answer_type",
+        "reasoning_structure",
+        "numeric_parameters",
+        "wording",
+        "marks",
+        "question_type"
+      ],
+      "must_change": [
+        "reasoning_direction"
+      ],
+      "invariants": [
+        "The original unknown becomes given data",
+        "If several answers are valid the marking defines an accept rule, otherwise reject"
+      ],
+      "required_judgements": [
+        "target_skill"
+      ],
+      "instructions": [
+        "Make 'h' (height) the unknown.",
+        "Give the original required output as data.",
+        "State verification.answer_uniqueness. If several answers are valid, set marking.accept_rule or the candidate will be rejected.",
+        "Preserve: primary_concept, learning_objectives, topic.",
+        "Must change: reasoning_direction.",
+        "Write an original question; do not copy sentences from the parent or any source paper.",
+        "Return one JSON object matching candidate.schema.json (question + genome + verification + invariant_judgements)."
+      ],
+      "expected_difficulty_effect": "increase",
+      "validation_checks": [
+        "schema",
+        "direction_changed",
+        "numeric_recompute",
+        "uniqueness",
+        "domain"
+      ],
+      "known_failure_modes": [
+        "non-unique answer without accept rule",
+        "reverse problem has no solution in domain",
+        "same direction disguised"
+      ],
+      "output_contract": "candidate.schema.json"
+    },
+    {
+      "spec_id": "spec-37cc50e210",
+      "parent_id": "p1-b2",
+      "parent_genome_id": "g-p1-b2",
+      "operator": "difficulty",
+      "operator_name": "Difficulty Adjustment",
+      "mode": "exploratory",
+      "generation": 1,
+      "parameters": {
+        "direction": "up",
+        "adjustment": "require_interpretation",
+        "current_points": 14,
+        "minimum_point_change": 2
+      },
+      "preserve": [
+        "primary_concept",
+        "learning_objectives",
+        "topic"
+      ],
+      "may_change": [
+        "reasoning_structure",
+        "constraints",
+        "marks",
+        "numeric_parameters",
+        "wording",
+        "representation",
+        "answer_type"
+      ],
+      "must_change": [
+        "difficulty_features"
+      ],
+      "invariants": [
+        "Each added/removed stage is named in change_summary",
+        "Marks reflect the new number of stages"
+      ],
+      "required_judgements": [
+        "target_skill"
+      ],
+      "instructions": [
+        "Make the question harder by: require interpretation.",
+        "Update the genome's reasoning steps/constraints so the change is visible structurally.",
+        "Adjust marks and marking points to match the new number of stages.",
+        "Preserve: primary_concept, learning_objectives, topic.",
+        "Must change: difficulty_features.",
+        "Write an original question; do not copy sentences from the parent or any source paper.",
+        "Return one JSON object matching candidate.schema.json (question + genome + verification + invariant_judgements)."
+      ],
+      "expected_difficulty_effect": "per direction",
+      "validation_checks": [
+        "schema",
+        "difficulty_direction",
+        "marks_consistent",
+        "numeric_recompute"
+      ],
+      "known_failure_modes": [
+        "harder-looking wording without structural change",
+        "marks not adjusted",
+        "added stage unrelated to objective"
+      ],
+      "output_contract": "candidate.schema.json"
+    },
+    {
+      "spec_id": "spec-a1853a63e5",
+      "parent_id": "p1-b2",
+      "parent_genome_id": "g-p1-b2",
+      "operator": "reasoning_path",
+      "operator_name": "Reasoning Path Mutation",
+      "mode": "exploratory",
+      "generation": 1,
+      "parameters": {
+        "parent_step_types": [
+          "read_given",
+          "select_relation",
+          "apply_mathematics",
+          "construct_model",
+          "apply_mathematics",
+          "derive_result",
+          "interpret_result"
+        ]
+      },
+      "preserve": [
+        "primary_concept",
+        "learning_objectives",
+        "topic",
+        "answer_type"
+      ],
+      "may_change": [
+        "wording",
+        "numeric_parameters",
+        "representation",
+        "marks",
+        "constraints"
+      ],
+      "must_change": [
+        "reasoning_structure"
+      ],
+      "invariants": [
+        "The new path is valid and different, not a paraphrase",
+        "Target concept still required"
+      ],
+      "required_judgements": [
+        "target_skill"
+      ],
+      "instructions": [
+        "Design the question so that it is best solved by a different valid method from the parent's.",
+        "The candidate's reasoning step-type sequence must differ from: read_given > select_relation > apply_mathematics > construct_model > apply_mathematics > derive_result > interpret_result.",
+        "Preserve: primary_concept, learning_objectives, topic, answer_type.",
+        "Must change: reasoning_structure.",
+        "Write an original question; do not copy sentences from the parent or any source paper.",
+        "Return one JSON object matching candidate.schema.json (question + genome + verification + invariant_judgements)."
+      ],
+      "expected_difficulty_effect": "variable",
+      "validation_checks": [
+        "schema",
+        "reasoning_changed",
+        "invariants",
+        "numeric_recompute"
+      ],
+      "known_failure_modes": [
+        "paraphrase with identical method",
+        "new method bypasses the target concept"
+      ],
+      "output_contract": "candidate.schema.json"
+    },
+    {
+      "spec_id": "spec-8a8f8cb485",
+      "parent_id": "p1-b2",
+      "parent_genome_id": "g-p1-b2",
+      "operator": "representation",
+      "operator_name": "Representation Mutation",
+      "mode": "exploratory",
+      "generation": 1,
+      "parameters": {
+        "from": "verbal",
+        "to": "equation"
+      },
+      "preserve": [
+        "primary_concept",
+        "learning_objectives",
+        "topic",
+        "answer_type"
+      ],
+      "may_change": [
+        "wording",
+        "question_type",
+        "reasoning_structure",
+        "marks",
+        "numeric_parameters"
+      ],
+      "must_change": [
+        "representation"
+      ],
+      "invariants": [
+        "All information needed to solve is present in the new representation",
+        "Representation is legible in print"
+      ],
+      "required_judgements": [
+        "target_skill"
+      ],
+      "instructions": [
+        "Present the information currently given as 'verbal' as a 'equation' instead.",
+        "Every value needed to solve the problem must be recoverable from the new representation.",
+        "Graphs must be described precisely in text or as a data table so they can be printed and checked.",
+        "Preserve: primary_concept, learning_objectives, topic, answer_type.",
+        "Must change: representation.",
+        "Write an original question; do not copy sentences from the parent or any source paper.",
+        "Return one JSON object matching candidate.schema.json (question + genome + verification + invariant_judgements)."
+      ],
+      "expected_difficulty_effect": "variable",
+      "validation_checks": [
+        "schema",
+        "representation_changed",
+        "invariants",
+        "numeric_recompute",
+        "diagram_specified"
+      ],
+      "known_failure_modes": [
+        "information lost in conversion",
+        "graph/table underspecified",
+        "representation unreadable in text output"
+      ],
+      "output_contract": "candidate.schema.json"
+    }
+  ],
+  "skipped": [],
+  "notes": []
+}

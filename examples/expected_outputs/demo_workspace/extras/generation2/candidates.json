@@ -1,0 +1,161 @@
+{
+  "candidates": [
+    {
+      "candidate_id": "g2-c01",
+      "spec_id": "spec-93ff56018e",
+      "parent_id": "m-p1-a2-rep",
+      "operator": "parameter",
+      "question": {
+        "id": "m2-p1-a2-rep-par",
+        "source": {
+          "origin": "generated"
+        },
+        "subject": "Introductory Physics",
+        "topic": "Kinematics",
+        "subtopic": "Uniform acceleration",
+        "text": "A sprinter's velocity–time graph during the drive phase is shown below. Using the graph, find the sprinter's acceleration.",
+        "question_type": "calculation",
+        "marks": 2,
+        "section": "A",
+        "learning_objectives": [
+          "K1 Use the equations of uniformly accelerated motion",
+          "K2 Interpret motion data in tables and graphs"
+        ],
+        "cognitive_level": "application",
+        "given": [
+          {
+            "symbol": "v",
+            "value": 9.0,
+            "unit": "m/s",
+            "description": "velocity at 2.5 s (read from graph)"
+          },
+          {
+            "symbol": "t",
+            "value": 2.5,
+            "unit": "s",
+            "description": "time (read from graph)"
+          }
+        ],
+        "constraints": [],
+        "language": "en",
+        "marking": {
+          "scheme_available": true,
+          "final_answer": "3.6 m/s²",
+          "answer_key": null,
+          "worked_solution": "a = gradient = 9.0/2.5 = 3.6 m/s²",
+          "points": [
+            {
+              "description": "Acceleration = gradient",
+              "marks": 1
+            },
+            {
+              "description": "3.6 m/s²",
+              "marks": 1
+            }
+          ],
+          "accept_rule": null
+        },
+        "provenance": {
+          "text": "inferred"
+        },
+        "diagram_description": "Velocity–time graph: v / m s⁻¹ (vertical, 0 to 10) against t / s (horizontal, 0 to 3). A straight line runs from (0 s, 0 m/s) to (2.5 s, 9.0 m/s)."
+      },
+      "genome": {
+        "schema_version": "0.1.0",
+        "genome_id": "g-m2-p1-a2-rep-par",
+        "question_id": "m2-p1-a2-rep-par",
+        "knowledge": {
+          "primary_concept": "uniform acceleration",
+          "secondary_concepts": [
+            "velocity",
+            "gradient"
+          ],
+          "prerequisites": [
+            "velocity"
+          ],
+          "learning_objectives": [
+            "K1 Use the equations of uniformly accelerated motion",
+            "K2 Interpret motion data in tables and graphs"
+          ]
+        },
+        "reasoning": {
+          "steps": [
+            {
+              "id": "s1",
+              "type": "read_representation"
+            },
+            {
+              "id": "s2",
+              "type": "select_relation"
+            },
+            {
+              "id": "s3",
+              "type": "apply_mathematics"
+            },
+            {
+              "id": "s4",
+              "type": "derive_result"
+            }
+          ],
+          "edges": [
+            [
+              "s1",
+              "s2"
+            ],
+            [
+              "s2",
+              "s3"
+            ],
+            [
+              "s3",
+              "s4"
+            ]
+          ]
+        },
+        "representation": {
+          "input": [
+            "verbal",
+            "graph"
+          ],
+          "output": [
+            "numeric"
+          ],
+          "context": "sports and athletics"
+        },
+        "constraints": {
+          "explicit": [],
+          "implicit": [],
+          "domain": [],
+          "boundary": [],
+          "units": []
+        },
+        "assessment": {
+          "answer_type": "numeric",
+          "difficulty_features": {
+            "math_complexity": 1
+          }
+        },
+        "validation": {}
+      },
+      "verification": {
+        "kind": "numeric",
+        "expression": "v/t",
+        "variables": {
+          "v": 9.0,
+          "t": 2.5
+        },
+        "claimed_value": 3.6,
+        "claimed_unit": "m/s^2",
+        "answer_uniqueness": "unique"
+      },
+      "invariant_judgements": [
+        {
+          "property": "target_skill",
+          "preserved": true,
+          "rationale": "Same target concept and skill as the parent."
+        }
+      ],
+      "change_summary": "Time read from the graph changed to 2.5 s; answer recomputed."
+    }
+  ]
+}

@@ -1,0 +1,1779 @@
+{
+  "schema_version": "0.1.0",
+  "profile_id": "dna-c6bdd7fbd6",
+  "source_set": {
+    "bank_id": "bank-c6bdd7fbd6",
+    "documents": [
+      {
+        "name": "Synthetic Physics Paper 1",
+        "kind": "exam",
+        "paper_id": "P1"
+      },
+      {
+        "name": "Synthetic Physics Paper 2",
+        "kind": "exam",
+        "paper_id": "P2"
+      },
+      {
+        "name": "Synthetic Physics Paper 3",
+        "kind": "exam",
+        "paper_id": "P3"
+      },
+      {
+        "name": "Marking Scheme — Synthetic Physics Paper 1",
+        "kind": "markscheme"
+      },
+      {
+        "name": "Mini syllabus",
+        "kind": "syllabus"
+      },
+      {
+        "name": "Teaching notes",
+        "kind": "notes"
+      }
+    ],
+    "paper_count": 3,
+    "question_count": 27,
+    "subjects": {
+      "Introductory Physics": 27
+    }
+  },
+  "papers": [
+    {
+      "document": "Synthetic Physics Paper 1",
+      "question_count": 9,
+      "total_marks": 30,
+      "marks_complete": true,
+      "section_order": [
+        "A",
+        "B"
+      ],
+      "sections": [
+        {
+          "label": "A",
+          "question_ids": [
+            "p1-a1",
+            "p1-a2",
+            "p1-a3",
+            "p1-a4",
+            "p1-a5",
+            "p1-a6"
+          ],
+          "marks": 10,
+          "marks_complete": true
+        },
+        {
+          "label": "B",
+          "question_ids": [
+            "p1-b1",
+            "p1-b2",
+            "p1-b3"
+          ],
+          "marks": 20,
+          "marks_complete": true
+        }
+      ],
+      "ordering": [
+        {
+          "id": "p1-a1",
+          "section": "A",
+          "type": "multiple_choice",
+          "marks": 1
+        },
+        {
+          "id": "p1-a2",
+          "section": "A",
+          "type": "calculation",
+          "marks": 2
+        },
+        {
+          "id": "p1-a3",
+          "section": "A",
+          "type": "calculation",
+          "marks": 2
+        },
+        {
+          "id": "p1-a4",
+          "section": "A",
+          "type": "calculation",
+          "marks": 2
+        },
+        {
+          "id": "p1-a5",
+          "section": "A",
+          "type": "multiple_choice",
+          "marks": 1
+        },
+        {
+          "id": "p1-a6",
+          "section": "A",
+          "type": "calculation",
+          "marks": 2
+        },
+        {
+          "id": "p1-b1",
+          "section": "B",
+          "type": "mixed",
+          "marks": 7
+        },
+        {
+          "id": "p1-b2",
+          "section": "B",
+          "type": "mixed",
+          "marks": 7
+        },
+        {
+          "id": "p1-b3",
+          "section": "B",
+          "type": "calculation",
+          "marks": 6
+        }
+      ]
+    },
+    {
+      "document": "Synthetic Physics Paper 2",
+      "question_count": 9,
+      "total_marks": 30,
+      "marks_complete": true,
+      "section_order": [
+        "A",
+        "B"
+      ],
+      "sections": [
+        {
+          "label": "A",
+          "question_ids": [
+            "p2-a1",
+            "p2-a2",
+            "p2-a3",
+            "p2-a4",
+            "p2-a5",
+            "p2-a6"
+          ],
+          "marks": 10,
+          "marks_complete": true
+        },
+        {
+          "label": "B",
+          "question_ids": [
+            "p2-b1",
+            "p2-b2",
+            "p2-b3"
+          ],
+          "marks": 20,
+          "marks_complete": true
+        }
+      ],
+      "ordering": [
+        {
+          "id": "p2-a1",
+          "section": "A",
+          "type": "multiple_choice",
+          "marks": 1
+        },
+        {
+          "id": "p2-a2",
+          "section": "A",
+          "type": "calculation",
+          "marks": 2
+        },
+        {
+          "id": "p2-a3",
+          "section": "A",
+          "type": "calculation",
+          "marks": 2
+        },
+        {
+          "id": "p2-a4",
+          "section": "A",
+          "type": "multiple_choice",
+          "marks": 1
+        },
+        {
+          "id": "p2-a5",
+          "section": "A",
+          "type": "calculation",
+          "marks": 2
+        },
+        {
+          "id": "p2-a6",
+          "section": "A",
+          "type": "short_answer",
+          "marks": 2
+        },
+        {
+          "id": "p2-b1",
+          "section": "B",
+          "type": "mixed",
+          "marks": 8
+        },
+        {
+          "id": "p2-b2",
+          "section": "B",
+          "type": "data_interpretation",
+          "marks": 6
+        },
+        {
+          "id": "p2-b3",
+          "section": "B",
+          "type": "mixed",
+          "marks": 6
+        }
+      ]
+    },
+    {
+      "document": "Synthetic Physics Paper 3",
+      "question_count": 9,
+      "total_marks": 32,
+      "marks_complete": true,
+      "section_order": [
+        "A",
+        "B"
+      ],
+      "sections": [
+        {
+          "label": "A",
+          "question_ids": [
+            "p3-a1",
+            "p3-a2",
+            "p3-a3",
+            "p3-a4",
+            "p3-a5",
+            "p3-a6"
+          ],
+          "marks": 12,
+          "marks_complete": true
+        },
+        {
+          "label": "B",
+          "question_ids": [
+            "p3-b1",
+            "p3-b2",
+            "p3-b3"
+          ],
+          "marks": 20,
+          "marks_complete": true
+        }
+      ],
+      "ordering": [
+        {
+          "id": "p3-a1",
+          "section": "A",
+          "type": "multiple_choice",
+          "marks": 1
+        },
+        {
+          "id": "p3-a2",
+          "section": "A",
+          "type": "calculation",
+          "marks": 2
+        },
+        {
+          "id": "p3-a3",
+          "section": "A",
+          "type": "calculation",
+          "marks": 3
+        },
+        {
+          "id": "p3-a4",
+          "section": "A",
+          "type": "calculation",
+          "marks": 2
+        },
+        {
+          "id": "p3-a5",
+          "section": "A",
+          "type": "calculation",
+          "marks": 2
+        },
+        {
+          "id": "p3-a6",
+          "section": "A",
+          "type": "calculation",
+          "marks": 2
+        },
+        {
+          "id": "p3-b1",
+          "section": "B",
+          "type": "mixed",
+          "marks": 7
+        },
+        {
+          "id": "p3-b2",
+          "section": "B",
+          "type": "calculation",
+          "marks": 7
+        },
+        {
+          "id": "p3-b3",
+          "section": "B",
+          "type": "mixed",
+          "marks": 6
+        }
+      ]
+    }
+  ],
+  "aggregate": {
+    "questions_per_paper": {
+      "n": 3,
+      "mean": 9.0,
+      "median": 9.0,
+      "min": 9,
+      "max": 9
+    },
+    "marks_per_paper": {
+      "n": 3,
+      "mean": 30.667,
+      "median": 30.0,
+      "min": 30,
+      "max": 32
+    },
+    "marks_per_question": {
+      "n": 27,
+      "mean": 3.407,
+      "median": 2.0,
+      "min": 1,
+      "max": 8
+    }
+  },
+  "distributions": {
+    "topic": {
+      "counts": {
+        "Electricity": 5,
+        "Energy": 5,
+        "Forces": 5,
+        "Kinematics": 5,
+        "Waves": 4,
+        "Momentum": 3
+      },
+      "share_by_count": {
+        "Kinematics": 0.1852,
+        "Forces": 0.1852,
+        "Energy": 0.1852,
+        "Waves": 0.1481,
+        "Electricity": 0.1852,
+        "Momentum": 0.1111
+      },
+      "share_by_marks": {
+        "Kinematics": 0.2065,
+        "Forces": 0.163,
+        "Energy": 0.2065,
+        "Waves": 0.1087,
+        "Electricity": 0.1957,
+        "Momentum": 0.1196
+      },
+      "unclassified": [],
+      "evidence": {
+        "Electricity": [
+          "p1-a6",
+          "p1-b3",
+          "p2-a5",
+          "p2-b3",
+          "p3-a5"
+        ],
+        "Energy": [
+          "p1-a4",
+          "p1-b2",
+          "p3-a1",
+          "p3-a2",
+          "p3-b2"
+        ],
+        "Forces": [
+          "p1-a3",
+          "p2-a3",
+          "p2-a6",
+          "p3-a6",
+          "p3-b1"
+        ],
+        "Kinematics": [
+          "p1-a1",
+          "p1-a2",
+          "p1-b1",
+          "p2-b2",
+          "p3-a3"
+        ],
+        "Momentum": [
+          "p2-a1",
+          "p2-a2",
+          "p2-b1"
+        ],
+        "Waves": [
+          "p1-a5",
+          "p2-a4",
+          "p3-a4",
+          "p3-b3"
+        ]
+      }
+    },
+    "subtopic": {
+      "counts": {
+        "Wave equation": 3,
+        "Momentum": 2,
+        "Newton's second law": 2,
+        "Ohm's law": 2,
+        "Power": 2,
+        "Collisions": 1,
+        "Current and charge": 1,
+        "Efficiency": 1,
+        "Electrical power": 1,
+        "Energy conservation": 1,
+        "Gravitational potential energy": 1,
+        "Hooke's law": 1,
+        "Inclined planes": 1,
+        "Motion data": 1,
+        "Newton's first law": 1,
+        "Projectile motion": 1,
+        "Refraction": 1,
+        "Scalars and vectors": 1,
+        "Series circuits": 1,
+        "Stopping distance": 1,
+        "Uniform acceleration": 1
+      },
+      "share_by_count": {
+        "Scalars and vectors": 0.037,
+        "Uniform acceleration": 0.037,
+        "Newton's second law": 0.0741,
+        "Power": 0.0741,
+        "Wave equation": 0.1111,
+        "Ohm's law": 0.0741,
+        "Stopping distance": 0.037,
+        "Energy conservation": 0.037,
+        "Series circuits": 0.037,
+        "Momentum": 0.0741,
+        "Hooke's law": 0.037,
+        "Current and charge": 0.037,
+        "Newton's first law": 0.037,
+        "Collisions": 0.037,
+        "Motion data": 0.037,
+        "Electrical power": 0.037,
+        "Gravitational potential energy": 0.037,
+        "Projectile motion": 0.037,
+        "Inclined planes": 0.037,
+        "Efficiency": 0.037,
+        "Refraction": 0.037
+      },
+      "share_by_marks": {
+        "Scalars and vectors": 0.0109,
+        "Uniform acceleration": 0.0217,
+        "Newton's second law": 0.0978,
+        "Power": 0.0326,
+        "Wave equation": 0.0435,
+        "Ohm's law": 0.0435,
+        "Stopping distance": 0.0761,
+        "Energy conservation": 0.0761,
+        "Series circuits": 0.0652,
+        "Momentum": 0.0326,
+        "Hooke's law": 0.0217,
+        "Current and charge": 0.0217,
+        "Newton's first law": 0.0217,
+        "Collisions": 0.087,
+        "Motion data": 0.0652,
+        "Electrical power": 0.0652,
+        "Gravitational potential energy": 0.0217,
+        "Projectile motion": 0.0326,
+        "Inclined planes": 0.0217,
+        "Efficiency": 0.0761,
+        "Refraction": 0.0652
+      },
+      "unclassified": [],
+      "evidence": {
+        "Collisions": [
+          "p2-b1"
+        ],
+        "Current and charge": [
+          "p2-a5"
+        ],
+        "Efficiency": [
+          "p3-b2"
+        ],
+        "Electrical power": [
+          "p2-b3"
+        ],
+        "Energy conservation": [
+          "p1-b2"
+        ],
+        "Gravitational potential energy": [
+          "p3-a2"
+        ],
+        "Hooke's law": [
+          "p2-a3"
+        ],
+        "Inclined planes": [
+          "p3-a6"
+        ],
+        "Momentum": [
+          "p2-a1",
+          "p2-a2"
+        ],
+        "Motion data": [
+          "p2-b2"
+        ],
+        "Newton's first law": [
+          "p2-a6"
+        ],
+        "Newton's second law": [
+          "p1-a3",
+          "p3-b1"
+        ],
+        "Ohm's law": [
+          "p1-a6",
+          "p3-a5"
+        ],
+        "Power": [
+          "p1-a4",
+          "p3-a1"
+        ],
+        "Projectile motion": [
+          "p3-a3"
+        ],
+        "Refraction": [
+          "p3-b3"
+        ],
+        "Scalars and vectors": [
+          "p1-a1"
+        ],
+        "Series circuits": [
+          "p1-b3"
+        ],
+        "Stopping distance": [
+          "p1-b1"
+        ],
+        "Uniform acceleration": [
+          "p1-a2"
+        ],
+        "Wave equation": [
+          "p1-a5",
+          "p2-a4",
+          "p3-a4"
+        ]
+      }
+    },
+    "question_type": {
+      "counts": {
+        "calculation": 14,
+        "mixed": 6,
+        "multiple_choice": 5,
+        "data_interpretation": 1,
+        "short_answer": 1
+      },
+      "share_by_count": {
+        "multiple_choice": 0.1852,
+        "calculation": 0.5185,
+        "mixed": 0.2222,
+        "short_answer": 0.037,
+        "data_interpretation": 0.037
+      },
+      "share_by_marks": {
+        "multiple_choice": 0.0543,
+        "calculation": 0.413,
+        "mixed": 0.4457,
+        "short_answer": 0.0217,
+        "data_interpretation": 0.0652
+      },
+      "unclassified": [],
+      "evidence": {
+        "calculation": [
+          "p1-a2",
+          "p1-a3",
+          "p1-a4",
+          "p1-a6",
+          "p1-b3",
+          "p2-a2",
+          "p2-a3",
+          "p2-a5",
+          "p3-a2",
+          "p3-a3",
+          "p3-a4",
+          "p3-a5",
+          "p3-a6",
+          "p3-b2"
+        ],
+        "data_interpretation": [
+          "p2-b2"
+        ],
+        "mixed": [
+          "p1-b1",
+          "p1-b2",
+          "p2-b1",
+          "p2-b3",
+          "p3-b1",
+          "p3-b3"
+        ],
+        "multiple_choice": [
+          "p1-a1",
+          "p1-a5",
+          "p2-a1",
+          "p2-a4",
+          "p3-a1"
+        ],
+        "short_answer": [
+          "p2-a6"
+        ]
+      }
+    },
+    "cognitive_level": {
+      "counts": {
+        "application": 14,
+        "multi_step_reasoning": 7,
+        "interpretation": 3,
+        "recall": 3
+      },
+      "share_by_count": {
+        "recall": 0.1111,
+        "application": 0.5185,
+        "multi_step_reasoning": 0.2593,
+        "interpretation": 0.1111
+      },
+      "share_by_marks": {
+        "recall": 0.0326,
+        "application": 0.3261,
+        "multi_step_reasoning": 0.4891,
+        "interpretation": 0.1522
+      },
+      "unclassified": [],
+      "evidence": {
+        "application": [
+          "p1-a2",
+          "p1-a3",
+          "p1-a4",
+          "p1-a5",
+          "p1-a6",
+          "p2-a2",
+          "p2-a3",
+          "p2-a4",
+          "p2-a5",
+          "p2-b3",
+          "p3-a2",
+          "p3-a4",
+          "p3-a5",
+          "p3-a6"
+        ],
+        "interpretation": [
+          "p2-a6",
+          "p2-b2",
+          "p3-b3"
+        ],
+        "multi_step_reasoning": [
+          "p1-b1",
+          "p1-b2",
+          "p1-b3",
+          "p2-b1",
+          "p3-a3",
+          "p3-b1",
+          "p3-b2"
+        ],
+        "recall": [
+          "p1-a1",
+          "p2-a1",
+          "p3-a1"
+        ]
+      }
+    },
+    "learning_objective": {
+      "counts": {
+        "E1 Calculate gravitational potential and kinetic energy": 4,
+        "E2 Calculate power and efficiency": 4,
+        "K1 Use the equations of uniformly accelerated motion": 4,
+        "W1 Use the wave equation v = f λ": 4,
+        "C1 Apply Ohm's law to series circuits": 3,
+        "F1 Apply Newton's second law F = ma": 3,
+        "F3 Explain motion using Newton's first law": 3,
+        "M1 Apply conservation of momentum": 3,
+        "U1 Distinguish scalar and vector quantities and use SI units": 3,
+        "C2 Relate charge, current, potential difference and power": 2,
+        "F2 Apply Hooke's law F = kx": 1,
+        "K2 Interpret motion data in tables and graphs": 1,
+        "K3 Analyse projectile motion with independent horizontal and vertical components": 1,
+        "W2 Describe and calculate refraction of light": 1
+      },
+      "share_by_count": {
+        "U1 Distinguish scalar and vector quantities and use SI units": 0.0811,
+        "K1 Use the equations of uniformly accelerated motion": 0.1081,
+        "F1 Apply Newton's second law F = ma": 0.0811,
+        "E2 Calculate power and efficiency": 0.1081,
+        "W1 Use the wave equation v = f λ": 0.1081,
+        "C1 Apply Ohm's law to series circuits": 0.0811,
+        "F3 Explain motion using Newton's first law": 0.0811,
+        "E1 Calculate gravitational potential and kinetic energy": 0.1081,
+        "M1 Apply conservation of momentum": 0.0811,
+        "F2 Apply Hooke's law F = kx": 0.027,
+        "C2 Relate charge, current, potential difference and power": 0.0541,
+        "K2 Interpret motion data in tables and graphs": 0.027,
+        "K3 Analyse projectile motion with independent horizontal and vertical components": 0.027,
+        "W2 Describe and calculate refraction of light": 0.027
+      },
+      "share_by_marks": {
+        "U1 Distinguish scalar and vector quantities and use SI units": 0.0208,
+        "K1 Use the equations of uniformly accelerated motion": 0.125,
+        "F1 Apply Newton's second law F = ma": 0.0764,
+        "E2 Calculate power and efficiency": 0.1111,
+        "W1 Use the wave equation v = f λ": 0.0694,
+        "C1 Apply Ohm's law to series circuits": 0.0694,
+        "F3 Explain motion using Newton's first law": 0.1111,
+        "E1 Calculate gravitational potential and kinetic energy": 0.1667,
+        "M1 Apply conservation of momentum": 0.0764,
+        "F2 Apply Hooke's law F = kx": 0.0139,
+        "C2 Relate charge, current, potential difference and power": 0.0556,
+        "K2 Interpret motion data in tables and graphs": 0.0417,
+        "K3 Analyse projectile motion with independent horizontal and vertical components": 0.0208,
+        "W2 Describe and calculate refraction of light": 0.0417
+      },
+      "unclassified": [],
+      "evidence": {
+        "C1 Apply Ohm's law to series circuits": [
+          "p1-a6",
+          "p1-b3",
+          "p3-a5"
+        ],
+        "C2 Relate charge, current, potential difference and power": [
+          "p2-a5",
+          "p2-b3"
+        ],
+        "E1 Calculate gravitational potential and kinetic energy": [
+          "p1-b2",
+          "p2-b1",
+          "p3-a2",
+          "p3-b2"
+        ],
+        "E2 Calculate power and efficiency": [
+          "p1-a4",
+          "p2-b3",
+          "p3-a1",
+          "p3-b2"
+        ],
+        "F1 Apply Newton's second law F = ma": [
+          "p1-a3",
+          "p3-a6",
+          "p3-b1"
+        ],
+        "F2 Apply Hooke's law F = kx": [
+          "p2-a3"
+        ],
+        "F3 Explain motion using Newton's first law": [
+          "p1-b1",
+          "p2-a6",
+          "p3-b1"
+        ],
+        "K1 Use the equations of uniformly accelerated motion": [
+          "p1-a2",
+          "p1-b1",
+          "p2-b2",
+          "p3-a3"
+        ],
+        "K2 Interpret motion data in tables and graphs": [
+          "p2-b2"
+        ],
+        "K3 Analyse projectile motion with independent horizontal and vertical components": [
+          "p3-a3"
+        ],
+        "M1 Apply conservation of momentum": [
+          "p2-a1",
+          "p2-a2",
+          "p2-b1"
+        ],
+        "U1 Distinguish scalar and vector quantities and use SI units": [
+          "p1-a1",
+          "p2-a1",
+          "p3-a1"
+        ],
+        "W1 Use the wave equation v = f λ": [
+          "p1-a5",
+          "p2-a4",
+          "p3-a4",
+          "p3-b3"
+        ],
+        "W2 Describe and calculate refraction of light": [
+          "p3-b3"
+        ]
+      }
+    },
+    "difficulty_band": {
+      "counts": {
+        "standard": 12,
+        "foundation": 10,
+        "challenging": 5
+      },
+      "share_by_count": {
+        "foundation": 0.3704,
+        "standard": 0.4444,
+        "challenging": 0.1852
+      },
+      "share_by_marks": {
+        "foundation": 0.163,
+        "standard": 0.5109,
+        "challenging": 0.3261
+      },
+      "unclassified": [],
+      "evidence": {
+        "challenging": [
+          "p1-b1",
+          "p1-b2",
+          "p2-b2",
+          "p3-a3",
+          "p3-b1"
+        ],
+        "foundation": [
+          "p1-a1",
+          "p1-a2",
+          "p1-a4",
+          "p1-a5",
+          "p2-a1",
+          "p2-a4",
+          "p2-a5",
+          "p2-a6",
+          "p3-a1",
+          "p3-a2"
+        ],
+        "standard": [
+          "p1-a3",
+          "p1-a6",
+          "p1-b3",
+          "p2-a2",
+          "p2-a3",
+          "p2-b1",
+          "p2-b3",
+          "p3-a4",
+          "p3-a5",
+          "p3-a6",
+          "p3-b2",
+          "p3-b3"
+        ]
+      }
+    }
+  },
+  "sections": [
+    {
+      "label": "A",
+      "papers_present": 3,
+      "question_count": {
+        "n": 3,
+        "mean": 6.0,
+        "median": 6.0,
+        "min": 6,
+        "max": 6
+      },
+      "marks": {
+        "n": 3,
+        "mean": 10.667,
+        "median": 10.0,
+        "min": 10,
+        "max": 12
+      },
+      "mark_share": 0.3478,
+      "marks_per_question": {
+        "n": 18,
+        "mean": 1.778,
+        "median": 2.0,
+        "min": 1,
+        "max": 3
+      },
+      "question_types": {
+        "calculation": 12,
+        "multiple_choice": 5,
+        "short_answer": 1
+      },
+      "evidence": [
+        "p1-a1",
+        "p1-a2",
+        "p1-a3",
+        "p1-a4",
+        "p1-a5",
+        "p1-a6",
+        "p2-a1",
+        "p2-a2",
+        "p2-a3",
+        "p2-a4",
+        "p2-a5",
+        "p2-a6",
+        "p3-a1",
+        "p3-a2",
+        "p3-a3",
+        "p3-a4",
+        "p3-a5",
+        "p3-a6"
+      ]
+    },
+    {
+      "label": "B",
+      "papers_present": 3,
+      "question_count": {
+        "n": 3,
+        "mean": 3.0,
+        "median": 3.0,
+        "min": 3,
+        "max": 3
+      },
+      "marks": {
+        "n": 3,
+        "mean": 20.0,
+        "median": 20.0,
+        "min": 20,
+        "max": 20
+      },
+      "mark_share": 0.6522,
+      "marks_per_question": {
+        "n": 9,
+        "mean": 6.667,
+        "median": 7.0,
+        "min": 6,
+        "max": 8
+      },
+      "question_types": {
+        "mixed": 6,
+        "calculation": 2,
+        "data_interpretation": 1
+      },
+      "evidence": [
+        "p1-b1",
+        "p1-b2",
+        "p1-b3",
+        "p2-b1",
+        "p2-b2",
+        "p2-b3",
+        "p3-b1",
+        "p3-b2",
+        "p3-b3"
+      ]
+    }
+  ],
+  "sequencing": {
+    "section_orders": {
+      "A > B": 3
+    },
+    "marks_nondecreasing_within_section": {
+      "A": {
+        "papers_checked": 3,
+        "papers_nondecreasing": 0
+      },
+      "B": {
+        "papers_checked": 3,
+        "papers_nondecreasing": 0
+      }
+    }
+  },
+  "concept_combinations": [
+    {
+      "concepts": [
+        "Hooke's law",
+        "elastic deformation"
+      ],
+      "count": 1,
+      "evidence": [
+        "p2-a3"
+      ]
+    },
+    {
+      "concepts": [
+        "Newton's first law",
+        "Newton's second law"
+      ],
+      "count": 1,
+      "evidence": [
+        "p3-b1"
+      ]
+    },
+    {
+      "concepts": [
+        "Newton's first law",
+        "resultant force"
+      ],
+      "count": 1,
+      "evidence": [
+        "p2-a6"
+      ]
+    },
+    {
+      "concepts": [
+        "Newton's first law",
+        "weight"
+      ],
+      "count": 1,
+      "evidence": [
+        "p3-b1"
+      ]
+    },
+    {
+      "concepts": [
+        "Newton's second law",
+        "acceleration"
+      ],
+      "count": 1,
+      "evidence": [
+        "p1-a3"
+      ]
+    },
+    {
+      "concepts": [
+        "Newton's second law",
+        "components of weight"
+      ],
+      "count": 1,
+      "evidence": [
+        "p3-a6"
+      ]
+    },
+    {
+      "concepts": [
+        "Newton's second law",
+        "weight"
+      ],
+      "count": 1,
+      "evidence": [
+        "p3-b1"
+      ]
+    },
+    {
+      "concepts": [
+        "Ohm's law",
+        "resistance"
+      ],
+      "count": 1,
+      "evidence": [
+        "p1-a6"
+      ]
+    },
+    {
+      "concepts": [
+        "Ohm's law",
+        "series circuit"
+      ],
+      "count": 1,
+      "evidence": [
+        "p1-b3"
+      ]
+    },
+    {
+      "concepts": [
+        "charge",
+        "electric current"
+      ],
+      "count": 1,
+      "evidence": [
+        "p2-a5"
+      ]
+    },
+    {
+      "concepts": [
+        "conservation of energy",
+        "gravitational potential energy"
+      ],
+      "count": 1,
+      "evidence": [
+        "p1-b2"
+      ]
+    },
+    {
+      "concepts": [
+        "conservation of energy",
+        "kinetic energy"
+      ],
+      "count": 1,
+      "evidence": [
+        "p1-b2"
+      ]
+    },
+    {
+      "concepts": [
+        "conservation of momentum",
+        "inelastic collision"
+      ],
+      "count": 1,
+      "evidence": [
+        "p2-b1"
+      ]
+    },
+    {
+      "concepts": [
+        "conservation of momentum",
+        "kinetic energy"
+      ],
+      "count": 1,
+      "evidence": [
+        "p2-b1"
+      ]
+    },
+    {
+      "concepts": [
+        "efficiency",
+        "gravitational potential energy"
+      ],
+      "count": 1,
+      "evidence": [
+        "p3-b2"
+      ]
+    },
+    {
+      "concepts": [
+        "efficiency",
+        "power"
+      ],
+      "count": 1,
+      "evidence": [
+        "p3-b2"
+      ]
+    },
+    {
+      "concepts": [
+        "electrical power",
+        "energy transfer"
+      ],
+      "count": 1,
+      "evidence": [
+        "p2-b3"
+      ]
+    },
+    {
+      "concepts": [
+        "energy transfer",
+        "power"
+      ],
+      "count": 1,
+      "evidence": [
+        "p1-a4"
+      ]
+    },
+    {
+      "concepts": [
+        "frequency",
+        "wave equation"
+      ],
+      "count": 1,
+      "evidence": [
+        "p1-a5"
+      ]
+    },
+    {
+      "concepts": [
+        "frequency",
+        "wavelength"
+      ],
+      "count": 1,
+      "evidence": [
+        "p1-a5"
+      ]
+    },
+    {
+      "concepts": [
+        "friction",
+        "stopping distance"
+      ],
+      "count": 1,
+      "evidence": [
+        "p1-b1"
+      ]
+    },
+    {
+      "concepts": [
+        "friction",
+        "uniformly accelerated motion"
+      ],
+      "count": 1,
+      "evidence": [
+        "p1-b1"
+      ]
+    },
+    {
+      "concepts": [
+        "gravitational potential energy",
+        "kinetic energy"
+      ],
+      "count": 1,
+      "evidence": [
+        "p1-b2"
+      ]
+    },
+    {
+      "concepts": [
+        "gravitational potential energy",
+        "power"
+      ],
+      "count": 1,
+      "evidence": [
+        "p3-b2"
+      ]
+    },
+    {
+      "concepts": [
+        "inelastic collision",
+        "kinetic energy"
+      ],
+      "count": 1,
+      "evidence": [
+        "p2-b1"
+      ]
+    },
+    {
+      "concepts": [
+        "momentum",
+        "velocity"
+      ],
+      "count": 1,
+      "evidence": [
+        "p2-a2"
+      ]
+    },
+    {
+      "concepts": [
+        "motion data interpretation",
+        "uniformly accelerated motion"
+      ],
+      "count": 1,
+      "evidence": [
+        "p2-b2"
+      ]
+    },
+    {
+      "concepts": [
+        "projectile motion",
+        "uniformly accelerated motion"
+      ],
+      "count": 1,
+      "evidence": [
+        "p3-a3"
+      ]
+    },
+    {
+      "concepts": [
+        "refraction",
+        "wave speed"
+      ],
+      "count": 1,
+      "evidence": [
+        "p3-b3"
+      ]
+    },
+    {
+      "concepts": [
+        "sound",
+        "wave equation"
+      ],
+      "count": 1,
+      "evidence": [
+        "p2-a4"
+      ]
+    },
+    {
+      "concepts": [
+        "stopping distance",
+        "uniformly accelerated motion"
+      ],
+      "count": 1,
+      "evidence": [
+        "p1-b1"
+      ]
+    },
+    {
+      "concepts": [
+        "uniform acceleration",
+        "velocity"
+      ],
+      "count": 1,
+      "evidence": [
+        "p1-a2"
+      ]
+    },
+    {
+      "concepts": [
+        "wave equation",
+        "wavelength"
+      ],
+      "count": 1,
+      "evidence": [
+        "p1-a5"
+      ]
+    }
+  ],
+  "structural_constraints": {
+    "target_total_marks": 30,
+    "target_question_count": 9.0,
+    "section_order": [
+      "A",
+      "B"
+    ],
+    "section_mark_share": {
+      "A": 0.3478,
+      "B": 0.6522
+    },
+    "basis": "median of complete source papers"
+  },
+  "uncertainty": {
+    "paper_count": 3,
+    "evidence_level": "limited",
+    "questions_missing_marks": [],
+    "questions_low_confidence": [],
+    "questions_without_difficulty": [],
+    "notes": [
+      "Blueprint is based on 3 paper(s); treat distributions as a low-confidence approximation, not a stable pattern."
+    ]
+  },
+  "evidence": {
+    "per_question_difficulty": {
+      "p1-a1": {
+        "model": "examdna-heuristic-v1",
+        "points": 2,
+        "band": "foundation",
+        "features": {
+          "reasoning_stages": 1,
+          "prerequisite_count": 1,
+          "math_complexity": 0,
+          "interacting_constraints": 0,
+          "representation_count": 1
+        },
+        "feature_source": "genome",
+        "status": "heuristic"
+      },
+      "p1-a2": {
+        "model": "examdna-heuristic-v1",
+        "points": 6,
+        "band": "foundation",
+        "features": {
+          "reasoning_stages": 3,
+          "prerequisite_count": 1,
+          "math_complexity": 1,
+          "interacting_constraints": 0,
+          "representation_count": 1
+        },
+        "feature_source": "genome",
+        "status": "heuristic"
+      },
+      "p1-a3": {
+        "model": "examdna-heuristic-v1",
+        "points": 7,
+        "band": "standard",
+        "features": {
+          "reasoning_stages": 3,
+          "prerequisite_count": 2,
+          "math_complexity": 1,
+          "interacting_constraints": 0,
+          "representation_count": 1
+        },
+        "feature_source": "genome",
+        "status": "heuristic"
+      },
+      "p1-a4": {
+        "model": "examdna-heuristic-v1",
+        "points": 6,
+        "band": "foundation",
+        "features": {
+          "reasoning_stages": 3,
+          "prerequisite_count": 1,
+          "math_complexity": 1,
+          "interacting_constraints": 0,
+          "representation_count": 1
+        },
+        "feature_source": "genome",
+        "status": "heuristic"
+      },
+      "p1-a5": {
+        "model": "examdna-heuristic-v1",
+        "points": 5,
+        "band": "foundation",
+        "features": {
+          "reasoning_stages": 2,
+          "prerequisite_count": 1,
+          "math_complexity": 1,
+          "interacting_constraints": 0,
+          "representation_count": 1
+        },
+        "feature_source": "genome",
+        "status": "heuristic"
+      },
+      "p1-a6": {
+        "model": "examdna-heuristic-v1",
+        "points": 7,
+        "band": "standard",
+        "features": {
+          "reasoning_stages": 3,
+          "prerequisite_count": 2,
+          "math_complexity": 1,
+          "interacting_constraints": 0,
+          "representation_count": 1
+        },
+        "feature_source": "genome",
+        "status": "heuristic"
+      },
+      "p1-b1": {
+        "model": "examdna-heuristic-v1",
+        "points": 14,
+        "band": "challenging",
+        "features": {
+          "reasoning_stages": 7,
+          "prerequisite_count": 2,
+          "math_complexity": 2,
+          "interacting_constraints": 2,
+          "representation_count": 1
+        },
+        "feature_source": "genome",
+        "status": "heuristic"
+      },
+      "p1-b2": {
+        "model": "examdna-heuristic-v1",
+        "points": 14,
+        "band": "challenging",
+        "features": {
+          "reasoning_stages": 6,
+          "prerequisite_count": 2,
+          "math_complexity": 2,
+          "interacting_constraints": 2,
+          "representation_count": 1
+        },
+        "feature_source": "genome",
+        "status": "heuristic"
+      },
+      "p1-b3": {
+        "model": "examdna-heuristic-v1",
+        "points": 10,
+        "band": "standard",
+        "features": {
+          "reasoning_stages": 5,
+          "prerequisite_count": 2,
+          "math_complexity": 1,
+          "interacting_constraints": 1,
+          "representation_count": 1
+        },
+        "feature_source": "genome",
+        "status": "heuristic"
+      },
+      "p2-a1": {
+        "model": "examdna-heuristic-v1",
+        "points": 3,
+        "band": "foundation",
+        "features": {
+          "reasoning_stages": 1,
+          "prerequisite_count": 2,
+          "math_complexity": 0,
+          "interacting_constraints": 0,
+          "representation_count": 1
+        },
+        "feature_source": "genome",
+        "status": "heuristic"
+      },
+      "p2-a2": {
+        "model": "examdna-heuristic-v1",
+        "points": 7,
+        "band": "standard",
+        "features": {
+          "reasoning_stages": 3,
+          "prerequisite_count": 2,
+          "math_complexity": 1,
+          "interacting_constraints": 0,
+          "representation_count": 1
+        },
+        "feature_source": "genome",
+        "status": "heuristic"
+      },
+      "p2-a3": {
+        "model": "examdna-heuristic-v1",
+        "points": 7,
+        "band": "standard",
+        "features": {
+          "reasoning_stages": 3,
+          "prerequisite_count": 1,
+          "math_complexity": 1,
+          "interacting_constraints": 1,
+          "representation_count": 1
+        },
+        "feature_source": "genome",
+        "status": "heuristic"
+      },
+      "p2-a4": {
+        "model": "examdna-heuristic-v1",
+        "points": 5,
+        "band": "foundation",
+        "features": {
+          "reasoning_stages": 2,
+          "prerequisite_count": 1,
+          "math_complexity": 1,
+          "interacting_constraints": 0,
+          "representation_count": 1
+        },
+        "feature_source": "genome",
+        "status": "heuristic"
+      },
+      "p2-a5": {
+        "model": "examdna-heuristic-v1",
+        "points": 6,
+        "band": "foundation",
+        "features": {
+          "reasoning_stages": 3,
+          "prerequisite_count": 1,
+          "math_complexity": 1,
+          "interacting_constraints": 0,
+          "representation_count": 1
+        },
+        "feature_source": "genome",
+        "status": "heuristic"
+      },
+      "p2-a6": {
+        "model": "examdna-heuristic-v1",
+        "points": 5,
+        "band": "foundation",
+        "features": {
+          "reasoning_stages": 3,
+          "prerequisite_count": 1,
+          "math_complexity": 0,
+          "interacting_constraints": 1,
+          "representation_count": 1
+        },
+        "feature_source": "genome",
+        "status": "heuristic"
+      },
+      "p2-b1": {
+        "model": "examdna-heuristic-v1",
+        "points": 12,
+        "band": "standard",
+        "features": {
+          "reasoning_stages": 7,
+          "prerequisite_count": 1,
+          "math_complexity": 2,
+          "interacting_constraints": 1,
+          "representation_count": 1
+        },
+        "feature_source": "genome",
+        "status": "heuristic"
+      },
+      "p2-b2": {
+        "model": "examdna-heuristic-v1",
+        "points": 13,
+        "band": "challenging",
+        "features": {
+          "reasoning_stages": 7,
+          "prerequisite_count": 2,
+          "math_complexity": 2,
+          "interacting_constraints": 0,
+          "representation_count": 2
+        },
+        "feature_source": "genome",
+        "status": "heuristic"
+      },
+      "p2-b3": {
+        "model": "examdna-heuristic-v1",
+        "points": 9,
+        "band": "standard",
+        "features": {
+          "reasoning_stages": 5,
+          "prerequisite_count": 2,
+          "math_complexity": 1,
+          "interacting_constraints": 0,
+          "representation_count": 1
+        },
+        "feature_source": "genome",
+        "status": "heuristic"
+      },
+      "p3-a1": {
+        "model": "examdna-heuristic-v1",
+        "points": 2,
+        "band": "foundation",
+        "features": {
+          "reasoning_stages": 1,
+          "prerequisite_count": 1,
+          "math_complexity": 0,
+          "interacting_constraints": 0,
+          "representation_count": 1
+        },
+        "feature_source": "genome",
+        "status": "heuristic"
+      },
+      "p3-a2": {
+        "model": "examdna-heuristic-v1",
+        "points": 6,
+        "band": "foundation",
+        "features": {
+          "reasoning_stages": 3,
+          "prerequisite_count": 1,
+          "math_complexity": 1,
+          "interacting_constraints": 0,
+          "representation_count": 1
+        },
+        "feature_source": "genome",
+        "status": "heuristic"
+      },
+      "p3-a3": {
+        "model": "examdna-heuristic-v1",
+        "points": 15,
+        "band": "challenging",
+        "features": {
+          "reasoning_stages": 5,
+          "prerequisite_count": 2,
+          "math_complexity": 3,
+          "interacting_constraints": 2,
+          "representation_count": 1
+        },
+        "feature_source": "genome",
+        "status": "heuristic"
+      },
+      "p3-a4": {
+        "model": "examdna-heuristic-v1",
+        "points": 7,
+        "band": "standard",
+        "features": {
+          "reasoning_stages": 3,
+          "prerequisite_count": 2,
+          "math_complexity": 1,
+          "interacting_constraints": 0,
+          "representation_count": 1
+        },
+        "feature_source": "genome",
+        "status": "heuristic"
+      },
+      "p3-a5": {
+        "model": "examdna-heuristic-v1",
+        "points": 7,
+        "band": "standard",
+        "features": {
+          "reasoning_stages": 3,
+          "prerequisite_count": 2,
+          "math_complexity": 1,
+          "interacting_constraints": 0,
+          "representation_count": 1
+        },
+        "feature_source": "genome",
+        "status": "heuristic"
+      },
+      "p3-a6": {
+        "model": "examdna-heuristic-v1",
+        "points": 11,
+        "band": "standard",
+        "features": {
+          "reasoning_stages": 4,
+          "prerequisite_count": 2,
+          "math_complexity": 2,
+          "interacting_constraints": 0,
+          "representation_count": 2
+        },
+        "feature_source": "genome",
+        "status": "heuristic"
+      },
+      "p3-b1": {
+        "model": "examdna-heuristic-v1",
+        "points": 13,
+        "band": "challenging",
+        "features": {
+          "reasoning_stages": 7,
+          "prerequisite_count": 2,
+          "math_complexity": 2,
+          "interacting_constraints": 1,
+          "representation_count": 1
+        },
+        "feature_source": "genome",
+        "status": "heuristic"
+      },
+      "p3-b2": {
+        "model": "examdna-heuristic-v1",
+        "points": 12,
+        "band": "standard",
+        "features": {
+          "reasoning_stages": 6,
+          "prerequisite_count": 2,
+          "math_complexity": 2,
+          "interacting_constraints": 0,
+          "representation_count": 1
+        },
+        "feature_source": "genome",
+        "status": "heuristic"
+      },
+      "p3-b3": {
+        "model": "examdna-heuristic-v1",
+        "points": 9,
+        "band": "standard",
+        "features": {
+          "reasoning_stages": 6,
+          "prerequisite_count": 1,
+          "math_complexity": 1,
+          "interacting_constraints": 0,
+          "representation_count": 1
+        },
+        "feature_source": "genome",
+        "status": "heuristic"
+      }
+    },
+    "provenance_counts": {
+      "explicit": 205,
+      "inferred": 108
+    }
+  },
+  "classification_schema": {
+    "question_types": [
+      "multiple_choice",
+      "short_answer",
+      "calculation",
+      "extended_response",
+      "data_interpretation",
+      "diagram_interpretation",
+      "graph_interpretation",
+      "mixed"
+    ],
+    "cognitive_levels": [
+      "recall",
+      "interpretation",
+      "application",
+      "multi_step_reasoning",
+      "evaluation",
+      "synthesis"
+    ],
+    "difficulty_bands": [
+      "foundation",
+      "standard",
+      "challenging"
+    ],
+    "representations": [
+      "verbal",
+      "table",
+      "graph",
+      "equation",
+      "diagram",
+      "symbolic",
+      "data_set"
+    ],
+    "reasoning_step_types": [
+      "read_given",
+      "read_representation",
+      "recall_fact",
+      "identify_concept",
+      "identify_constraint",
+      "convert_units",
+      "construct_model",
+      "select_relation",
+      "apply_mathematics",
+      "derive_result",
+      "compare",
+      "interpret_result",
+      "justify",
+      "evaluate"
+    ]
+  },
+  "difficulty_model": {
+    "name": "examdna-heuristic-v1",
+    "status": "heuristic; not psychometrically validated",
+    "formula": "min(stages,6) + min(prereqs,4) + 2*math_complexity + min(constraints,4) + min(max(representations-1,0),3)",
+    "range": [
+      0,
+      23
+    ],
+    "bands": {
+      "foundation": [
+        0,
+        6
+      ],
+      "standard": [
+        7,
+        12
+      ],
+      "challenging": [
+        13,
+        23
+      ]
+    },
+    "features": [
+      "reasoning_stages",
+      "prerequisite_count",
+      "math_complexity",
+      "interacting_constraints",
+      "representation_count"
+    ]
+  },
+  "generation_preferences": {
+    "mode": "balanced",
+    "seed": 7
+  }
+}

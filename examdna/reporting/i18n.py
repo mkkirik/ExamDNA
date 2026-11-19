@@ -1,0 +1,56 @@
+"""User-facing labels in English and Turkish. Schema keys stay English."""
+
+LABELS = {
+    "en": {
+        "total_marks": "Total marks",
+        "time": "Suggested time",
+        "minutes": "minutes",
+        "instructions": "Instructions",
+        "section": "Section",
+        "question": "Question",
+        "marks": "marks",
+        "mark": "mark",
+        "answer_key": "Answer Key",
+        "marking_guide": "Marking Guide",
+        "final_answer": "Final answer",
+        "worked_solution": "Worked solution",
+        "marking_points": "Marking points",
+        "accept_rule": "Also accept",
+        "no_answer": "No verified answer available — requires teacher review.",
+        "review_flag": "REVIEW REQUIRED — not fully verified",
+        "unofficial": "Practice material generated with ExamDNA. Not an official examination and not affiliated with any examination board.",
+        "name": "Name",
+        "date": "Date",
+        "options": "Options",
+        "confidential": "For teachers / self-marking — keep separate from the student paper.",
+        "lineage": "Origin",
+    },
+    "tr": {
+        "total_marks": "Toplam puan",
+        "time": "Önerilen süre",
+        "minutes": "dakika",
+        "instructions": "Yönergeler",
+        "section": "Bölüm",
+        "question": "Soru",
+        "marks": "puan",
+        "mark": "puan",
+        "answer_key": "Cevap Anahtarı",
+        "marking_guide": "Puanlama Rehberi",
+        "final_answer": "Sonuç",
+        "worked_solution": "Çözüm",
+        "marking_points": "Puanlama ölçütleri",
+        "accept_rule": "Ayrıca kabul edilir",
+        "no_answer": "Doğrulanmış cevap yok — öğretmen kontrolü gerekir.",
+        "review_flag": "KONTROL GEREKLİ — tam olarak doğrulanmadı",
+        "unofficial": "ExamDNA ile üretilmiş alıştırma materyalidir. Resmî bir sınav değildir ve hiçbir sınav kurumuyla bağlantılı değildir.",
+        "name": "Ad Soyad",
+        "date": "Tarih",
+        "options": "Seçenekler",
+        "confidential": "Öğretmen / öz değerlendirme içindir — öğrenci kâğıdından ayrı tutunuz.",
+        "lineage": "Köken",
+    },
+}
+
+
+def labels(lang: str) -> dict:
+    return LABELS.get(lang, LABELS["en"])

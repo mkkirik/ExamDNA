@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://examdna.local/schemas/exam_dna.schema.json",
+  "title": "ExamDNA assessment profile",
+  "description": "Schema version 0.1.0. Observable structural characteristics of a set of source assessments.",
+  "type": "object",
+  "required": ["schema_version", "profile_id", "source_set", "papers", "distributions", "sections", "structural_constraints", "uncertainty", "classification_schema"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {"type": "string"},
+    "profile_id": {"type": "string"},
+    "source_set": {"type": "object"},
+    "papers": {"type": "array", "items": {"type": "object"}},
+    "aggregate": {"type": "object"},
+    "distributions": {"type": "object"},
+    "sections": {"type": "array", "items": {"type": "object"}},
+    "sequencing": {"type": "object"},
+    "concept_combinations": {"type": "array"},
+    "structural_constraints": {"type": "object"},
+    "uncertainty": {"type": "object"},
+    "evidence": {"type": "object"},
+    "classification_schema": {"type": "object"},
+    "difficulty_model": {"type": "object"},
+    "generation_preferences": {"type": "object"}
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://examdna.local/schemas/question_bank.schema.json",
+  "title": "ExamDNA question bank",
+  "description": "Schema version 0.1.0. A collection of normalized questions. Each question is validated separately against question.schema.json.",
+  "type": "object",
+  "required": ["schema_version", "questions"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {"type": "string"},
+    "bank_id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"},
+    "title": {"type": ["string", "null"], "maxLength": 300},
+    "source_documents": {
+      "type": "array",
+      "maxItems": 200,
+      "items": {
+        "type": "object",
+        "required": ["name"],
+        "additionalProperties": false,
+        "properties": {
+          "name": {"type": "string", "maxLength": 300},
+          "kind": {"enum": ["exam", "markscheme", "syllabus", "notes", "question_bank", "other"]},
+          "paper_id": {"type": ["string", "null"], "maxLength": 100},
+          "notes": {"type": ["string", "null"], "maxLength": 2000}
+        }
+      }
+    },
+    "questions": {"type": "array", "maxItems": 5000, "items": {"type": "object"}},
+    "normalization_report": {"type": "object"},
+    "extensions": {"type": "object"}
+  }
+}

@@ -1,0 +1,4060 @@
+{
+  "schema_version": "0.1.0",
+  "bank_id": "bank-c6bdd7fbd6",
+  "genomes": [
+    {
+      "schema_version": "0.1.0",
+      "genome_id": "g-p1-a1",
+      "question_id": "p1-a1",
+      "parent_question_id": null,
+      "provenance": {
+        "origin": "source",
+        "document": "Synthetic Physics Paper 1",
+        "page": 1
+      },
+      "lineage": [],
+      "knowledge": {
+        "primary_concept": "vector quantity",
+        "secondary_concepts": [],
+        "prerequisites": [
+          "scalar quantity"
+        ],
+        "learning_objectives": [
+          "U1 Distinguish scalar and vector quantities and use SI units"
+        ],
+        "topic": "Kinematics",
+        "subtopic": "Scalars and vectors"
+      },
+      "reasoning": {
+        "steps": [
+          {
+            "id": "s1",
+            "type": "recall_fact"
+          }
+        ],
+        "edges": [],
+        "expected_inference": null,
+        "justification_required": false
+      },
+      "representation": {
+        "input": [
+          "verbal"
+        ],
+        "output": [],
+        "context": "abstract"
+      },
+      "constraints": {
+        "explicit": [],
+        "implicit": [],
+        "domain": [],
+        "boundary": [],
+        "units": [],
+        "precision": null
+      },
+      "assessment": {
+        "command_term": null,
+        "question_type": "multiple_choice",
+        "cognitive_level": "recall",
+        "max_marks": 1,
+        "answer_type": "choice",
+        "expected_answer": "Displacement",
+        "answer_unit": null,
+        "marking_components": [
+          {
+            "description": "C (displacement)",
+            "marks": 1
+          }
+        ],
+        "difficulty_features": {
+          "math_complexity": 0
+        },
+        "difficulty": {
+          "model": "examdna-heuristic-v1",
+          "points": 2,
+          "band": "foundation",
+          "features": {
+            "reasoning_stages": 1,
+            "prerequisite_count": 1,
+            "math_complexity": 0,
+            "interacting_constraints": 0,
+            "representation_count": 1
+          },
+          "feature_source": "genome",
+          "status": "heuristic"
+        }
+      },
+      "validation": {
+        "structural_completeness": "complete",
+        "missing_components": [],
+        "solvability": "NOT_VERIFIED",
+        "answer_validation": "NOT_VERIFIED",
+        "uniqueness": "unknown",
+        "human_review_required": false,
+        "confidence": "high",
+        "graph_errors": []
+      },
+      "field_provenance": {
+        "knowledge.primary_concept": "inferred",
+        "knowledge.prerequisites": "inferred",
+        "knowledge.learning_objectives": "inferred",
+        "reasoning": "inferred",
+        "representation.input": "inferred",
+        "assessment.command_term": "calculated",
+        "assessment.answer_type": "inferred"
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "genome_id": "g-p1-a2",
+      "question_id": "p1-a2",
+      "parent_question_id": null,
+      "provenance": {
+        "origin": "source",
+        "document": "Synthetic Physics Paper 1",
+        "page": 1
+      },
+      "lineage": [],
+      "knowledge": {
+        "primary_concept": "uniform acceleration",
+        "secondary_concepts": [
+          "velocity"
+        ],
+        "prerequisites": [
+          "velocity"
+        ],
+        "learning_objectives": [
+          "K1 Use the equations of uniformly accelerated motion"
+        ],
+        "topic": "Kinematics",
+        "subtopic": "Uniform acceleration"
+      },
+      "reasoning": {
+        "steps": [
+          {
+            "id": "s1",
+            "type": "read_given"
+          },
+          {
+            "id": "s2",
+            "type": "select_relation"
+          },
+          {
+            "id": "s3",
+            "type": "apply_mathematics"
+          },
+          {
+            "id": "s4",
+            "type": "derive_result"
+          }
+        ],
+        "edges": [
+          [
+            "s1",
+            "s2"
+          ],
+          [
+            "s2",
+            "s3"
+          ],
+          [
+            "s3",
+            "s4"
+          ]
+        ],
+        "expected_inference": null,
+        "justification_required": false
+      },
+      "representation": {
+        "input": [
+          "verbal"
+        ],
+        "output": [
+          "numeric"
+        ],
+        "context": "cycling"
+      },
+      "constraints": {
+        "explicit": [],
+        "implicit": [],
+        "domain": [],
+        "boundary": [],
+        "units": [
+          "m/s",
+          "s"
+        ],
+        "precision": null
+      },
+      "assessment": {
+        "command_term": "calculate",
+        "question_type": "calculation",
+        "cognitive_level": "application",
+        "max_marks": 2,
+        "answer_type": "numeric",
+        "expected_answer": "2.0 m/s²",
+        "answer_unit": "m/s^2",
+        "marking_components": [
+          {
+            "description": "Uses a = (v − u)/t with u = 0",
+            "marks": 1
+          },
+          {
+            "description": "2.0 m/s²",
+            "marks": 1
+          }
+        ],
+        "difficulty_features": {
+          "math_complexity": 1
+        },
+        "difficulty": {
+          "model": "examdna-heuristic-v1",
+          "points": 6,
+          "band": "foundation",
+          "features": {
+            "reasoning_stages": 3,
+            "prerequisite_count": 1,
+            "math_complexity": 1,
+            "interacting_constraints": 0,
+            "representation_count": 1
+          },
+          "feature_source": "genome",
+          "status": "heuristic"
+        }
+      },
+      "validation": {
+        "structural_completeness": "complete",
+        "missing_components": [],
+        "solvability": "NOT_VERIFIED",
+        "answer_validation": "NOT_VERIFIED",
+        "uniqueness": "unknown",
+        "human_review_required": false,
+        "confidence": "high",
+        "graph_errors": []
+      },
+      "field_provenance": {
+        "knowledge.primary_concept": "inferred",
+        "knowledge.secondary_concepts": "inferred",
+        "knowledge.prerequisites": "inferred",
+        "knowledge.learning_objectives": "inferred",
+        "reasoning": "inferred",
+        "representation.input": "inferred",
+        "assessment.command_term": "calculated",
+        "assessment.answer_type": "calculated"
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "genome_id": "g-p1-a3",
+      "question_id": "p1-a3",
+      "parent_question_id": null,
+      "provenance": {
+        "origin": "source",
+        "document": "Synthetic Physics Paper 1",
+        "page": 1
+      },
+      "lineage": [],
+      "knowledge": {
+        "primary_concept": "Newton's second law",
+        "secondary_concepts": [
+          "acceleration"
+        ],
+        "prerequisites": [
+          "force",
+          "mass"
+        ],
+        "learning_objectives": [
+          "F1 Apply Newton's second law F = ma"
+        ],
+        "topic": "Forces",
+        "subtopic": "Newton's second law"
+      },
+      "reasoning": {
+        "steps": [
+          {
+            "id": "s1",
+            "type": "read_given"
+          },
+          {
+            "id": "s2",
+            "type": "select_relation"
+          },
+          {
+            "id": "s3",
+            "type": "apply_mathematics"
+          },
+          {
+            "id": "s4",
+            "type": "derive_result"
+          }
+        ],
+        "edges": [
+          [
+            "s1",
+            "s2"
+          ],
+          [
+            "s2",
+            "s3"
+          ],
+          [
+            "s3",
+            "s4"
+          ]
+        ],
+        "expected_inference": null,
+        "justification_required": false
+      },
+      "representation": {
+        "input": [
+          "verbal"
+        ],
+        "output": [
+          "numeric"
+        ],
+        "context": "laboratory trolley"
+      },
+      "constraints": {
+        "explicit": [],
+        "implicit": [],
+        "domain": [],
+        "boundary": [],
+        "units": [
+          "N",
+          "kg"
+        ],
+        "precision": null
+      },
+      "assessment": {
+        "command_term": "calculate",
+        "question_type": "calculation",
+        "cognitive_level": "application",
+        "max_marks": 2,
+        "answer_type": "numeric",
+        "expected_answer": "3.0 m/s²",
+        "answer_unit": "m/s^2",
+        "marking_components": [
+          {
+            "description": "a = F/m",
+            "marks": 1
+          },
+          {
+            "description": "3.0 m/s²",
+            "marks": 1
+          }
+        ],
+        "difficulty_features": {
+          "math_complexity": 1
+        },
+        "difficulty": {
+          "model": "examdna-heuristic-v1",
+          "points": 7,
+          "band": "standard",
+          "features": {
+            "reasoning_stages": 3,
+            "prerequisite_count": 2,
+            "math_complexity": 1,
+            "interacting_constraints": 0,
+            "representation_count": 1
+          },
+          "feature_source": "genome",
+          "status": "heuristic"
+        }
+      },
+      "validation": {
+        "structural_completeness": "complete",
+        "missing_components": [],
+        "solvability": "NOT_VERIFIED",
+        "answer_validation": "NOT_VERIFIED",
+        "uniqueness": "unknown",
+        "human_review_required": false,
+        "confidence": "high",
+        "graph_errors": []
+      },
+      "field_provenance": {
+        "knowledge.primary_concept": "inferred",
+        "knowledge.secondary_concepts": "inferred",
+        "knowledge.prerequisites": "inferred",
+        "knowledge.learning_objectives": "inferred",
+        "reasoning": "inferred",
+        "representation.input": "inferred",
+        "assessment.command_term": "calculated",
+        "assessment.answer_type": "calculated"
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "genome_id": "g-p1-a4",
+      "question_id": "p1-a4",
+      "parent_question_id": null,
+      "provenance": {
+        "origin": "source",
+        "document": "Synthetic Physics Paper 1",
+        "page": 1
+      },
+      "lineage": [],
+      "knowledge": {
+        "primary_concept": "power",
+        "secondary_concepts": [
+          "energy transfer"
+        ],
+        "prerequisites": [
+          "energy"
+        ],
+        "learning_objectives": [
+          "E2 Calculate power and efficiency"
+        ],
+        "topic": "Energy",
+        "subtopic": "Power"
+      },
+      "reasoning": {
+        "steps": [
+          {
+            "id": "s1",
+            "type": "read_given"
+          },
+          {
+            "id": "s2",
+            "type": "select_relation"
+          },
+          {
+            "id": "s3",
+            "type": "apply_mathematics"
+          },
+          {
+            "id": "s4",
+            "type": "derive_result"
+          }
+        ],
+        "edges": [
+          [
+            "s1",
+            "s2"
+          ],
+          [
+            "s2",
+            "s3"
+          ],
+          [
+            "s3",
+            "s4"
+          ]
+        ],
+        "expected_inference": null,
+        "justification_required": false
+      },
+      "representation": {
+        "input": [
+          "verbal"
+        ],
+        "output": [
+          "numeric"
+        ],
+        "context": "household lamp"
+      },
+      "constraints": {
+        "explicit": [],
+        "implicit": [],
+        "domain": [],
+        "boundary": [],
+        "units": [
+          "J",
+          "s"
+        ],
+        "precision": null
+      },
+      "assessment": {
+        "command_term": "calculate",
+        "question_type": "calculation",
+        "cognitive_level": "application",
+        "max_marks": 2,
+        "answer_type": "numeric",
+        "expected_answer": "30 W",
+        "answer_unit": "W",
+        "marking_components": [
+          {
+            "description": "P = E/t",
+            "marks": 1
+          },
+          {
+            "description": "30 W",
+            "marks": 1
+          }
+        ],
+        "difficulty_features": {
+          "math_complexity": 1
+        },
+        "difficulty": {
+          "model": "examdna-heuristic-v1",
+          "points": 6,
+          "band": "foundation",
+          "features": {
+            "reasoning_stages": 3,
+            "prerequisite_count": 1,
+            "math_complexity": 1,
+            "interacting_constraints": 0,
+            "representation_count": 1
+          },
+          "feature_source": "genome",
+          "status": "heuristic"
+        }
+      },
+      "validation": {
+        "structural_completeness": "complete",
+        "missing_components": [],
+        "solvability": "NOT_VERIFIED",
+        "answer_validation": "NOT_VERIFIED",
+        "uniqueness": "unknown",
+        "human_review_required": false,
+        "confidence": "high",
+        "graph_errors": []
+      },
+      "field_provenance": {
+        "knowledge.primary_concept": "inferred",
+        "knowledge.secondary_concepts": "inferred",
+        "knowledge.prerequisites": "inferred",
+        "knowledge.learning_objectives": "inferred",
+        "reasoning": "inferred",
+        "representation.input": "inferred",
+        "assessment.command_term": "calculated",
+        "assessment.answer_type": "calculated"
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "genome_id": "g-p1-a5",
+      "question_id": "p1-a5",
+      "parent_question_id": null,
+      "provenance": {
+        "origin": "source",
+        "document": "Synthetic Physics Paper 1",
+        "page": 1
+      },
+      "lineage": [],
+      "knowledge": {
+        "primary_concept": "wave equation",
+        "secondary_concepts": [
+          "frequency",
+          "wavelength"
+        ],
+        "prerequisites": [
+          "frequency"
+        ],
+        "learning_objectives": [
+          "W1 Use the wave equation v = f λ"
+        ],
+        "topic": "Waves",
+        "subtopic": "Wave equation"
+      },
+      "reasoning": {
+        "steps": [
+          {
+            "id": "s1",
+            "type": "read_given"
+          },
+          {
+            "id": "s2",
+            "type": "select_relation"
+          },
+          {
+            "id": "s3",
+            "type": "apply_mathematics"
+          }
+        ],
+        "edges": [
+          [
+            "s1",
+            "s2"
+          ],
+          [
+            "s2",
+            "s3"
+          ]
+        ],
+        "expected_inference": null,
+        "justification_required": false
+      },
+      "representation": {
+        "input": [
+          "verbal"
+        ],
+        "output": [],
+        "context": "abstract"
+      },
+      "constraints": {
+        "explicit": [],
+        "implicit": [],
+        "domain": [],
+        "boundary": [],
+        "units": [
+          "Hz",
+          "m"
+        ],
+        "precision": null
+      },
+      "assessment": {
+        "command_term": null,
+        "question_type": "multiple_choice",
+        "cognitive_level": "application",
+        "max_marks": 1,
+        "answer_type": "choice",
+        "expected_answer": "100 m/s",
+        "answer_unit": "m/s",
+        "marking_components": [
+          {
+            "description": "C",
+            "marks": 1
+          }
+        ],
+        "difficulty_features": {
+          "math_complexity": 1
+        },
+        "difficulty": {
+          "model": "examdna-heuristic-v1",
+          "points": 5,
+          "band": "foundation",
+          "features": {
+            "reasoning_stages": 2,
+            "prerequisite_count": 1,
+            "math_complexity": 1,
+            "interacting_constraints": 0,
+            "representation_count": 1
+          },
+          "feature_source": "genome",
+          "status": "heuristic"
+        }
+      },
+      "validation": {
+        "structural_completeness": "complete",
+        "missing_components": [],
+        "solvability": "NOT_VERIFIED",
+        "answer_validation": "NOT_VERIFIED",
+        "uniqueness": "unknown",
+        "human_review_required": false,
+        "confidence": "high",
+        "graph_errors": []
+      },
+      "field_provenance": {
+        "knowledge.primary_concept": "inferred",
+        "knowledge.secondary_concepts": "inferred",
+        "knowledge.prerequisites": "inferred",
+        "knowledge.learning_objectives": "inferred",
+        "reasoning": "inferred",
+        "representation.input": "inferred",
+        "assessment.command_term": "calculated",
+        "assessment.answer_type": "inferred"
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "genome_id": "g-p1-a6",
+      "question_id": "p1-a6",
+      "parent_question_id": null,
+      "provenance": {
+        "origin": "source",
+        "document": "Synthetic Physics Paper 1",
+        "page": 1
+      },
+      "lineage": [],
+      "knowledge": {
+        "primary_concept": "Ohm's law",
+        "secondary_concepts": [
+          "resistance"
+        ],
+        "prerequisites": [
+          "current",
+          "potential difference"
+        ],
+        "learning_objectives": [
+          "C1 Apply Ohm's law to series circuits"
+        ],
+        "topic": "Electricity",
+        "subtopic": "Ohm's law"
+      },
+      "reasoning": {
+        "steps": [
+          {
+            "id": "s1",
+            "type": "read_given"
+          },
+          {
+            "id": "s2",
+            "type": "select_relation"
+          },
+          {
+            "id": "s3",
+            "type": "apply_mathematics"
+          },
+          {
+            "id": "s4",
+            "type": "derive_result"
+          }
+        ],
+        "edges": [
+          [
+            "s1",
+            "s2"
+          ],
+          [
+            "s2",
+            "s3"
+          ],
+          [
+            "s3",
+            "s4"
+          ]
+        ],
+        "expected_inference": null,
+        "justification_required": false
+      },
+      "representation": {
+        "input": [
+          "verbal"
+        ],
+        "output": [
+          "numeric"
+        ],
+        "context": "circuit"
+      },
+      "constraints": {
+        "explicit": [],
+        "implicit": [],
+        "domain": [],
+        "boundary": [],
+        "units": [
+          "A",
+          "ohm"
+        ],
+        "precision": null
+      },
+      "assessment": {
+        "command_term": "calculate",
+        "question_type": "calculation",
+        "cognitive_level": "application",
+        "max_marks": 2,
+        "answer_type": "numeric",
+        "expected_answer": "6.0 V",
+        "answer_unit": "V",
+        "marking_components": [
+          {
+            "description": "V = IR",
+            "marks": 1
+          },
+          {
+            "description": "6.0 V",
+            "marks": 1
+          }
+        ],
+        "difficulty_features": {
+          "math_complexity": 1
+        },
+        "difficulty": {
+          "model": "examdna-heuristic-v1",
+          "points": 7,
+          "band": "standard",
+          "features": {
+            "reasoning_stages": 3,
+            "prerequisite_count": 2,
+            "math_complexity": 1,
+            "interacting_constraints": 0,
+            "representation_count": 1
+          },
+          "feature_source": "genome",
+          "status": "heuristic"
+        }
+      },
+      "validation": {
+        "structural_completeness": "complete",
+        "missing_components": [],
+        "solvability": "NOT_VERIFIED",
+        "answer_validation": "NOT_VERIFIED",
+        "uniqueness": "unknown",
+        "human_review_required": false,
+        "confidence": "high",
+        "graph_errors": []
+      },
+      "field_provenance": {
+        "knowledge.primary_concept": "inferred",
+        "knowledge.secondary_concepts": "inferred",
+        "knowledge.prerequisites": "inferred",
+        "knowledge.learning_objectives": "inferred",
+        "reasoning": "inferred",
+        "representation.input": "inferred",
+        "assessment.command_term": "calculated",
+        "assessment.answer_type": "calculated"
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "genome_id": "g-p1-b1",
+      "question_id": "p1-b1",
+      "parent_question_id": null,
+      "provenance": {
+        "origin": "source",
+        "document": "Synthetic Physics Paper 1",
+        "page": 2
+      },
+      "lineage": [],
+      "knowledge": {
+        "primary_concept": "uniformly accelerated motion",
+        "secondary_concepts": [
+          "friction",
+          "stopping distance"
+        ],
+        "prerequisites": [
+          "acceleration",
+          "velocity"
+        ],
+        "learning_objectives": [
+          "K1 Use the equations of uniformly accelerated motion",
+          "F3 Explain motion using Newton's first law"
+        ],
+        "topic": "Kinematics",
+        "subtopic": "Stopping distance"
+      },
+      "reasoning": {
+        "steps": [
+          {
+            "id": "s1",
+            "type": "read_given"
+          },
+          {
+            "id": "s2",
+            "type": "identify_constraint"
+          },
+          {
+            "id": "s3",
+            "type": "select_relation"
+          },
+          {
+            "id": "s4",
+            "type": "apply_mathematics"
+          },
+          {
+            "id": "s5",
+            "type": "derive_result"
+          },
+          {
+            "id": "s6",
+            "type": "select_relation"
+          },
+          {
+            "id": "s7",
+            "type": "derive_result"
+          },
+          {
+            "id": "s8",
+            "type": "justify"
+          }
+        ],
+        "edges": [
+          [
+            "s1",
+            "s2"
+          ],
+          [
+            "s2",
+            "s3"
+          ],
+          [
+            "s3",
+            "s4"
+          ],
+          [
+            "s4",
+            "s5"
+          ],
+          [
+            "s5",
+            "s6"
+          ],
+          [
+            "s6",
+            "s7"
+          ],
+          [
+            "s2",
+            "s8"
+          ]
+        ],
+        "expected_inference": null,
+        "justification_required": false
+      },
+      "representation": {
+        "input": [
+          "verbal"
+        ],
+        "output": [
+          "numeric"
+        ],
+        "context": "road transport"
+      },
+      "constraints": {
+        "explicit": [
+          "deceleration is uniform"
+        ],
+        "implicit": [],
+        "domain": [],
+        "boundary": [
+          "final velocity is zero"
+        ],
+        "units": [
+          "m",
+          "m/s"
+        ],
+        "precision": null
+      },
+      "assessment": {
+        "command_term": "calculate",
+        "question_type": "mixed",
+        "cognitive_level": "multi_step_reasoning",
+        "max_marks": 7,
+        "answer_type": "mixed",
+        "expected_answer": "(a) 4.0 m/s² (b) 5.0 s (c) less friction, so smaller decelerating force",
+        "answer_unit": "m/s^2",
+        "marking_components": [
+          {
+            "description": "Selects v² = u² − 2as with v = 0",
+            "marks": 1
+          },
+          {
+            "description": "Rearranges for a",
+            "marks": 1
+          },
+          {
+            "description": "4.0 m/s²",
+            "marks": 1
+          },
+          {
+            "description": "t = u/a or equivalent",
+            "marks": 1
+          },
+          {
+            "description": "5.0 s",
+            "marks": 1
+          },
+          {
+            "description": "Less friction / grip on wet road",
+            "marks": 1
+          },
+          {
+            "description": "So smaller deceleration and greater distance",
+            "marks": 1
+          }
+        ],
+        "difficulty_features": {
+          "math_complexity": 2
+        },
+        "difficulty": {
+          "model": "examdna-heuristic-v1",
+          "points": 14,
+          "band": "challenging",
+          "features": {
+            "reasoning_stages": 7,
+            "prerequisite_count": 2,
+            "math_complexity": 2,
+            "interacting_constraints": 2,
+            "representation_count": 1
+          },
+          "feature_source": "genome",
+          "status": "heuristic"
+        }
+      },
+      "validation": {
+        "structural_completeness": "complete",
+        "missing_components": [],
+        "solvability": "NOT_VERIFIED",
+        "answer_validation": "NOT_VERIFIED",
+        "uniqueness": "unknown",
+        "human_review_required": false,
+        "confidence": "high",
+        "graph_errors": []
+      },
+      "field_provenance": {
+        "knowledge.primary_concept": "inferred",
+        "knowledge.secondary_concepts": "inferred",
+        "knowledge.prerequisites": "inferred",
+        "knowledge.learning_objectives": "inferred",
+        "reasoning": "inferred",
+        "representation.input": "inferred",
+        "assessment.command_term": "calculated",
+        "assessment.answer_type": "calculated"
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "genome_id": "g-p1-b2",
+      "question_id": "p1-b2",
+      "parent_question_id": null,
+      "provenance": {
+        "origin": "source",
+        "document": "Synthetic Physics Paper 1",
+        "page": 2
+      },
+      "lineage": [],
+      "knowledge": {
+        "primary_concept": "conservation of energy",
+        "secondary_concepts": [
+          "gravitational potential energy",
+          "kinetic energy"
+        ],
+        "prerequisites": [
+          "energy stores",
+          "work"
+        ],
+        "learning_objectives": [
+          "E1 Calculate gravitational potential and kinetic energy"
+        ],
+        "topic": "Energy",
+        "subtopic": "Energy conservation"
+      },
+      "reasoning": {
+        "steps": [
+          {
+            "id": "s1",
+            "type": "read_given"
+          },
+          {
+            "id": "s2",
+            "type": "select_relation"
+          },
+          {
+            "id": "s3",
+            "type": "apply_mathematics"
+          },
+          {
+            "id": "s4",
+            "type": "construct_model"
+          },
+          {
+            "id": "s5",
+            "type": "apply_mathematics"
+          },
+          {
+            "id": "s6",
+            "type": "derive_result"
+          },
+          {
+            "id": "s7",
+            "type": "interpret_result"
+          }
+        ],
+        "edges": [
+          [
+            "s1",
+            "s2"
+          ],
+          [
+            "s2",
+            "s3"
+          ],
+          [
+            "s3",
+            "s4"
+          ],
+          [
+            "s4",
+            "s5"
+          ],
+          [
+            "s5",
+            "s6"
+          ],
+          [
+            "s6",
+            "s7"
+          ]
+        ],
+        "expected_inference": null,
+        "justification_required": false
+      },
+      "representation": {
+        "input": [
+          "verbal"
+        ],
+        "output": [
+          "numeric"
+        ],
+        "context": "dropped ball"
+      },
+      "constraints": {
+        "explicit": [
+          "air resistance is negligible"
+        ],
+        "implicit": [],
+        "domain": [],
+        "boundary": [
+          "released from rest"
+        ],
+        "units": [
+          "kg",
+          "m",
+          "m/s^2"
+        ],
+        "precision": null
+      },
+      "assessment": {
+        "command_term": "calculate",
+        "question_type": "mixed",
+        "cognitive_level": "multi_step_reasoning",
+        "max_marks": 7,
+        "answer_type": "mixed",
+        "expected_answer": "(a) 15.7 J (b) 7.9 m/s (c) lower speed: some energy transferred to the surroundings",
+        "answer_unit": "J",
+        "marking_components": [
+          {
+            "description": "ΔEp = mgh",
+            "marks": 1
+          },
+          {
+            "description": "15.7 J",
+            "marks": 1
+          },
+          {
+            "description": "Equates kinetic energy gained to potential energy lost",
+            "marks": 1
+          },
+          {
+            "description": "v = √(2gh)",
+            "marks": 1
+          },
+          {
+            "description": "7.9 m/s",
+            "marks": 1
+          },
+          {
+            "description": "Work done against air resistance",
+            "marks": 1
+          },
+          {
+            "description": "Less kinetic energy so lower speed",
+            "marks": 1
+          }
+        ],
+        "difficulty_features": {
+          "math_complexity": 2
+        },
+        "difficulty": {
+          "model": "examdna-heuristic-v1",
+          "points": 14,
+          "band": "challenging",
+          "features": {
+            "reasoning_stages": 6,
+            "prerequisite_count": 2,
+            "math_complexity": 2,
+            "interacting_constraints": 2,
+            "representation_count": 1
+          },
+          "feature_source": "genome",
+          "status": "heuristic"
+        }
+      },
+      "validation": {
+        "structural_completeness": "complete",
+        "missing_components": [],
+        "solvability": "NOT_VERIFIED",
+        "answer_validation": "NOT_VERIFIED",
+        "uniqueness": "unknown",
+        "human_review_required": false,
+        "confidence": "high",
+        "graph_errors": []
+      },
+      "field_provenance": {
+        "knowledge.primary_concept": "inferred",
+        "knowledge.secondary_concepts": "inferred",
+        "knowledge.prerequisites": "inferred",
+        "knowledge.learning_objectives": "inferred",
+        "reasoning": "inferred",
+        "representation.input": "inferred",
+        "assessment.command_term": "calculated",
+        "assessment.answer_type": "calculated"
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "genome_id": "g-p1-b3",
+      "question_id": "p1-b3",
+      "parent_question_id": null,
+      "provenance": {
+        "origin": "source",
+        "document": "Synthetic Physics Paper 1",
+        "page": 2
+      },
+      "lineage": [],
+      "knowledge": {
+        "primary_concept": "series circuit",
+        "secondary_concepts": [
+          "Ohm's law"
+        ],
+        "prerequisites": [
+          "resistance",
+          "current"
+        ],
+        "learning_objectives": [
+          "C1 Apply Ohm's law to series circuits"
+        ],
+        "topic": "Electricity",
+        "subtopic": "Series circuits"
+      },
+      "reasoning": {
+        "steps": [
+          {
+            "id": "s1",
+            "type": "read_given"
+          },
+          {
+            "id": "s2",
+            "type": "construct_model"
+          },
+          {
+            "id": "s3",
+            "type": "apply_mathematics"
+          },
+          {
+            "id": "s4",
+            "type": "select_relation"
+          },
+          {
+            "id": "s5",
+            "type": "apply_mathematics"
+          },
+          {
+            "id": "s6",
+            "type": "derive_result"
+          }
+        ],
+        "edges": [
+          [
+            "s1",
+            "s2"
+          ],
+          [
+            "s2",
+            "s3"
+          ],
+          [
+            "s3",
+            "s4"
+          ],
+          [
+            "s4",
+            "s5"
+          ],
+          [
+            "s5",
+            "s6"
+          ]
+        ],
+        "expected_inference": null,
+        "justification_required": false
+      },
+      "representation": {
+        "input": [
+          "verbal"
+        ],
+        "output": [
+          "numeric"
+        ],
+        "context": "circuit"
+      },
+      "constraints": {
+        "explicit": [
+          "negligible internal resistance"
+        ],
+        "implicit": [],
+        "domain": [],
+        "boundary": [],
+        "units": [
+          "V",
+          "ohm"
+        ],
+        "precision": null
+      },
+      "assessment": {
+        "command_term": "calculate",
+        "question_type": "calculation",
+        "cognitive_level": "multi_step_reasoning",
+        "max_marks": 6,
+        "answer_type": "numeric",
+        "expected_answer": "(a) 10 Ω (b) 1.2 A (c) 7.2 V",
+        "answer_unit": "V",
+        "marking_components": [
+          {
+            "description": "10 Ω",
+            "marks": 1
+          },
+          {
+            "description": "I = V/R",
+            "marks": 1
+          },
+          {
+            "description": "1.2 A",
+            "marks": 1
+          },
+          {
+            "description": "Same current in series",
+            "marks": 1
+          },
+          {
+            "description": "V = IR2",
+            "marks": 1
+          },
+          {
+            "description": "7.2 V",
+            "marks": 1
+          }
+        ],
+        "difficulty_features": {
+          "math_complexity": 1
+        },
+        "difficulty": {
+          "model": "examdna-heuristic-v1",
+          "points": 10,
+          "band": "standard",
+          "features": {
+            "reasoning_stages": 5,
+            "prerequisite_count": 2,
+            "math_complexity": 1,
+            "interacting_constraints": 1,
+            "representation_count": 1
+          },
+          "feature_source": "genome",
+          "status": "heuristic"
+        }
+      },
+      "validation": {
+        "structural_completeness": "complete",
+        "missing_components": [],
+        "solvability": "NOT_VERIFIED",
+        "answer_validation": "NOT_VERIFIED",
+        "uniqueness": "unknown",
+        "human_review_required": false,
+        "confidence": "high",
+        "graph_errors": []
+      },
+      "field_provenance": {
+        "knowledge.primary_concept": "inferred",
+        "knowledge.secondary_concepts": "inferred",
+        "knowledge.prerequisites": "inferred",
+        "knowledge.learning_objectives": "inferred",
+        "reasoning": "inferred",
+        "representation.input": "inferred",
+        "assessment.command_term": "calculated",
+        "assessment.answer_type": "calculated"
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "genome_id": "g-p2-a1",
+      "question_id": "p2-a1",
+      "parent_question_id": null,
+      "provenance": {
+        "origin": "source",
+        "document": "Synthetic Physics Paper 2",
+        "page": 1
+      },
+      "lineage": [],
+      "knowledge": {
+        "primary_concept": "momentum",
+        "secondary_concepts": [],
+        "prerequisites": [
+          "mass",
+          "velocity"
+        ],
+        "learning_objectives": [
+          "U1 Distinguish scalar and vector quantities and use SI units",
+          "M1 Apply conservation of momentum"
+        ],
+        "topic": "Momentum",
+        "subtopic": "Momentum"
+      },
+      "reasoning": {
+        "steps": [
+          {
+            "id": "s1",
+            "type": "recall_fact"
+          }
+        ],
+        "edges": [],
+        "expected_inference": null,
+        "justification_required": false
+      },
+      "representation": {
+        "input": [
+          "verbal"
+        ],
+        "output": [],
+        "context": "abstract"
+      },
+      "constraints": {
+        "explicit": [],
+        "implicit": [],
+        "domain": [],
+        "boundary": [],
+        "units": [],
+        "precision": null
+      },
+      "assessment": {
+        "command_term": null,
+        "question_type": "multiple_choice",
+        "cognitive_level": "recall",
+        "max_marks": 1,
+        "answer_type": "choice",
+        "expected_answer": "kg m/s",
+        "answer_unit": null,
+        "marking_components": [
+          {
+            "description": "A",
+            "marks": 1
+          }
+        ],
+        "difficulty_features": {
+          "math_complexity": 0
+        },
+        "difficulty": {
+          "model": "examdna-heuristic-v1",
+          "points": 3,
+          "band": "foundation",
+          "features": {
+            "reasoning_stages": 1,
+            "prerequisite_count": 2,
+            "math_complexity": 0,
+            "interacting_constraints": 0,
+            "representation_count": 1
+          },
+          "feature_source": "genome",
+          "status": "heuristic"
+        }
+      },
+      "validation": {
+        "structural_completeness": "complete",
+        "missing_components": [],
+        "solvability": "NOT_VERIFIED",
+        "answer_validation": "NOT_VERIFIED",
+        "uniqueness": "unknown",
+        "human_review_required": false,
+        "confidence": "high",
+        "graph_errors": []
+      },
+      "field_provenance": {
+        "knowledge.primary_concept": "inferred",
+        "knowledge.prerequisites": "inferred",
+        "knowledge.learning_objectives": "inferred",
+        "reasoning": "inferred",
+        "representation.input": "inferred",
+        "assessment.command_term": "calculated",
+        "assessment.answer_type": "inferred"
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "genome_id": "g-p2-a2",
+      "question_id": "p2-a2",
+      "parent_question_id": null,
+      "provenance": {
+        "origin": "source",
+        "document": "Synthetic Physics Paper 2",
+        "page": 1
+      },
+      "lineage": [],
+      "knowledge": {
+        "primary_concept": "momentum",
+        "secondary_concepts": [
+          "velocity"
+        ],
+        "prerequisites": [
+          "mass",
+          "velocity"
+        ],
+        "learning_objectives": [
+          "M1 Apply conservation of momentum"
+        ],
+        "topic": "Momentum",
+        "subtopic": "Momentum"
+      },
+      "reasoning": {
+        "steps": [
+          {
+            "id": "s1",
+            "type": "read_given"
+          },
+          {
+            "id": "s2",
+            "type": "select_relation"
+          },
+          {
+            "id": "s3",
+            "type": "apply_mathematics"
+          },
+          {
+            "id": "s4",
+            "type": "derive_result"
+          }
+        ],
+        "edges": [
+          [
+            "s1",
+            "s2"
+          ],
+          [
+            "s2",
+            "s3"
+          ],
+          [
+            "s3",
+            "s4"
+          ]
+        ],
+        "expected_inference": null,
+        "justification_required": false
+      },
+      "representation": {
+        "input": [
+          "verbal"
+        ],
+        "output": [
+          "numeric"
+        ],
+        "context": "road transport"
+      },
+      "constraints": {
+        "explicit": [],
+        "implicit": [],
+        "domain": [],
+        "boundary": [],
+        "units": [
+          "kg",
+          "m/s"
+        ],
+        "precision": null
+      },
+      "assessment": {
+        "command_term": "calculate",
+        "question_type": "calculation",
+        "cognitive_level": "application",
+        "max_marks": 2,
+        "answer_type": "numeric",
+        "expected_answer": "18000 kg m/s",
+        "answer_unit": "kg m/s",
+        "marking_components": [
+          {
+            "description": "p = mv",
+            "marks": 1
+          },
+          {
+            "description": "18 000 kg m/s",
+            "marks": 1
+          }
+        ],
+        "difficulty_features": {
+          "math_complexity": 1
+        },
+        "difficulty": {
+          "model": "examdna-heuristic-v1",
+          "points": 7,
+          "band": "standard",
+          "features": {
+            "reasoning_stages": 3,
+            "prerequisite_count": 2,
+            "math_complexity": 1,
+            "interacting_constraints": 0,
+            "representation_count": 1
+          },
+          "feature_source": "genome",
+          "status": "heuristic"
+        }
+      },
+      "validation": {
+        "structural_completeness": "complete",
+        "missing_components": [],
+        "solvability": "NOT_VERIFIED",
+        "answer_validation": "NOT_VERIFIED",
+        "uniqueness": "unknown",
+        "human_review_required": false,
+        "confidence": "high",
+        "graph_errors": []
+      },
+      "field_provenance": {
+        "knowledge.primary_concept": "inferred",
+        "knowledge.secondary_concepts": "inferred",
+        "knowledge.prerequisites": "inferred",
+        "knowledge.learning_objectives": "inferred",
+        "reasoning": "inferred",
+        "representation.input": "inferred",
+        "assessment.command_term": "calculated",
+        "assessment.answer_type": "calculated"
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "genome_id": "g-p2-a3",
+      "question_id": "p2-a3",
+      "parent_question_id": null,
+      "provenance": {
+        "origin": "source",
+        "document": "Synthetic Physics Paper 2",
+        "page": 1
+      },
+      "lineage": [],
+      "knowledge": {
+        "primary_concept": "Hooke's law",
+        "secondary_concepts": [
+          "elastic deformation"
+        ],
+        "prerequisites": [
+          "force"
+        ],
+        "learning_objectives": [
+          "F2 Apply Hooke's law F = kx"
+        ],
+        "topic": "Forces",
+        "subtopic": "Hooke's law"
+      },
+      "reasoning": {
+        "steps": [
+          {
+            "id": "s1",
+            "type": "read_given"
+          },
+          {
+            "id": "s2",
+            "type": "select_relation"
+          },
+          {
+            "id": "s3",
+            "type": "apply_mathematics"
+          },
+          {
+            "id": "s4",
+            "type": "derive_result"
+          }
+        ],
+        "edges": [
+          [
+            "s1",
+            "s2"
+          ],
+          [
+            "s2",
+            "s3"
+          ],
+          [
+            "s3",
+            "s4"
+          ]
+        ],
+        "expected_inference": null,
+        "justification_required": false
+      },
+      "representation": {
+        "input": [
+          "verbal"
+        ],
+        "output": [
+          "numeric"
+        ],
+        "context": "spring"
+      },
+      "constraints": {
+        "explicit": [
+          "limit of proportionality not exceeded"
+        ],
+        "implicit": [],
+        "domain": [],
+        "boundary": [],
+        "units": [
+          "N/m",
+          "m"
+        ],
+        "precision": null
+      },
+      "assessment": {
+        "command_term": "calculate",
+        "question_type": "calculation",
+        "cognitive_level": "application",
+        "max_marks": 2,
+        "answer_type": "numeric",
+        "expected_answer": "6.0 N",
+        "answer_unit": "N",
+        "marking_components": [
+          {
+            "description": "F = kx",
+            "marks": 1
+          },
+          {
+            "description": "6.0 N",
+            "marks": 1
+          }
+        ],
+        "difficulty_features": {
+          "math_complexity": 1
+        },
+        "difficulty": {
+          "model": "examdna-heuristic-v1",
+          "points": 7,
+          "band": "standard",
+          "features": {
+            "reasoning_stages": 3,
+            "prerequisite_count": 1,
+            "math_complexity": 1,
+            "interacting_constraints": 1,
+            "representation_count": 1
+          },
+          "feature_source": "genome",
+          "status": "heuristic"
+        }
+      },
+      "validation": {
+        "structural_completeness": "complete",
+        "missing_components": [],
+        "solvability": "NOT_VERIFIED",
+        "answer_validation": "NOT_VERIFIED",
+        "uniqueness": "unknown",
+        "human_review_required": false,
+        "confidence": "high",
+        "graph_errors": []
+      },
+      "field_provenance": {
+        "knowledge.primary_concept": "inferred",
+        "knowledge.secondary_concepts": "inferred",
+        "knowledge.prerequisites": "inferred",
+        "knowledge.learning_objectives": "inferred",
+        "reasoning": "inferred",
+        "representation.input": "inferred",
+        "assessment.command_term": "calculated",
+        "assessment.answer_type": "calculated"
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "genome_id": "g-p2-a4",
+      "question_id": "p2-a4",
+      "parent_question_id": null,
+      "provenance": {
+        "origin": "source",
+        "document": "Synthetic Physics Paper 2",
+        "page": 1
+      },
+      "lineage": [],
+      "knowledge": {
+        "primary_concept": "wave equation",
+        "secondary_concepts": [
+          "sound"
+        ],
+        "prerequisites": [
+          "frequency"
+        ],
+        "learning_objectives": [
+          "W1 Use the wave equation v = f λ"
+        ],
+        "topic": "Waves",
+        "subtopic": "Wave equation"
+      },
+      "reasoning": {
+        "steps": [
+          {
+            "id": "s1",
+            "type": "read_given"
+          },
+          {
+            "id": "s2",
+            "type": "select_relation"
+          },
+          {
+            "id": "s3",
+            "type": "apply_mathematics"
+          }
+        ],
+        "edges": [
+          [
+            "s1",
+            "s2"
+          ],
+          [
+            "s2",
+            "s3"
+          ]
+        ],
+        "expected_inference": null,
+        "justification_required": false
+      },
+      "representation": {
+        "input": [
+          "verbal"
+        ],
+        "output": [],
+        "context": "sound"
+      },
+      "constraints": {
+        "explicit": [],
+        "implicit": [],
+        "domain": [],
+        "boundary": [],
+        "units": [
+          "Hz",
+          "m/s"
+        ],
+        "precision": null
+      },
+      "assessment": {
+        "command_term": null,
+        "question_type": "multiple_choice",
+        "cognitive_level": "application",
+        "max_marks": 1,
+        "answer_type": "choice",
+        "expected_answer": "2.0 m",
+        "answer_unit": "m",
+        "marking_components": [
+          {
+            "description": "B",
+            "marks": 1
+          }
+        ],
+        "difficulty_features": {
+          "math_complexity": 1
+        },
+        "difficulty": {
+          "model": "examdna-heuristic-v1",
+          "points": 5,
+          "band": "foundation",
+          "features": {
+            "reasoning_stages": 2,
+            "prerequisite_count": 1,
+            "math_complexity": 1,
+            "interacting_constraints": 0,
+            "representation_count": 1
+          },
+          "feature_source": "genome",
+          "status": "heuristic"
+        }
+      },
+      "validation": {
+        "structural_completeness": "complete",
+        "missing_components": [],
+        "solvability": "NOT_VERIFIED",
+        "answer_validation": "NOT_VERIFIED",
+        "uniqueness": "unknown",
+        "human_review_required": false,
+        "confidence": "high",
+        "graph_errors": []
+      },
+      "field_provenance": {
+        "knowledge.primary_concept": "inferred",
+        "knowledge.secondary_concepts": "inferred",
+        "knowledge.prerequisites": "inferred",
+        "knowledge.learning_objectives": "inferred",
+        "reasoning": "inferred",
+        "representation.input": "inferred",
+        "assessment.command_term": "calculated",
+        "assessment.answer_type": "inferred"
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "genome_id": "g-p2-a5",
+      "question_id": "p2-a5",
+      "parent_question_id": null,
+      "provenance": {
+        "origin": "source",
+        "document": "Synthetic Physics Paper 2",
+        "page": 1
+      },
+      "lineage": [],
+      "knowledge": {
+        "primary_concept": "electric current",
+        "secondary_concepts": [
+          "charge"
+        ],
+        "prerequisites": [
+          "charge"
+        ],
+        "learning_objectives": [
+          "C2 Relate charge, current, potential difference and power"
+        ],
+        "topic": "Electricity",
+        "subtopic": "Current and charge"
+      },
+      "reasoning": {
+        "steps": [
+          {
+            "id": "s1",
+            "type": "read_given"
+          },
+          {
+            "id": "s2",
+            "type": "select_relation"
+          },
+          {
+            "id": "s3",
+            "type": "apply_mathematics"
+          },
+          {
+            "id": "s4",
+            "type": "derive_result"
+          }
+        ],
+        "edges": [
+          [
+            "s1",
+            "s2"
+          ],
+          [
+            "s2",
+            "s3"
+          ],
+          [
+            "s3",
+            "s4"
+          ]
+        ],
+        "expected_inference": null,
+        "justification_required": false
+      },
+      "representation": {
+        "input": [
+          "verbal"
+        ],
+        "output": [
+          "numeric"
+        ],
+        "context": "household lamp"
+      },
+      "constraints": {
+        "explicit": [],
+        "implicit": [],
+        "domain": [],
+        "boundary": [],
+        "units": [
+          "C",
+          "s"
+        ],
+        "precision": null
+      },
+      "assessment": {
+        "command_term": "calculate",
+        "question_type": "calculation",
+        "cognitive_level": "application",
+        "max_marks": 2,
+        "answer_type": "numeric",
+        "expected_answer": "0.50 A",
+        "answer_unit": "A",
+        "marking_components": [
+          {
+            "description": "I = Q/t",
+            "marks": 1
+          },
+          {
+            "description": "0.50 A",
+            "marks": 1
+          }
+        ],
+        "difficulty_features": {
+          "math_complexity": 1
+        },
+        "difficulty": {
+          "model": "examdna-heuristic-v1",
+          "points": 6,
+          "band": "foundation",
+          "features": {
+            "reasoning_stages": 3,
+            "prerequisite_count": 1,
+            "math_complexity": 1,
+            "interacting_constraints": 0,
+            "representation_count": 1
+          },
+          "feature_source": "genome",
+          "status": "heuristic"
+        }
+      },
+      "validation": {
+        "structural_completeness": "complete",
+        "missing_components": [],
+        "solvability": "NOT_VERIFIED",
+        "answer_validation": "NOT_VERIFIED",
+        "uniqueness": "unknown",
+        "human_review_required": false,
+        "confidence": "high",
+        "graph_errors": []
+      },
+      "field_provenance": {
+        "knowledge.primary_concept": "inferred",
+        "knowledge.secondary_concepts": "inferred",
+        "knowledge.prerequisites": "inferred",
+        "knowledge.learning_objectives": "inferred",
+        "reasoning": "inferred",
+        "representation.input": "inferred",
+        "assessment.command_term": "calculated",
+        "assessment.answer_type": "calculated"
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "genome_id": "g-p2-a6",
+      "question_id": "p2-a6",
+      "parent_question_id": null,
+      "provenance": {
+        "origin": "source",
+        "document": "Synthetic Physics Paper 2",
+        "page": 1
+      },
+      "lineage": [],
+      "knowledge": {
+        "primary_concept": "Newton's first law",
+        "secondary_concepts": [
+          "resultant force"
+        ],
+        "prerequisites": [
+          "force"
+        ],
+        "learning_objectives": [
+          "F3 Explain motion using Newton's first law"
+        ],
+        "topic": "Forces",
+        "subtopic": "Newton's first law"
+      },
+      "reasoning": {
+        "steps": [
+          {
+            "id": "s1",
+            "type": "identify_constraint"
+          },
+          {
+            "id": "s2",
+            "type": "recall_fact"
+          },
+          {
+            "id": "s3",
+            "type": "justify"
+          }
+        ],
+        "edges": [
+          [
+            "s1",
+            "s2"
+          ],
+          [
+            "s2",
+            "s3"
+          ]
+        ],
+        "expected_inference": null,
+        "justification_required": false
+      },
+      "representation": {
+        "input": [
+          "verbal"
+        ],
+        "output": [],
+        "context": "ice hockey"
+      },
+      "constraints": {
+        "explicit": [
+          "frictionless surface"
+        ],
+        "implicit": [],
+        "domain": [],
+        "boundary": [],
+        "units": [],
+        "precision": null
+      },
+      "assessment": {
+        "command_term": "explain",
+        "question_type": "short_answer",
+        "cognitive_level": "interpretation",
+        "max_marks": 2,
+        "answer_type": "short_text",
+        "expected_answer": "No resultant force acts, so by Newton's first law the velocity does not change.",
+        "answer_unit": null,
+        "marking_components": [
+          {
+            "description": "No resultant (unbalanced) force acts on the puck",
+            "marks": 1
+          },
+          {
+            "description": "So velocity is unchanged (Newton's first law)",
+            "marks": 1
+          }
+        ],
+        "difficulty_features": {
+          "math_complexity": 0
+        },
+        "difficulty": {
+          "model": "examdna-heuristic-v1",
+          "points": 5,
+          "band": "foundation",
+          "features": {
+            "reasoning_stages": 3,
+            "prerequisite_count": 1,
+            "math_complexity": 0,
+            "interacting_constraints": 1,
+            "representation_count": 1
+          },
+          "feature_source": "genome",
+          "status": "heuristic"
+        }
+      },
+      "validation": {
+        "structural_completeness": "complete",
+        "missing_components": [],
+        "solvability": "NOT_VERIFIED",
+        "answer_validation": "NOT_VERIFIED",
+        "uniqueness": "unknown",
+        "human_review_required": false,
+        "confidence": "high",
+        "graph_errors": []
+      },
+      "field_provenance": {
+        "knowledge.primary_concept": "inferred",
+        "knowledge.secondary_concepts": "inferred",
+        "knowledge.prerequisites": "inferred",
+        "knowledge.learning_objectives": "inferred",
+        "reasoning": "inferred",
+        "representation.input": "inferred",
+        "assessment.command_term": "calculated",
+        "assessment.answer_type": "inferred"
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "genome_id": "g-p2-b1",
+      "question_id": "p2-b1",
+      "parent_question_id": null,
+      "provenance": {
+        "origin": "source",
+        "document": "Synthetic Physics Paper 2",
+        "page": 2
+      },
+      "lineage": [],
+      "knowledge": {
+        "primary_concept": "conservation of momentum",
+        "secondary_concepts": [
+          "kinetic energy",
+          "inelastic collision"
+        ],
+        "prerequisites": [
+          "momentum"
+        ],
+        "learning_objectives": [
+          "M1 Apply conservation of momentum",
+          "E1 Calculate gravitational potential and kinetic energy"
+        ],
+        "topic": "Momentum",
+        "subtopic": "Collisions"
+      },
+      "reasoning": {
+        "steps": [
+          {
+            "id": "s1",
+            "type": "read_given"
+          },
+          {
+            "id": "s2",
+            "type": "select_relation"
+          },
+          {
+            "id": "s3",
+            "type": "apply_mathematics"
+          },
+          {
+            "id": "s4",
+            "type": "construct_model"
+          },
+          {
+            "id": "s5",
+            "type": "derive_result"
+          },
+          {
+            "id": "s6",
+            "type": "select_relation"
+          },
+          {
+            "id": "s7",
+            "type": "apply_mathematics"
+          },
+          {
+            "id": "s8",
+            "type": "compare"
+          }
+        ],
+        "edges": [
+          [
+            "s1",
+            "s2"
+          ],
+          [
+            "s2",
+            "s3"
+          ],
+          [
+            "s3",
+            "s4"
+          ],
+          [
+            "s4",
+            "s5"
+          ],
+          [
+            "s5",
+            "s6"
+          ],
+          [
+            "s1",
+            "s6"
+          ],
+          [
+            "s6",
+            "s7"
+          ],
+          [
+            "s7",
+            "s8"
+          ]
+        ],
+        "expected_inference": null,
+        "justification_required": false
+      },
+      "representation": {
+        "input": [
+          "verbal"
+        ],
+        "output": [
+          "numeric"
+        ],
+        "context": "laboratory trolley"
+      },
+      "constraints": {
+        "explicit": [
+          "trolleys stick together"
+        ],
+        "implicit": [
+          "no external horizontal force"
+        ],
+        "domain": [],
+        "boundary": [],
+        "units": [
+          "kg",
+          "m/s"
+        ],
+        "precision": null
+      },
+      "assessment": {
+        "command_term": "calculate",
+        "question_type": "mixed",
+        "cognitive_level": "multi_step_reasoning",
+        "max_marks": 8,
+        "answer_type": "mixed",
+        "expected_answer": "(a) 6.0 kg m/s (b) 2.0 m/s (c) 3.0 J",
+        "answer_unit": "kg m/s",
+        "marking_components": [
+          {
+            "description": "p = mv",
+            "marks": 1
+          },
+          {
+            "description": "6.0 kg m/s",
+            "marks": 1
+          },
+          {
+            "description": "Momentum conserved",
+            "marks": 1
+          },
+          {
+            "description": "Combined mass 3.0 kg",
+            "marks": 1
+          },
+          {
+            "description": "2.0 m/s",
+            "marks": 1
+          },
+          {
+            "description": "Ek before 9.0 J",
+            "marks": 1
+          },
+          {
+            "description": "Ek after 6.0 J",
+            "marks": 1
+          },
+          {
+            "description": "3.0 J lost",
+            "marks": 1
+          }
+        ],
+        "difficulty_features": {
+          "math_complexity": 2
+        },
+        "difficulty": {
+          "model": "examdna-heuristic-v1",
+          "points": 12,
+          "band": "standard",
+          "features": {
+            "reasoning_stages": 7,
+            "prerequisite_count": 1,
+            "math_complexity": 2,
+            "interacting_constraints": 1,
+            "representation_count": 1
+          },
+          "feature_source": "genome",
+          "status": "heuristic"
+        }
+      },
+      "validation": {
+        "structural_completeness": "complete",
+        "missing_components": [],
+        "solvability": "NOT_VERIFIED",
+        "answer_validation": "NOT_VERIFIED",
+        "uniqueness": "unknown",
+        "human_review_required": false,
+        "confidence": "high",
+        "graph_errors": []
+      },
+      "field_provenance": {
+        "knowledge.primary_concept": "inferred",
+        "knowledge.secondary_concepts": "inferred",
+        "knowledge.prerequisites": "inferred",
+        "knowledge.learning_objectives": "inferred",
+        "reasoning": "inferred",
+        "representation.input": "inferred",
+        "assessment.command_term": "calculated",
+        "assessment.answer_type": "calculated"
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "genome_id": "g-p2-b2",
+      "question_id": "p2-b2",
+      "parent_question_id": null,
+      "provenance": {
+        "origin": "source",
+        "document": "Synthetic Physics Paper 2",
+        "page": 2
+      },
+      "lineage": [],
+      "knowledge": {
+        "primary_concept": "motion data interpretation",
+        "secondary_concepts": [
+          "uniformly accelerated motion"
+        ],
+        "prerequisites": [
+          "velocity",
+          "acceleration"
+        ],
+        "learning_objectives": [
+          "K2 Interpret motion data in tables and graphs",
+          "K1 Use the equations of uniformly accelerated motion"
+        ],
+        "topic": "Kinematics",
+        "subtopic": "Motion data"
+      },
+      "reasoning": {
+        "steps": [
+          {
+            "id": "s1",
+            "type": "read_representation"
+          },
+          {
+            "id": "s2",
+            "type": "select_relation"
+          },
+          {
+            "id": "s3",
+            "type": "apply_mathematics"
+          },
+          {
+            "id": "s4",
+            "type": "construct_model"
+          },
+          {
+            "id": "s5",
+            "type": "apply_mathematics"
+          },
+          {
+            "id": "s6",
+            "type": "derive_result"
+          },
+          {
+            "id": "s7",
+            "type": "interpret_result"
+          }
+        ],
+        "edges": [
+          [
+            "s1",
+            "s2"
+          ],
+          [
+            "s2",
+            "s3"
+          ],
+          [
+            "s3",
+            "s4"
+          ],
+          [
+            "s4",
+            "s5"
+          ],
+          [
+            "s5",
+            "s6"
+          ],
+          [
+            "s6",
+            "s7"
+          ]
+        ],
+        "expected_inference": null,
+        "justification_required": false
+      },
+      "representation": {
+        "input": [
+          "verbal",
+          "table"
+        ],
+        "output": [
+          "numeric"
+        ],
+        "context": "sports and athletics"
+      },
+      "constraints": {
+        "explicit": [],
+        "implicit": [],
+        "domain": [],
+        "boundary": [],
+        "units": [
+          "m/s",
+          "s"
+        ],
+        "precision": null
+      },
+      "assessment": {
+        "command_term": "calculate",
+        "question_type": "data_interpretation",
+        "cognitive_level": "interpretation",
+        "max_marks": 6,
+        "answer_type": "mixed",
+        "expected_answer": "(a) 1.5 m/s² (b) 24 m (c) constant velocity of 6.0 m/s",
+        "answer_unit": "m",
+        "marking_components": [
+          {
+            "description": "a = Δv/Δt",
+            "marks": 1
+          },
+          {
+            "description": "1.5 m/s²",
+            "marks": 1
+          },
+          {
+            "description": "Distance during acceleration 12 m",
+            "marks": 1
+          },
+          {
+            "description": "Distance at constant speed 12 m",
+            "marks": 1
+          },
+          {
+            "description": "24 m",
+            "marks": 1
+          },
+          {
+            "description": "Constant velocity",
+            "marks": 1
+          }
+        ],
+        "difficulty_features": {
+          "math_complexity": 2
+        },
+        "difficulty": {
+          "model": "examdna-heuristic-v1",
+          "points": 13,
+          "band": "challenging",
+          "features": {
+            "reasoning_stages": 7,
+            "prerequisite_count": 2,
+            "math_complexity": 2,
+            "interacting_constraints": 0,
+            "representation_count": 2
+          },
+          "feature_source": "genome",
+          "status": "heuristic"
+        }
+      },
+      "validation": {
+        "structural_completeness": "complete",
+        "missing_components": [],
+        "solvability": "NOT_VERIFIED",
+        "answer_validation": "NOT_VERIFIED",
+        "uniqueness": "unknown",
+        "human_review_required": false,
+        "confidence": "high",
+        "graph_errors": []
+      },
+      "field_provenance": {
+        "knowledge.primary_concept": "inferred",
+        "knowledge.secondary_concepts": "inferred",
+        "knowledge.prerequisites": "inferred",
+        "knowledge.learning_objectives": "inferred",
+        "reasoning": "inferred",
+        "representation.input": "inferred",
+        "assessment.command_term": "calculated",
+        "assessment.answer_type": "calculated"
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "genome_id": "g-p2-b3",
+      "question_id": "p2-b3",
+      "parent_question_id": null,
+      "provenance": {
+        "origin": "source",
+        "document": "Synthetic Physics Paper 2",
+        "page": 2
+      },
+      "lineage": [],
+      "knowledge": {
+        "primary_concept": "electrical power",
+        "secondary_concepts": [
+          "energy transfer"
+        ],
+        "prerequisites": [
+          "current",
+          "potential difference"
+        ],
+        "learning_objectives": [
+          "C2 Relate charge, current, potential difference and power",
+          "E2 Calculate power and efficiency"
+        ],
+        "topic": "Electricity",
+        "subtopic": "Electrical power"
+      },
+      "reasoning": {
+        "steps": [
+          {
+            "id": "s1",
+            "type": "read_given"
+          },
+          {
+            "id": "s2",
+            "type": "select_relation"
+          },
+          {
+            "id": "s3",
+            "type": "apply_mathematics"
+          },
+          {
+            "id": "s4",
+            "type": "select_relation"
+          },
+          {
+            "id": "s5",
+            "type": "apply_mathematics"
+          },
+          {
+            "id": "s6",
+            "type": "justify"
+          }
+        ],
+        "edges": [
+          [
+            "s1",
+            "s2"
+          ],
+          [
+            "s2",
+            "s3"
+          ],
+          [
+            "s3",
+            "s4"
+          ],
+          [
+            "s4",
+            "s5"
+          ],
+          [
+            "s1",
+            "s6"
+          ]
+        ],
+        "expected_inference": null,
+        "justification_required": false
+      },
+      "representation": {
+        "input": [
+          "verbal"
+        ],
+        "output": [
+          "numeric"
+        ],
+        "context": "household appliances"
+      },
+      "constraints": {
+        "explicit": [],
+        "implicit": [],
+        "domain": [],
+        "boundary": [],
+        "units": [
+          "A",
+          "V",
+          "s"
+        ],
+        "precision": null
+      },
+      "assessment": {
+        "command_term": "calculate",
+        "question_type": "mixed",
+        "cognitive_level": "application",
+        "max_marks": 6,
+        "answer_type": "mixed",
+        "expected_answer": "(a) 1840 W (b) 2.2 × 10^5 J (c) larger current; thicker cable has lower resistance so less heating",
+        "answer_unit": "W",
+        "marking_components": [
+          {
+            "description": "P = VI",
+            "marks": 1
+          },
+          {
+            "description": "1840 W",
+            "marks": 1
+          },
+          {
+            "description": "E = Pt",
+            "marks": 1
+          },
+          {
+            "description": "2.2 × 10⁵ J",
+            "marks": 1
+          },
+          {
+            "description": "Larger current",
+            "marks": 1
+          },
+          {
+            "description": "Lower resistance so less heating",
+            "marks": 1
+          }
+        ],
+        "difficulty_features": {
+          "math_complexity": 1
+        },
+        "difficulty": {
+          "model": "examdna-heuristic-v1",
+          "points": 9,
+          "band": "standard",
+          "features": {
+            "reasoning_stages": 5,
+            "prerequisite_count": 2,
+            "math_complexity": 1,
+            "interacting_constraints": 0,
+            "representation_count": 1
+          },
+          "feature_source": "genome",
+          "status": "heuristic"
+        }
+      },
+      "validation": {
+        "structural_completeness": "complete",
+        "missing_components": [],
+        "solvability": "NOT_VERIFIED",
+        "answer_validation": "NOT_VERIFIED",
+        "uniqueness": "unknown",
+        "human_review_required": false,
+        "confidence": "high",
+        "graph_errors": []
+      },
+      "field_provenance": {
+        "knowledge.primary_concept": "inferred",
+        "knowledge.secondary_concepts": "inferred",
+        "knowledge.prerequisites": "inferred",
+        "knowledge.learning_objectives": "inferred",
+        "reasoning": "inferred",
+        "representation.input": "inferred",
+        "assessment.command_term": "calculated",
+        "assessment.answer_type": "calculated"
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "genome_id": "g-p3-a1",
+      "question_id": "p3-a1",
+      "parent_question_id": null,
+      "provenance": {
+        "origin": "source",
+        "document": "Synthetic Physics Paper 3",
+        "page": 1
+      },
+      "lineage": [],
+      "knowledge": {
+        "primary_concept": "power",
+        "secondary_concepts": [],
+        "prerequisites": [
+          "energy"
+        ],
+        "learning_objectives": [
+          "U1 Distinguish scalar and vector quantities and use SI units",
+          "E2 Calculate power and efficiency"
+        ],
+        "topic": "Energy",
+        "subtopic": "Power"
+      },
+      "reasoning": {
+        "steps": [
+          {
+            "id": "s1",
+            "type": "recall_fact"
+          }
+        ],
+        "edges": [],
+        "expected_inference": null,
+        "justification_required": false
+      },
+      "representation": {
+        "input": [
+          "verbal"
+        ],
+        "output": [],
+        "context": "abstract"
+      },
+      "constraints": {
+        "explicit": [],
+        "implicit": [],
+        "domain": [],
+        "boundary": [],
+        "units": [],
+        "precision": null
+      },
+      "assessment": {
+        "command_term": null,
+        "question_type": "multiple_choice",
+        "cognitive_level": "recall",
+        "max_marks": 1,
+        "answer_type": "choice",
+        "expected_answer": "watt",
+        "answer_unit": null,
+        "marking_components": [
+          {
+            "description": "C",
+            "marks": 1
+          }
+        ],
+        "difficulty_features": {
+          "math_complexity": 0
+        },
+        "difficulty": {
+          "model": "examdna-heuristic-v1",
+          "points": 2,
+          "band": "foundation",
+          "features": {
+            "reasoning_stages": 1,
+            "prerequisite_count": 1,
+            "math_complexity": 0,
+            "interacting_constraints": 0,
+            "representation_count": 1
+          },
+          "feature_source": "genome",
+          "status": "heuristic"
+        }
+      },
+      "validation": {
+        "structural_completeness": "complete",
+        "missing_components": [],
+        "solvability": "NOT_VERIFIED",
+        "answer_validation": "NOT_VERIFIED",
+        "uniqueness": "unknown",
+        "human_review_required": false,
+        "confidence": "high",
+        "graph_errors": []
+      },
+      "field_provenance": {
+        "knowledge.primary_concept": "inferred",
+        "knowledge.prerequisites": "inferred",
+        "knowledge.learning_objectives": "inferred",
+        "reasoning": "inferred",
+        "representation.input": "inferred",
+        "assessment.command_term": "calculated",
+        "assessment.answer_type": "inferred"
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "genome_id": "g-p3-a2",
+      "question_id": "p3-a2",
+      "parent_question_id": null,
+      "provenance": {
+        "origin": "source",
+        "document": "Synthetic Physics Paper 3",
+        "page": 1
+      },
+      "lineage": [],
+      "knowledge": {
+        "primary_concept": "gravitational potential energy",
+        "secondary_concepts": [],
+        "prerequisites": [
+          "weight"
+        ],
+        "learning_objectives": [
+          "E1 Calculate gravitational potential and kinetic energy"
+        ],
+        "topic": "Energy",
+        "subtopic": "Gravitational potential energy"
+      },
+      "reasoning": {
+        "steps": [
+          {
+            "id": "s1",
+            "type": "read_given"
+          },
+          {
+            "id": "s2",
+            "type": "select_relation"
+          },
+          {
+            "id": "s3",
+            "type": "apply_mathematics"
+          },
+          {
+            "id": "s4",
+            "type": "derive_result"
+          }
+        ],
+        "edges": [
+          [
+            "s1",
+            "s2"
+          ],
+          [
+            "s2",
+            "s3"
+          ],
+          [
+            "s3",
+            "s4"
+          ]
+        ],
+        "expected_inference": null,
+        "justification_required": false
+      },
+      "representation": {
+        "input": [
+          "verbal"
+        ],
+        "output": [
+          "numeric"
+        ],
+        "context": "climbing"
+      },
+      "constraints": {
+        "explicit": [],
+        "implicit": [],
+        "domain": [],
+        "boundary": [],
+        "units": [
+          "kg",
+          "m",
+          "m/s^2"
+        ],
+        "precision": null
+      },
+      "assessment": {
+        "command_term": "calculate",
+        "question_type": "calculation",
+        "cognitive_level": "application",
+        "max_marks": 2,
+        "answer_type": "numeric",
+        "expected_answer": "7056 J (7.1 kJ)",
+        "answer_unit": "J",
+        "marking_components": [
+          {
+            "description": "ΔEp = mgh",
+            "marks": 1
+          },
+          {
+            "description": "7056 J / 7.1 kJ",
+            "marks": 1
+          }
+        ],
+        "difficulty_features": {
+          "math_complexity": 1
+        },
+        "difficulty": {
+          "model": "examdna-heuristic-v1",
+          "points": 6,
+          "band": "foundation",
+          "features": {
+            "reasoning_stages": 3,
+            "prerequisite_count": 1,
+            "math_complexity": 1,
+            "interacting_constraints": 0,
+            "representation_count": 1
+          },
+          "feature_source": "genome",
+          "status": "heuristic"
+        }
+      },
+      "validation": {
+        "structural_completeness": "complete",
+        "missing_components": [],
+        "solvability": "NOT_VERIFIED",
+        "answer_validation": "NOT_VERIFIED",
+        "uniqueness": "unknown",
+        "human_review_required": false,
+        "confidence": "high",
+        "graph_errors": []
+      },
+      "field_provenance": {
+        "knowledge.primary_concept": "inferred",
+        "knowledge.prerequisites": "inferred",
+        "knowledge.learning_objectives": "inferred",
+        "reasoning": "inferred",
+        "representation.input": "inferred",
+        "assessment.command_term": "calculated",
+        "assessment.answer_type": "calculated"
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "genome_id": "g-p3-a3",
+      "question_id": "p3-a3",
+      "parent_question_id": null,
+      "provenance": {
+        "origin": "source",
+        "document": "Synthetic Physics Paper 3",
+        "page": 1
+      },
+      "lineage": [],
+      "knowledge": {
+        "primary_concept": "projectile motion",
+        "secondary_concepts": [
+          "uniformly accelerated motion"
+        ],
+        "prerequisites": [
+          "acceleration",
+          "vector components"
+        ],
+        "learning_objectives": [
+          "K3 Analyse projectile motion with independent horizontal and vertical components",
+          "K1 Use the equations of uniformly accelerated motion"
+        ],
+        "topic": "Kinematics",
+        "subtopic": "Projectile motion"
+      },
+      "reasoning": {
+        "steps": [
+          {
+            "id": "s1",
+            "type": "read_given"
+          },
+          {
+            "id": "s2",
+            "type": "identify_constraint"
+          },
+          {
+            "id": "s3",
+            "type": "construct_model"
+          },
+          {
+            "id": "s4",
+            "type": "select_relation"
+          },
+          {
+            "id": "s5",
+            "type": "apply_mathematics"
+          },
+          {
+            "id": "s6",
+            "type": "derive_result"
+          }
+        ],
+        "edges": [
+          [
+            "s1",
+            "s2"
+          ],
+          [
+            "s2",
+            "s3"
+          ],
+          [
+            "s3",
+            "s4"
+          ],
+          [
+            "s4",
+            "s5"
+          ],
+          [
+            "s5",
+            "s6"
+          ]
+        ],
+        "expected_inference": null,
+        "justification_required": false
+      },
+      "representation": {
+        "input": [
+          "verbal"
+        ],
+        "output": [
+          "numeric"
+        ],
+        "context": "table-top experiment"
+      },
+      "constraints": {
+        "explicit": [
+          "air resistance negligible"
+        ],
+        "implicit": [],
+        "domain": [],
+        "boundary": [
+          "initial vertical velocity zero"
+        ],
+        "units": [
+          "m",
+          "m/s^2"
+        ],
+        "precision": null
+      },
+      "assessment": {
+        "command_term": "calculate",
+        "question_type": "calculation",
+        "cognitive_level": "multi_step_reasoning",
+        "max_marks": 3,
+        "answer_type": "numeric",
+        "expected_answer": "0.61 s",
+        "answer_unit": "s",
+        "marking_components": [
+          {
+            "description": "Vertical initial velocity is zero / motions independent",
+            "marks": 1
+          },
+          {
+            "description": "h = ½gt²",
+            "marks": 1
+          },
+          {
+            "description": "0.61 s",
+            "marks": 1
+          }
+        ],
+        "difficulty_features": {
+          "math_complexity": 3
+        },
+        "difficulty": {
+          "model": "examdna-heuristic-v1",
+          "points": 15,
+          "band": "challenging",
+          "features": {
+            "reasoning_stages": 5,
+            "prerequisite_count": 2,
+            "math_complexity": 3,
+            "interacting_constraints": 2,
+            "representation_count": 1
+          },
+          "feature_source": "genome",
+          "status": "heuristic"
+        }
+      },
+      "validation": {
+        "structural_completeness": "complete",
+        "missing_components": [],
+        "solvability": "NOT_VERIFIED",
+        "answer_validation": "NOT_VERIFIED",
+        "uniqueness": "unknown",
+        "human_review_required": false,
+        "confidence": "high",
+        "graph_errors": []
+      },
+      "field_provenance": {
+        "knowledge.primary_concept": "inferred",
+        "knowledge.secondary_concepts": "inferred",
+        "knowledge.prerequisites": "inferred",
+        "knowledge.learning_objectives": "inferred",
+        "reasoning": "inferred",
+        "representation.input": "inferred",
+        "assessment.command_term": "calculated",
+        "assessment.answer_type": "calculated"
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "genome_id": "g-p3-a4",
+      "question_id": "p3-a4",
+      "parent_question_id": null,
+      "provenance": {
+        "origin": "source",
+        "document": "Synthetic Physics Paper 3",
+        "page": 1
+      },
+      "lineage": [],
+      "knowledge": {
+        "primary_concept": "wave equation",
+        "secondary_concepts": [],
+        "prerequisites": [
+          "frequency",
+          "wavelength"
+        ],
+        "learning_objectives": [
+          "W1 Use the wave equation v = f λ"
+        ],
+        "topic": "Waves",
+        "subtopic": "Wave equation"
+      },
+      "reasoning": {
+        "steps": [
+          {
+            "id": "s1",
+            "type": "read_given"
+          },
+          {
+            "id": "s2",
+            "type": "select_relation"
+          },
+          {
+            "id": "s3",
+            "type": "apply_mathematics"
+          },
+          {
+            "id": "s4",
+            "type": "derive_result"
+          }
+        ],
+        "edges": [
+          [
+            "s1",
+            "s2"
+          ],
+          [
+            "s2",
+            "s3"
+          ],
+          [
+            "s3",
+            "s4"
+          ]
+        ],
+        "expected_inference": null,
+        "justification_required": false
+      },
+      "representation": {
+        "input": [
+          "verbal"
+        ],
+        "output": [
+          "numeric"
+        ],
+        "context": "music and acoustics"
+      },
+      "constraints": {
+        "explicit": [],
+        "implicit": [],
+        "domain": [],
+        "boundary": [],
+        "units": [
+          "m",
+          "m/s"
+        ],
+        "precision": null
+      },
+      "assessment": {
+        "command_term": "calculate",
+        "question_type": "calculation",
+        "cognitive_level": "application",
+        "max_marks": 2,
+        "answer_type": "numeric",
+        "expected_answer": "30 Hz",
+        "answer_unit": "Hz",
+        "marking_components": [
+          {
+            "description": "f = v/λ",
+            "marks": 1
+          },
+          {
+            "description": "30 Hz",
+            "marks": 1
+          }
+        ],
+        "difficulty_features": {
+          "math_complexity": 1
+        },
+        "difficulty": {
+          "model": "examdna-heuristic-v1",
+          "points": 7,
+          "band": "standard",
+          "features": {
+            "reasoning_stages": 3,
+            "prerequisite_count": 2,
+            "math_complexity": 1,
+            "interacting_constraints": 0,
+            "representation_count": 1
+          },
+          "feature_source": "genome",
+          "status": "heuristic"
+        }
+      },
+      "validation": {
+        "structural_completeness": "complete",
+        "missing_components": [],
+        "solvability": "NOT_VERIFIED",
+        "answer_validation": "NOT_VERIFIED",
+        "uniqueness": "unknown",
+        "human_review_required": false,
+        "confidence": "high",
+        "graph_errors": []
+      },
+      "field_provenance": {
+        "knowledge.primary_concept": "inferred",
+        "knowledge.prerequisites": "inferred",
+        "knowledge.learning_objectives": "inferred",
+        "reasoning": "inferred",
+        "representation.input": "inferred",
+        "assessment.command_term": "calculated",
+        "assessment.answer_type": "calculated"
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "genome_id": "g-p3-a5",
+      "question_id": "p3-a5",
+      "parent_question_id": null,
+      "provenance": {
+        "origin": "source",
+        "document": "Synthetic Physics Paper 3",
+        "page": 1
+      },
+      "lineage": [],
+      "knowledge": {
+        "primary_concept": "Ohm's law",
+        "secondary_concepts": [],
+        "prerequisites": [
+          "current",
+          "potential difference"
+        ],
+        "learning_objectives": [
+          "C1 Apply Ohm's law to series circuits"
+        ],
+        "topic": "Electricity",
+        "subtopic": "Ohm's law"
+      },
+      "reasoning": {
+        "steps": [
+          {
+            "id": "s1",
+            "type": "read_given"
+          },
+          {
+            "id": "s2",
+            "type": "select_relation"
+          },
+          {
+            "id": "s3",
+            "type": "apply_mathematics"
+          },
+          {
+            "id": "s4",
+            "type": "derive_result"
+          }
+        ],
+        "edges": [
+          [
+            "s1",
+            "s2"
+          ],
+          [
+            "s2",
+            "s3"
+          ],
+          [
+            "s3",
+            "s4"
+          ]
+        ],
+        "expected_inference": null,
+        "justification_required": false
+      },
+      "representation": {
+        "input": [
+          "verbal"
+        ],
+        "output": [
+          "numeric"
+        ],
+        "context": "circuit"
+      },
+      "constraints": {
+        "explicit": [],
+        "implicit": [],
+        "domain": [],
+        "boundary": [],
+        "units": [
+          "V",
+          "ohm"
+        ],
+        "precision": null
+      },
+      "assessment": {
+        "command_term": "calculate",
+        "question_type": "calculation",
+        "cognitive_level": "application",
+        "max_marks": 2,
+        "answer_type": "numeric",
+        "expected_answer": "0.050 A",
+        "answer_unit": "A",
+        "marking_components": [
+          {
+            "description": "I = V/R",
+            "marks": 1
+          },
+          {
+            "description": "0.050 A",
+            "marks": 1
+          }
+        ],
+        "difficulty_features": {
+          "math_complexity": 1
+        },
+        "difficulty": {
+          "model": "examdna-heuristic-v1",
+          "points": 7,
+          "band": "standard",
+          "features": {
+            "reasoning_stages": 3,
+            "prerequisite_count": 2,
+            "math_complexity": 1,
+            "interacting_constraints": 0,
+            "representation_count": 1
+          },
+          "feature_source": "genome",
+          "status": "heuristic"
+        }
+      },
+      "validation": {
+        "structural_completeness": "complete",
+        "missing_components": [],
+        "solvability": "NOT_VERIFIED",
+        "answer_validation": "NOT_VERIFIED",
+        "uniqueness": "unknown",
+        "human_review_required": false,
+        "confidence": "high",
+        "graph_errors": []
+      },
+      "field_provenance": {
+        "knowledge.primary_concept": "inferred",
+        "knowledge.prerequisites": "inferred",
+        "knowledge.learning_objectives": "inferred",
+        "reasoning": "inferred",
+        "representation.input": "inferred",
+        "assessment.command_term": "calculated",
+        "assessment.answer_type": "calculated"
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "genome_id": "g-p3-a6",
+      "question_id": "p3-a6",
+      "parent_question_id": null,
+      "provenance": {
+        "origin": "source",
+        "document": "Synthetic Physics Paper 3",
+        "page": 1
+      },
+      "lineage": [],
+      "knowledge": {
+        "primary_concept": "Newton's second law",
+        "secondary_concepts": [
+          "components of weight"
+        ],
+        "prerequisites": [
+          "force",
+          "trigonometry"
+        ],
+        "learning_objectives": [
+          "F1 Apply Newton's second law F = ma"
+        ],
+        "topic": "Forces",
+        "subtopic": "Inclined planes"
+      },
+      "reasoning": {
+        "steps": [
+          {
+            "id": "s1",
+            "type": "read_representation"
+          },
+          {
+            "id": "s2",
+            "type": "construct_model"
+          },
+          {
+            "id": "s3",
+            "type": "apply_mathematics"
+          },
+          {
+            "id": "s4",
+            "type": "derive_result"
+          }
+        ],
+        "edges": [
+          [
+            "s1",
+            "s2"
+          ],
+          [
+            "s2",
+            "s3"
+          ],
+          [
+            "s3",
+            "s4"
+          ]
+        ],
+        "expected_inference": null,
+        "justification_required": false
+      },
+      "representation": {
+        "input": [
+          "verbal",
+          "diagram"
+        ],
+        "output": [
+          "numeric"
+        ],
+        "context": "inclined plane"
+      },
+      "constraints": {
+        "explicit": [],
+        "implicit": [],
+        "domain": [],
+        "boundary": [],
+        "units": [
+          "kg"
+        ],
+        "precision": null
+      },
+      "assessment": {
+        "command_term": "calculate",
+        "question_type": "calculation",
+        "cognitive_level": "application",
+        "max_marks": 2,
+        "answer_type": "numeric",
+        "expected_answer": null,
+        "answer_unit": "m/s^2",
+        "marking_components": [
+          {
+            "description": "Resolves weight along slope",
+            "marks": 1
+          },
+          {
+            "description": "Correct acceleration",
+            "marks": 1
+          }
+        ],
+        "difficulty_features": {
+          "math_complexity": 2
+        },
+        "difficulty": {
+          "model": "examdna-heuristic-v1",
+          "points": 11,
+          "band": "standard",
+          "features": {
+            "reasoning_stages": 4,
+            "prerequisite_count": 2,
+            "math_complexity": 2,
+            "interacting_constraints": 0,
+            "representation_count": 2
+          },
+          "feature_source": "genome",
+          "status": "heuristic"
+        }
+      },
+      "validation": {
+        "structural_completeness": "complete",
+        "missing_components": [],
+        "solvability": "NOT_VERIFIED",
+        "answer_validation": "NOT_VERIFIED",
+        "uniqueness": "unknown",
+        "human_review_required": false,
+        "confidence": "high",
+        "graph_errors": []
+      },
+      "field_provenance": {
+        "knowledge.primary_concept": "inferred",
+        "knowledge.secondary_concepts": "inferred",
+        "knowledge.prerequisites": "inferred",
+        "knowledge.learning_objectives": "inferred",
+        "reasoning": "inferred",
+        "representation.input": "inferred",
+        "assessment.command_term": "calculated",
+        "assessment.answer_type": "calculated"
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "genome_id": "g-p3-b1",
+      "question_id": "p3-b1",
+      "parent_question_id": null,
+      "provenance": {
+        "origin": "source",
+        "document": "Synthetic Physics Paper 3",
+        "page": 2
+      },
+      "lineage": [],
+      "knowledge": {
+        "primary_concept": "Newton's second law",
+        "secondary_concepts": [
+          "weight",
+          "Newton's first law"
+        ],
+        "prerequisites": [
+          "force",
+          "acceleration"
+        ],
+        "learning_objectives": [
+          "F1 Apply Newton's second law F = ma",
+          "F3 Explain motion using Newton's first law"
+        ],
+        "topic": "Forces",
+        "subtopic": "Newton's second law"
+      },
+      "reasoning": {
+        "steps": [
+          {
+            "id": "s1",
+            "type": "read_given"
+          },
+          {
+            "id": "s2",
+            "type": "select_relation"
+          },
+          {
+            "id": "s3",
+            "type": "apply_mathematics"
+          },
+          {
+            "id": "s4",
+            "type": "construct_model"
+          },
+          {
+            "id": "s5",
+            "type": "apply_mathematics"
+          },
+          {
+            "id": "s6",
+            "type": "derive_result"
+          },
+          {
+            "id": "s7",
+            "type": "compare"
+          },
+          {
+            "id": "s8",
+            "type": "justify"
+          }
+        ],
+        "edges": [
+          [
+            "s1",
+            "s2"
+          ],
+          [
+            "s2",
+            "s3"
+          ],
+          [
+            "s3",
+            "s4"
+          ],
+          [
+            "s4",
+            "s5"
+          ],
+          [
+            "s5",
+            "s6"
+          ],
+          [
+            "s6",
+            "s7"
+          ],
+          [
+            "s7",
+            "s8"
+          ]
+        ],
+        "expected_inference": null,
+        "justification_required": false
+      },
+      "representation": {
+        "input": [
+          "verbal"
+        ],
+        "output": [
+          "numeric"
+        ],
+        "context": "building lift"
+      },
+      "constraints": {
+        "explicit": [
+          "acceleration upward and uniform"
+        ],
+        "implicit": [],
+        "domain": [],
+        "boundary": [],
+        "units": [
+          "kg",
+          "m/s^2"
+        ],
+        "precision": null
+      },
+      "assessment": {
+        "command_term": "calculate",
+        "question_type": "mixed",
+        "cognitive_level": "multi_step_reasoning",
+        "max_marks": 7,
+        "answer_type": "mixed",
+        "expected_answer": "(a) 8820 N (b) 1.0 × 10^4 N (10 170 N) (c) at constant speed the resultant force is zero, so tension equals weight",
+        "answer_unit": "N",
+        "marking_components": [
+          {
+            "description": "8820 N",
+            "marks": 1
+          },
+          {
+            "description": "Resultant force T − mg = ma",
+            "marks": 1
+          },
+          {
+            "description": "T = m(g + a)",
+            "marks": 1
+          },
+          {
+            "description": "10 170 N",
+            "marks": 1
+          },
+          {
+            "description": "Constant speed means zero acceleration",
+            "marks": 1
+          },
+          {
+            "description": "Resultant force is zero",
+            "marks": 1
+          },
+          {
+            "description": "So tension equals weight, smaller than before",
+            "marks": 1
+          }
+        ],
+        "difficulty_features": {
+          "math_complexity": 2
+        },
+        "difficulty": {
+          "model": "examdna-heuristic-v1",
+          "points": 13,
+          "band": "challenging",
+          "features": {
+            "reasoning_stages": 7,
+            "prerequisite_count": 2,
+            "math_complexity": 2,
+            "interacting_constraints": 1,
+            "representation_count": 1
+          },
+          "feature_source": "genome",
+          "status": "heuristic"
+        }
+      },
+      "validation": {
+        "structural_completeness": "complete",
+        "missing_components": [],
+        "solvability": "NOT_VERIFIED",
+        "answer_validation": "NOT_VERIFIED",
+        "uniqueness": "unknown",
+        "human_review_required": false,
+        "confidence": "high",
+        "graph_errors": []
+      },
+      "field_provenance": {
+        "knowledge.primary_concept": "inferred",
+        "knowledge.secondary_concepts": "inferred",
+        "knowledge.prerequisites": "inferred",
+        "knowledge.learning_objectives": "inferred",
+        "reasoning": "inferred",
+        "representation.input": "inferred",
+        "assessment.command_term": "calculated",
+        "assessment.answer_type": "calculated"
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "genome_id": "g-p3-b2",
+      "question_id": "p3-b2",
+      "parent_question_id": null,
+      "provenance": {
+        "origin": "source",
+        "document": "Synthetic Physics Paper 3",
+        "page": 2
+      },
+      "lineage": [],
+      "knowledge": {
+        "primary_concept": "efficiency",
+        "secondary_concepts": [
+          "gravitational potential energy",
+          "power"
+        ],
+        "prerequisites": [
+          "energy",
+          "power"
+        ],
+        "learning_objectives": [
+          "E1 Calculate gravitational potential and kinetic energy",
+          "E2 Calculate power and efficiency"
+        ],
+        "topic": "Energy",
+        "subtopic": "Efficiency"
+      },
+      "reasoning": {
+        "steps": [
+          {
+            "id": "s1",
+            "type": "read_given"
+          },
+          {
+            "id": "s2",
+            "type": "select_relation"
+          },
+          {
+            "id": "s3",
+            "type": "apply_mathematics"
+          },
+          {
+            "id": "s4",
+            "type": "select_relation"
+          },
+          {
+            "id": "s5",
+            "type": "apply_mathematics"
+          },
+          {
+            "id": "s6",
+            "type": "construct_model"
+          },
+          {
+            "id": "s7",
+            "type": "derive_result"
+          }
+        ],
+        "edges": [
+          [
+            "s1",
+            "s2"
+          ],
+          [
+            "s2",
+            "s3"
+          ],
+          [
+            "s1",
+            "s4"
+          ],
+          [
+            "s4",
+            "s5"
+          ],
+          [
+            "s3",
+            "s6"
+          ],
+          [
+            "s5",
+            "s6"
+          ],
+          [
+            "s6",
+            "s7"
+          ]
+        ],
+        "expected_inference": null,
+        "justification_required": false
+      },
+      "representation": {
+        "input": [
+          "verbal"
+        ],
+        "output": [
+          "numeric"
+        ],
+        "context": "construction and engineering"
+      },
+      "constraints": {
+        "explicit": [],
+        "implicit": [],
+        "domain": [],
+        "boundary": [],
+        "units": [
+          "W",
+          "kg",
+          "m",
+          "m/s^2",
+          "s"
+        ],
+        "precision": null
+      },
+      "assessment": {
+        "command_term": "calculate",
+        "question_type": "calculation",
+        "cognitive_level": "multi_step_reasoning",
+        "max_marks": 7,
+        "answer_type": "numeric",
+        "expected_answer": "(a) 980 J (b) 1600 J (c) 0.61 (61 %)",
+        "answer_unit": "J",
+        "marking_components": [
+          {
+            "description": "mgh",
+            "marks": 1
+          },
+          {
+            "description": "980 J",
+            "marks": 1
+          },
+          {
+            "description": "E = Pt",
+            "marks": 1
+          },
+          {
+            "description": "1600 J",
+            "marks": 1
+          },
+          {
+            "description": "efficiency = useful/total",
+            "marks": 1
+          },
+          {
+            "description": "Uses 980 and 1600",
+            "marks": 1
+          },
+          {
+            "description": "0.61 or 61 %",
+            "marks": 1
+          }
+        ],
+        "difficulty_features": {
+          "math_complexity": 2
+        },
+        "difficulty": {
+          "model": "examdna-heuristic-v1",
+          "points": 12,
+          "band": "standard",
+          "features": {
+            "reasoning_stages": 6,
+            "prerequisite_count": 2,
+            "math_complexity": 2,
+            "interacting_constraints": 0,
+            "representation_count": 1
+          },
+          "feature_source": "genome",
+          "status": "heuristic"
+        }
+      },
+      "validation": {
+        "structural_completeness": "complete",
+        "missing_components": [],
+        "solvability": "NOT_VERIFIED",
+        "answer_validation": "NOT_VERIFIED",
+        "uniqueness": "unknown",
+        "human_review_required": false,
+        "confidence": "high",
+        "graph_errors": []
+      },
+      "field_provenance": {
+        "knowledge.primary_concept": "inferred",
+        "knowledge.secondary_concepts": "inferred",
+        "knowledge.prerequisites": "inferred",
+        "knowledge.learning_objectives": "inferred",
+        "reasoning": "inferred",
+        "representation.input": "inferred",
+        "assessment.command_term": "calculated",
+        "assessment.answer_type": "calculated"
+      }
+    },
+    {
+      "schema_version": "0.1.0",
+      "genome_id": "g-p3-b3",
+      "question_id": "p3-b3",
+      "parent_question_id": null,
+      "provenance": {
+        "origin": "source",
+        "document": "Synthetic Physics Paper 3",
+        "page": 2
+      },
+      "lineage": [],
+      "knowledge": {
+        "primary_concept": "refraction",
+        "secondary_concepts": [
+          "wave speed"
+        ],
+        "prerequisites": [
+          "wave equation"
+        ],
+        "learning_objectives": [
+          "W2 Describe and calculate refraction of light",
+          "W1 Use the wave equation v = f λ"
+        ],
+        "topic": "Waves",
+        "subtopic": "Refraction"
+      },
+      "reasoning": {
+        "steps": [
+          {
+            "id": "s1",
+            "type": "read_given"
+          },
+          {
+            "id": "s2",
+            "type": "select_relation"
+          },
+          {
+            "id": "s3",
+            "type": "apply_mathematics"
+          },
+          {
+            "id": "s4",
+            "type": "recall_fact"
+          },
+          {
+            "id": "s5",
+            "type": "justify"
+          },
+          {
+            "id": "s6",
+            "type": "recall_fact"
+          },
+          {
+            "id": "s7",
+            "type": "justify"
+          }
+        ],
+        "edges": [
+          [
+            "s1",
+            "s2"
+          ],
+          [
+            "s2",
+            "s3"
+          ],
+          [
+            "s3",
+            "s4"
+          ],
+          [
+            "s4",
+            "s5"
+          ],
+          [
+            "s3",
+            "s6"
+          ],
+          [
+            "s6",
+            "s7"
+          ]
+        ],
+        "expected_inference": null,
+        "justification_required": false
+      },
+      "representation": {
+        "input": [
+          "verbal"
+        ],
+        "output": [
+          "numeric"
+        ],
+        "context": "optics"
+      },
+      "constraints": {
+        "explicit": [],
+        "implicit": [],
+        "domain": [],
+        "boundary": [],
+        "units": [
+          "1",
+          "m/s"
+        ],
+        "precision": null
+      },
+      "assessment": {
+        "command_term": "calculate",
+        "question_type": "mixed",
+        "cognitive_level": "interpretation",
+        "max_marks": 6,
+        "answer_type": "mixed",
+        "expected_answer": "(a) 2.0 × 10^8 m/s (b) speed decreases on entering the denser medium (c) unchanged; set by the source",
+        "answer_unit": "m/s",
+        "marking_components": [
+          {
+            "description": "v = c/n",
+            "marks": 1
+          },
+          {
+            "description": "2.0 × 10⁸ m/s",
+            "marks": 1
+          },
+          {
+            "description": "Speed decreases in glass",
+            "marks": 1
+          },
+          {
+            "description": "Wavefront slows unevenly, so direction changes",
+            "marks": 1
+          },
+          {
+            "description": "Frequency unchanged",
+            "marks": 1
+          },
+          {
+            "description": "Determined by the source",
+            "marks": 1
+          }
+        ],
+        "difficulty_features": {
+          "math_complexity": 1
+        },
+        "difficulty": {
+          "model": "examdna-heuristic-v1",
+          "points": 9,
+          "band": "standard",
+          "features": {
+            "reasoning_stages": 6,
+            "prerequisite_count": 1,
+            "math_complexity": 1,
+            "interacting_constraints": 0,
+            "representation_count": 1
+          },
+          "feature_source": "genome",
+          "status": "heuristic"
+        }
+      },
+      "validation": {
+        "structural_completeness": "complete",
+        "missing_components": [],
+        "solvability": "NOT_VERIFIED",
+        "answer_validation": "NOT_VERIFIED",
+        "uniqueness": "unknown",
+        "human_review_required": false,
+        "confidence": "high",
+        "graph_errors": []
+      },
+      "field_provenance": {
+        "knowledge.primary_concept": "inferred",
+        "knowledge.secondary_concepts": "inferred",
+        "knowledge.prerequisites": "inferred",
+        "knowledge.learning_objectives": "inferred",
+        "reasoning": "inferred",
+        "representation.input": "inferred",
+        "assessment.command_term": "calculated",
+        "assessment.answer_type": "calculated"
+      }
+    }
+  ],
+  "report": {
+    "count": 27,
+    "complete": 27,
+    "partial": 0,
+    "minimal": 0,
+    "errors": {}
+  }
+}

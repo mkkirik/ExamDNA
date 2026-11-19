@@ -1,0 +1,1910 @@
+{
+  "annotations": {
+    "p1-a1": {
+      "knowledge": {
+        "primary_concept": "vector quantity",
+        "secondary_concepts": [],
+        "prerequisites": [
+          "scalar quantity"
+        ]
+      },
+      "reasoning": {
+        "steps": [
+          {
+            "id": "s1",
+            "type": "recall_fact"
+          }
+        ],
+        "edges": []
+      },
+      "representation": {
+        "input": [
+          "verbal"
+        ],
+        "output": [],
+        "context": "abstract"
+      },
+      "constraints": {
+        "explicit": [],
+        "implicit": [],
+        "boundary": []
+      },
+      "assessment": {
+        "difficulty_features": {
+          "math_complexity": 0
+        },
+        "answer_type": "choice"
+      }
+    },
+    "p1-a2": {
+      "knowledge": {
+        "primary_concept": "uniform acceleration",
+        "secondary_concepts": [
+          "velocity"
+        ],
+        "prerequisites": [
+          "velocity"
+        ]
+      },
+      "reasoning": {
+        "steps": [
+          {
+            "id": "s1",
+            "type": "read_given"
+          },
+          {
+            "id": "s2",
+            "type": "select_relation"
+          },
+          {
+            "id": "s3",
+            "type": "apply_mathematics"
+          },
+          {
+            "id": "s4",
+            "type": "derive_result"
+          }
+        ],
+        "edges": [
+          [
+            "s1",
+            "s2"
+          ],
+          [
+            "s2",
+            "s3"
+          ],
+          [
+            "s3",
+            "s4"
+          ]
+        ]
+      },
+      "representation": {
+        "input": [
+          "verbal"
+        ],
+        "output": [
+          "numeric"
+        ],
+        "context": "cycling"
+      },
+      "constraints": {
+        "explicit": [],
+        "implicit": [],
+        "boundary": []
+      },
+      "assessment": {
+        "difficulty_features": {
+          "math_complexity": 1
+        }
+      }
+    },
+    "p1-a3": {
+      "knowledge": {
+        "primary_concept": "Newton's second law",
+        "secondary_concepts": [
+          "acceleration"
+        ],
+        "prerequisites": [
+          "force",
+          "mass"
+        ]
+      },
+      "reasoning": {
+        "steps": [
+          {
+            "id": "s1",
+            "type": "read_given"
+          },
+          {
+            "id": "s2",
+            "type": "select_relation"
+          },
+          {
+            "id": "s3",
+            "type": "apply_mathematics"
+          },
+          {
+            "id": "s4",
+            "type": "derive_result"
+          }
+        ],
+        "edges": [
+          [
+            "s1",
+            "s2"
+          ],
+          [
+            "s2",
+            "s3"
+          ],
+          [
+            "s3",
+            "s4"
+          ]
+        ]
+      },
+      "representation": {
+        "input": [
+          "verbal"
+        ],
+        "output": [
+          "numeric"
+        ],
+        "context": "laboratory trolley"
+      },
+      "constraints": {
+        "explicit": [],
+        "implicit": [],
+        "boundary": []
+      },
+      "assessment": {
+        "difficulty_features": {
+          "math_complexity": 1
+        }
+      }
+    },
+    "p1-a4": {
+      "knowledge": {
+        "primary_concept": "power",
+        "secondary_concepts": [
+          "energy transfer"
+        ],
+        "prerequisites": [
+          "energy"
+        ]
+      },
+      "reasoning": {
+        "steps": [
+          {
+            "id": "s1",
+            "type": "read_given"
+          },
+          {
+            "id": "s2",
+            "type": "select_relation"
+          },
+          {
+            "id": "s3",
+            "type": "apply_mathematics"
+          },
+          {
+            "id": "s4",
+            "type": "derive_result"
+          }
+        ],
+        "edges": [
+          [
+            "s1",
+            "s2"
+          ],
+          [
+            "s2",
+            "s3"
+          ],
+          [
+            "s3",
+            "s4"
+          ]
+        ]
+      },
+      "representation": {
+        "input": [
+          "verbal"
+        ],
+        "output": [
+          "numeric"
+        ],
+        "context": "household lamp"
+      },
+      "constraints": {
+        "explicit": [],
+        "implicit": [],
+        "boundary": []
+      },
+      "assessment": {
+        "difficulty_features": {
+          "math_complexity": 1
+        }
+      }
+    },
+    "p1-a5": {
+      "knowledge": {
+        "primary_concept": "wave equation",
+        "secondary_concepts": [
+          "frequency",
+          "wavelength"
+        ],
+        "prerequisites": [
+          "frequency"
+        ]
+      },
+      "reasoning": {
+        "steps": [
+          {
+            "id": "s1",
+            "type": "read_given"
+          },
+          {
+            "id": "s2",
+            "type": "select_relation"
+          },
+          {
+            "id": "s3",
+            "type": "apply_mathematics"
+          }
+        ],
+        "edges": [
+          [
+            "s1",
+            "s2"
+          ],
+          [
+            "s2",
+            "s3"
+          ]
+        ]
+      },
+      "representation": {
+        "input": [
+          "verbal"
+        ],
+        "output": [],
+        "context": "abstract"
+      },
+      "constraints": {
+        "explicit": [],
+        "implicit": [],
+        "boundary": []
+      },
+      "assessment": {
+        "difficulty_features": {
+          "math_complexity": 1
+        },
+        "answer_type": "choice"
+      }
+    },
+    "p1-a6": {
+      "knowledge": {
+        "primary_concept": "Ohm's law",
+        "secondary_concepts": [
+          "resistance"
+        ],
+        "prerequisites": [
+          "current",
+          "potential difference"
+        ]
+      },
+      "reasoning": {
+        "steps": [
+          {
+            "id": "s1",
+            "type": "read_given"
+          },
+          {
+            "id": "s2",
+            "type": "select_relation"
+          },
+          {
+            "id": "s3",
+            "type": "apply_mathematics"
+          },
+          {
+            "id": "s4",
+            "type": "derive_result"
+          }
+        ],
+        "edges": [
+          [
+            "s1",
+            "s2"
+          ],
+          [
+            "s2",
+            "s3"
+          ],
+          [
+            "s3",
+            "s4"
+          ]
+        ]
+      },
+      "representation": {
+        "input": [
+          "verbal"
+        ],
+        "output": [
+          "numeric"
+        ],
+        "context": "circuit"
+      },
+      "constraints": {
+        "explicit": [],
+        "implicit": [],
+        "boundary": []
+      },
+      "assessment": {
+        "difficulty_features": {
+          "math_complexity": 1
+        }
+      }
+    },
+    "p1-b1": {
+      "knowledge": {
+        "primary_concept": "uniformly accelerated motion",
+        "secondary_concepts": [
+          "friction",
+          "stopping distance"
+        ],
+        "prerequisites": [
+          "acceleration",
+          "velocity"
+        ]
+      },
+      "reasoning": {
+        "steps": [
+          {
+            "id": "s1",
+            "type": "read_given"
+          },
+          {
+            "id": "s2",
+            "type": "identify_constraint"
+          },
+          {
+            "id": "s3",
+            "type": "select_relation"
+          },
+          {
+            "id": "s4",
+            "type": "apply_mathematics"
+          },
+          {
+            "id": "s5",
+            "type": "derive_result"
+          },
+          {
+            "id": "s6",
+            "type": "select_relation"
+          },
+          {
+            "id": "s7",
+            "type": "derive_result"
+          },
+          {
+            "id": "s8",
+            "type": "justify"
+          }
+        ],
+        "edges": [
+          [
+            "s1",
+            "s2"
+          ],
+          [
+            "s2",
+            "s3"
+          ],
+          [
+            "s3",
+            "s4"
+          ],
+          [
+            "s4",
+            "s5"
+          ],
+          [
+            "s5",
+            "s6"
+          ],
+          [
+            "s6",
+            "s7"
+          ],
+          [
+            "s2",
+            "s8"
+          ]
+        ]
+      },
+      "representation": {
+        "input": [
+          "verbal"
+        ],
+        "output": [
+          "numeric"
+        ],
+        "context": "road transport"
+      },
+      "constraints": {
+        "explicit": [
+          "deceleration is uniform"
+        ],
+        "implicit": [],
+        "boundary": [
+          "final velocity is zero"
+        ]
+      },
+      "assessment": {
+        "difficulty_features": {
+          "math_complexity": 2
+        }
+      }
+    },
+    "p1-b2": {
+      "knowledge": {
+        "primary_concept": "conservation of energy",
+        "secondary_concepts": [
+          "gravitational potential energy",
+          "kinetic energy"
+        ],
+        "prerequisites": [
+          "energy stores",
+          "work"
+        ]
+      },
+      "reasoning": {
+        "steps": [
+          {
+            "id": "s1",
+            "type": "read_given"
+          },
+          {
+            "id": "s2",
+            "type": "select_relation"
+          },
+          {
+            "id": "s3",
+            "type": "apply_mathematics"
+          },
+          {
+            "id": "s4",
+            "type": "construct_model"
+          },
+          {
+            "id": "s5",
+            "type": "apply_mathematics"
+          },
+          {
+            "id": "s6",
+            "type": "derive_result"
+          },
+          {
+            "id": "s7",
+            "type": "interpret_result"
+          }
+        ],
+        "edges": [
+          [
+            "s1",
+            "s2"
+          ],
+          [
+            "s2",
+            "s3"
+          ],
+          [
+            "s3",
+            "s4"
+          ],
+          [
+            "s4",
+            "s5"
+          ],
+          [
+            "s5",
+            "s6"
+          ],
+          [
+            "s6",
+            "s7"
+          ]
+        ]
+      },
+      "representation": {
+        "input": [
+          "verbal"
+        ],
+        "output": [
+          "numeric"
+        ],
+        "context": "dropped ball"
+      },
+      "constraints": {
+        "explicit": [
+          "air resistance is negligible"
+        ],
+        "implicit": [],
+        "boundary": [
+          "released from rest"
+        ]
+      },
+      "assessment": {
+        "difficulty_features": {
+          "math_complexity": 2
+        }
+      }
+    },
+    "p1-b3": {
+      "knowledge": {
+        "primary_concept": "series circuit",
+        "secondary_concepts": [
+          "Ohm's law"
+        ],
+        "prerequisites": [
+          "resistance",
+          "current"
+        ]
+      },
+      "reasoning": {
+        "steps": [
+          {
+            "id": "s1",
+            "type": "read_given"
+          },
+          {
+            "id": "s2",
+            "type": "construct_model"
+          },
+          {
+            "id": "s3",
+            "type": "apply_mathematics"
+          },
+          {
+            "id": "s4",
+            "type": "select_relation"
+          },
+          {
+            "id": "s5",
+            "type": "apply_mathematics"
+          },
+          {
+            "id": "s6",
+            "type": "derive_result"
+          }
+        ],
+        "edges": [
+          [
+            "s1",
+            "s2"
+          ],
+          [
+            "s2",
+            "s3"
+          ],
+          [
+            "s3",
+            "s4"
+          ],
+          [
+            "s4",
+            "s5"
+          ],
+          [
+            "s5",
+            "s6"
+          ]
+        ]
+      },
+      "representation": {
+        "input": [
+          "verbal"
+        ],
+        "output": [
+          "numeric"
+        ],
+        "context": "circuit"
+      },
+      "constraints": {
+        "explicit": [
+          "negligible internal resistance"
+        ],
+        "implicit": [],
+        "boundary": []
+      },
+      "assessment": {
+        "difficulty_features": {
+          "math_complexity": 1
+        }
+      }
+    },
+    "p2-a1": {
+      "knowledge": {
+        "primary_concept": "momentum",
+        "secondary_concepts": [],
+        "prerequisites": [
+          "mass",
+          "velocity"
+        ]
+      },
+      "reasoning": {
+        "steps": [
+          {
+            "id": "s1",
+            "type": "recall_fact"
+          }
+        ],
+        "edges": []
+      },
+      "representation": {
+        "input": [
+          "verbal"
+        ],
+        "output": [],
+        "context": "abstract"
+      },
+      "constraints": {
+        "explicit": [],
+        "implicit": [],
+        "boundary": []
+      },
+      "assessment": {
+        "difficulty_features": {
+          "math_complexity": 0
+        },
+        "answer_type": "choice"
+      }
+    },
+    "p2-a2": {
+      "knowledge": {
+        "primary_concept": "momentum",
+        "secondary_concepts": [
+          "velocity"
+        ],
+        "prerequisites": [
+          "mass",
+          "velocity"
+        ]
+      },
+      "reasoning": {
+        "steps": [
+          {
+            "id": "s1",
+            "type": "read_given"
+          },
+          {
+            "id": "s2",
+            "type": "select_relation"
+          },
+          {
+            "id": "s3",
+            "type": "apply_mathematics"
+          },
+          {
+            "id": "s4",
+            "type": "derive_result"
+          }
+        ],
+        "edges": [
+          [
+            "s1",
+            "s2"
+          ],
+          [
+            "s2",
+            "s3"
+          ],
+          [
+            "s3",
+            "s4"
+          ]
+        ]
+      },
+      "representation": {
+        "input": [
+          "verbal"
+        ],
+        "output": [
+          "numeric"
+        ],
+        "context": "road transport"
+      },
+      "constraints": {
+        "explicit": [],
+        "implicit": [],
+        "boundary": []
+      },
+      "assessment": {
+        "difficulty_features": {
+          "math_complexity": 1
+        }
+      }
+    },
+    "p2-a3": {
+      "knowledge": {
+        "primary_concept": "Hooke's law",
+        "secondary_concepts": [
+          "elastic deformation"
+        ],
+        "prerequisites": [
+          "force"
+        ]
+      },
+      "reasoning": {
+        "steps": [
+          {
+            "id": "s1",
+            "type": "read_given"
+          },
+          {
+            "id": "s2",
+            "type": "select_relation"
+          },
+          {
+            "id": "s3",
+            "type": "apply_mathematics"
+          },
+          {
+            "id": "s4",
+            "type": "derive_result"
+          }
+        ],
+        "edges": [
+          [
+            "s1",
+            "s2"
+          ],
+          [
+            "s2",
+            "s3"
+          ],
+          [
+            "s3",
+            "s4"
+          ]
+        ]
+      },
+      "representation": {
+        "input": [
+          "verbal"
+        ],
+        "output": [
+          "numeric"
+        ],
+        "context": "spring"
+      },
+      "constraints": {
+        "explicit": [
+          "limit of proportionality not exceeded"
+        ],
+        "implicit": [],
+        "boundary": []
+      },
+      "assessment": {
+        "difficulty_features": {
+          "math_complexity": 1
+        }
+      }
+    },
+    "p2-a4": {
+      "knowledge": {
+        "primary_concept": "wave equation",
+        "secondary_concepts": [
+          "sound"
+        ],
+        "prerequisites": [
+          "frequency"
+        ]
+      },
+      "reasoning": {
+        "steps": [
+          {
+            "id": "s1",
+            "type": "read_given"
+          },
+          {
+            "id": "s2",
+            "type": "select_relation"
+          },
+          {
+            "id": "s3",
+            "type": "apply_mathematics"
+          }
+        ],
+        "edges": [
+          [
+            "s1",
+            "s2"
+          ],
+          [
+            "s2",
+            "s3"
+          ]
+        ]
+      },
+      "representation": {
+        "input": [
+          "verbal"
+        ],
+        "output": [],
+        "context": "sound"
+      },
+      "constraints": {
+        "explicit": [],
+        "implicit": [],
+        "boundary": []
+      },
+      "assessment": {
+        "difficulty_features": {
+          "math_complexity": 1
+        },
+        "answer_type": "choice"
+      }
+    },
+    "p2-a5": {
+      "knowledge": {
+        "primary_concept": "electric current",
+        "secondary_concepts": [
+          "charge"
+        ],
+        "prerequisites": [
+          "charge"
+        ]
+      },
+      "reasoning": {
+        "steps": [
+          {
+            "id": "s1",
+            "type": "read_given"
+          },
+          {
+            "id": "s2",
+            "type": "select_relation"
+          },
+          {
+            "id": "s3",
+            "type": "apply_mathematics"
+          },
+          {
+            "id": "s4",
+            "type": "derive_result"
+          }
+        ],
+        "edges": [
+          [
+            "s1",
+            "s2"
+          ],
+          [
+            "s2",
+            "s3"
+          ],
+          [
+            "s3",
+            "s4"
+          ]
+        ]
+      },
+      "representation": {
+        "input": [
+          "verbal"
+        ],
+        "output": [
+          "numeric"
+        ],
+        "context": "household lamp"
+      },
+      "constraints": {
+        "explicit": [],
+        "implicit": [],
+        "boundary": []
+      },
+      "assessment": {
+        "difficulty_features": {
+          "math_complexity": 1
+        }
+      }
+    },
+    "p2-a6": {
+      "knowledge": {
+        "primary_concept": "Newton's first law",
+        "secondary_concepts": [
+          "resultant force"
+        ],
+        "prerequisites": [
+          "force"
+        ]
+      },
+      "reasoning": {
+        "steps": [
+          {
+            "id": "s1",
+            "type": "identify_constraint"
+          },
+          {
+            "id": "s2",
+            "type": "recall_fact"
+          },
+          {
+            "id": "s3",
+            "type": "justify"
+          }
+        ],
+        "edges": [
+          [
+            "s1",
+            "s2"
+          ],
+          [
+            "s2",
+            "s3"
+          ]
+        ]
+      },
+      "representation": {
+        "input": [
+          "verbal"
+        ],
+        "output": [],
+        "context": "ice hockey"
+      },
+      "constraints": {
+        "explicit": [
+          "frictionless surface"
+        ],
+        "implicit": [],
+        "boundary": []
+      },
+      "assessment": {
+        "difficulty_features": {
+          "math_complexity": 0
+        },
+        "answer_type": "short_text"
+      }
+    },
+    "p2-b1": {
+      "knowledge": {
+        "primary_concept": "conservation of momentum",
+        "secondary_concepts": [
+          "kinetic energy",
+          "inelastic collision"
+        ],
+        "prerequisites": [
+          "momentum"
+        ]
+      },
+      "reasoning": {
+        "steps": [
+          {
+            "id": "s1",
+            "type": "read_given"
+          },
+          {
+            "id": "s2",
+            "type": "select_relation"
+          },
+          {
+            "id": "s3",
+            "type": "apply_mathematics"
+          },
+          {
+            "id": "s4",
+            "type": "construct_model"
+          },
+          {
+            "id": "s5",
+            "type": "derive_result"
+          },
+          {
+            "id": "s6",
+            "type": "select_relation"
+          },
+          {
+            "id": "s7",
+            "type": "apply_mathematics"
+          },
+          {
+            "id": "s8",
+            "type": "compare"
+          }
+        ],
+        "edges": [
+          [
+            "s1",
+            "s2"
+          ],
+          [
+            "s2",
+            "s3"
+          ],
+          [
+            "s3",
+            "s4"
+          ],
+          [
+            "s4",
+            "s5"
+          ],
+          [
+            "s5",
+            "s6"
+          ],
+          [
+            "s1",
+            "s6"
+          ],
+          [
+            "s6",
+            "s7"
+          ],
+          [
+            "s7",
+            "s8"
+          ]
+        ]
+      },
+      "representation": {
+        "input": [
+          "verbal"
+        ],
+        "output": [
+          "numeric"
+        ],
+        "context": "laboratory trolley"
+      },
+      "constraints": {
+        "explicit": [
+          "trolleys stick together"
+        ],
+        "implicit": [
+          "no external horizontal force"
+        ],
+        "boundary": []
+      },
+      "assessment": {
+        "difficulty_features": {
+          "math_complexity": 2
+        }
+      }
+    },
+    "p2-b2": {
+      "knowledge": {
+        "primary_concept": "motion data interpretation",
+        "secondary_concepts": [
+          "uniformly accelerated motion"
+        ],
+        "prerequisites": [
+          "velocity",
+          "acceleration"
+        ]
+      },
+      "reasoning": {
+        "steps": [
+          {
+            "id": "s1",
+            "type": "read_representation"
+          },
+          {
+            "id": "s2",
+            "type": "select_relation"
+          },
+          {
+            "id": "s3",
+            "type": "apply_mathematics"
+          },
+          {
+            "id": "s4",
+            "type": "construct_model"
+          },
+          {
+            "id": "s5",
+            "type": "apply_mathematics"
+          },
+          {
+            "id": "s6",
+            "type": "derive_result"
+          },
+          {
+            "id": "s7",
+            "type": "interpret_result"
+          }
+        ],
+        "edges": [
+          [
+            "s1",
+            "s2"
+          ],
+          [
+            "s2",
+            "s3"
+          ],
+          [
+            "s3",
+            "s4"
+          ],
+          [
+            "s4",
+            "s5"
+          ],
+          [
+            "s5",
+            "s6"
+          ],
+          [
+            "s6",
+            "s7"
+          ]
+        ]
+      },
+      "representation": {
+        "input": [
+          "verbal",
+          "table"
+        ],
+        "output": [
+          "numeric"
+        ],
+        "context": "sports and athletics"
+      },
+      "constraints": {
+        "explicit": [],
+        "implicit": [],
+        "boundary": []
+      },
+      "assessment": {
+        "difficulty_features": {
+          "math_complexity": 2
+        }
+      }
+    },
+    "p2-b3": {
+      "knowledge": {
+        "primary_concept": "electrical power",
+        "secondary_concepts": [
+          "energy transfer"
+        ],
+        "prerequisites": [
+          "current",
+          "potential difference"
+        ]
+      },
+      "reasoning": {
+        "steps": [
+          {
+            "id": "s1",
+            "type": "read_given"
+          },
+          {
+            "id": "s2",
+            "type": "select_relation"
+          },
+          {
+            "id": "s3",
+            "type": "apply_mathematics"
+          },
+          {
+            "id": "s4",
+            "type": "select_relation"
+          },
+          {
+            "id": "s5",
+            "type": "apply_mathematics"
+          },
+          {
+            "id": "s6",
+            "type": "justify"
+          }
+        ],
+        "edges": [
+          [
+            "s1",
+            "s2"
+          ],
+          [
+            "s2",
+            "s3"
+          ],
+          [
+            "s3",
+            "s4"
+          ],
+          [
+            "s4",
+            "s5"
+          ],
+          [
+            "s1",
+            "s6"
+          ]
+        ]
+      },
+      "representation": {
+        "input": [
+          "verbal"
+        ],
+        "output": [
+          "numeric"
+        ],
+        "context": "household appliances"
+      },
+      "constraints": {
+        "explicit": [],
+        "implicit": [],
+        "boundary": []
+      },
+      "assessment": {
+        "difficulty_features": {
+          "math_complexity": 1
+        }
+      }
+    },
+    "p3-a1": {
+      "knowledge": {
+        "primary_concept": "power",
+        "secondary_concepts": [],
+        "prerequisites": [
+          "energy"
+        ]
+      },
+      "reasoning": {
+        "steps": [
+          {
+            "id": "s1",
+            "type": "recall_fact"
+          }
+        ],
+        "edges": []
+      },
+      "representation": {
+        "input": [
+          "verbal"
+        ],
+        "output": [],
+        "context": "abstract"
+      },
+      "constraints": {
+        "explicit": [],
+        "implicit": [],
+        "boundary": []
+      },
+      "assessment": {
+        "difficulty_features": {
+          "math_complexity": 0
+        },
+        "answer_type": "choice"
+      }
+    },
+    "p3-a2": {
+      "knowledge": {
+        "primary_concept": "gravitational potential energy",
+        "secondary_concepts": [],
+        "prerequisites": [
+          "weight"
+        ]
+      },
+      "reasoning": {
+        "steps": [
+          {
+            "id": "s1",
+            "type": "read_given"
+          },
+          {
+            "id": "s2",
+            "type": "select_relation"
+          },
+          {
+            "id": "s3",
+            "type": "apply_mathematics"
+          },
+          {
+            "id": "s4",
+            "type": "derive_result"
+          }
+        ],
+        "edges": [
+          [
+            "s1",
+            "s2"
+          ],
+          [
+            "s2",
+            "s3"
+          ],
+          [
+            "s3",
+            "s4"
+          ]
+        ]
+      },
+      "representation": {
+        "input": [
+          "verbal"
+        ],
+        "output": [
+          "numeric"
+        ],
+        "context": "climbing"
+      },
+      "constraints": {
+        "explicit": [],
+        "implicit": [],
+        "boundary": []
+      },
+      "assessment": {
+        "difficulty_features": {
+          "math_complexity": 1
+        }
+      }
+    },
+    "p3-a3": {
+      "knowledge": {
+        "primary_concept": "projectile motion",
+        "secondary_concepts": [
+          "uniformly accelerated motion"
+        ],
+        "prerequisites": [
+          "acceleration",
+          "vector components"
+        ]
+      },
+      "reasoning": {
+        "steps": [
+          {
+            "id": "s1",
+            "type": "read_given"
+          },
+          {
+            "id": "s2",
+            "type": "identify_constraint"
+          },
+          {
+            "id": "s3",
+            "type": "construct_model"
+          },
+          {
+            "id": "s4",
+            "type": "select_relation"
+          },
+          {
+            "id": "s5",
+            "type": "apply_mathematics"
+          },
+          {
+            "id": "s6",
+            "type": "derive_result"
+          }
+        ],
+        "edges": [
+          [
+            "s1",
+            "s2"
+          ],
+          [
+            "s2",
+            "s3"
+          ],
+          [
+            "s3",
+            "s4"
+          ],
+          [
+            "s4",
+            "s5"
+          ],
+          [
+            "s5",
+            "s6"
+          ]
+        ]
+      },
+      "representation": {
+        "input": [
+          "verbal"
+        ],
+        "output": [
+          "numeric"
+        ],
+        "context": "table-top experiment"
+      },
+      "constraints": {
+        "explicit": [
+          "air resistance negligible"
+        ],
+        "implicit": [],
+        "boundary": [
+          "initial vertical velocity zero"
+        ]
+      },
+      "assessment": {
+        "difficulty_features": {
+          "math_complexity": 3
+        }
+      }
+    },
+    "p3-a4": {
+      "knowledge": {
+        "primary_concept": "wave equation",
+        "secondary_concepts": [],
+        "prerequisites": [
+          "frequency",
+          "wavelength"
+        ]
+      },
+      "reasoning": {
+        "steps": [
+          {
+            "id": "s1",
+            "type": "read_given"
+          },
+          {
+            "id": "s2",
+            "type": "select_relation"
+          },
+          {
+            "id": "s3",
+            "type": "apply_mathematics"
+          },
+          {
+            "id": "s4",
+            "type": "derive_result"
+          }
+        ],
+        "edges": [
+          [
+            "s1",
+            "s2"
+          ],
+          [
+            "s2",
+            "s3"
+          ],
+          [
+            "s3",
+            "s4"
+          ]
+        ]
+      },
+      "representation": {
+        "input": [
+          "verbal"
+        ],
+        "output": [
+          "numeric"
+        ],
+        "context": "music and acoustics"
+      },
+      "constraints": {
+        "explicit": [],
+        "implicit": [],
+        "boundary": []
+      },
+      "assessment": {
+        "difficulty_features": {
+          "math_complexity": 1
+        }
+      }
+    },
+    "p3-a5": {
+      "knowledge": {
+        "primary_concept": "Ohm's law",
+        "secondary_concepts": [],
+        "prerequisites": [
+          "current",
+          "potential difference"
+        ]
+      },
+      "reasoning": {
+        "steps": [
+          {
+            "id": "s1",
+            "type": "read_given"
+          },
+          {
+            "id": "s2",
+            "type": "select_relation"
+          },
+          {
+            "id": "s3",
+            "type": "apply_mathematics"
+          },
+          {
+            "id": "s4",
+            "type": "derive_result"
+          }
+        ],
+        "edges": [
+          [
+            "s1",
+            "s2"
+          ],
+          [
+            "s2",
+            "s3"
+          ],
+          [
+            "s3",
+            "s4"
+          ]
+        ]
+      },
+      "representation": {
+        "input": [
+          "verbal"
+        ],
+        "output": [
+          "numeric"
+        ],
+        "context": "circuit"
+      },
+      "constraints": {
+        "explicit": [],
+        "implicit": [],
+        "boundary": []
+      },
+      "assessment": {
+        "difficulty_features": {
+          "math_complexity": 1
+        }
+      }
+    },
+    "p3-a6": {
+      "knowledge": {
+        "primary_concept": "Newton's second law",
+        "secondary_concepts": [
+          "components of weight"
+        ],
+        "prerequisites": [
+          "force",
+          "trigonometry"
+        ]
+      },
+      "reasoning": {
+        "steps": [
+          {
+            "id": "s1",
+            "type": "read_representation"
+          },
+          {
+            "id": "s2",
+            "type": "construct_model"
+          },
+          {
+            "id": "s3",
+            "type": "apply_mathematics"
+          },
+          {
+            "id": "s4",
+            "type": "derive_result"
+          }
+        ],
+        "edges": [
+          [
+            "s1",
+            "s2"
+          ],
+          [
+            "s2",
+            "s3"
+          ],
+          [
+            "s3",
+            "s4"
+          ]
+        ]
+      },
+      "representation": {
+        "input": [
+          "verbal",
+          "diagram"
+        ],
+        "output": [
+          "numeric"
+        ],
+        "context": "inclined plane"
+      },
+      "constraints": {
+        "explicit": [],
+        "implicit": [],
+        "boundary": []
+      },
+      "assessment": {
+        "difficulty_features": {
+          "math_complexity": 2
+        }
+      }
+    },
+    "p3-b1": {
+      "knowledge": {
+        "primary_concept": "Newton's second law",
+        "secondary_concepts": [
+          "weight",
+          "Newton's first law"
+        ],
+        "prerequisites": [
+          "force",
+          "acceleration"
+        ]
+      },
+      "reasoning": {
+        "steps": [
+          {
+            "id": "s1",
+            "type": "read_given"
+          },
+          {
+            "id": "s2",
+            "type": "select_relation"
+          },
+          {
+            "id": "s3",
+            "type": "apply_mathematics"
+          },
+          {
+            "id": "s4",
+            "type": "construct_model"
+          },
+          {
+            "id": "s5",
+            "type": "apply_mathematics"
+          },
+          {
+            "id": "s6",
+            "type": "derive_result"
+          },
+          {
+            "id": "s7",
+            "type": "compare"
+          },
+          {
+            "id": "s8",
+            "type": "justify"
+          }
+        ],
+        "edges": [
+          [
+            "s1",
+            "s2"
+          ],
+          [
+            "s2",
+            "s3"
+          ],
+          [
+            "s3",
+            "s4"
+          ],
+          [
+            "s4",
+            "s5"
+          ],
+          [
+            "s5",
+            "s6"
+          ],
+          [
+            "s6",
+            "s7"
+          ],
+          [
+            "s7",
+            "s8"
+          ]
+        ]
+      },
+      "representation": {
+        "input": [
+          "verbal"
+        ],
+        "output": [
+          "numeric"
+        ],
+        "context": "building lift"
+      },
+      "constraints": {
+        "explicit": [
+          "acceleration upward and uniform"
+        ],
+        "implicit": [],
+        "boundary": []
+      },
+      "assessment": {
+        "difficulty_features": {
+          "math_complexity": 2
+        }
+      }
+    },
+    "p3-b2": {
+      "knowledge": {
+        "primary_concept": "efficiency",
+        "secondary_concepts": [
+          "gravitational potential energy",
+          "power"
+        ],
+        "prerequisites": [
+          "energy",
+          "power"
+        ]
+      },
+      "reasoning": {
+        "steps": [
+          {
+            "id": "s1",
+            "type": "read_given"
+          },
+          {
+            "id": "s2",
+            "type": "select_relation"
+          },
+          {
+            "id": "s3",
+            "type": "apply_mathematics"
+          },
+          {
+            "id": "s4",
+            "type": "select_relation"
+          },
+          {
+            "id": "s5",
+            "type": "apply_mathematics"
+          },
+          {
+            "id": "s6",
+            "type": "construct_model"
+          },
+          {
+            "id": "s7",
+            "type": "derive_result"
+          }
+        ],
+        "edges": [
+          [
+            "s1",
+            "s2"
+          ],
+          [
+            "s2",
+            "s3"
+          ],
+          [
+            "s1",
+            "s4"
+          ],
+          [
+            "s4",
+            "s5"
+          ],
+          [
+            "s3",
+            "s6"
+          ],
+          [
+            "s5",
+            "s6"
+          ],
+          [
+            "s6",
+            "s7"
+          ]
+        ]
+      },
+      "representation": {
+        "input": [
+          "verbal"
+        ],
+        "output": [
+          "numeric"
+        ],
+        "context": "construction and engineering"
+      },
+      "constraints": {
+        "explicit": [],
+        "implicit": [],
+        "boundary": []
+      },
+      "assessment": {
+        "difficulty_features": {
+          "math_complexity": 2
+        }
+      }
+    },
+    "p3-b3": {
+      "knowledge": {
+        "primary_concept": "refraction",
+        "secondary_concepts": [
+          "wave speed"
+        ],
+        "prerequisites": [
+          "wave equation"
+        ]
+      },
+      "reasoning": {
+        "steps": [
+          {
+            "id": "s1",
+            "type": "read_given"
+          },
+          {
+            "id": "s2",
+            "type": "select_relation"
+          },
+          {
+            "id": "s3",
+            "type": "apply_mathematics"
+          },
+          {
+            "id": "s4",
+            "type": "recall_fact"
+          },
+          {
+            "id": "s5",
+            "type": "justify"
+          },
+          {
+            "id": "s6",
+            "type": "recall_fact"
+          },
+          {
+            "id": "s7",
+            "type": "justify"
+          }
+        ],
+        "edges": [
+          [
+            "s1",
+            "s2"
+          ],
+          [
+            "s2",
+            "s3"
+          ],
+          [
+            "s3",
+            "s4"
+          ],
+          [
+            "s4",
+            "s5"
+          ],
+          [
+            "s3",
+            "s6"
+          ],
+          [
+            "s6",
+            "s7"
+          ]
+        ]
+      },
+      "representation": {
+        "input": [
+          "verbal"
+        ],
+        "output": [
+          "numeric"
+        ],
+        "context": "optics"
+      },
+      "constraints": {
+        "explicit": [],
+        "implicit": [],
+        "boundary": []
+      },
+      "assessment": {
+        "difficulty_features": {
+          "math_complexity": 1
+        }
+      }
+    }
+  }
+}

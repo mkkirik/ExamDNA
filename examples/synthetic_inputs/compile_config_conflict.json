@@ -1,0 +1,11 @@
+{
+  "title": "Deliberately infeasible configuration (for testing)",
+  "total_marks": 30,
+  "sections": [
+    {"label": "A", "marks": 10, "question_count": 2, "allowed_types": ["calculation", "multiple_choice", "short_answer"]},
+    {"label": "B", "marks": 20, "allowed_types": ["mixed", "calculation", "data_interpretation"]}
+  ],
+  "required_types": ["extended_response"],
+  "max_per_family": 1,
+  "seed": 7
+}

@@ -1,0 +1,15 @@
+{
+  "_note": "ILLUSTRATIVE FIXTURE, NOT EXPERIMENTAL DATA. Hand-written during development to show the *format* of an unstructured 'write a similar exam' output so the evaluation command can be demonstrated. It is not the output of a measured model run. See docs/evaluation.md for the protocol to collect real baseline outputs.",
+  "title": "Physics Practice Test",
+  "questions": [
+    {"text": "Which of the following quantities is a vector? A speed B distance C displacement D mass", "marks": 1, "section": "A", "answer": "C"},
+    {"text": "A cyclist accelerates uniformly from rest to a speed of 10 m/s in 5.0 s. Calculate the acceleration of the cyclist.", "marks": 2, "section": "A", "topic": "Kinematics", "answer": "2.0 m/s²"},
+    {"text": "A resultant force of 8.0 N acts on a trolley of mass 2.0 kg. Calculate the acceleration of the trolley.", "marks": 2, "section": "A", "topic": "Forces", "answer": "4.0 m/s²"},
+    {"text": "Explain what is meant by power.", "section": "A", "topic": "Energy"},
+    {"text": "A wave has a frequency of 40 Hz and wavelength 2.5 m. Find its speed.", "marks": 1, "section": "A", "answer": "100 m/s"},
+    {"text": "A car travelling at 25 m/s brakes with uniform deceleration and comes to rest in a distance of 50 m. (a) Calculate the deceleration. (b) Calculate the stopping time. (c) Explain why the distance is larger on a wet road.", "marks": 7, "section": "B", "topic": "Kinematics", "answer": "(a) 6.25 m/s² (b) 4.0 s"},
+    {"text": "A ball of mass 0.50 kg is dropped from a height of 5.0 m. Calculate its speed just before hitting the ground.", "marks": 5, "section": "B", "topic": "Energy", "answer": "9.9 m/s"},
+    {"text": "A 4.0 Ω resistor and a 6.0 Ω resistor are connected in series with a 12 V battery. Calculate the current and the potential difference across each resistor.", "marks": 6, "section": "B", "topic": "Electricity", "answer": "1.2 A; 4.8 V; 7.2 V"},
+    {"text": "A trolley of mass 2.0 kg moving at 3.0 m/s collides with a stationary trolley of mass 1.0 kg and they stick together. Calculate their velocity after the collision.", "marks": 4, "section": "B", "topic": "Momentum", "answer": "2.0 m/s"}
+  ]
+}

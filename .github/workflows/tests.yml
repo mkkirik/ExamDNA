@@ -1,0 +1,44 @@
+name: tests
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: ${{ matrix.os }} / Python ${{ matrix.python }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        python: ["3.9", "3.10", "3.11", "3.12", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Unit and integration tests (standard library only)
+        run: python -m unittest discover -s tests -t . -v
+      - name: Demo is reproducible
+        shell: bash
+        run: |
+          python tools/run_demo.py > /dev/null
+          git diff --exit-code -- examples/expected_outputs
+      - name: Build and verify Skill package
+        run: python -m examdna.cli package --out dist
+
+  coverage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pytest coverage
+      - run: coverage run --source=examdna -m pytest -q
+      - run: coverage report

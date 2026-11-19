@@ -1,0 +1,200 @@
+{
+  "schema_version": "0.1.0",
+  "report_id": "validation-e3ad127ced",
+  "plan_id": "plan-c10cfee8c6",
+  "summary": {
+    "candidates": 1,
+    "PASS": 1,
+    "REVIEW_REQUIRED": 0,
+    "FAIL": 0
+  },
+  "results": [
+    {
+      "candidate_id": "g2-c01",
+      "question_id": "m2-p1-a2-rep-par",
+      "spec_id": "spec-93ff56018e",
+      "parent_id": "m-p1-a2-rep",
+      "operator": "parameter",
+      "state": "PASS",
+      "summary": "all checks passed",
+      "model_assisted": true,
+      "numeric_verified": true,
+      "distance": {
+        "dimensions": {
+          "surface": {
+            "distance": 0.55,
+            "label": "moderate",
+            "method": "difflib SequenceMatcher ratio over lower-cased word tokens of the full question text"
+          },
+          "concept": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "Jaccard overlap of {primary_concept} ∪ secondary_concepts (case-insensitive)"
+          },
+          "reasoning": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "1 − normalized edit distance between step-type sequences in topological order, multiplied by 0.5 if the graph shape (linear vs branched) differs"
+          },
+          "representation": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "Jaccard overlap of input representation sets"
+          },
+          "constraint": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "Jaccard overlap of content words in explicit+domain+boundary constraints"
+          },
+          "answer": {
+            "distance": 0.0,
+            "label": "none",
+            "method": "0.5 if answer types are equal + 0.5 if the answer units have the same physical dimension (or both are absent)"
+          }
+        },
+        "novelty": "parameter_novelty",
+        "conceptual_equivalence": {
+          "status": "model_assisted",
+          "conceptually_equivalent": true
+        },
+        "note": "Distances are transparent set/sequence measures; they do not establish psychometric equivalence."
+      },
+      "checks": [
+        {
+          "stage": "lineage",
+          "check": "lineage_consistent",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "parameter of m-p1-a2-rep"
+        },
+        {
+          "stage": "schema",
+          "check": "genome_schema",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "genome schema and reasoning graph valid"
+        },
+        {
+          "stage": "structural",
+          "check": "marks_present",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "2 marks"
+        },
+        {
+          "stage": "answer_marking",
+          "check": "marking_total",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "marking points match marks"
+        },
+        {
+          "stage": "numeric",
+          "check": "recompute",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "claimed 3.6 matches recomputed 3.6 (exact rational arithmetic, tolerance 0.01)"
+        },
+        {
+          "stage": "answer_marking",
+          "check": "final_answer_matches",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "final answer text contains the verified value"
+        },
+        {
+          "stage": "numeric",
+          "check": "units",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "dimensions of the expression match 'm/s^2'"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:primary_concept",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "primary_concept preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:learning_objectives",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "learning_objectives preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:topic",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "topic preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:question_type",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "question_type preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:answer_type",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "answer_type preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:marks",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "marks preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:reasoning_structure",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "reasoning_structure preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:representation",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "representation preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "preserve:constraints",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "constraints preserved"
+        },
+        {
+          "stage": "invariants",
+          "check": "change:numeric_parameters",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "numeric_parameters changed as required"
+        },
+        {
+          "stage": "invariants",
+          "check": "judgement:target_skill",
+          "status": "PASS",
+          "method": "model_assisted",
+          "message": "agent judgement on target_skill"
+        },
+        {
+          "stage": "distance",
+          "check": "novelty",
+          "status": "PASS",
+          "method": "deterministic",
+          "message": "parameter_novelty"
+        }
+      ]
+    }
+  ],
+  "assurance_note": "PASS means every applicable deterministic check passed and every required semantic judgement was supplied and affirmative. Checks marked model_assisted rely on the agent's judgement, not on independent verification."
+}

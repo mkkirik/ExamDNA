@@ -1,0 +1,12 @@
+{
+  "title": "Physics Practice Paper — Mechanics, Energy, Waves and Electricity",
+  "subject": "Introductory Physics",
+  "language": "en",
+  "total_marks": 30,
+  "time_minutes": 45,
+  "max_per_family": 1,
+  "include_review_required": false,
+  "include_source_questions": false,
+  "required_topics": ["Kinematics", "Electricity"],
+  "seed": 7
+}

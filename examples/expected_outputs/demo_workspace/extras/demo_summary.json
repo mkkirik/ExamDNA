@@ -1,0 +1,47 @@
+{
+  "prepare": {
+    "genomes": {
+      "count": 27,
+      "complete": 27,
+      "partial": 0,
+      "minimal": 0,
+      "errors": {}
+    },
+    "evidence_level": "limited",
+    "uncertainty_notes": [
+      "Blueprint is based on 3 paper(s); treat distributions as a low-confidence approximation, not a stable pattern."
+    ],
+    "specs": 18,
+    "skipped": 0,
+    "next_step": "Write candidates.json (one candidate per spec in mutation_plan.json), and compile_config.json, then run 'finish'."
+  },
+  "finish": {
+    "source_documents": 6,
+    "extracted_questions": 27,
+    "genomes_complete": 27,
+    "mutation_specs": 18,
+    "candidates": 22,
+    "passed": 17,
+    "review_required": 1,
+    "rejected": 4,
+    "compiled_questions": 8,
+    "deviations": [
+      "None above the 0.25 total-variation reporting threshold."
+    ],
+    "limitations": [
+      "Difficulty bands are heuristic and not calibrated on student data.",
+      "Semantic checks marked model_assisted rely on the agent's own judgement.",
+      "Blueprint evidence level: limited.",
+      "Solver optimality: best possible under the stated objective."
+    ]
+  },
+  "exam_id": "exam-1972aaf3e5",
+  "harder_exam_id": "exam-f601c60a32",
+  "generation2": {
+    "candidates": 1,
+    "PASS": 1,
+    "REVIEW_REQUIRED": 0,
+    "FAIL": 0
+  },
+  "lineage_max_generation": 2
+}

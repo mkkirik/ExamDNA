@@ -1,0 +1,549 @@
+{
+  "nodes": {
+    "m-p1-a2-rep": {
+      "id": "m-p1-a2-rep",
+      "parent": "p1-a2",
+      "operator": "representation",
+      "generation": 1,
+      "state": "PASS",
+      "children": [],
+      "root": "p1-a2"
+    },
+    "m-p1-a3-path": {
+      "id": "m-p1-a3-path",
+      "parent": "p1-a3",
+      "operator": "reasoning_path",
+      "generation": 1,
+      "state": "PASS",
+      "children": [],
+      "root": "p1-a3"
+    },
+    "m-p1-a4-con": {
+      "id": "m-p1-a4-con",
+      "parent": "p1-a4",
+      "operator": "constraint",
+      "generation": 1,
+      "state": "PASS",
+      "children": [],
+      "root": "p1-a4"
+    },
+    "m-p1-a6-surf": {
+      "id": "m-p1-a6-surf",
+      "parent": "p1-a6",
+      "operator": "surface",
+      "generation": 1,
+      "state": "PASS",
+      "children": [],
+      "root": "p1-a6"
+    },
+    "m-p1-b1-par": {
+      "id": "m-p1-b1-par",
+      "parent": "p1-b1",
+      "operator": "parameter",
+      "generation": 1,
+      "state": "PASS",
+      "children": [],
+      "root": "p1-b1"
+    },
+    "m-p1-b2-surf": {
+      "id": "m-p1-b2-surf",
+      "parent": "p1-b2",
+      "operator": "surface",
+      "generation": 1,
+      "state": "PASS",
+      "children": [],
+      "root": "p1-b2"
+    },
+    "m-p1-b3-rev": {
+      "id": "m-p1-b3-rev",
+      "parent": "p1-b3",
+      "operator": "reverse",
+      "generation": 1,
+      "state": "PASS",
+      "children": [],
+      "root": "p1-b3"
+    },
+    "m-p2-a2-diff": {
+      "id": "m-p2-a2-diff",
+      "parent": "p2-a2",
+      "operator": "difficulty",
+      "generation": 1,
+      "state": "PASS",
+      "children": [],
+      "root": "p2-a2"
+    },
+    "m-p2-a3-par": {
+      "id": "m-p2-a3-par",
+      "parent": "p2-a3",
+      "operator": "parameter",
+      "generation": 1,
+      "state": "PASS",
+      "children": [],
+      "root": "p2-a3"
+    },
+    "m-p2-a4-rev": {
+      "id": "m-p2-a4-rev",
+      "parent": "p2-a4",
+      "operator": "reverse",
+      "generation": 1,
+      "state": "PASS",
+      "children": [],
+      "root": "p2-a4"
+    },
+    "m-p2-a5-ctx": {
+      "id": "m-p2-a5-ctx",
+      "parent": "p2-a5",
+      "operator": "context_transfer",
+      "generation": 1,
+      "state": "PASS",
+      "children": [],
+      "root": "p2-a5"
+    },
+    "m-p2-b1-path": {
+      "id": "m-p2-b1-path",
+      "parent": "p2-b1",
+      "operator": "reasoning_path",
+      "generation": 1,
+      "state": "PASS",
+      "children": [],
+      "root": "p2-b1"
+    },
+    "m-p2-b3-con": {
+      "id": "m-p2-b3-con",
+      "parent": "p2-b3",
+      "operator": "constraint",
+      "generation": 1,
+      "state": "PASS",
+      "children": [],
+      "root": "p2-b3"
+    },
+    "m-p3-a2-diff": {
+      "id": "m-p3-a2-diff",
+      "parent": "p3-a2",
+      "operator": "difficulty",
+      "generation": 1,
+      "state": "PASS",
+      "children": [],
+      "root": "p3-a2"
+    },
+    "m-p3-a3-ctx": {
+      "id": "m-p3-a3-ctx",
+      "parent": "p3-a3",
+      "operator": "context_transfer",
+      "generation": 1,
+      "state": "PASS",
+      "children": [],
+      "root": "p3-a3"
+    },
+    "m-p3-a4-rep": {
+      "id": "m-p3-a4-rep",
+      "parent": "p3-a4",
+      "operator": "representation",
+      "generation": 1,
+      "state": "REVIEW_REQUIRED",
+      "children": [],
+      "root": "p3-a4"
+    },
+    "m-p3-b1-diff": {
+      "id": "m-p3-b1-diff",
+      "parent": "p3-b1",
+      "operator": "difficulty",
+      "generation": 1,
+      "state": "PASS",
+      "children": [],
+      "root": "p3-b1"
+    },
+    "m-p3-b2-rep": {
+      "id": "m-p3-b2-rep",
+      "parent": "p3-b2",
+      "operator": "representation",
+      "generation": 1,
+      "state": "PASS",
+      "children": [],
+      "root": "p3-b2"
+    },
+    "p1-a1": {
+      "id": "p1-a1",
+      "parent": null,
+      "operator": null,
+      "generation": 0,
+      "state": "SOURCE",
+      "children": [],
+      "root": "p1-a1"
+    },
+    "p1-a2": {
+      "id": "p1-a2",
+      "parent": null,
+      "operator": null,
+      "generation": 0,
+      "state": "SOURCE",
+      "children": [
+        "m-p1-a2-rep"
+      ],
+      "root": "p1-a2"
+    },
+    "p1-a3": {
+      "id": "p1-a3",
+      "parent": null,
+      "operator": null,
+      "generation": 0,
+      "state": "SOURCE",
+      "children": [
+        "m-p1-a3-path"
+      ],
+      "root": "p1-a3"
+    },
+    "p1-a4": {
+      "id": "p1-a4",
+      "parent": null,
+      "operator": null,
+      "generation": 0,
+      "state": "SOURCE",
+      "children": [
+        "m-p1-a4-con"
+      ],
+      "root": "p1-a4"
+    },
+    "p1-a5": {
+      "id": "p1-a5",
+      "parent": null,
+      "operator": null,
+      "generation": 0,
+      "state": "SOURCE",
+      "children": [],
+      "root": "p1-a5"
+    },
+    "p1-a6": {
+      "id": "p1-a6",
+      "parent": null,
+      "operator": null,
+      "generation": 0,
+      "state": "SOURCE",
+      "children": [
+        "m-p1-a6-surf"
+      ],
+      "root": "p1-a6"
+    },
+    "p1-b1": {
+      "id": "p1-b1",
+      "parent": null,
+      "operator": null,
+      "generation": 0,
+      "state": "SOURCE",
+      "children": [
+        "m-p1-b1-par"
+      ],
+      "root": "p1-b1"
+    },
+    "p1-b2": {
+      "id": "p1-b2",
+      "parent": null,
+      "operator": null,
+      "generation": 0,
+      "state": "SOURCE",
+      "children": [
+        "m-p1-b2-surf"
+      ],
+      "root": "p1-b2"
+    },
+    "p1-b3": {
+      "id": "p1-b3",
+      "parent": null,
+      "operator": null,
+      "generation": 0,
+      "state": "SOURCE",
+      "children": [
+        "m-p1-b3-rev"
+      ],
+      "root": "p1-b3"
+    },
+    "p2-a1": {
+      "id": "p2-a1",
+      "parent": null,
+      "operator": null,
+      "generation": 0,
+      "state": "SOURCE",
+      "children": [],
+      "root": "p2-a1"
+    },
+    "p2-a2": {
+      "id": "p2-a2",
+      "parent": null,
+      "operator": null,
+      "generation": 0,
+      "state": "SOURCE",
+      "children": [
+        "m-p2-a2-diff"
+      ],
+      "root": "p2-a2"
+    },
+    "p2-a3": {
+      "id": "p2-a3",
+      "parent": null,
+      "operator": null,
+      "generation": 0,
+      "state": "SOURCE",
+      "children": [
+        "m-p2-a3-par"
+      ],
+      "root": "p2-a3"
+    },
+    "p2-a4": {
+      "id": "p2-a4",
+      "parent": null,
+      "operator": null,
+      "generation": 0,
+      "state": "SOURCE",
+      "children": [
+        "m-p2-a4-rev"
+      ],
+      "root": "p2-a4"
+    },
+    "p2-a5": {
+      "id": "p2-a5",
+      "parent": null,
+      "operator": null,
+      "generation": 0,
+      "state": "SOURCE",
+      "children": [
+        "m-p2-a5-ctx"
+      ],
+      "root": "p2-a5"
+    },
+    "p2-a6": {
+      "id": "p2-a6",
+      "parent": null,
+      "operator": null,
+      "generation": 0,
+      "state": "SOURCE",
+      "children": [],
+      "root": "p2-a6"
+    },
+    "p2-b1": {
+      "id": "p2-b1",
+      "parent": null,
+      "operator": null,
+      "generation": 0,
+      "state": "SOURCE",
+      "children": [
+        "m-p2-b1-path"
+      ],
+      "root": "p2-b1"
+    },
+    "p2-b2": {
+      "id": "p2-b2",
+      "parent": null,
+      "operator": null,
+      "generation": 0,
+      "state": "SOURCE",
+      "children": [],
+      "root": "p2-b2"
+    },
+    "p2-b3": {
+      "id": "p2-b3",
+      "parent": null,
+      "operator": null,
+      "generation": 0,
+      "state": "SOURCE",
+      "children": [
+        "m-p2-b3-con"
+      ],
+      "root": "p2-b3"
+    },
+    "p3-a1": {
+      "id": "p3-a1",
+      "parent": null,
+      "operator": null,
+      "generation": 0,
+      "state": "SOURCE",
+      "children": [],
+      "root": "p3-a1"
+    },
+    "p3-a2": {
+      "id": "p3-a2",
+      "parent": null,
+      "operator": null,
+      "generation": 0,
+      "state": "SOURCE",
+      "children": [
+        "m-p3-a2-diff"
+      ],
+      "root": "p3-a2"
+    },
+    "p3-a3": {
+      "id": "p3-a3",
+      "parent": null,
+      "operator": null,
+      "generation": 0,
+      "state": "SOURCE",
+      "children": [
+        "m-p3-a3-ctx"
+      ],
+      "root": "p3-a3"
+    },
+    "p3-a4": {
+      "id": "p3-a4",
+      "parent": null,
+      "operator": null,
+      "generation": 0,
+      "state": "SOURCE",
+      "children": [
+        "m-p3-a4-rep"
+      ],
+      "root": "p3-a4"
+    },
+    "p3-a5": {
+      "id": "p3-a5",
+      "parent": null,
+      "operator": null,
+      "generation": 0,
+      "state": "SOURCE",
+      "children": [],
+      "root": "p3-a5"
+    },
+    "p3-a6": {
+      "id": "p3-a6",
+      "parent": null,
+      "operator": null,
+      "generation": 0,
+      "state": "SOURCE",
+      "children": [],
+      "root": "p3-a6"
+    },
+    "p3-b1": {
+      "id": "p3-b1",
+      "parent": null,
+      "operator": null,
+      "generation": 0,
+      "state": "SOURCE",
+      "children": [
+        "m-p3-b1-diff"
+      ],
+      "root": "p3-b1"
+    },
+    "p3-b2": {
+      "id": "p3-b2",
+      "parent": null,
+      "operator": null,
+      "generation": 0,
+      "state": "SOURCE",
+      "children": [
+        "m-p3-b2-rep"
+      ],
+      "root": "p3-b2"
+    },
+    "p3-b3": {
+      "id": "p3-b3",
+      "parent": null,
+      "operator": null,
+      "generation": 0,
+      "state": "SOURCE",
+      "children": [],
+      "root": "p3-b3"
+    }
+  },
+  "families": {
+    "p1-a1": [
+      "p1-a1"
+    ],
+    "p1-a2": [
+      "m-p1-a2-rep",
+      "p1-a2"
+    ],
+    "p1-a3": [
+      "m-p1-a3-path",
+      "p1-a3"
+    ],
+    "p1-a4": [
+      "m-p1-a4-con",
+      "p1-a4"
+    ],
+    "p1-a5": [
+      "p1-a5"
+    ],
+    "p1-a6": [
+      "m-p1-a6-surf",
+      "p1-a6"
+    ],
+    "p1-b1": [
+      "m-p1-b1-par",
+      "p1-b1"
+    ],
+    "p1-b2": [
+      "m-p1-b2-surf",
+      "p1-b2"
+    ],
+    "p1-b3": [
+      "m-p1-b3-rev",
+      "p1-b3"
+    ],
+    "p2-a1": [
+      "p2-a1"
+    ],
+    "p2-a2": [
+      "m-p2-a2-diff",
+      "p2-a2"
+    ],
+    "p2-a3": [
+      "m-p2-a3-par",
+      "p2-a3"
+    ],
+    "p2-a4": [
+      "m-p2-a4-rev",
+      "p2-a4"
+    ],
+    "p2-a5": [
+      "m-p2-a5-ctx",
+      "p2-a5"
+    ],
+    "p2-a6": [
+      "p2-a6"
+    ],
+    "p2-b1": [
+      "m-p2-b1-path",
+      "p2-b1"
+    ],
+    "p2-b2": [
+      "p2-b2"
+    ],
+    "p2-b3": [
+      "m-p2-b3-con",
+      "p2-b3"
+    ],
+    "p3-a1": [
+      "p3-a1"
+    ],
+    "p3-a2": [
+      "m-p3-a2-diff",
+      "p3-a2"
+    ],
+    "p3-a3": [
+      "m-p3-a3-ctx",
+      "p3-a3"
+    ],
+    "p3-a4": [
+      "m-p3-a4-rep",
+      "p3-a4"
+    ],
+    "p3-a5": [
+      "p3-a5"
+    ],
+    "p3-a6": [
+      "p3-a6"
+    ],
+    "p3-b1": [
+      "m-p3-b1-diff",
+      "p3-b1"
+    ],
+    "p3-b2": [
+      "m-p3-b2-rep",
+      "p3-b2"
+    ],
+    "p3-b3": [
+      "p3-b3"
+    ]
+  },
+  "valid": true,
+  "errors": [],
+  "max_generation": 1
+}

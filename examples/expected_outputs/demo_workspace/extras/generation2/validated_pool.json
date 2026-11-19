@@ -1,0 +1,271 @@
+{
+  "schema_version": "0.1.0",
+  "bank_id": "pool-4239844684",
+  "title": "Validated mutation pool",
+  "source_documents": [],
+  "questions": [
+    {
+      "id": "m2-p1-a2-rep-par",
+      "schema_version": "0.1.0",
+      "language": "en",
+      "source": {
+        "document": null,
+        "page": null,
+        "section": "A",
+        "position": 0,
+        "origin": "generated"
+      },
+      "subject": "Introductory Physics",
+      "topic": "Kinematics",
+      "subtopic": "Uniform acceleration",
+      "text": "A sprinter's velocity–time graph during the drive phase is shown below. Using the graph, find the sprinter's acceleration.",
+      "question_type": "calculation",
+      "marks": 2,
+      "section": "A",
+      "learning_objectives": [
+        "K1 Use the equations of uniformly accelerated motion",
+        "K2 Interpret motion data in tables and graphs"
+      ],
+      "cognitive_level": "application",
+      "given": [
+        {
+          "symbol": "v",
+          "description": "velocity at 2.5 s (read from graph)",
+          "value": 9.0,
+          "unit": "m/s"
+        },
+        {
+          "symbol": "t",
+          "description": "time (read from graph)",
+          "value": 2.5,
+          "unit": "s"
+        }
+      ],
+      "required_output": null,
+      "constraints": [],
+      "options": [],
+      "parts": [],
+      "table": null,
+      "diagram_description": "Velocity–time graph: v / m s⁻¹ (vertical, 0 to 10) against t / s (horizontal, 0 to 3). A straight line runs from (0 s, 0 m/s) to (2.5 s, 9.0 m/s).",
+      "marking": {
+        "scheme_available": true,
+        "final_answer": "3.6 m/s²",
+        "answer_key": null,
+        "worked_solution": "a = gradient = 9.0/2.5 = 3.6 m/s²",
+        "points": [
+          {
+            "description": "Acceleration = gradient",
+            "marks": 1
+          },
+          {
+            "description": "3.6 m/s²",
+            "marks": 1
+          }
+        ],
+        "accept_rule": null
+      },
+      "difficulty_features": null,
+      "extraction_confidence": "medium",
+      "evidence": [],
+      "review_status": "unreviewed",
+      "provenance": {
+        "text": "inferred",
+        "subject": "inferred",
+        "topic": "inferred",
+        "subtopic": "inferred",
+        "question_type": "inferred",
+        "marks": "inferred",
+        "section": "inferred",
+        "learning_objectives": "inferred",
+        "cognitive_level": "inferred",
+        "given": "inferred",
+        "marking": "inferred"
+      },
+      "missing_fields": [
+        "required_output",
+        "constraints"
+      ],
+      "security_flags": [],
+      "lineage": {
+        "parent_id": "m-p1-a2-rep",
+        "root_id": "p1-a2",
+        "operator": "parameter",
+        "spec_id": "spec-93ff56018e",
+        "candidate_id": "g2-c01",
+        "generation": 2,
+        "mutation_parameters": {
+          "changes": [
+            {
+              "symbol": "t",
+              "old": 5.0,
+              "suggested": 2.5,
+              "unit": "s"
+            }
+          ]
+        },
+        "preserved": [
+          "primary_concept",
+          "learning_objectives",
+          "topic",
+          "question_type",
+          "answer_type",
+          "marks",
+          "reasoning_structure",
+          "representation",
+          "constraints"
+        ],
+        "changed": [
+          "numeric_parameters"
+        ],
+        "created": null
+      },
+      "validation": {
+        "state": "PASS",
+        "summary": "all checks passed",
+        "model_assisted": true,
+        "numeric_verified": true
+      },
+      "extensions": {
+        "verification": {
+          "kind": "numeric",
+          "expression": "v/t",
+          "variables": {
+            "v": 9.0,
+            "t": 2.5
+          },
+          "claimed_value": 3.6,
+          "claimed_unit": "m/s^2",
+          "answer_uniqueness": "unique"
+        }
+      }
+    }
+  ],
+  "normalization_report": {
+    "question_count": 1,
+    "issues": [],
+    "missing_marks": [],
+    "security_flagged": []
+  },
+  "extensions": {
+    "genomes": [
+      {
+        "schema_version": "0.1.0",
+        "genome_id": "g-m2-p1-a2-rep-par",
+        "question_id": "m2-p1-a2-rep-par",
+        "knowledge": {
+          "primary_concept": "uniform acceleration",
+          "secondary_concepts": [
+            "velocity",
+            "gradient"
+          ],
+          "prerequisites": [
+            "velocity"
+          ],
+          "learning_objectives": [
+            "K1 Use the equations of uniformly accelerated motion",
+            "K2 Interpret motion data in tables and graphs"
+          ]
+        },
+        "reasoning": {
+          "steps": [
+            {
+              "id": "s1",
+              "type": "read_representation"
+            },
+            {
+              "id": "s2",
+              "type": "select_relation"
+            },
+            {
+              "id": "s3",
+              "type": "apply_mathematics"
+            },
+            {
+              "id": "s4",
+              "type": "derive_result"
+            }
+          ],
+          "edges": [
+            [
+              "s1",
+              "s2"
+            ],
+            [
+              "s2",
+              "s3"
+            ],
+            [
+              "s3",
+              "s4"
+            ]
+          ]
+        },
+        "representation": {
+          "input": [
+            "verbal",
+            "graph"
+          ],
+          "output": [
+            "numeric"
+          ],
+          "context": "sports and athletics"
+        },
+        "constraints": {
+          "explicit": [],
+          "implicit": [],
+          "domain": [],
+          "boundary": [],
+          "units": []
+        },
+        "assessment": {
+          "answer_type": "numeric",
+          "difficulty_features": {
+            "math_complexity": 1
+          },
+          "answer_unit": "m/s^2",
+          "difficulty": {
+            "model": "examdna-heuristic-v1",
+            "points": 8,
+            "band": "standard",
+            "features": {
+              "reasoning_stages": 4,
+              "prerequisite_count": 1,
+              "math_complexity": 1,
+              "interacting_constraints": 0,
+              "representation_count": 2
+            },
+            "feature_source": "genome",
+            "status": "heuristic"
+          }
+        },
+        "validation": {
+          "structural_completeness": "partial",
+          "missing_components": [
+            "assessment.max_marks",
+            "assessment.marking_components"
+          ],
+          "solvability": "PASS",
+          "answer_validation": "PASS",
+          "uniqueness": "unique",
+          "human_review_required": true,
+          "confidence": "medium",
+          "graph_errors": []
+        },
+        "parent_question_id": "m-p1-a2-rep",
+        "lineage": [
+          {
+            "question_id": "p1-a2",
+            "operator": "representation",
+            "spec_id": "spec-f69f5eba0d"
+          },
+          {
+            "question_id": "m-p1-a2-rep",
+            "operator": "parameter",
+            "spec_id": "spec-93ff56018e"
+          }
+        ]
+      }
+    ],
+    "validation_report_id": "validation-e3ad127ced"
+  }
+}

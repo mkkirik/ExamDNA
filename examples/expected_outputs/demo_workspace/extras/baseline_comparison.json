@@ -1,0 +1,98 @@
+{
+  "note": "Observable properties of two artifacts. Not a measure of educational quality or learning outcomes.",
+  "section_target_basis": "blueprint-derived sections of the ExamDNA exam",
+  "baseline": {
+    "question_count": 9,
+    "required_field_completeness": {
+      "complete_questions": 0,
+      "of": 9,
+      "missing_by_field": {
+        "text": 0,
+        "marks": 1,
+        "topic": 2,
+        "question_type": 9,
+        "learning_objectives": 9,
+        "answer": 1
+      }
+    },
+    "total_marks": {
+      "requested": 30,
+      "actual_known": 28,
+      "all_marks_known": false,
+      "compliant": false
+    },
+    "section_adherence": {
+      "targets": {
+        "A": 10,
+        "B": 20
+      },
+      "actual": {
+        "A": 6,
+        "B": 22
+      },
+      "total_variation": 0.119
+    },
+    "explicit_learning_objectives": {
+      "distinct": 0,
+      "questions_with_objectives": 0
+    },
+    "lineage": {
+      "questions_with_lineage": 0,
+      "lineage_resolves_to_source": 0
+    },
+    "surface_duplicate_pairs": 0,
+    "near_verbatim_source_copies": 2,
+    "numeric_solutions_recomputed": 0,
+    "validation_states": {
+      "none": 9
+    },
+    "validation_failures_identified": null
+  },
+  "examdna": {
+    "question_count": 8,
+    "required_field_completeness": {
+      "complete_questions": 8,
+      "of": 8,
+      "missing_by_field": {
+        "text": 0,
+        "marks": 0,
+        "topic": 0,
+        "question_type": 0,
+        "learning_objectives": 0,
+        "answer": 0
+      }
+    },
+    "total_marks": {
+      "requested": 30,
+      "actual_known": 30,
+      "all_marks_known": true,
+      "compliant": true
+    },
+    "section_adherence": {
+      "targets": {
+        "A": 10,
+        "B": 20
+      },
+      "actual": {
+        "A": 10,
+        "B": 20
+      },
+      "total_variation": 0.0
+    },
+    "explicit_learning_objectives": {
+      "distinct": 10,
+      "questions_with_objectives": 8
+    },
+    "lineage": {
+      "questions_with_lineage": 8,
+      "lineage_resolves_to_source": 8
+    },
+    "surface_duplicate_pairs": 0,
+    "near_verbatim_source_copies": 0,
+    "numeric_solutions_recomputed": 8,
+    "validation_states": {
+      "PASS": 8
+    },
+    "validation_failures_identified": 4
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "title": "Physics Practice Paper — Harder Version",
+  "subject": "Introductory Physics",
+  "language": "en",
+  "total_marks": 30,
+  "time_minutes": 50,
+  "max_per_family": 1,
+  "difficulty_shift": 1,
+  "weights": {"difficulty": 2.0},
+  "seed": 7
+}

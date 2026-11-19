@@ -1,0 +1,79 @@
+{
+  "schema_version": "0.1.0",
+  "plan_id": "plan-c10cfee8c6",
+  "seed": 7,
+  "mode": "balanced",
+  "specs": [
+    {
+      "spec_id": "spec-93ff56018e",
+      "parent_id": "m-p1-a2-rep",
+      "parent_genome_id": "g-m-p1-a2-rep",
+      "operator": "parameter",
+      "operator_name": "Parameter Mutation",
+      "mode": "balanced",
+      "generation": 2,
+      "parameters": {
+        "changes": [
+          {
+            "symbol": "t",
+            "old": 5.0,
+            "suggested": 2.5,
+            "unit": "s"
+          }
+        ]
+      },
+      "preserve": [
+        "primary_concept",
+        "learning_objectives",
+        "topic",
+        "question_type",
+        "answer_type",
+        "marks",
+        "reasoning_structure",
+        "representation",
+        "constraints"
+      ],
+      "may_change": [
+        "wording"
+      ],
+      "must_change": [
+        "numeric_parameters"
+      ],
+      "invariants": [
+        "Answer recomputed from the new values",
+        "Values stay inside physical/domain limits",
+        "Same units"
+      ],
+      "required_judgements": [
+        "target_skill"
+      ],
+      "instructions": [
+        "Replace the listed given values (suggested values may be adjusted to keep the scenario realistic).",
+        "Recompute the answer and the worked solution from the new values; supply verification.expression and variables.",
+        "Preserve: primary_concept, learning_objectives, topic, question_type, answer_type, marks, reasoning_structure, representation, constraints.",
+        "Must change: numeric_parameters.",
+        "Write an original question; do not copy sentences from the parent or any source paper.",
+        "Return one JSON object matching candidate.schema.json (question + genome + verification + invariant_judgements)."
+      ],
+      "expected_difficulty_effect": "none",
+      "validation_checks": [
+        "schema",
+        "numeric_recompute",
+        "units",
+        "domain",
+        "givens_consistent"
+      ],
+      "known_failure_modes": [
+        "answer not updated",
+        "values inconsistent with each other",
+        "out-of-domain values (e.g. negative mass)"
+      ],
+      "output_contract": "candidate.schema.json"
+    }
+  ],
+  "skipped": [],
+  "notes": [
+    "Specs are deterministic. Candidate text is written by the agent and is not reproducible in the same way.",
+    "Operator usage: {'parameter': 1}"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://examdna.local/schemas/mutation_spec.schema.json",
+  "title": "ExamDNA mutation specification",
+  "description": "Schema version 0.1.0. A deterministic, machine-generated instruction for one controlled mutation. The agent writes a candidate that satisfies it.",
+  "type": "object",
+  "required": ["spec_id", "parent_id", "operator", "mode", "parameters", "preserve", "must_change", "invariants", "instructions", "validation_checks"],
+  "additionalProperties": false,
+  "properties": {
+    "spec_id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"},
+    "parent_id": {"type": "string"},
+    "parent_genome_id": {"type": ["string", "null"]},
+    "operator": {"type": "string"},
+    "operator_name": {"type": "string"},
+    "mode": {"enum": ["conservative", "balanced", "exploratory"]},
+    "generation": {"type": "integer", "minimum": 1},
+    "parameters": {"type": "object"},
+    "preserve": {"type": "array", "items": {"type": "string"}},
+    "may_change": {"type": "array", "items": {"type": "string"}},
+    "must_change": {"type": "array", "items": {"type": "string"}},
+    "invariants": {"type": "array", "items": {"type": "string"}},
+    "required_judgements": {"type": "array", "items": {"type": "string"}},
+    "instructions": {"type": "array", "items": {"type": "string"}},
+    "expected_distance": {"type": "object"},
+    "expected_difficulty_effect": {"type": "string"},
+    "validation_checks": {"type": "array", "items": {"type": "string"}},
+    "known_failure_modes": {"type": "array", "items": {"type": "string"}},
+    "output_contract": {"type": "string"}
+  }
+}

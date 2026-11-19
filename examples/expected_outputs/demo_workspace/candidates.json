@@ -1,0 +1,4412 @@
+{
+  "candidates": [
+    {
+      "candidate_id": "c01",
+      "spec_id": "spec-f69f5eba0d",
+      "parent_id": "p1-a2",
+      "operator": "representation",
+      "question": {
+        "id": "m-p1-a2-rep",
+        "source": {
+          "origin": "generated"
+        },
+        "subject": "Introductory Physics",
+        "topic": "Kinematics",
+        "subtopic": "Uniform acceleration",
+        "text": "The velocity–time graph for a skateboarder moving in a straight line is shown below. Use the graph to determine the acceleration of the skateboarder.",
+        "question_type": "calculation",
+        "marks": 2,
+        "section": "A",
+        "learning_objectives": [
+          "K1 Use the equations of uniformly accelerated motion",
+          "K2 Interpret motion data in tables and graphs"
+        ],
+        "cognitive_level": "application",
+        "given": [
+          {
+            "symbol": "v",
+            "value": 9.0,
+            "unit": "m/s",
+            "description": "velocity at 5.0 s (read from graph)"
+          },
+          {
+            "symbol": "t",
+            "value": 5.0,
+            "unit": "s",
+            "description": "time (read from graph)"
+          }
+        ],
+        "constraints": [],
+        "language": "en",
+        "marking": {
+          "scheme_available": true,
+          "final_answer": "1.8 m/s²",
+          "answer_key": null,
+          "worked_solution": "a = gradient = Δv/Δt = 9.0/5.0 = 1.8 m/s²",
+          "points": [
+            {
+              "description": "Acceleration = gradient of v–t graph",
+              "marks": 1
+            },
+            {
+              "description": "1.8 m/s²",
+              "marks": 1
+            }
+          ],
+          "accept_rule": null
+        },
+        "provenance": {
+          "text": "inferred"
+        },
+        "diagram_description": "Velocity–time graph: velocity v / m s⁻¹ on the vertical axis (0 to 10), time t / s on the horizontal axis (0 to 6). A straight line runs from (0 s, 0 m/s) to (5.0 s, 9.0 m/s)."
+      },
+      "genome": {
+        "schema_version": "0.1.0",
+        "genome_id": "g-m-p1-a2-rep",
+        "question_id": "m-p1-a2-rep",
+        "knowledge": {
+          "primary_concept": "uniform acceleration",
+          "secondary_concepts": [
+            "velocity",
+            "gradient"
+          ],
+          "prerequisites": [
+            "velocity"
+          ],
+          "learning_objectives": [
+            "K1 Use the equations of uniformly accelerated motion",
+            "K2 Interpret motion data in tables and graphs"
+          ]
+        },
+        "reasoning": {
+          "steps": [
+            {
+              "id": "s1",
+              "type": "read_representation"
+            },
+            {
+              "id": "s2",
+              "type": "select_relation"
+            },
+            {
+              "id": "s3",
+              "type": "apply_mathematics"
+            },
+            {
+              "id": "s4",
+              "type": "derive_result"
+            }
+          ],
+          "edges": [
+            [
+              "s1",
+              "s2"
+            ],
+            [
+              "s2",
+              "s3"
+            ],
+            [
+              "s3",
+              "s4"
+            ]
+          ]
+        },
+        "representation": {
+          "input": [
+            "verbal",
+            "graph"
+          ],
+          "output": [
+            "numeric"
+          ],
+          "context": "skateboarding"
+        },
+        "constraints": {
+          "explicit": [],
+          "implicit": [],
+          "domain": [],
+          "boundary": [],
+          "units": []
+        },
+        "assessment": {
+          "answer_type": "numeric",
+          "difficulty_features": {
+            "math_complexity": 1
+          }
+        },
+        "validation": {}
+      },
+      "verification": {
+        "kind": "numeric",
+        "expression": "v/t",
+        "variables": {
+          "v": 9.0,
+          "t": 5.0
+        },
+        "claimed_value": 1.8,
+        "claimed_unit": "m/s^2",
+        "answer_uniqueness": "unique"
+      },
+      "invariant_judgements": [
+        {
+          "property": "target_skill",
+          "preserved": true,
+          "rationale": "Same target concept and skill as the parent."
+        }
+      ],
+      "change_summary": "Data now read from a v–t graph; acceleration found as the gradient."
+    },
+    {
+      "candidate_id": "c02",
+      "spec_id": "spec-c4d1222a01",
+      "parent_id": "p1-a3",
+      "operator": "reasoning_path",
+      "question": {
+        "id": "m-p1-a3-path",
+        "source": {
+          "origin": "generated"
+        },
+        "subject": "Introductory Physics",
+        "topic": "Forces",
+        "subtopic": "Newton's second law",
+        "text": "A trolley of mass 2.0 kg is pulled from rest by a constant resultant force and reaches a speed of 1.5 m/s after 0.50 s. Calculate the resultant force on the trolley.",
+        "question_type": "calculation",
+        "marks": 3,
+        "section": "A",
+        "learning_objectives": [
+          "F1 Apply Newton's second law F = ma",
+          "K1 Use the equations of uniformly accelerated motion"
+        ],
+        "cognitive_level": "multi_step_reasoning",
+        "given": [
+          {
+            "symbol": "m",
+            "value": 2.0,
+            "unit": "kg",
+            "description": "mass"
+          },
+          {
+            "symbol": "v",
+            "value": 1.5,
+            "unit": "m/s",
+            "description": "final speed"
+          },
+          {
+            "symbol": "t",
+            "value": 0.5,
+            "unit": "s",
+            "description": "time"
+          }
+        ],
+        "constraints": [],
+        "language": "en",
+        "marking": {
+          "scheme_available": true,
+          "final_answer": "6.0 N",
+          "answer_key": null,
+          "worked_solution": "a = v/t = 1.5/0.50 = 3.0 m/s²; F = ma = 2.0 × 3.0 = 6.0 N",
+          "points": [
+            {
+              "description": "a = (v − u)/t",
+              "marks": 1
+            },
+            {
+              "description": "F = ma",
+              "marks": 1
+            },
+            {
+              "description": "6.0 N",
+              "marks": 1
+            }
+          ],
+          "accept_rule": null
+        },
+        "provenance": {
+          "text": "inferred"
+        }
+      },
+      "genome": {
+        "schema_version": "0.1.0",
+        "genome_id": "g-m-p1-a3-path",
+        "question_id": "m-p1-a3-path",
+        "knowledge": {
+          "primary_concept": "Newton's second law",
+          "secondary_concepts": [
+            "acceleration",
+            "uniform acceleration"
+          ],
+          "prerequisites": [
+            "force",
+            "mass",
+            "velocity"
+          ],
+          "learning_objectives": [
+            "F1 Apply Newton's second law F = ma",
+            "K1 Use the equations of uniformly accelerated motion"
+          ]
+        },
+        "reasoning": {
+          "steps": [
+            {
+              "id": "s1",
+              "type": "read_given"
+            },
+            {
+              "id": "s2",
+              "type": "select_relation"
+            },
+            {
+              "id": "s3",
+              "type": "apply_mathematics"
+            },
+            {
+              "id": "s4",
+              "type": "select_relation"
+            },
+            {
+              "id": "s5",
+              "type": "apply_mathematics"
+            },
+            {
+              "id": "s6",
+              "type": "derive_result"
+            }
+          ],
+          "edges": [
+            [
+              "s1",
+              "s2"
+            ],
+            [
+              "s2",
+              "s3"
+            ],
+            [
+              "s3",
+              "s4"
+            ],
+            [
+              "s4",
+              "s5"
+            ],
+            [
+              "s5",
+              "s6"
+            ]
+          ]
+        },
+        "representation": {
+          "input": [
+            "verbal"
+          ],
+          "output": [
+            "numeric"
+          ],
+          "context": "laboratory trolley"
+        },
+        "constraints": {
+          "explicit": [],
+          "implicit": [],
+          "domain": [],
+          "boundary": [],
+          "units": []
+        },
+        "assessment": {
+          "answer_type": "numeric",
+          "difficulty_features": {
+            "math_complexity": 1
+          }
+        },
+        "validation": {}
+      },
+      "verification": {
+        "kind": "numeric",
+        "expression": "m*v/t",
+        "variables": {
+          "m": 2.0,
+          "v": 1.5,
+          "t": 0.5
+        },
+        "claimed_value": 6.0,
+        "claimed_unit": "N",
+        "answer_uniqueness": "unique"
+      },
+      "invariant_judgements": [
+        {
+          "property": "target_skill",
+          "preserved": true,
+          "rationale": "Same target concept and skill as the parent."
+        }
+      ],
+      "change_summary": "Acceleration must first be found from motion data, then F = ma: a two-relation path instead of one."
+    },
+    {
+      "candidate_id": "c03",
+      "spec_id": "spec-c08bf35e3c",
+      "parent_id": "p1-a4",
+      "operator": "constraint",
+      "question": {
+        "id": "m-p1-a4-con",
+        "source": {
+          "origin": "generated"
+        },
+        "subject": "Introductory Physics",
+        "topic": "Energy",
+        "subtopic": "Power",
+        "text": "A bedside lamp is rated at a maximum of 40 W. In a test it transfers 150 J of energy in 5.0 s. Calculate the power of the lamp and state whether it is operating within its rating.",
+        "question_type": "calculation",
+        "marks": 3,
+        "section": "A",
+        "learning_objectives": [
+          "E2 Calculate power and efficiency"
+        ],
+        "cognitive_level": "application",
+        "given": [
+          {
+            "symbol": "E",
+            "value": 150,
+            "unit": "J",
+            "description": "energy transferred"
+          },
+          {
+            "symbol": "t",
+            "value": 5.0,
+            "unit": "s",
+            "description": "time"
+          },
+          {
+            "symbol": "Pmax",
+            "value": 40,
+            "unit": "W",
+            "description": "rated maximum power",
+            "role": "data"
+          }
+        ],
+        "constraints": [
+          {
+            "text": "power must not exceed the 40 W rating",
+            "kind": "explicit"
+          }
+        ],
+        "language": "en",
+        "marking": {
+          "scheme_available": true,
+          "final_answer": "30 W; within the 40 W rating",
+          "answer_key": null,
+          "worked_solution": "P = E/t = 150/5.0 = 30 W, which is less than 40 W, so within rating.",
+          "points": [
+            {
+              "description": "P = E/t",
+              "marks": 1
+            },
+            {
+              "description": "30 W",
+              "marks": 1
+            },
+            {
+              "description": "Compares with 40 W: within rating",
+              "marks": 1
+            }
+          ],
+          "accept_rule": null
+        },
+        "provenance": {
+          "text": "inferred"
+        }
+      },
+      "genome": {
+        "schema_version": "0.1.0",
+        "genome_id": "g-m-p1-a4-con",
+        "question_id": "m-p1-a4-con",
+        "knowledge": {
+          "primary_concept": "power",
+          "secondary_concepts": [
+            "energy transfer",
+            "power rating"
+          ],
+          "prerequisites": [
+            "energy"
+          ],
+          "learning_objectives": [
+            "E2 Calculate power and efficiency"
+          ]
+        },
+        "reasoning": {
+          "steps": [
+            {
+              "id": "s1",
+              "type": "read_given"
+            },
+            {
+              "id": "s2",
+              "type": "select_relation"
+            },
+            {
+              "id": "s3",
+              "type": "apply_mathematics"
+            },
+            {
+              "id": "s4",
+              "type": "derive_result"
+            },
+            {
+              "id": "s5",
+              "type": "compare"
+            }
+          ],
+          "edges": [
+            [
+              "s1",
+              "s2"
+            ],
+            [
+              "s2",
+              "s3"
+            ],
+            [
+              "s3",
+              "s4"
+            ],
+            [
+              "s4",
+              "s5"
+            ]
+          ]
+        },
+        "representation": {
+          "input": [
+            "verbal"
+          ],
+          "output": [
+            "numeric"
+          ],
+          "context": "household lamp"
+        },
+        "constraints": {
+          "explicit": [
+            "power must not exceed the 40 W rating"
+          ],
+          "implicit": [],
+          "domain": [],
+          "boundary": [],
+          "units": []
+        },
+        "assessment": {
+          "answer_type": "numeric",
+          "difficulty_features": {
+            "math_complexity": 1
+          }
+        },
+        "validation": {}
+      },
+      "verification": {
+        "kind": "numeric",
+        "expression": "E/t",
+        "variables": {
+          "E": 150,
+          "t": 5.0
+        },
+        "claimed_value": 30,
+        "claimed_unit": "W",
+        "answer_uniqueness": "unique",
+        "domain": [
+          {
+            "var": "result",
+            "min": 0,
+            "max": 40
+          }
+        ]
+      },
+      "invariant_judgements": [
+        {
+          "property": "target_skill",
+          "preserved": true,
+          "rationale": "Same target concept and skill as the parent."
+        }
+      ],
+      "change_summary": "Adds a power-rating constraint that the result must be checked against."
+    },
+    {
+      "candidate_id": "c04-try1",
+      "spec_id": "spec-f69c97ba43",
+      "parent_id": "p1-a6",
+      "operator": "surface",
+      "question": {
+        "id": "m-p1-a6-surf-t1",
+        "source": {
+          "origin": "generated"
+        },
+        "subject": "Introductory Physics",
+        "topic": "Electricity",
+        "subtopic": "Ohm's law",
+        "text": "Determine the potential difference across a 12 Ω resistor that carries a steady current of 0.40 A.",
+        "question_type": "calculation",
+        "marks": 2,
+        "section": "A",
+        "learning_objectives": [
+          "C1 Apply Ohm's law to series circuits"
+        ],
+        "cognitive_level": "application",
+        "given": [
+          {
+            "symbol": "I",
+            "value": 0.4,
+            "unit": "A",
+            "description": "current"
+          },
+          {
+            "symbol": "R",
+            "value": 12,
+            "unit": "ohm",
+            "description": "resistance"
+          }
+        ],
+        "constraints": [],
+        "language": "en",
+        "marking": {
+          "scheme_available": true,
+          "final_answer": "4.8 V",
+          "answer_key": null,
+          "worked_solution": "V = IR = 0.40 × 12 = 4.8 V",
+          "points": [
+            {
+              "description": "V = IR",
+              "marks": 1
+            },
+            {
+              "description": "4.8 V",
+              "marks": 1
+            }
+          ],
+          "accept_rule": null
+        },
+        "provenance": {
+          "text": "inferred"
+        }
+      },
+      "genome": {
+        "schema_version": "0.1.0",
+        "genome_id": "g-m-p1-a6-surf-t1",
+        "question_id": "m-p1-a6-surf-t1",
+        "knowledge": {
+          "primary_concept": "Ohm's law",
+          "secondary_concepts": [
+            "resistance"
+          ],
+          "prerequisites": [
+            "current",
+            "potential difference"
+          ],
+          "learning_objectives": [
+            "C1 Apply Ohm's law to series circuits"
+          ]
+        },
+        "reasoning": {
+          "steps": [
+            {
+              "id": "s1",
+              "type": "read_given"
+            },
+            {
+              "id": "s2",
+              "type": "select_relation"
+            },
+            {
+              "id": "s3",
+              "type": "apply_mathematics"
+            },
+            {
+              "id": "s4",
+              "type": "derive_result"
+            }
+          ],
+          "edges": [
+            [
+              "s1",
+              "s2"
+            ],
+            [
+              "s2",
+              "s3"
+            ],
+            [
+              "s3",
+              "s4"
+            ]
+          ]
+        },
+        "representation": {
+          "input": [
+            "verbal"
+          ],
+          "output": [
+            "numeric"
+          ],
+          "context": "circuit"
+        },
+        "constraints": {
+          "explicit": [],
+          "implicit": [],
+          "domain": [],
+          "boundary": [],
+          "units": []
+        },
+        "assessment": {
+          "answer_type": "numeric",
+          "difficulty_features": {
+            "math_complexity": 1
+          }
+        },
+        "validation": {}
+      },
+      "verification": {
+        "kind": "numeric",
+        "expression": "I*R",
+        "variables": {
+          "I": 0.4,
+          "R": 12
+        },
+        "claimed_value": 4.8,
+        "claimed_unit": "V",
+        "answer_uniqueness": "unique"
+      },
+      "invariant_judgements": [
+        {
+          "property": "target_skill",
+          "preserved": true,
+          "rationale": "Same target concept and skill as the parent."
+        }
+      ],
+      "change_summary": "Concise rewording (first attempt)."
+    },
+    {
+      "candidate_id": "c04-try2",
+      "spec_id": "spec-f69c97ba43",
+      "parent_id": "p1-a6",
+      "operator": "surface",
+      "question": {
+        "id": "m-p1-a6-surf",
+        "source": {
+          "origin": "generated"
+        },
+        "subject": "Introductory Physics",
+        "topic": "Electricity",
+        "subtopic": "Ohm's law",
+        "text": "Determine the potential difference across a 12 Ω resistor that carries a steady current of 0.50 A.",
+        "question_type": "calculation",
+        "marks": 2,
+        "section": "A",
+        "learning_objectives": [
+          "C1 Apply Ohm's law to series circuits"
+        ],
+        "cognitive_level": "application",
+        "given": [
+          {
+            "symbol": "I",
+            "value": 0.5,
+            "unit": "A",
+            "description": "current"
+          },
+          {
+            "symbol": "R",
+            "value": 12,
+            "unit": "ohm",
+            "description": "resistance"
+          }
+        ],
+        "constraints": [],
+        "language": "en",
+        "marking": {
+          "scheme_available": true,
+          "final_answer": "6.0 V",
+          "answer_key": null,
+          "worked_solution": "V = IR = 0.50 × 12 = 6.0 V",
+          "points": [
+            {
+              "description": "V = IR",
+              "marks": 1
+            },
+            {
+              "description": "6.0 V",
+              "marks": 1
+            }
+          ],
+          "accept_rule": null
+        },
+        "provenance": {
+          "text": "inferred"
+        }
+      },
+      "genome": {
+        "schema_version": "0.1.0",
+        "genome_id": "g-m-p1-a6-surf",
+        "question_id": "m-p1-a6-surf",
+        "knowledge": {
+          "primary_concept": "Ohm's law",
+          "secondary_concepts": [
+            "resistance"
+          ],
+          "prerequisites": [
+            "current",
+            "potential difference"
+          ],
+          "learning_objectives": [
+            "C1 Apply Ohm's law to series circuits"
+          ]
+        },
+        "reasoning": {
+          "steps": [
+            {
+              "id": "s1",
+              "type": "read_given"
+            },
+            {
+              "id": "s2",
+              "type": "select_relation"
+            },
+            {
+              "id": "s3",
+              "type": "apply_mathematics"
+            },
+            {
+              "id": "s4",
+              "type": "derive_result"
+            }
+          ],
+          "edges": [
+            [
+              "s1",
+              "s2"
+            ],
+            [
+              "s2",
+              "s3"
+            ],
+            [
+              "s3",
+              "s4"
+            ]
+          ]
+        },
+        "representation": {
+          "input": [
+            "verbal"
+          ],
+          "output": [
+            "numeric"
+          ],
+          "context": "circuit"
+        },
+        "constraints": {
+          "explicit": [],
+          "implicit": [],
+          "domain": [],
+          "boundary": [],
+          "units": []
+        },
+        "assessment": {
+          "answer_type": "numeric",
+          "difficulty_features": {
+            "math_complexity": 1
+          }
+        },
+        "validation": {}
+      },
+      "verification": {
+        "kind": "numeric",
+        "expression": "I*R",
+        "variables": {
+          "I": 0.5,
+          "R": 12
+        },
+        "claimed_value": 6.0,
+        "claimed_unit": "V",
+        "answer_uniqueness": "unique"
+      },
+      "invariant_judgements": [
+        {
+          "property": "target_skill",
+          "preserved": true,
+          "rationale": "Same target concept and skill as the parent."
+        }
+      ],
+      "change_summary": "Concise technical rewording; data, method and answer unchanged."
+    },
+    {
+      "candidate_id": "c05",
+      "spec_id": "spec-5757edbca7",
+      "parent_id": "p2-a2",
+      "operator": "difficulty",
+      "question": {
+        "id": "m-p2-a2-diff",
+        "source": {
+          "origin": "generated"
+        },
+        "subject": "Introductory Physics",
+        "topic": "Momentum",
+        "subtopic": "Momentum",
+        "text": "A car of mass 1200 kg travels at 15 m/s. A lorry of mass 8000 kg travels at 2.5 m/s. Calculate the momentum of each vehicle and state which would need the larger average force to stop it in the same time.",
+        "question_type": "calculation",
+        "marks": 3,
+        "section": "A",
+        "learning_objectives": [
+          "M1 Apply conservation of momentum",
+          "F1 Apply Newton's second law F = ma"
+        ],
+        "cognitive_level": "multi_step_reasoning",
+        "given": [
+          {
+            "symbol": "m1",
+            "value": 1200,
+            "unit": "kg",
+            "description": "car mass"
+          },
+          {
+            "symbol": "v1",
+            "value": 15,
+            "unit": "m/s",
+            "description": "car speed"
+          },
+          {
+            "symbol": "m2",
+            "value": 8000,
+            "unit": "kg",
+            "description": "lorry mass"
+          },
+          {
+            "symbol": "v2",
+            "value": 2.5,
+            "unit": "m/s",
+            "description": "lorry speed"
+          }
+        ],
+        "constraints": [],
+        "language": "en",
+        "marking": {
+          "scheme_available": true,
+          "final_answer": "car 18 000 kg m/s; lorry 20 000 kg m/s; the lorry needs the larger force",
+          "answer_key": null,
+          "worked_solution": "p(car) = 1200 × 15 = 18 000 kg m/s; p(lorry) = 8000 × 2.5 = 20 000 kg m/s. Same stopping time ⇒ F = Δp/Δt is larger for the lorry.",
+          "points": [
+            {
+              "description": "Car momentum 18 000 kg m/s",
+              "marks": 1
+            },
+            {
+              "description": "Lorry momentum 20 000 kg m/s",
+              "marks": 1
+            },
+            {
+              "description": "Lorry: larger change of momentum in same time needs larger force",
+              "marks": 1
+            }
+          ],
+          "accept_rule": null
+        },
+        "provenance": {
+          "text": "inferred"
+        }
+      },
+      "genome": {
+        "schema_version": "0.1.0",
+        "genome_id": "g-m-p2-a2-diff",
+        "question_id": "m-p2-a2-diff",
+        "knowledge": {
+          "primary_concept": "momentum",
+          "secondary_concepts": [
+            "velocity",
+            "force as rate of change of momentum"
+          ],
+          "prerequisites": [
+            "mass",
+            "velocity",
+            "force"
+          ],
+          "learning_objectives": [
+            "M1 Apply conservation of momentum",
+            "F1 Apply Newton's second law F = ma"
+          ]
+        },
+        "reasoning": {
+          "steps": [
+            {
+              "id": "s1",
+              "type": "read_given"
+            },
+            {
+              "id": "s2",
+              "type": "select_relation"
+            },
+            {
+              "id": "s3",
+              "type": "apply_mathematics"
+            },
+            {
+              "id": "s4",
+              "type": "apply_mathematics"
+            },
+            {
+              "id": "s5",
+              "type": "compare"
+            },
+            {
+              "id": "s6",
+              "type": "interpret_result"
+            }
+          ],
+          "edges": [
+            [
+              "s1",
+              "s2"
+            ],
+            [
+              "s2",
+              "s3"
+            ],
+            [
+              "s3",
+              "s4"
+            ],
+            [
+              "s4",
+              "s5"
+            ],
+            [
+              "s5",
+              "s6"
+            ]
+          ]
+        },
+        "representation": {
+          "input": [
+            "verbal"
+          ],
+          "output": [
+            "numeric"
+          ],
+          "context": "road transport"
+        },
+        "constraints": {
+          "explicit": [],
+          "implicit": [],
+          "domain": [],
+          "boundary": [],
+          "units": []
+        },
+        "assessment": {
+          "answer_type": "numeric",
+          "difficulty_features": {
+            "math_complexity": 1
+          }
+        },
+        "validation": {}
+      },
+      "verification": {
+        "kind": "numeric",
+        "expression": "m2*v2",
+        "variables": {
+          "m2": 8000,
+          "v2": 2.5
+        },
+        "claimed_value": 20000,
+        "claimed_unit": "kg m/s",
+        "answer_uniqueness": "unique"
+      },
+      "invariant_judgements": [
+        {
+          "property": "target_skill",
+          "preserved": true,
+          "rationale": "Same target concept and skill as the parent."
+        }
+      ],
+      "change_summary": "Adds a second calculation and an interpretation stage (comparison of stopping force)."
+    },
+    {
+      "candidate_id": "c06-try1",
+      "spec_id": "spec-247e52b245",
+      "parent_id": "p2-a3",
+      "operator": "parameter",
+      "question": {
+        "id": "m-p2-a3-par-t1",
+        "source": {
+          "origin": "generated"
+        },
+        "subject": "Introductory Physics",
+        "topic": "Forces",
+        "subtopic": "Hooke's law",
+        "text": "A spring with spring constant 40 N/m is extended by 0.19 m. Calculate the force applied to the spring.",
+        "question_type": "calculation",
+        "marks": 2,
+        "section": "A",
+        "learning_objectives": [
+          "F2 Apply Hooke's law F = kx"
+        ],
+        "cognitive_level": "application",
+        "given": [
+          {
+            "symbol": "k",
+            "value": 40,
+            "unit": "N/m",
+            "description": "spring constant"
+          },
+          {
+            "symbol": "x",
+            "value": 0.19,
+            "unit": "m",
+            "description": "extension"
+          }
+        ],
+        "constraints": [
+          {
+            "text": "the spring obeys Hooke's law (limit of proportionality not exceeded)",
+            "kind": "explicit"
+          }
+        ],
+        "language": "en",
+        "marking": {
+          "scheme_available": true,
+          "final_answer": "7.6 N",
+          "answer_key": null,
+          "worked_solution": "F = kx = 40 × 0.19 = 7.6 N",
+          "points": [
+            {
+              "description": "F = kx",
+              "marks": 1
+            },
+            {
+              "description": "7.6 N",
+              "marks": 1
+            }
+          ],
+          "accept_rule": null
+        },
+        "provenance": {
+          "text": "inferred"
+        }
+      },
+      "genome": {
+        "schema_version": "0.1.0",
+        "genome_id": "g-m-p2-a3-par-t1",
+        "question_id": "m-p2-a3-par-t1",
+        "knowledge": {
+          "primary_concept": "Hooke's law",
+          "secondary_concepts": [
+            "elastic deformation"
+          ],
+          "prerequisites": [
+            "force"
+          ],
+          "learning_objectives": [
+            "F2 Apply Hooke's law F = kx"
+          ]
+        },
+        "reasoning": {
+          "steps": [
+            {
+              "id": "s1",
+              "type": "read_given"
+            },
+            {
+              "id": "s2",
+              "type": "select_relation"
+            },
+            {
+              "id": "s3",
+              "type": "apply_mathematics"
+            },
+            {
+              "id": "s4",
+              "type": "derive_result"
+            }
+          ],
+          "edges": [
+            [
+              "s1",
+              "s2"
+            ],
+            [
+              "s2",
+              "s3"
+            ],
+            [
+              "s3",
+              "s4"
+            ]
+          ]
+        },
+        "representation": {
+          "input": [
+            "verbal"
+          ],
+          "output": [
+            "numeric"
+          ],
+          "context": "spring"
+        },
+        "constraints": {
+          "explicit": [
+            "limit of proportionality not exceeded"
+          ],
+          "implicit": [],
+          "domain": [],
+          "boundary": [],
+          "units": []
+        },
+        "assessment": {
+          "answer_type": "numeric",
+          "difficulty_features": {
+            "math_complexity": 1
+          }
+        },
+        "validation": {}
+      },
+      "verification": {
+        "kind": "numeric",
+        "expression": "k*x",
+        "variables": {
+          "k": 40,
+          "x": 0.19
+        },
+        "claimed_value": 7.6,
+        "claimed_unit": "N",
+        "answer_uniqueness": "unique"
+      },
+      "invariant_judgements": [
+        {
+          "property": "target_skill",
+          "preserved": true,
+          "rationale": "Same target concept and skill as the parent."
+        }
+      ],
+      "change_summary": "Only the extension changed (first attempt)."
+    },
+    {
+      "candidate_id": "c06-try2",
+      "spec_id": "spec-247e52b245",
+      "parent_id": "p2-a3",
+      "operator": "parameter",
+      "question": {
+        "id": "m-p2-a3-par",
+        "source": {
+          "origin": "generated"
+        },
+        "subject": "Introductory Physics",
+        "topic": "Forces",
+        "subtopic": "Hooke's law",
+        "text": "When a student hangs a load on a spring of stiffness 40 N/m, it stretches by 0.19 m without passing its limit of proportionality. What force does the load exert on the spring?",
+        "question_type": "calculation",
+        "marks": 2,
+        "section": "A",
+        "learning_objectives": [
+          "F2 Apply Hooke's law F = kx"
+        ],
+        "cognitive_level": "application",
+        "given": [
+          {
+            "symbol": "k",
+            "value": 40,
+            "unit": "N/m",
+            "description": "spring constant"
+          },
+          {
+            "symbol": "x",
+            "value": 0.19,
+            "unit": "m",
+            "description": "extension"
+          }
+        ],
+        "constraints": [
+          {
+            "text": "the spring obeys Hooke's law (limit of proportionality not exceeded)",
+            "kind": "explicit"
+          }
+        ],
+        "language": "en",
+        "marking": {
+          "scheme_available": true,
+          "final_answer": "7.6 N",
+          "answer_key": null,
+          "worked_solution": "F = kx = 40 × 0.19 = 7.6 N",
+          "points": [
+            {
+              "description": "F = kx",
+              "marks": 1
+            },
+            {
+              "description": "7.6 N",
+              "marks": 1
+            }
+          ],
+          "accept_rule": null
+        },
+        "provenance": {
+          "text": "inferred"
+        }
+      },
+      "genome": {
+        "schema_version": "0.1.0",
+        "genome_id": "g-m-p2-a3-par",
+        "question_id": "m-p2-a3-par",
+        "knowledge": {
+          "primary_concept": "Hooke's law",
+          "secondary_concepts": [
+            "elastic deformation"
+          ],
+          "prerequisites": [
+            "force"
+          ],
+          "learning_objectives": [
+            "F2 Apply Hooke's law F = kx"
+          ]
+        },
+        "reasoning": {
+          "steps": [
+            {
+              "id": "s1",
+              "type": "read_given"
+            },
+            {
+              "id": "s2",
+              "type": "select_relation"
+            },
+            {
+              "id": "s3",
+              "type": "apply_mathematics"
+            },
+            {
+              "id": "s4",
+              "type": "derive_result"
+            }
+          ],
+          "edges": [
+            [
+              "s1",
+              "s2"
+            ],
+            [
+              "s2",
+              "s3"
+            ],
+            [
+              "s3",
+              "s4"
+            ]
+          ]
+        },
+        "representation": {
+          "input": [
+            "verbal"
+          ],
+          "output": [
+            "numeric"
+          ],
+          "context": "spring"
+        },
+        "constraints": {
+          "explicit": [
+            "limit of proportionality not exceeded"
+          ],
+          "implicit": [],
+          "domain": [],
+          "boundary": [],
+          "units": []
+        },
+        "assessment": {
+          "answer_type": "numeric",
+          "difficulty_features": {
+            "math_complexity": 1
+          }
+        },
+        "validation": {}
+      },
+      "verification": {
+        "kind": "numeric",
+        "expression": "k*x",
+        "variables": {
+          "k": 40,
+          "x": 0.19
+        },
+        "claimed_value": 7.6,
+        "claimed_unit": "N",
+        "answer_uniqueness": "unique"
+      },
+      "invariant_judgements": [
+        {
+          "property": "target_skill",
+          "preserved": true,
+          "rationale": "Same target concept and skill as the parent."
+        }
+      ],
+      "change_summary": "Extension changed to 0.19 m; scenario reworded; answer recomputed."
+    },
+    {
+      "candidate_id": "c07",
+      "spec_id": "spec-31dad5c71b",
+      "parent_id": "p2-a4",
+      "operator": "reverse",
+      "question": {
+        "id": "m-p2-a4-rev",
+        "source": {
+          "origin": "generated"
+        },
+        "subject": "Introductory Physics",
+        "topic": "Waves",
+        "subtopic": "Wave equation",
+        "text": "A sound wave of frequency 250 Hz has a wavelength of 1.36 m in air. What is the speed of sound in the air?",
+        "question_type": "multiple_choice",
+        "marks": 1,
+        "section": "A",
+        "learning_objectives": [
+          "W1 Use the wave equation v = f λ"
+        ],
+        "cognitive_level": "application",
+        "given": [
+          {
+            "symbol": "f",
+            "value": 250,
+            "unit": "Hz",
+            "description": "frequency"
+          },
+          {
+            "symbol": "lam",
+            "value": 1.36,
+            "unit": "m",
+            "description": "wavelength"
+          }
+        ],
+        "constraints": [],
+        "language": "en",
+        "marking": {
+          "scheme_available": true,
+          "final_answer": "340 m/s",
+          "answer_key": "B",
+          "worked_solution": null,
+          "points": [
+            {
+              "description": "B",
+              "marks": 1
+            }
+          ],
+          "accept_rule": null
+        },
+        "provenance": {
+          "text": "inferred"
+        },
+        "options": [
+          {
+            "key": "A",
+            "text": "184 m/s"
+          },
+          {
+            "key": "B",
+            "text": "340 m/s"
+          },
+          {
+            "key": "C",
+            "text": "0.0054 m/s"
+          },
+          {
+            "key": "D",
+            "text": "251 m/s"
+          }
+        ]
+      },
+      "genome": {
+        "schema_version": "0.1.0",
+        "genome_id": "g-m-p2-a4-rev",
+        "question_id": "m-p2-a4-rev",
+        "knowledge": {
+          "primary_concept": "wave equation",
+          "secondary_concepts": [
+            "sound"
+          ],
+          "prerequisites": [
+            "frequency"
+          ],
+          "learning_objectives": [
+            "W1 Use the wave equation v = f λ"
+          ]
+        },
+        "reasoning": {
+          "steps": [
+            {
+              "id": "s1",
+              "type": "read_given"
+            },
+            {
+              "id": "s2",
+              "type": "select_relation"
+            },
+            {
+              "id": "s3",
+              "type": "apply_mathematics"
+            }
+          ],
+          "edges": [
+            [
+              "s1",
+              "s2"
+            ],
+            [
+              "s2",
+              "s3"
+            ]
+          ]
+        },
+        "representation": {
+          "input": [
+            "verbal"
+          ],
+          "output": [],
+          "context": "sound"
+        },
+        "constraints": {
+          "explicit": [],
+          "implicit": [],
+          "domain": [],
+          "boundary": [],
+          "units": []
+        },
+        "assessment": {
+          "answer_type": "choice",
+          "difficulty_features": {
+            "math_complexity": 1
+          }
+        },
+        "validation": {}
+      },
+      "verification": {
+        "kind": "numeric",
+        "expression": "f*lam",
+        "variables": {
+          "f": 250,
+          "lam": 1.36
+        },
+        "claimed_value": 340,
+        "claimed_unit": "m/s",
+        "answer_uniqueness": "unique"
+      },
+      "invariant_judgements": [
+        {
+          "property": "target_skill",
+          "preserved": true,
+          "rationale": "Same target concept and skill as the parent."
+        }
+      ],
+      "change_summary": "The former result type (wavelength) is now given and the former given (speed) is the unknown."
+    },
+    {
+      "candidate_id": "c08",
+      "spec_id": "spec-4347c5eb2c",
+      "parent_id": "p2-a5",
+      "operator": "context_transfer",
+      "question": {
+        "id": "m-p2-a5-ctx",
+        "source": {
+          "origin": "generated"
+        },
+        "subject": "Introductory Physics",
+        "topic": "Electricity",
+        "subtopic": "Current and charge",
+        "text": "The motor of a kitchen food mixer passes 2700 C of charge during 900 s of use. Calculate the average current in the motor.",
+        "question_type": "calculation",
+        "marks": 2,
+        "section": "A",
+        "learning_objectives": [
+          "C2 Relate charge, current, potential difference and power"
+        ],
+        "cognitive_level": "application",
+        "given": [
+          {
+            "symbol": "Q",
+            "value": 2700,
+            "unit": "C",
+            "description": "charge"
+          },
+          {
+            "symbol": "t",
+            "value": 900,
+            "unit": "s",
+            "description": "time"
+          }
+        ],
+        "constraints": [],
+        "language": "en",
+        "marking": {
+          "scheme_available": true,
+          "final_answer": "3.0 A",
+          "answer_key": null,
+          "worked_solution": "I = Q/t = 2700/900 = 3.0 A",
+          "points": [
+            {
+              "description": "I = Q/t",
+              "marks": 1
+            },
+            {
+              "description": "3.0 A",
+              "marks": 1
+            }
+          ],
+          "accept_rule": null
+        },
+        "provenance": {
+          "text": "inferred"
+        }
+      },
+      "genome": {
+        "schema_version": "0.1.0",
+        "genome_id": "g-m-p2-a5-ctx",
+        "question_id": "m-p2-a5-ctx",
+        "knowledge": {
+          "primary_concept": "electric current",
+          "secondary_concepts": [
+            "charge"
+          ],
+          "prerequisites": [
+            "charge"
+          ],
+          "learning_objectives": [
+            "C2 Relate charge, current, potential difference and power"
+          ]
+        },
+        "reasoning": {
+          "steps": [
+            {
+              "id": "s1",
+              "type": "read_given"
+            },
+            {
+              "id": "s2",
+              "type": "select_relation"
+            },
+            {
+              "id": "s3",
+              "type": "apply_mathematics"
+            },
+            {
+              "id": "s4",
+              "type": "derive_result"
+            }
+          ],
+          "edges": [
+            [
+              "s1",
+              "s2"
+            ],
+            [
+              "s2",
+              "s3"
+            ],
+            [
+              "s3",
+              "s4"
+            ]
+          ]
+        },
+        "representation": {
+          "input": [
+            "verbal"
+          ],
+          "output": [
+            "numeric"
+          ],
+          "context": "kitchen appliances"
+        },
+        "constraints": {
+          "explicit": [],
+          "implicit": [],
+          "domain": [],
+          "boundary": [],
+          "units": []
+        },
+        "assessment": {
+          "answer_type": "numeric",
+          "difficulty_features": {
+            "math_complexity": 1
+          }
+        },
+        "validation": {}
+      },
+      "verification": {
+        "kind": "numeric",
+        "expression": "Q/t",
+        "variables": {
+          "Q": 2700,
+          "t": 900
+        },
+        "claimed_value": 3.0,
+        "claimed_unit": "A",
+        "answer_uniqueness": "unique"
+      },
+      "invariant_judgements": [
+        {
+          "property": "target_skill",
+          "preserved": true,
+          "rationale": "Same target concept and skill as the parent."
+        },
+        {
+          "property": "context",
+          "preserved": false,
+          "rationale": null
+        }
+      ],
+      "change_summary": "Moved from a lamp to a food-mixer motor; same relation and steps."
+    },
+    {
+      "candidate_id": "c09",
+      "spec_id": "spec-8794acaa91",
+      "parent_id": "p3-a2",
+      "operator": "difficulty",
+      "question": {
+        "id": "m-p3-a2-diff",
+        "source": {
+          "origin": "generated"
+        },
+        "subject": "Introductory Physics",
+        "topic": "Energy",
+        "subtopic": "Gravitational potential energy",
+        "text": "A climber of mass 55 kg ascends a vertical wall of height 15 m in 50 s. Calculate the climber's gain in gravitational potential energy and the minimum average useful power developed. Take g = 9.8 m/s².",
+        "question_type": "calculation",
+        "marks": 3,
+        "section": "A",
+        "learning_objectives": [
+          "E1 Calculate gravitational potential and kinetic energy",
+          "E2 Calculate power and efficiency"
+        ],
+        "cognitive_level": "multi_step_reasoning",
+        "given": [
+          {
+            "symbol": "m",
+            "value": 55,
+            "unit": "kg",
+            "description": "mass"
+          },
+          {
+            "symbol": "h",
+            "value": 15,
+            "unit": "m",
+            "description": "height"
+          },
+          {
+            "symbol": "t",
+            "value": 50,
+            "unit": "s",
+            "description": "time"
+          },
+          {
+            "symbol": "g",
+            "value": 9.8,
+            "unit": "m/s^2",
+            "description": "gravitational field strength",
+            "role": "constant"
+          }
+        ],
+        "constraints": [],
+        "language": "en",
+        "marking": {
+          "scheme_available": true,
+          "final_answer": "8085 J (8.1 kJ); 162 W",
+          "answer_key": null,
+          "worked_solution": "ΔEp = mgh = 55 × 9.8 × 15 = 8085 J; P = ΔEp/t = 8085/50 = 161.7 ≈ 162 W (minimum, as other energy transfers are ignored).",
+          "points": [
+            {
+              "description": "ΔEp = mgh = 8085 J",
+              "marks": 1
+            },
+            {
+              "description": "P = E/t",
+              "marks": 1
+            },
+            {
+              "description": "162 W, identified as a minimum",
+              "marks": 1
+            }
+          ],
+          "accept_rule": null
+        },
+        "provenance": {
+          "text": "inferred"
+        }
+      },
+      "genome": {
+        "schema_version": "0.1.0",
+        "genome_id": "g-m-p3-a2-diff",
+        "question_id": "m-p3-a2-diff",
+        "knowledge": {
+          "primary_concept": "gravitational potential energy",
+          "secondary_concepts": [
+            "power"
+          ],
+          "prerequisites": [
+            "weight",
+            "power"
+          ],
+          "learning_objectives": [
+            "E1 Calculate gravitational potential and kinetic energy",
+            "E2 Calculate power and efficiency"
+          ]
+        },
+        "reasoning": {
+          "steps": [
+            {
+              "id": "s1",
+              "type": "read_given"
+            },
+            {
+              "id": "s2",
+              "type": "select_relation"
+            },
+            {
+              "id": "s3",
+              "type": "apply_mathematics"
+            },
+            {
+              "id": "s4",
+              "type": "select_relation"
+            },
+            {
+              "id": "s5",
+              "type": "apply_mathematics"
+            },
+            {
+              "id": "s6",
+              "type": "interpret_result"
+            }
+          ],
+          "edges": [
+            [
+              "s1",
+              "s2"
+            ],
+            [
+              "s2",
+              "s3"
+            ],
+            [
+              "s3",
+              "s4"
+            ],
+            [
+              "s4",
+              "s5"
+            ],
+            [
+              "s5",
+              "s6"
+            ]
+          ]
+        },
+        "representation": {
+          "input": [
+            "verbal"
+          ],
+          "output": [
+            "numeric"
+          ],
+          "context": "climbing"
+        },
+        "constraints": {
+          "explicit": [],
+          "implicit": [],
+          "domain": [],
+          "boundary": [],
+          "units": []
+        },
+        "assessment": {
+          "answer_type": "numeric",
+          "difficulty_features": {
+            "math_complexity": 1
+          }
+        },
+        "validation": {}
+      },
+      "verification": {
+        "kind": "numeric",
+        "expression": "m*g*h/t",
+        "variables": {
+          "m": 55,
+          "g": 9.8,
+          "h": 15,
+          "t": 50
+        },
+        "claimed_value": 161.7,
+        "claimed_unit": "W",
+        "answer_uniqueness": "unique"
+      },
+      "invariant_judgements": [
+        {
+          "property": "target_skill",
+          "preserved": true,
+          "rationale": "Same target concept and skill as the parent."
+        }
+      ],
+      "change_summary": "Adds a power stage and an interpretation of why the value is a minimum."
+    },
+    {
+      "candidate_id": "c10",
+      "spec_id": "spec-9cde7791d5",
+      "parent_id": "p3-a3",
+      "operator": "context_transfer",
+      "question": {
+        "id": "m-p3-a3-ctx",
+        "source": {
+          "origin": "generated"
+        },
+        "subject": "Introductory Physics",
+        "topic": "Kinematics",
+        "subtopic": "Projectile motion",
+        "text": "During an outdoor concert a drumstick rolls horizontally off the edge of a stage riser 1.25 m above the ground. Ignoring air resistance, calculate the time the drumstick takes to reach the ground. Take g = 9.8 m/s².",
+        "question_type": "calculation",
+        "marks": 3,
+        "section": "A",
+        "learning_objectives": [
+          "K3 Analyse projectile motion with independent horizontal and vertical components",
+          "K1 Use the equations of uniformly accelerated motion"
+        ],
+        "cognitive_level": "multi_step_reasoning",
+        "given": [
+          {
+            "symbol": "h",
+            "value": 1.25,
+            "unit": "m",
+            "description": "height of riser"
+          },
+          {
+            "symbol": "g",
+            "value": 9.8,
+            "unit": "m/s^2",
+            "description": "gravitational field strength",
+            "role": "constant"
+          }
+        ],
+        "constraints": [
+          {
+            "text": "air resistance is negligible",
+            "kind": "explicit"
+          },
+          {
+            "text": "initial vertical velocity is zero",
+            "kind": "boundary"
+          }
+        ],
+        "language": "en",
+        "marking": {
+          "scheme_available": true,
+          "final_answer": "0.51 s",
+          "answer_key": null,
+          "worked_solution": "Vertical motion from zero vertical velocity: h = ½gt² ⇒ t = √(2h/g) = √(2.5/9.8) = 0.51 s",
+          "points": [
+            {
+              "description": "Initial vertical velocity zero / horizontal motion irrelevant",
+              "marks": 1
+            },
+            {
+              "description": "h = ½gt²",
+              "marks": 1
+            },
+            {
+              "description": "0.51 s",
+              "marks": 1
+            }
+          ],
+          "accept_rule": null
+        },
+        "provenance": {
+          "text": "inferred"
+        }
+      },
+      "genome": {
+        "schema_version": "0.1.0",
+        "genome_id": "g-m-p3-a3-ctx",
+        "question_id": "m-p3-a3-ctx",
+        "knowledge": {
+          "primary_concept": "projectile motion",
+          "secondary_concepts": [
+            "uniformly accelerated motion"
+          ],
+          "prerequisites": [
+            "acceleration",
+            "vector components"
+          ],
+          "learning_objectives": [
+            "K3 Analyse projectile motion with independent horizontal and vertical components",
+            "K1 Use the equations of uniformly accelerated motion"
+          ]
+        },
+        "reasoning": {
+          "steps": [
+            {
+              "id": "s1",
+              "type": "read_given"
+            },
+            {
+              "id": "s2",
+              "type": "identify_constraint"
+            },
+            {
+              "id": "s3",
+              "type": "construct_model"
+            },
+            {
+              "id": "s4",
+              "type": "select_relation"
+            },
+            {
+              "id": "s5",
+              "type": "apply_mathematics"
+            },
+            {
+              "id": "s6",
+              "type": "derive_result"
+            }
+          ],
+          "edges": [
+            [
+              "s1",
+              "s2"
+            ],
+            [
+              "s2",
+              "s3"
+            ],
+            [
+              "s3",
+              "s4"
+            ],
+            [
+              "s4",
+              "s5"
+            ],
+            [
+              "s5",
+              "s6"
+            ]
+          ]
+        },
+        "representation": {
+          "input": [
+            "verbal"
+          ],
+          "output": [
+            "numeric"
+          ],
+          "context": "music and acoustics (concert stage)"
+        },
+        "constraints": {
+          "explicit": [
+            "air resistance negligible"
+          ],
+          "implicit": [],
+          "domain": [],
+          "boundary": [
+            "initial vertical velocity zero"
+          ],
+          "units": []
+        },
+        "assessment": {
+          "answer_type": "numeric",
+          "difficulty_features": {
+            "math_complexity": 3
+          }
+        },
+        "validation": {}
+      },
+      "verification": {
+        "kind": "numeric",
+        "expression": "sqrt(2*h/g)",
+        "variables": {
+          "h": 1.25,
+          "g": 9.8
+        },
+        "claimed_value": 0.505,
+        "claimed_unit": "s",
+        "answer_uniqueness": "unique"
+      },
+      "invariant_judgements": [
+        {
+          "property": "target_skill",
+          "preserved": true,
+          "rationale": "Same target concept and skill as the parent."
+        },
+        {
+          "property": "context",
+          "preserved": false,
+          "rationale": null
+        }
+      ],
+      "change_summary": "Same projectile model in a concert setting."
+    },
+    {
+      "candidate_id": "c11",
+      "spec_id": "spec-5a5fb5a89a",
+      "parent_id": "p3-a4",
+      "operator": "representation",
+      "question": {
+        "id": "m-p3-a4-rep",
+        "source": {
+          "origin": "generated"
+        },
+        "subject": "Introductory Physics",
+        "topic": "Waves",
+        "subtopic": "Wave equation",
+        "text": "A student measures a wave on a stretched string. The results are recorded in the table below. Calculate the frequency of the wave.",
+        "question_type": "calculation",
+        "marks": 2,
+        "section": "A",
+        "learning_objectives": [
+          "W1 Use the wave equation v = f λ"
+        ],
+        "cognitive_level": "application",
+        "given": [
+          {
+            "symbol": "v",
+            "value": 15,
+            "unit": "m/s",
+            "description": "wave speed"
+          },
+          {
+            "symbol": "lam",
+            "value": 0.6,
+            "unit": "m",
+            "description": "wavelength"
+          }
+        ],
+        "constraints": [],
+        "language": "en",
+        "marking": {
+          "scheme_available": true,
+          "final_answer": "25 Hz",
+          "answer_key": null,
+          "worked_solution": "f = v/λ = 15/0.60 = 25 Hz",
+          "points": [
+            {
+              "description": "f = v/λ",
+              "marks": 1
+            },
+            {
+              "description": "25 Hz",
+              "marks": 1
+            }
+          ],
+          "accept_rule": null
+        },
+        "provenance": {
+          "text": "inferred"
+        },
+        "table": {
+          "caption": "Measurements",
+          "columns": [
+            "Quantity",
+            "Value"
+          ],
+          "rows": [
+            [
+              "wave speed",
+              "15 m/s"
+            ],
+            [
+              "wavelength",
+              "0.60 m"
+            ]
+          ]
+        }
+      },
+      "genome": {
+        "schema_version": "0.1.0",
+        "genome_id": "g-m-p3-a4-rep",
+        "question_id": "m-p3-a4-rep",
+        "knowledge": {
+          "primary_concept": "wave equation",
+          "secondary_concepts": [],
+          "prerequisites": [
+            "frequency",
+            "wavelength"
+          ],
+          "learning_objectives": [
+            "W1 Use the wave equation v = f λ"
+          ]
+        },
+        "reasoning": {
+          "steps": [
+            {
+              "id": "s1",
+              "type": "read_representation"
+            },
+            {
+              "id": "s2",
+              "type": "select_relation"
+            },
+            {
+              "id": "s3",
+              "type": "apply_mathematics"
+            },
+            {
+              "id": "s4",
+              "type": "derive_result"
+            }
+          ],
+          "edges": [
+            [
+              "s1",
+              "s2"
+            ],
+            [
+              "s2",
+              "s3"
+            ],
+            [
+              "s3",
+              "s4"
+            ]
+          ]
+        },
+        "representation": {
+          "input": [
+            "verbal",
+            "table"
+          ],
+          "output": [
+            "numeric"
+          ],
+          "context": "music and acoustics"
+        },
+        "constraints": {
+          "explicit": [],
+          "implicit": [],
+          "domain": [],
+          "boundary": [],
+          "units": []
+        },
+        "assessment": {
+          "answer_type": "numeric",
+          "difficulty_features": {
+            "math_complexity": 1
+          }
+        },
+        "validation": {}
+      },
+      "verification": {
+        "kind": "numeric",
+        "expression": "v/lam",
+        "variables": {
+          "v": 15,
+          "lam": 0.6
+        },
+        "claimed_value": 25,
+        "claimed_unit": "Hz",
+        "answer_uniqueness": "unique"
+      },
+      "invariant_judgements": [],
+      "change_summary": "Data moved into a table."
+    },
+    {
+      "candidate_id": "c12-try1",
+      "spec_id": "spec-1dda8598d2",
+      "parent_id": "p1-b1",
+      "operator": "parameter",
+      "question": {
+        "id": "m-p1-b1-par-t1",
+        "source": {
+          "origin": "generated"
+        },
+        "subject": "Introductory Physics",
+        "topic": "Kinematics",
+        "subtopic": "Stopping distance",
+        "text": "Travelling along a straight road at 20 m/s, a driver applies the brakes. The car decelerates uniformly and stops after covering 62 m.",
+        "question_type": "mixed",
+        "marks": 7,
+        "section": "B",
+        "learning_objectives": [
+          "K1 Use the equations of uniformly accelerated motion",
+          "F3 Explain motion using Newton's first law"
+        ],
+        "cognitive_level": "multi_step_reasoning",
+        "given": [
+          {
+            "symbol": "u",
+            "value": 20,
+            "unit": "m/s",
+            "description": "initial speed"
+          },
+          {
+            "symbol": "s",
+            "value": 62,
+            "unit": "m",
+            "description": "braking distance"
+          }
+        ],
+        "constraints": [
+          {
+            "text": "deceleration is uniform",
+            "kind": "explicit"
+          },
+          {
+            "text": "the car comes to rest (v = 0)",
+            "kind": "boundary"
+          }
+        ],
+        "language": "en",
+        "marking": {
+          "scheme_available": true,
+          "final_answer": "(a) 4.0 m/s² (b) 5.0 s (c) less friction, so longer distance",
+          "answer_key": null,
+          "worked_solution": "(a) a = 4.0 m/s² (b) t = 5.0 s",
+          "points": [
+            {
+              "description": "Selects v² = u² − 2as with v = 0",
+              "marks": 1,
+              "part": "a"
+            },
+            {
+              "description": "Rearranges for a",
+              "marks": 1,
+              "part": "a"
+            },
+            {
+              "description": "4.0 m/s²",
+              "marks": 1,
+              "part": "a"
+            },
+            {
+              "description": "t = u/a or equivalent",
+              "marks": 1,
+              "part": "b"
+            },
+            {
+              "description": "Correct time",
+              "marks": 1,
+              "part": "b"
+            },
+            {
+              "description": "Less friction / grip on ice",
+              "marks": 1,
+              "part": "c"
+            },
+            {
+              "description": "Smaller deceleration so longer stopping distance",
+              "marks": 1,
+              "part": "c"
+            }
+          ],
+          "accept_rule": null
+        },
+        "provenance": {
+          "text": "inferred"
+        },
+        "parts": [
+          {
+            "label": "a",
+            "text": "Find the size of the car's deceleration.",
+            "marks": 3
+          },
+          {
+            "label": "b",
+            "text": "Find how long the car takes to stop.",
+            "marks": 2
+          },
+          {
+            "label": "c",
+            "text": "Explain how an icy road surface would affect the stopping distance.",
+            "marks": 2
+          }
+        ]
+      },
+      "genome": {
+        "schema_version": "0.1.0",
+        "genome_id": "g-m-p1-b1-par-t1",
+        "question_id": "m-p1-b1-par-t1",
+        "knowledge": {
+          "primary_concept": "uniformly accelerated motion",
+          "secondary_concepts": [
+            "friction",
+            "stopping distance"
+          ],
+          "prerequisites": [
+            "acceleration",
+            "velocity"
+          ],
+          "learning_objectives": [
+            "K1 Use the equations of uniformly accelerated motion",
+            "F3 Explain motion using Newton's first law"
+          ]
+        },
+        "reasoning": {
+          "steps": [
+            {
+              "id": "s1",
+              "type": "read_given"
+            },
+            {
+              "id": "s2",
+              "type": "identify_constraint"
+            },
+            {
+              "id": "s3",
+              "type": "select_relation"
+            },
+            {
+              "id": "s4",
+              "type": "apply_mathematics"
+            },
+            {
+              "id": "s5",
+              "type": "derive_result"
+            },
+            {
+              "id": "s6",
+              "type": "select_relation"
+            },
+            {
+              "id": "s7",
+              "type": "derive_result"
+            },
+            {
+              "id": "s8",
+              "type": "justify"
+            }
+          ],
+          "edges": [
+            [
+              "s1",
+              "s2"
+            ],
+            [
+              "s2",
+              "s3"
+            ],
+            [
+              "s3",
+              "s4"
+            ],
+            [
+              "s4",
+              "s5"
+            ],
+            [
+              "s5",
+              "s6"
+            ],
+            [
+              "s6",
+              "s7"
+            ],
+            [
+              "s2",
+              "s8"
+            ]
+          ]
+        },
+        "representation": {
+          "input": [
+            "verbal"
+          ],
+          "output": [],
+          "context": "road transport"
+        },
+        "constraints": {
+          "explicit": [
+            "deceleration is uniform"
+          ],
+          "implicit": [],
+          "domain": [],
+          "boundary": [
+            "final velocity is zero"
+          ],
+          "units": []
+        },
+        "assessment": {
+          "answer_type": "mixed",
+          "difficulty_features": {
+            "math_complexity": 2
+          }
+        },
+        "validation": {}
+      },
+      "verification": {
+        "kind": "numeric",
+        "expression": "u**2/(2*s)",
+        "variables": {
+          "u": 20,
+          "s": 62
+        },
+        "claimed_value": 4.0,
+        "claimed_unit": "m/s^2",
+        "answer_uniqueness": "unique"
+      },
+      "invariant_judgements": [
+        {
+          "property": "target_skill",
+          "preserved": true,
+          "rationale": "Same target concept and skill as the parent."
+        }
+      ],
+      "change_summary": "Distance changed to 62 m (answer not recomputed)."
+    },
+    {
+      "candidate_id": "c12-try2",
+      "spec_id": "spec-1dda8598d2",
+      "parent_id": "p1-b1",
+      "operator": "parameter",
+      "question": {
+        "id": "m-p1-b1-par",
+        "source": {
+          "origin": "generated"
+        },
+        "subject": "Introductory Physics",
+        "topic": "Kinematics",
+        "subtopic": "Stopping distance",
+        "text": "Travelling along a straight road at 20 m/s, a driver applies the brakes. The car decelerates uniformly and stops after covering 62 m.",
+        "question_type": "mixed",
+        "marks": 7,
+        "section": "B",
+        "learning_objectives": [
+          "K1 Use the equations of uniformly accelerated motion",
+          "F3 Explain motion using Newton's first law"
+        ],
+        "cognitive_level": "multi_step_reasoning",
+        "given": [
+          {
+            "symbol": "u",
+            "value": 20,
+            "unit": "m/s",
+            "description": "initial speed"
+          },
+          {
+            "symbol": "s",
+            "value": 62,
+            "unit": "m",
+            "description": "braking distance"
+          }
+        ],
+        "constraints": [
+          {
+            "text": "deceleration is uniform",
+            "kind": "explicit"
+          },
+          {
+            "text": "the car comes to rest (v = 0)",
+            "kind": "boundary"
+          }
+        ],
+        "language": "en",
+        "marking": {
+          "scheme_available": true,
+          "final_answer": "(a) 3.2 m/s² (b) 6.2 s (c) less friction on ice, so smaller deceleration and longer distance",
+          "answer_key": null,
+          "worked_solution": "(a) a = u²/(2s) = 400/124 = 3.2 m/s² (b) t = u/a = 20/3.23 = 6.2 s (c) Ice reduces friction, so the maximum deceleration is smaller and the car travels further.",
+          "points": [
+            {
+              "description": "Selects v² = u² − 2as with v = 0",
+              "marks": 1,
+              "part": "a"
+            },
+            {
+              "description": "Rearranges for a",
+              "marks": 1,
+              "part": "a"
+            },
+            {
+              "description": "3.2 m/s²",
+              "marks": 1,
+              "part": "a"
+            },
+            {
+              "description": "t = u/a or equivalent",
+              "marks": 1,
+              "part": "b"
+            },
+            {
+              "description": "Correct time",
+              "marks": 1,
+              "part": "b"
+            },
+            {
+              "description": "Less friction / grip on ice",
+              "marks": 1,
+              "part": "c"
+            },
+            {
+              "description": "Smaller deceleration so longer stopping distance",
+              "marks": 1,
+              "part": "c"
+            }
+          ],
+          "accept_rule": null
+        },
+        "provenance": {
+          "text": "inferred"
+        },
+        "parts": [
+          {
+            "label": "a",
+            "text": "Find the size of the car's deceleration.",
+            "marks": 3
+          },
+          {
+            "label": "b",
+            "text": "Find how long the car takes to stop.",
+            "marks": 2
+          },
+          {
+            "label": "c",
+            "text": "Explain how an icy road surface would affect the stopping distance.",
+            "marks": 2
+          }
+        ]
+      },
+      "genome": {
+        "schema_version": "0.1.0",
+        "genome_id": "g-m-p1-b1-par",
+        "question_id": "m-p1-b1-par",
+        "knowledge": {
+          "primary_concept": "uniformly accelerated motion",
+          "secondary_concepts": [
+            "friction",
+            "stopping distance"
+          ],
+          "prerequisites": [
+            "acceleration",
+            "velocity"
+          ],
+          "learning_objectives": [
+            "K1 Use the equations of uniformly accelerated motion",
+            "F3 Explain motion using Newton's first law"
+          ]
+        },
+        "reasoning": {
+          "steps": [
+            {
+              "id": "s1",
+              "type": "read_given"
+            },
+            {
+              "id": "s2",
+              "type": "identify_constraint"
+            },
+            {
+              "id": "s3",
+              "type": "select_relation"
+            },
+            {
+              "id": "s4",
+              "type": "apply_mathematics"
+            },
+            {
+              "id": "s5",
+              "type": "derive_result"
+            },
+            {
+              "id": "s6",
+              "type": "select_relation"
+            },
+            {
+              "id": "s7",
+              "type": "derive_result"
+            },
+            {
+              "id": "s8",
+              "type": "justify"
+            }
+          ],
+          "edges": [
+            [
+              "s1",
+              "s2"
+            ],
+            [
+              "s2",
+              "s3"
+            ],
+            [
+              "s3",
+              "s4"
+            ],
+            [
+              "s4",
+              "s5"
+            ],
+            [
+              "s5",
+              "s6"
+            ],
+            [
+              "s6",
+              "s7"
+            ],
+            [
+              "s2",
+              "s8"
+            ]
+          ]
+        },
+        "representation": {
+          "input": [
+            "verbal"
+          ],
+          "output": [],
+          "context": "road transport"
+        },
+        "constraints": {
+          "explicit": [
+            "deceleration is uniform"
+          ],
+          "implicit": [],
+          "domain": [],
+          "boundary": [
+            "final velocity is zero"
+          ],
+          "units": []
+        },
+        "assessment": {
+          "answer_type": "mixed",
+          "difficulty_features": {
+            "math_complexity": 2
+          }
+        },
+        "validation": {}
+      },
+      "verification": {
+        "kind": "numeric",
+        "expression": "u**2/(2*s)",
+        "variables": {
+          "u": 20,
+          "s": 62
+        },
+        "claimed_value": 3.226,
+        "claimed_unit": "m/s^2",
+        "answer_uniqueness": "unique",
+        "domain": [
+          {
+            "var": "result",
+            "min": 0
+          }
+        ]
+      },
+      "invariant_judgements": [
+        {
+          "property": "target_skill",
+          "preserved": true,
+          "rationale": "Same target concept and skill as the parent."
+        }
+      ],
+      "change_summary": "Distance changed to 62 m; all answers recomputed; reworded."
+    },
+    {
+      "candidate_id": "c13",
+      "spec_id": "spec-ac7053b6a8",
+      "parent_id": "p1-b2",
+      "operator": "surface",
+      "question": {
+        "id": "m-p1-b2-surf",
+        "source": {
+          "origin": "generated"
+        },
+        "subject": "Introductory Physics",
+        "topic": "Energy",
+        "subtopic": "Energy conservation",
+        "text": "A 0.50 kg ball is released from rest 3.2 m above level ground. Drag is negligible; use g = 9.8 m/s².",
+        "question_type": "mixed",
+        "marks": 7,
+        "section": "B",
+        "learning_objectives": [
+          "E1 Calculate gravitational potential and kinetic energy"
+        ],
+        "cognitive_level": "multi_step_reasoning",
+        "given": [
+          {
+            "symbol": "m",
+            "value": 0.5,
+            "unit": "kg",
+            "description": "mass"
+          },
+          {
+            "symbol": "h",
+            "value": 3.2,
+            "unit": "m",
+            "description": "height"
+          },
+          {
+            "symbol": "g",
+            "value": 9.8,
+            "unit": "m/s^2",
+            "description": "gravitational field strength",
+            "role": "constant"
+          }
+        ],
+        "constraints": [
+          {
+            "text": "air resistance is negligible",
+            "kind": "explicit"
+          },
+          {
+            "text": "released from rest",
+            "kind": "boundary"
+          }
+        ],
+        "language": "en",
+        "marking": {
+          "scheme_available": true,
+          "final_answer": "(a) 15.7 J (b) 7.9 m/s (c) lower: energy is transferred to the surroundings by drag",
+          "answer_key": null,
+          "worked_solution": "(a) mgh = 0.50 × 9.8 × 3.2 = 15.68 J. (b) v = √(2gh) = 7.9 m/s. (c) Work done against drag ⇒ less kinetic energy ⇒ lower speed.",
+          "points": [
+            {
+              "description": "ΔEp = mgh",
+              "marks": 1,
+              "part": "a"
+            },
+            {
+              "description": "15.7 J",
+              "marks": 1,
+              "part": "a"
+            },
+            {
+              "description": "Ek gained = Ep lost",
+              "marks": 1,
+              "part": "b"
+            },
+            {
+              "description": "v = √(2gh)",
+              "marks": 1,
+              "part": "b"
+            },
+            {
+              "description": "7.9 m/s",
+              "marks": 1,
+              "part": "b"
+            },
+            {
+              "description": "Work done against drag",
+              "marks": 1,
+              "part": "c"
+            },
+            {
+              "description": "Less kinetic energy so lower speed",
+              "marks": 1,
+              "part": "c"
+            }
+          ],
+          "accept_rule": null
+        },
+        "provenance": {
+          "text": "inferred"
+        },
+        "parts": [
+          {
+            "label": "a",
+            "text": "Determine the decrease in gravitational potential energy during the fall.",
+            "marks": 2
+          },
+          {
+            "label": "b",
+            "text": "Find the speed of the ball at the instant before impact.",
+            "marks": 3
+          },
+          {
+            "label": "c",
+            "text": "State and explain the effect on this impact speed if drag were significant.",
+            "marks": 2
+          }
+        ]
+      },
+      "genome": {
+        "schema_version": "0.1.0",
+        "genome_id": "g-m-p1-b2-surf",
+        "question_id": "m-p1-b2-surf",
+        "knowledge": {
+          "primary_concept": "conservation of energy",
+          "secondary_concepts": [
+            "gravitational potential energy",
+            "kinetic energy"
+          ],
+          "prerequisites": [
+            "energy stores",
+            "work"
+          ],
+          "learning_objectives": [
+            "E1 Calculate gravitational potential and kinetic energy"
+          ]
+        },
+        "reasoning": {
+          "steps": [
+            {
+              "id": "s1",
+              "type": "read_given"
+            },
+            {
+              "id": "s2",
+              "type": "select_relation"
+            },
+            {
+              "id": "s3",
+              "type": "apply_mathematics"
+            },
+            {
+              "id": "s4",
+              "type": "construct_model"
+            },
+            {
+              "id": "s5",
+              "type": "apply_mathematics"
+            },
+            {
+              "id": "s6",
+              "type": "derive_result"
+            },
+            {
+              "id": "s7",
+              "type": "interpret_result"
+            }
+          ],
+          "edges": [
+            [
+              "s1",
+              "s2"
+            ],
+            [
+              "s2",
+              "s3"
+            ],
+            [
+              "s3",
+              "s4"
+            ],
+            [
+              "s4",
+              "s5"
+            ],
+            [
+              "s5",
+              "s6"
+            ],
+            [
+              "s6",
+              "s7"
+            ]
+          ]
+        },
+        "representation": {
+          "input": [
+            "verbal"
+          ],
+          "output": [],
+          "context": "dropped ball"
+        },
+        "constraints": {
+          "explicit": [
+            "air resistance is negligible"
+          ],
+          "implicit": [],
+          "domain": [],
+          "boundary": [
+            "released from rest"
+          ],
+          "units": []
+        },
+        "assessment": {
+          "answer_type": "mixed",
+          "difficulty_features": {
+            "math_complexity": 2
+          }
+        },
+        "validation": {}
+      },
+      "verification": {
+        "kind": "numeric",
+        "expression": "m*g*h",
+        "variables": {
+          "m": 0.5,
+          "g": 9.8,
+          "h": 3.2
+        },
+        "claimed_value": 15.68,
+        "claimed_unit": "J",
+        "answer_uniqueness": "unique"
+      },
+      "invariant_judgements": [
+        {
+          "property": "target_skill",
+          "preserved": true,
+          "rationale": "Same target concept and skill as the parent."
+        }
+      ],
+      "change_summary": "Concise technical restatement with identical data and method."
+    },
+    {
+      "candidate_id": "c14-try1",
+      "spec_id": "spec-ee59079dda",
+      "parent_id": "p1-b3",
+      "operator": "reverse",
+      "question": {
+        "id": "m-p1-b3-rev-t1",
+        "source": {
+          "origin": "generated"
+        },
+        "subject": "Introductory Physics",
+        "topic": "Electricity",
+        "subtopic": "Series circuits",
+        "text": "A 4.0 Ω resistor and a second resistor R are connected in series with a 12 V battery of negligible internal resistance. The current must be less than 1.5 A.",
+        "question_type": "calculation",
+        "marks": 6,
+        "section": "B",
+        "learning_objectives": [
+          "C1 Apply Ohm's law to series circuits"
+        ],
+        "cognitive_level": "multi_step_reasoning",
+        "given": [
+          {
+            "symbol": "V",
+            "value": 12,
+            "unit": "V",
+            "description": "battery p.d."
+          },
+          {
+            "symbol": "R1",
+            "value": 4.0,
+            "unit": "ohm",
+            "description": "first resistance"
+          },
+          {
+            "symbol": "I",
+            "value": 1.5,
+            "unit": "A",
+            "description": "maximum current"
+          }
+        ],
+        "constraints": [
+          {
+            "text": "battery has negligible internal resistance",
+            "kind": "explicit"
+          }
+        ],
+        "language": "en",
+        "marking": {
+          "scheme_available": true,
+          "final_answer": "(a) any R greater than 4.0 Ω, e.g. 6.0 Ω (b) 7.2 V for 6.0 Ω",
+          "answer_key": null,
+          "worked_solution": null,
+          "points": [
+            {
+              "description": "Total resistance > 8.0 Ω",
+              "marks": 1,
+              "part": "a"
+            },
+            {
+              "description": "R > 4.0 Ω",
+              "marks": 1,
+              "part": "a"
+            },
+            {
+              "description": "Suitable value",
+              "marks": 1,
+              "part": "a"
+            },
+            {
+              "description": "I = V/R_total",
+              "marks": 1,
+              "part": "b"
+            },
+            {
+              "description": "V = IR",
+              "marks": 1,
+              "part": "b"
+            },
+            {
+              "description": "Consistent value",
+              "marks": 1,
+              "part": "b"
+            }
+          ],
+          "accept_rule": null
+        },
+        "provenance": {
+          "text": "inferred"
+        },
+        "parts": [
+          {
+            "label": "a",
+            "text": "Suggest a suitable value for R.",
+            "marks": 3
+          },
+          {
+            "label": "b",
+            "text": "Calculate the potential difference across R for your value.",
+            "marks": 3
+          }
+        ]
+      },
+      "genome": {
+        "schema_version": "0.1.0",
+        "genome_id": "g-m-p1-b3-rev-t1",
+        "question_id": "m-p1-b3-rev-t1",
+        "knowledge": {
+          "primary_concept": "series circuit",
+          "secondary_concepts": [
+            "Ohm's law"
+          ],
+          "prerequisites": [
+            "resistance",
+            "current"
+          ],
+          "learning_objectives": [
+            "C1 Apply Ohm's law to series circuits"
+          ]
+        },
+        "reasoning": {
+          "steps": [
+            {
+              "id": "s1",
+              "type": "read_given"
+            },
+            {
+              "id": "s2",
+              "type": "construct_model"
+            },
+            {
+              "id": "s3",
+              "type": "apply_mathematics"
+            },
+            {
+              "id": "s4",
+              "type": "select_relation"
+            },
+            {
+              "id": "s5",
+              "type": "apply_mathematics"
+            },
+            {
+              "id": "s6",
+              "type": "derive_result"
+            }
+          ],
+          "edges": [
+            [
+              "s1",
+              "s2"
+            ],
+            [
+              "s2",
+              "s3"
+            ],
+            [
+              "s3",
+              "s4"
+            ],
+            [
+              "s4",
+              "s5"
+            ],
+            [
+              "s5",
+              "s6"
+            ]
+          ]
+        },
+        "representation": {
+          "input": [
+            "verbal"
+          ],
+          "output": [
+            "numeric"
+          ],
+          "context": "circuit"
+        },
+        "constraints": {
+          "explicit": [
+            "negligible internal resistance"
+          ],
+          "implicit": [],
+          "domain": [],
+          "boundary": [],
+          "units": []
+        },
+        "assessment": {
+          "answer_type": "numeric",
+          "difficulty_features": {
+            "math_complexity": 1
+          }
+        },
+        "validation": {}
+      },
+      "verification": {
+        "kind": "numeric",
+        "expression": "V/I - R1",
+        "variables": {
+          "V": 12,
+          "I": 1.5,
+          "R1": 4.0
+        },
+        "claimed_value": 4.0,
+        "claimed_unit": "ohm",
+        "answer_uniqueness": "multiple"
+      },
+      "invariant_judgements": [
+        {
+          "property": "target_skill",
+          "preserved": true,
+          "rationale": "Same target concept and skill as the parent."
+        }
+      ],
+      "change_summary": "Inverted: find R from a current condition (first attempt)."
+    },
+    {
+      "candidate_id": "c14-try2",
+      "spec_id": "spec-ee59079dda",
+      "parent_id": "p1-b3",
+      "operator": "reverse",
+      "question": {
+        "id": "m-p1-b3-rev",
+        "source": {
+          "origin": "generated"
+        },
+        "subject": "Introductory Physics",
+        "topic": "Electricity",
+        "subtopic": "Series circuits",
+        "text": "A 4.0 Ω resistor and an unknown resistor R are connected in series with a 12 V battery of negligible internal resistance. The current in the circuit is 1.5 A.",
+        "question_type": "calculation",
+        "marks": 6,
+        "section": "B",
+        "learning_objectives": [
+          "C1 Apply Ohm's law to series circuits"
+        ],
+        "cognitive_level": "multi_step_reasoning",
+        "given": [
+          {
+            "symbol": "V",
+            "value": 12,
+            "unit": "V",
+            "description": "battery p.d."
+          },
+          {
+            "symbol": "R1",
+            "value": 4.0,
+            "unit": "ohm",
+            "description": "known resistance"
+          },
+          {
+            "symbol": "I",
+            "value": 1.5,
+            "unit": "A",
+            "description": "current"
+          }
+        ],
+        "constraints": [
+          {
+            "text": "battery has negligible internal resistance",
+            "kind": "explicit"
+          }
+        ],
+        "language": "en",
+        "marking": {
+          "scheme_available": true,
+          "final_answer": "(a) 8.0 Ω (b) 4.0 Ω (c) 6.0 V",
+          "answer_key": null,
+          "worked_solution": "(a) R_total = V/I = 12/1.5 = 8.0 Ω. (b) R = 8.0 − 4.0 = 4.0 Ω. (c) V_R = IR = 1.5 × 4.0 = 6.0 V.",
+          "points": [
+            {
+              "description": "R_total = V/I",
+              "marks": 1,
+              "part": "a"
+            },
+            {
+              "description": "8.0 Ω",
+              "marks": 1,
+              "part": "a"
+            },
+            {
+              "description": "R = R_total − 4.0",
+              "marks": 1,
+              "part": "b"
+            },
+            {
+              "description": "4.0 Ω",
+              "marks": 1,
+              "part": "b"
+            },
+            {
+              "description": "V = IR",
+              "marks": 1,
+              "part": "c"
+            },
+            {
+              "description": "6.0 V",
+              "marks": 1,
+              "part": "c"
+            }
+          ],
+          "accept_rule": null
+        },
+        "provenance": {
+          "text": "inferred"
+        },
+        "parts": [
+          {
+            "label": "a",
+            "text": "Calculate the total resistance of the circuit.",
+            "marks": 2
+          },
+          {
+            "label": "b",
+            "text": "Determine the resistance R.",
+            "marks": 2
+          },
+          {
+            "label": "c",
+            "text": "Calculate the potential difference across R.",
+            "marks": 2
+          }
+        ]
+      },
+      "genome": {
+        "schema_version": "0.1.0",
+        "genome_id": "g-m-p1-b3-rev",
+        "question_id": "m-p1-b3-rev",
+        "knowledge": {
+          "primary_concept": "series circuit",
+          "secondary_concepts": [
+            "Ohm's law"
+          ],
+          "prerequisites": [
+            "resistance",
+            "current"
+          ],
+          "learning_objectives": [
+            "C1 Apply Ohm's law to series circuits"
+          ]
+        },
+        "reasoning": {
+          "steps": [
+            {
+              "id": "s1",
+              "type": "read_given"
+            },
+            {
+              "id": "s2",
+              "type": "select_relation"
+            },
+            {
+              "id": "s3",
+              "type": "apply_mathematics"
+            },
+            {
+              "id": "s4",
+              "type": "construct_model"
+            },
+            {
+              "id": "s5",
+              "type": "apply_mathematics"
+            },
+            {
+              "id": "s6",
+              "type": "derive_result"
+            }
+          ],
+          "edges": [
+            [
+              "s1",
+              "s2"
+            ],
+            [
+              "s2",
+              "s3"
+            ],
+            [
+              "s3",
+              "s4"
+            ],
+            [
+              "s4",
+              "s5"
+            ],
+            [
+              "s5",
+              "s6"
+            ]
+          ]
+        },
+        "representation": {
+          "input": [
+            "verbal"
+          ],
+          "output": [
+            "numeric"
+          ],
+          "context": "circuit"
+        },
+        "constraints": {
+          "explicit": [
+            "negligible internal resistance"
+          ],
+          "implicit": [],
+          "domain": [],
+          "boundary": [],
+          "units": []
+        },
+        "assessment": {
+          "answer_type": "numeric",
+          "difficulty_features": {
+            "math_complexity": 1
+          }
+        },
+        "validation": {}
+      },
+      "verification": {
+        "kind": "numeric",
+        "expression": "V/I - R1",
+        "variables": {
+          "V": 12,
+          "I": 1.5,
+          "R1": 4.0
+        },
+        "claimed_value": 4.0,
+        "claimed_unit": "ohm",
+        "answer_uniqueness": "unique",
+        "domain": [
+          {
+            "var": "result",
+            "min": 0,
+            "exclusive": true
+          }
+        ]
+      },
+      "invariant_judgements": [
+        {
+          "property": "target_skill",
+          "preserved": true,
+          "rationale": "Same target concept and skill as the parent."
+        }
+      ],
+      "change_summary": "Inverted: the current is given and the second resistance is the unknown; the answer is unique."
+    },
+    {
+      "candidate_id": "c15",
+      "spec_id": "spec-2bd2a84744",
+      "parent_id": "p2-b1",
+      "operator": "reasoning_path",
+      "question": {
+        "id": "m-p2-b1-path",
+        "source": {
+          "origin": "generated"
+        },
+        "subject": "Introductory Physics",
+        "topic": "Momentum",
+        "subtopic": "Collisions",
+        "text": "Trolley X (mass 2.0 kg) moves to the right at 3.0 m/s. Trolley Y (mass 1.0 kg) moves to the left at 1.5 m/s. They collide head-on and stick together.",
+        "question_type": "mixed",
+        "marks": 8,
+        "section": "B",
+        "learning_objectives": [
+          "M1 Apply conservation of momentum",
+          "E1 Calculate gravitational potential and kinetic energy"
+        ],
+        "cognitive_level": "evaluation",
+        "given": [
+          {
+            "symbol": "m1",
+            "value": 2.0,
+            "unit": "kg",
+            "description": "mass of X"
+          },
+          {
+            "symbol": "u1",
+            "value": 3.0,
+            "unit": "m/s",
+            "description": "speed of X (to the right)"
+          },
+          {
+            "symbol": "m2",
+            "value": 1.0,
+            "unit": "kg",
+            "description": "mass of Y"
+          },
+          {
+            "symbol": "u2",
+            "value": 1.5,
+            "unit": "m/s",
+            "description": "speed of Y (to the left)"
+          }
+        ],
+        "constraints": [
+          {
+            "text": "momentum to the right is positive",
+            "kind": "explicit"
+          },
+          {
+            "text": "trolleys stick together",
+            "kind": "explicit"
+          }
+        ],
+        "language": "en",
+        "marking": {
+          "scheme_available": true,
+          "final_answer": "(a) 4.5 kg m/s (b) 1.5 m/s to the right (c) not conserved: 10.1 J before, 3.4 J after",
+          "answer_key": null,
+          "worked_solution": "(a) p = 2.0 × 3.0 + 1.0 × (−1.5) = 4.5 kg m/s. (b) v = 4.5/3.0 = 1.5 m/s to the right. (c) Ek before = 9.0 + 1.125 = 10.1 J; after = ½ × 3.0 × 1.5² = 3.4 J; kinetic energy is not conserved (inelastic).",
+          "points": [
+            {
+              "description": "Sign convention applied to Y",
+              "marks": 1,
+              "part": "a"
+            },
+            {
+              "description": "4.5 kg m/s",
+              "marks": 1,
+              "part": "a"
+            },
+            {
+              "description": "Momentum conserved",
+              "marks": 1,
+              "part": "b"
+            },
+            {
+              "description": "v = p/(m1 + m2)",
+              "marks": 1,
+              "part": "b"
+            },
+            {
+              "description": "1.5 m/s to the right",
+              "marks": 1,
+              "part": "b"
+            },
+            {
+              "description": "Ek before 10.1 J",
+              "marks": 1,
+              "part": "c"
+            },
+            {
+              "description": "Ek after 3.4 J",
+              "marks": 1,
+              "part": "c"
+            },
+            {
+              "description": "Conclusion: not conserved",
+              "marks": 1,
+              "part": "c"
+            }
+          ],
+          "accept_rule": null
+        },
+        "provenance": {
+          "text": "inferred"
+        },
+        "parts": [
+          {
+            "label": "a",
+            "text": "Taking right as positive, calculate the total momentum before the collision.",
+            "marks": 2
+          },
+          {
+            "label": "b",
+            "text": "Determine the velocity of the trolleys after the collision.",
+            "marks": 3
+          },
+          {
+            "label": "c",
+            "text": "Evaluate whether kinetic energy is conserved in the collision.",
+            "marks": 3
+          }
+        ]
+      },
+      "genome": {
+        "schema_version": "0.1.0",
+        "genome_id": "g-m-p2-b1-path",
+        "question_id": "m-p2-b1-path",
+        "knowledge": {
+          "primary_concept": "conservation of momentum",
+          "secondary_concepts": [
+            "kinetic energy",
+            "inelastic collision",
+            "sign convention"
+          ],
+          "prerequisites": [
+            "momentum",
+            "vectors"
+          ],
+          "learning_objectives": [
+            "M1 Apply conservation of momentum",
+            "E1 Calculate gravitational potential and kinetic energy"
+          ]
+        },
+        "reasoning": {
+          "steps": [
+            {
+              "id": "s1",
+              "type": "read_given"
+            },
+            {
+              "id": "s2",
+              "type": "identify_constraint"
+            },
+            {
+              "id": "s3",
+              "type": "construct_model"
+            },
+            {
+              "id": "s4",
+              "type": "apply_mathematics"
+            },
+            {
+              "id": "s5",
+              "type": "derive_result"
+            },
+            {
+              "id": "s6",
+              "type": "apply_mathematics"
+            },
+            {
+              "id": "s7",
+              "type": "compare"
+            },
+            {
+              "id": "s8",
+              "type": "evaluate"
+            }
+          ],
+          "edges": [
+            [
+              "s1",
+              "s2"
+            ],
+            [
+              "s2",
+              "s3"
+            ],
+            [
+              "s3",
+              "s4"
+            ],
+            [
+              "s4",
+              "s5"
+            ],
+            [
+              "s5",
+              "s6"
+            ],
+            [
+              "s6",
+              "s7"
+            ],
+            [
+              "s7",
+              "s8"
+            ]
+          ]
+        },
+        "representation": {
+          "input": [
+            "verbal"
+          ],
+          "output": [],
+          "context": "laboratory trolley"
+        },
+        "constraints": {
+          "explicit": [
+            "momentum to the right is positive",
+            "trolleys stick together"
+          ],
+          "implicit": [],
+          "domain": [],
+          "boundary": [],
+          "units": []
+        },
+        "assessment": {
+          "answer_type": "mixed",
+          "difficulty_features": {
+            "math_complexity": 2
+          }
+        },
+        "validation": {}
+      },
+      "verification": {
+        "kind": "numeric",
+        "expression": "(m1*u1 - m2*u2)/(m1 + m2)",
+        "variables": {
+          "m1": 2.0,
+          "u1": 3.0,
+          "m2": 1.0,
+          "u2": 1.5
+        },
+        "claimed_value": 1.5,
+        "claimed_unit": "m/s",
+        "answer_uniqueness": "unique"
+      },
+      "invariant_judgements": [
+        {
+          "property": "target_skill",
+          "preserved": true,
+          "rationale": "Same target concept and skill as the parent."
+        }
+      ],
+      "change_summary": "Head-on collision requires a sign convention and an evaluation of energy conservation instead of a direct energy-loss calculation."
+    },
+    {
+      "candidate_id": "c16",
+      "spec_id": "spec-f5e687e9f0",
+      "parent_id": "p2-b3",
+      "operator": "constraint",
+      "question": {
+        "id": "m-p2-b3-con",
+        "source": {
+          "origin": "generated"
+        },
+        "subject": "Introductory Physics",
+        "topic": "Electricity",
+        "subtopic": "Electrical power",
+        "text": "A kettle connected to a 230 V supply draws a current of 8.0 A. The kettle and a toaster drawing 6.0 A are plugged into an adaptor protected by a 13 A fuse.",
+        "question_type": "mixed",
+        "marks": 6,
+        "section": "B",
+        "learning_objectives": [
+          "C2 Relate charge, current, potential difference and power",
+          "E2 Calculate power and efficiency"
+        ],
+        "cognitive_level": "application",
+        "given": [
+          {
+            "symbol": "V",
+            "value": 230,
+            "unit": "V",
+            "description": "supply voltage"
+          },
+          {
+            "symbol": "I",
+            "value": 8.0,
+            "unit": "A",
+            "description": "kettle current"
+          },
+          {
+            "symbol": "t",
+            "value": 150,
+            "unit": "s",
+            "description": "heating time"
+          },
+          {
+            "symbol": "I2",
+            "value": 6.0,
+            "unit": "A",
+            "description": "toaster current",
+            "role": "data"
+          }
+        ],
+        "constraints": [
+          {
+            "text": "the fuse melts if the total current exceeds 13 A",
+            "kind": "explicit"
+          }
+        ],
+        "language": "en",
+        "marking": {
+          "scheme_available": true,
+          "final_answer": "(a) 1840 W (b) 2.8 × 10^5 J (c) yes: total current 14 A exceeds 13 A",
+          "answer_key": null,
+          "worked_solution": "(a) P = VI = 230 × 8.0 = 1840 W. (b) E = Pt = 1840 × 150 = 276 000 J ≈ 2.8 × 10⁵ J. (c) I_total = 8.0 + 6.0 = 14 A > 13 A, so the fuse melts.",
+          "points": [
+            {
+              "description": "P = VI",
+              "marks": 1,
+              "part": "a"
+            },
+            {
+              "description": "1840 W",
+              "marks": 1,
+              "part": "a"
+            },
+            {
+              "description": "E = Pt",
+              "marks": 1,
+              "part": "b"
+            },
+            {
+              "description": "2.8 × 10⁵ J",
+              "marks": 1,
+              "part": "b"
+            },
+            {
+              "description": "Total current 14 A",
+              "marks": 1,
+              "part": "c"
+            },
+            {
+              "description": "Exceeds 13 A so fuse melts",
+              "marks": 1,
+              "part": "c"
+            }
+          ],
+          "accept_rule": null
+        },
+        "provenance": {
+          "text": "inferred"
+        },
+        "parts": [
+          {
+            "label": "a",
+            "text": "Calculate the power of the kettle.",
+            "marks": 2
+          },
+          {
+            "label": "b",
+            "text": "Calculate the energy transferred by the kettle in 150 s.",
+            "marks": 2
+          },
+          {
+            "label": "c",
+            "text": "Determine whether the fuse melts when both appliances are switched on together.",
+            "marks": 2
+          }
+        ]
+      },
+      "genome": {
+        "schema_version": "0.1.0",
+        "genome_id": "g-m-p2-b3-con",
+        "question_id": "m-p2-b3-con",
+        "knowledge": {
+          "primary_concept": "electrical power",
+          "secondary_concepts": [
+            "energy transfer",
+            "fuse rating"
+          ],
+          "prerequisites": [
+            "current",
+            "potential difference"
+          ],
+          "learning_objectives": [
+            "C2 Relate charge, current, potential difference and power",
+            "E2 Calculate power and efficiency"
+          ]
+        },
+        "reasoning": {
+          "steps": [
+            {
+              "id": "s1",
+              "type": "read_given"
+            },
+            {
+              "id": "s2",
+              "type": "select_relation"
+            },
+            {
+              "id": "s3",
+              "type": "apply_mathematics"
+            },
+            {
+              "id": "s4",
+              "type": "select_relation"
+            },
+            {
+              "id": "s5",
+              "type": "apply_mathematics"
+            },
+            {
+              "id": "s6",
+              "type": "apply_mathematics"
+            },
+            {
+              "id": "s7",
+              "type": "compare"
+            }
+          ],
+          "edges": [
+            [
+              "s1",
+              "s2"
+            ],
+            [
+              "s2",
+              "s3"
+            ],
+            [
+              "s3",
+              "s4"
+            ],
+            [
+              "s4",
+              "s5"
+            ],
+            [
+              "s1",
+              "s6"
+            ],
+            [
+              "s6",
+              "s7"
+            ]
+          ]
+        },
+        "representation": {
+          "input": [
+            "verbal"
+          ],
+          "output": [],
+          "context": "household appliances"
+        },
+        "constraints": {
+          "explicit": [
+            "total current must not exceed 13 A fuse rating"
+          ],
+          "implicit": [],
+          "domain": [],
+          "boundary": [],
+          "units": []
+        },
+        "assessment": {
+          "answer_type": "mixed",
+          "difficulty_features": {
+            "math_complexity": 1
+          }
+        },
+        "validation": {}
+      },
+      "verification": {
+        "kind": "numeric",
+        "expression": "V*I",
+        "variables": {
+          "V": 230,
+          "I": 8.0
+        },
+        "claimed_value": 1840,
+        "claimed_unit": "W",
+        "answer_uniqueness": "unique"
+      },
+      "invariant_judgements": [
+        {
+          "property": "target_skill",
+          "preserved": true,
+          "rationale": "Same target concept and skill as the parent."
+        }
+      ],
+      "change_summary": "Adds a fuse-rating constraint that must be checked against the combined current."
+    },
+    {
+      "candidate_id": "c17",
+      "spec_id": "spec-0d5d276b4e",
+      "parent_id": "p3-b1",
+      "operator": "difficulty",
+      "question": {
+        "id": "m-p3-b1-diff",
+        "source": {
+          "origin": "generated"
+        },
+        "subject": "Introductory Physics",
+        "topic": "Forces",
+        "subtopic": "Newton's second law",
+        "text": "A lift of total mass 900 kg is supported by a cable with a maximum safe tension of 11 000 N. Take g = 9.8 m/s².",
+        "question_type": "mixed",
+        "marks": 7,
+        "section": "B",
+        "learning_objectives": [
+          "F1 Apply Newton's second law F = ma",
+          "F3 Explain motion using Newton's first law"
+        ],
+        "cognitive_level": "multi_step_reasoning",
+        "given": [
+          {
+            "symbol": "m",
+            "value": 900,
+            "unit": "kg",
+            "description": "mass of lift"
+          },
+          {
+            "symbol": "Tmax",
+            "value": 11000,
+            "unit": "N",
+            "description": "maximum safe tension"
+          },
+          {
+            "symbol": "a",
+            "value": 1.5,
+            "unit": "m/s^2",
+            "description": "planned upward acceleration"
+          },
+          {
+            "symbol": "g",
+            "value": 9.8,
+            "unit": "m/s^2",
+            "description": "gravitational field strength",
+            "role": "constant"
+          }
+        ],
+        "constraints": [
+          {
+            "text": "tension must not exceed 11 000 N",
+            "kind": "explicit",
+            "var": "Tmax",
+            "op": "<=",
+            "value": 11000
+          },
+          {
+            "text": "acceleration is upward and uniform",
+            "kind": "explicit"
+          }
+        ],
+        "language": "en",
+        "marking": {
+          "scheme_available": true,
+          "final_answer": "(a) 1.0 × 10^4 N (10 170 N) (b) 2.4 m/s² (c) safe: 1.5 < 2.4 m/s²",
+          "answer_key": null,
+          "worked_solution": "(a) T = m(g + a) = 900 × 11.3 = 10 170 N. (b) a_max = Tmax/m − g = 11 000/900 − 9.8 = 2.42 m/s². (c) 1.5 m/s² < 2.4 m/s², so safe.",
+          "points": [
+            {
+              "description": "T − mg = ma",
+              "marks": 1,
+              "part": "a"
+            },
+            {
+              "description": "T = m(g + a)",
+              "marks": 1,
+              "part": "a"
+            },
+            {
+              "description": "10 170 N",
+              "marks": 1,
+              "part": "a"
+            },
+            {
+              "description": "Tmax − mg = m a_max",
+              "marks": 1,
+              "part": "b"
+            },
+            {
+              "description": "Rearranges",
+              "marks": 1,
+              "part": "b"
+            },
+            {
+              "description": "2.4 m/s²",
+              "marks": 1,
+              "part": "b"
+            },
+            {
+              "description": "Safe, with comparison",
+              "marks": 1,
+              "part": "c"
+            }
+          ],
+          "accept_rule": null
+        },
+        "provenance": {
+          "text": "inferred"
+        },
+        "parts": [
+          {
+            "label": "a",
+            "text": "Calculate the tension in the cable when the lift accelerates upwards at 1.5 m/s².",
+            "marks": 3
+          },
+          {
+            "label": "b",
+            "text": "Calculate the maximum upward acceleration that keeps the tension within the safe limit.",
+            "marks": 3
+          },
+          {
+            "label": "c",
+            "text": "State whether the planned acceleration of 1.5 m/s² is safe.",
+            "marks": 1
+          }
+        ]
+      },
+      "genome": {
+        "schema_version": "0.1.0",
+        "genome_id": "g-m-p3-b1-diff",
+        "question_id": "m-p3-b1-diff",
+        "knowledge": {
+          "primary_concept": "Newton's second law",
+          "secondary_concepts": [
+            "weight",
+            "safety limit"
+          ],
+          "prerequisites": [
+            "force",
+            "acceleration",
+            "rearranging equations"
+          ],
+          "learning_objectives": [
+            "F1 Apply Newton's second law F = ma",
+            "F3 Explain motion using Newton's first law"
+          ]
+        },
+        "reasoning": {
+          "steps": [
+            {
+              "id": "s1",
+              "type": "read_given"
+            },
+            {
+              "id": "s2",
+              "type": "select_relation"
+            },
+            {
+              "id": "s3",
+              "type": "apply_mathematics"
+            },
+            {
+              "id": "s4",
+              "type": "construct_model"
+            },
+            {
+              "id": "s5",
+              "type": "identify_constraint"
+            },
+            {
+              "id": "s6",
+              "type": "apply_mathematics"
+            },
+            {
+              "id": "s7",
+              "type": "derive_result"
+            },
+            {
+              "id": "s8",
+              "type": "compare"
+            }
+          ],
+          "edges": [
+            [
+              "s1",
+              "s2"
+            ],
+            [
+              "s2",
+              "s3"
+            ],
+            [
+              "s3",
+              "s4"
+            ],
+            [
+              "s4",
+              "s5"
+            ],
+            [
+              "s5",
+              "s6"
+            ],
+            [
+              "s6",
+              "s7"
+            ],
+            [
+              "s7",
+              "s8"
+            ]
+          ]
+        },
+        "representation": {
+          "input": [
+            "verbal"
+          ],
+          "output": [],
+          "context": "building lift"
+        },
+        "constraints": {
+          "explicit": [
+            "acceleration upward and uniform",
+            "tension must not exceed 11 000 N"
+          ],
+          "implicit": [],
+          "domain": [],
+          "boundary": [
+            "tension at the safe limit"
+          ],
+          "units": []
+        },
+        "assessment": {
+          "answer_type": "mixed",
+          "difficulty_features": {
+            "math_complexity": 2
+          }
+        },
+        "validation": {}
+      },
+      "verification": {
+        "kind": "numeric",
+        "expression": "Tmax/m - g",
+        "variables": {
+          "Tmax": 11000,
+          "m": 900,
+          "g": 9.8
+        },
+        "claimed_value": 2.42,
+        "claimed_unit": "m/s^2",
+        "answer_uniqueness": "unique",
+        "domain": [
+          {
+            "var": "result",
+            "min": 0
+          }
+        ]
+      },
+      "invariant_judgements": [
+        {
+          "property": "target_skill",
+          "preserved": true,
+          "rationale": "Same target concept and skill as the parent."
+        }
+      ],
+      "change_summary": "Adds a cable-rating limit: an extra constraint, a boundary condition and a rearrangement stage."
+    },
+    {
+      "candidate_id": "c18",
+      "spec_id": "spec-c96ea599ae",
+      "parent_id": "p3-b2",
+      "operator": "representation",
+      "question": {
+        "id": "m-p3-b2-rep",
+        "source": {
+          "origin": "generated"
+        },
+        "subject": "Introductory Physics",
+        "topic": "Energy",
+        "subtopic": "Efficiency",
+        "text": "A motor lifts a 20 kg load through a vertical height of 5.0 m in 10 s. The graph shows the total energy supplied to the motor against time during the lift. Take g = 9.8 m/s².",
+        "question_type": "calculation",
+        "marks": 7,
+        "section": "B",
+        "learning_objectives": [
+          "E1 Calculate gravitational potential and kinetic energy",
+          "E2 Calculate power and efficiency",
+          "K2 Interpret motion data in tables and graphs"
+        ],
+        "cognitive_level": "multi_step_reasoning",
+        "given": [
+          {
+            "symbol": "m",
+            "value": 20,
+            "unit": "kg",
+            "description": "mass of load"
+          },
+          {
+            "symbol": "h",
+            "value": 5.0,
+            "unit": "m",
+            "description": "height"
+          },
+          {
+            "symbol": "Ein",
+            "value": 2000,
+            "unit": "J",
+            "description": "energy supplied in 10 s (read from graph)"
+          },
+          {
+            "symbol": "g",
+            "value": 9.8,
+            "unit": "m/s^2",
+            "description": "gravitational field strength",
+            "role": "constant"
+          },
+          {
+            "symbol": "t",
+            "value": 10,
+            "unit": "s",
+            "description": "time",
+            "role": "data"
+          }
+        ],
+        "constraints": [],
+        "language": "en",
+        "marking": {
+          "scheme_available": true,
+          "final_answer": "(a) 980 J (b) 200 W (c) 0.49 (49 %)",
+          "answer_key": null,
+          "worked_solution": "(a) mgh = 20 × 9.8 × 5.0 = 980 J. (b) gradient = 2000/10 = 200 W. (c) efficiency = 980/2000 = 0.49.",
+          "points": [
+            {
+              "description": "mgh",
+              "marks": 1,
+              "part": "a"
+            },
+            {
+              "description": "980 J",
+              "marks": 1,
+              "part": "a"
+            },
+            {
+              "description": "Power = gradient",
+              "marks": 1,
+              "part": "b"
+            },
+            {
+              "description": "200 W",
+              "marks": 1,
+              "part": "b"
+            },
+            {
+              "description": "efficiency = useful/total",
+              "marks": 1,
+              "part": "c"
+            },
+            {
+              "description": "Uses 980 and 2000",
+              "marks": 1,
+              "part": "c"
+            },
+            {
+              "description": "0.49 or 49 %",
+              "marks": 1,
+              "part": "c"
+            }
+          ],
+          "accept_rule": null
+        },
+        "provenance": {
+          "text": "inferred"
+        },
+        "parts": [
+          {
+            "label": "a",
+            "text": "Calculate the useful energy transferred to the load.",
+            "marks": 2
+          },
+          {
+            "label": "b",
+            "text": "Use the graph to determine the input power to the motor.",
+            "marks": 2
+          },
+          {
+            "label": "c",
+            "text": "Calculate the efficiency of the motor.",
+            "marks": 3
+          }
+        ],
+        "diagram_description": "Graph of energy supplied E / J (vertical axis, 0 to 2500) against time t / s (horizontal axis, 0 to 12): a straight line through the origin reaching 2000 J at 10 s."
+      },
+      "genome": {
+        "schema_version": "0.1.0",
+        "genome_id": "g-m-p3-b2-rep",
+        "question_id": "m-p3-b2-rep",
+        "knowledge": {
+          "primary_concept": "efficiency",
+          "secondary_concepts": [
+            "gravitational potential energy",
+            "power",
+            "gradient"
+          ],
+          "prerequisites": [
+            "energy",
+            "power"
+          ],
+          "learning_objectives": [
+            "E1 Calculate gravitational potential and kinetic energy",
+            "E2 Calculate power and efficiency",
+            "K2 Interpret motion data in tables and graphs"
+          ]
+        },
+        "reasoning": {
+          "steps": [
+            {
+              "id": "s1",
+              "type": "read_given"
+            },
+            {
+              "id": "s2",
+              "type": "select_relation"
+            },
+            {
+              "id": "s3",
+              "type": "apply_mathematics"
+            },
+            {
+              "id": "s4",
+              "type": "read_representation"
+            },
+            {
+              "id": "s5",
+              "type": "apply_mathematics"
+            },
+            {
+              "id": "s6",
+              "type": "construct_model"
+            },
+            {
+              "id": "s7",
+              "type": "derive_result"
+            }
+          ],
+          "edges": [
+            [
+              "s1",
+              "s2"
+            ],
+            [
+              "s2",
+              "s3"
+            ],
+            [
+              "s1",
+              "s4"
+            ],
+            [
+              "s4",
+              "s5"
+            ],
+            [
+              "s3",
+              "s6"
+            ],
+            [
+              "s5",
+              "s6"
+            ],
+            [
+              "s6",
+              "s7"
+            ]
+          ]
+        },
+        "representation": {
+          "input": [
+            "verbal",
+            "graph"
+          ],
+          "output": [
+            "numeric"
+          ],
+          "context": "construction and engineering"
+        },
+        "constraints": {
+          "explicit": [],
+          "implicit": [],
+          "domain": [],
+          "boundary": [],
+          "units": []
+        },
+        "assessment": {
+          "answer_type": "numeric",
+          "difficulty_features": {
+            "math_complexity": 2
+          }
+        },
+        "validation": {}
+      },
+      "verification": {
+        "kind": "numeric",
+        "expression": "m*g*h/Ein",
+        "variables": {
+          "m": 20,
+          "g": 9.8,
+          "h": 5.0,
+          "Ein": 2000
+        },
+        "claimed_value": 0.49,
+        "claimed_unit": "1",
+        "answer_uniqueness": "unique",
+        "domain": [
+          {
+            "var": "result",
+            "min": 0,
+            "max": 1
+          }
+        ]
+      },
+      "invariant_judgements": [
+        {
+          "property": "target_skill",
+          "preserved": true,
+          "rationale": "Same target concept and skill as the parent."
+        }
+      ],
+      "change_summary": "Input energy is now read from an energy–time graph; input power is its gradient."
+    }
+  ]
+}

@@ -1,0 +1,3318 @@
+{
+  "schema_version": "0.1.0",
+  "bank_id": "bank-c6bdd7fbd6",
+  "title": "Synthetic introductory physics papers (original, for demonstration)",
+  "source_documents": [
+    {
+      "name": "Synthetic Physics Paper 1",
+      "kind": "exam",
+      "paper_id": "P1"
+    },
+    {
+      "name": "Synthetic Physics Paper 2",
+      "kind": "exam",
+      "paper_id": "P2"
+    },
+    {
+      "name": "Synthetic Physics Paper 3",
+      "kind": "exam",
+      "paper_id": "P3"
+    },
+    {
+      "name": "Marking Scheme — Synthetic Physics Paper 1",
+      "kind": "markscheme"
+    },
+    {
+      "name": "Mini syllabus",
+      "kind": "syllabus"
+    },
+    {
+      "name": "Teaching notes",
+      "kind": "notes"
+    }
+  ],
+  "questions": [
+    {
+      "id": "p1-a1",
+      "schema_version": "0.1.0",
+      "language": "en",
+      "source": {
+        "document": "Synthetic Physics Paper 1",
+        "page": 1,
+        "section": "A",
+        "position": 0,
+        "origin": "source"
+      },
+      "subject": "Introductory Physics",
+      "topic": "Kinematics",
+      "subtopic": "Scalars and vectors",
+      "text": "Which of the following quantities is a vector?",
+      "question_type": "multiple_choice",
+      "marks": 1,
+      "section": "A",
+      "learning_objectives": [
+        "U1 Distinguish scalar and vector quantities and use SI units"
+      ],
+      "cognitive_level": "recall",
+      "given": [],
+      "required_output": null,
+      "constraints": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "Speed"
+        },
+        {
+          "key": "B",
+          "text": "Distance"
+        },
+        {
+          "key": "C",
+          "text": "Displacement"
+        },
+        {
+          "key": "D",
+          "text": "Time"
+        }
+      ],
+      "parts": [],
+      "table": null,
+      "diagram_description": null,
+      "marking": {
+        "scheme_available": true,
+        "final_answer": "Displacement",
+        "answer_key": "C",
+        "worked_solution": null,
+        "points": [
+          {
+            "description": "C (displacement)",
+            "marks": 1
+          }
+        ],
+        "accept_rule": null
+      },
+      "difficulty_features": null,
+      "extraction_confidence": "high",
+      "evidence": [
+        {
+          "document": "Synthetic Physics Paper 1",
+          "page": 1,
+          "quote": "Which of the following quantities is a vector?"
+        }
+      ],
+      "review_status": "unreviewed",
+      "provenance": {
+        "text": "explicit",
+        "subject": "explicit",
+        "topic": "inferred",
+        "subtopic": "inferred",
+        "question_type": "explicit",
+        "marks": "explicit",
+        "section": "explicit",
+        "learning_objectives": "inferred",
+        "cognitive_level": "inferred",
+        "marking": "explicit"
+      },
+      "missing_fields": [
+        "given",
+        "required_output",
+        "constraints"
+      ],
+      "security_flags": [],
+      "lineage": null,
+      "validation": null
+    },
+    {
+      "id": "p1-a2",
+      "schema_version": "0.1.0",
+      "language": "en",
+      "source": {
+        "document": "Synthetic Physics Paper 1",
+        "page": 1,
+        "section": "A",
+        "position": 1,
+        "origin": "source"
+      },
+      "subject": "Introductory Physics",
+      "topic": "Kinematics",
+      "subtopic": "Uniform acceleration",
+      "text": "A cyclist accelerates uniformly from rest to a speed of 8.0 m/s in 4.0 s. Calculate the acceleration of the cyclist.",
+      "question_type": "calculation",
+      "marks": 2,
+      "section": "A",
+      "learning_objectives": [
+        "K1 Use the equations of uniformly accelerated motion"
+      ],
+      "cognitive_level": "application",
+      "given": [
+        {
+          "symbol": "v",
+          "description": "final speed",
+          "value": 8.0,
+          "unit": "m/s"
+        },
+        {
+          "symbol": "t",
+          "description": "time taken",
+          "value": 4.0,
+          "unit": "s"
+        }
+      ],
+      "required_output": "acceleration a in m/s^2",
+      "constraints": [],
+      "options": [],
+      "parts": [],
+      "table": null,
+      "diagram_description": null,
+      "marking": {
+        "scheme_available": true,
+        "final_answer": "2.0 m/s²",
+        "answer_key": null,
+        "worked_solution": "a = (v − u)/t = (8.0 − 0)/4.0 = 2.0 m/s²",
+        "points": [
+          {
+            "description": "Uses a = (v − u)/t with u = 0",
+            "marks": 1
+          },
+          {
+            "description": "2.0 m/s²",
+            "marks": 1
+          }
+        ],
+        "accept_rule": null
+      },
+      "difficulty_features": null,
+      "extraction_confidence": "high",
+      "evidence": [
+        {
+          "document": "Synthetic Physics Paper 1",
+          "page": 1,
+          "quote": "A cyclist accelerates uniformly from rest to a speed of 8.0 m/s in 4.0 s. Calculate the acceleration of the cyclist."
+        }
+      ],
+      "review_status": "unreviewed",
+      "provenance": {
+        "text": "explicit",
+        "subject": "explicit",
+        "topic": "inferred",
+        "subtopic": "inferred",
+        "question_type": "explicit",
+        "marks": "explicit",
+        "section": "explicit",
+        "learning_objectives": "inferred",
+        "cognitive_level": "inferred",
+        "given": "explicit",
+        "required_output": "explicit",
+        "marking": "explicit"
+      },
+      "missing_fields": [
+        "constraints"
+      ],
+      "security_flags": [],
+      "lineage": null,
+      "validation": null,
+      "extensions": {
+        "verification": {
+          "kind": "numeric",
+          "expression": "v/t",
+          "variables": {
+            "v": 8.0,
+            "t": 4.0
+          },
+          "claimed_value": 2.0,
+          "claimed_unit": "m/s^2",
+          "answer_uniqueness": "unique"
+        }
+      }
+    },
+    {
+      "id": "p1-a3",
+      "schema_version": "0.1.0",
+      "language": "en",
+      "source": {
+        "document": "Synthetic Physics Paper 1",
+        "page": 1,
+        "section": "A",
+        "position": 2,
+        "origin": "source"
+      },
+      "subject": "Introductory Physics",
+      "topic": "Forces",
+      "subtopic": "Newton's second law",
+      "text": "A resultant force of 6.0 N acts on a trolley of mass 2.0 kg. Calculate the acceleration of the trolley.",
+      "question_type": "calculation",
+      "marks": 2,
+      "section": "A",
+      "learning_objectives": [
+        "F1 Apply Newton's second law F = ma"
+      ],
+      "cognitive_level": "application",
+      "given": [
+        {
+          "symbol": "F",
+          "description": "resultant force",
+          "value": 6.0,
+          "unit": "N"
+        },
+        {
+          "symbol": "m",
+          "description": "mass of trolley",
+          "value": 2.0,
+          "unit": "kg"
+        }
+      ],
+      "required_output": "acceleration a in m/s^2",
+      "constraints": [],
+      "options": [],
+      "parts": [],
+      "table": null,
+      "diagram_description": null,
+      "marking": {
+        "scheme_available": true,
+        "final_answer": "3.0 m/s²",
+        "answer_key": null,
+        "worked_solution": "a = F/m = 6.0/2.0 = 3.0 m/s²",
+        "points": [
+          {
+            "description": "a = F/m",
+            "marks": 1
+          },
+          {
+            "description": "3.0 m/s²",
+            "marks": 1
+          }
+        ],
+        "accept_rule": null
+      },
+      "difficulty_features": null,
+      "extraction_confidence": "high",
+      "evidence": [
+        {
+          "document": "Synthetic Physics Paper 1",
+          "page": 1,
+          "quote": "A resultant force of 6.0 N acts on a trolley of mass 2.0 kg. Calculate the acceleration of the trolley."
+        }
+      ],
+      "review_status": "unreviewed",
+      "provenance": {
+        "text": "explicit",
+        "subject": "explicit",
+        "topic": "inferred",
+        "subtopic": "inferred",
+        "question_type": "explicit",
+        "marks": "explicit",
+        "section": "explicit",
+        "learning_objectives": "inferred",
+        "cognitive_level": "inferred",
+        "given": "explicit",
+        "required_output": "explicit",
+        "marking": "explicit"
+      },
+      "missing_fields": [
+        "constraints"
+      ],
+      "security_flags": [],
+      "lineage": null,
+      "validation": null,
+      "extensions": {
+        "verification": {
+          "kind": "numeric",
+          "expression": "F/m",
+          "variables": {
+            "F": 6.0,
+            "m": 2.0
+          },
+          "claimed_value": 3.0,
+          "claimed_unit": "m/s^2",
+          "answer_uniqueness": "unique"
+        }
+      }
+    },
+    {
+      "id": "p1-a4",
+      "schema_version": "0.1.0",
+      "language": "en",
+      "source": {
+        "document": "Synthetic Physics Paper 1",
+        "page": 1,
+        "section": "A",
+        "position": 3,
+        "origin": "source"
+      },
+      "subject": "Introductory Physics",
+      "topic": "Energy",
+      "subtopic": "Power",
+      "text": "A lamp transfers 120 J of energy in 4.0 s. Calculate the power of the lamp.",
+      "question_type": "calculation",
+      "marks": 2,
+      "section": "A",
+      "learning_objectives": [
+        "E2 Calculate power and efficiency"
+      ],
+      "cognitive_level": "application",
+      "given": [
+        {
+          "symbol": "E",
+          "description": "energy transferred",
+          "value": 120,
+          "unit": "J"
+        },
+        {
+          "symbol": "t",
+          "description": "time",
+          "value": 4.0,
+          "unit": "s"
+        }
+      ],
+      "required_output": "power P in W",
+      "constraints": [],
+      "options": [],
+      "parts": [],
+      "table": null,
+      "diagram_description": null,
+      "marking": {
+        "scheme_available": true,
+        "final_answer": "30 W",
+        "answer_key": null,
+        "worked_solution": "P = E/t = 120/4.0 = 30 W",
+        "points": [
+          {
+            "description": "P = E/t",
+            "marks": 1
+          },
+          {
+            "description": "30 W",
+            "marks": 1
+          }
+        ],
+        "accept_rule": null
+      },
+      "difficulty_features": null,
+      "extraction_confidence": "high",
+      "evidence": [
+        {
+          "document": "Synthetic Physics Paper 1",
+          "page": 1,
+          "quote": "A lamp transfers 120 J of energy in 4.0 s. Calculate the power of the lamp."
+        }
+      ],
+      "review_status": "unreviewed",
+      "provenance": {
+        "text": "explicit",
+        "subject": "explicit",
+        "topic": "inferred",
+        "subtopic": "inferred",
+        "question_type": "explicit",
+        "marks": "explicit",
+        "section": "explicit",
+        "learning_objectives": "inferred",
+        "cognitive_level": "inferred",
+        "given": "explicit",
+        "required_output": "explicit",
+        "marking": "explicit"
+      },
+      "missing_fields": [
+        "constraints"
+      ],
+      "security_flags": [],
+      "lineage": null,
+      "validation": null,
+      "extensions": {
+        "verification": {
+          "kind": "numeric",
+          "expression": "E/t",
+          "variables": {
+            "E": 120,
+            "t": 4.0
+          },
+          "claimed_value": 30,
+          "claimed_unit": "W",
+          "answer_uniqueness": "unique"
+        }
+      }
+    },
+    {
+      "id": "p1-a5",
+      "schema_version": "0.1.0",
+      "language": "en",
+      "source": {
+        "document": "Synthetic Physics Paper 1",
+        "page": 1,
+        "section": "A",
+        "position": 4,
+        "origin": "source"
+      },
+      "subject": "Introductory Physics",
+      "topic": "Waves",
+      "subtopic": "Wave equation",
+      "text": "A wave has a frequency of 50 Hz and a wavelength of 2.0 m. What is the speed of the wave?",
+      "question_type": "multiple_choice",
+      "marks": 1,
+      "section": "A",
+      "learning_objectives": [
+        "W1 Use the wave equation v = f λ"
+      ],
+      "cognitive_level": "application",
+      "given": [
+        {
+          "symbol": "f",
+          "description": "frequency",
+          "value": 50,
+          "unit": "Hz"
+        },
+        {
+          "symbol": "lam",
+          "description": "wavelength",
+          "value": 2.0,
+          "unit": "m"
+        }
+      ],
+      "required_output": null,
+      "constraints": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "25 m/s"
+        },
+        {
+          "key": "B",
+          "text": "52 m/s"
+        },
+        {
+          "key": "C",
+          "text": "100 m/s"
+        },
+        {
+          "key": "D",
+          "text": "0.04 m/s"
+        }
+      ],
+      "parts": [],
+      "table": null,
+      "diagram_description": null,
+      "marking": {
+        "scheme_available": true,
+        "final_answer": "100 m/s",
+        "answer_key": "C",
+        "worked_solution": null,
+        "points": [
+          {
+            "description": "C",
+            "marks": 1
+          }
+        ],
+        "accept_rule": null
+      },
+      "difficulty_features": null,
+      "extraction_confidence": "high",
+      "evidence": [
+        {
+          "document": "Synthetic Physics Paper 1",
+          "page": 1,
+          "quote": "A wave has a frequency of 50 Hz and a wavelength of 2.0 m. What is the speed of the wave?"
+        }
+      ],
+      "review_status": "unreviewed",
+      "provenance": {
+        "text": "explicit",
+        "subject": "explicit",
+        "topic": "inferred",
+        "subtopic": "inferred",
+        "question_type": "explicit",
+        "marks": "explicit",
+        "section": "explicit",
+        "learning_objectives": "inferred",
+        "cognitive_level": "inferred",
+        "given": "explicit",
+        "marking": "explicit"
+      },
+      "missing_fields": [
+        "required_output",
+        "constraints"
+      ],
+      "security_flags": [],
+      "lineage": null,
+      "validation": null,
+      "extensions": {
+        "verification": {
+          "kind": "numeric",
+          "expression": "f*lam",
+          "variables": {
+            "f": 50,
+            "lam": 2.0
+          },
+          "claimed_value": 100,
+          "claimed_unit": "m/s",
+          "answer_uniqueness": "unique"
+        }
+      }
+    },
+    {
+      "id": "p1-a6",
+      "schema_version": "0.1.0",
+      "language": "en",
+      "source": {
+        "document": "Synthetic Physics Paper 1",
+        "page": 1,
+        "section": "A",
+        "position": 5,
+        "origin": "source"
+      },
+      "subject": "Introductory Physics",
+      "topic": "Electricity",
+      "subtopic": "Ohm's law",
+      "text": "A current of 0.50 A flows through a 12 Ω resistor. Calculate the potential difference across the resistor.",
+      "question_type": "calculation",
+      "marks": 2,
+      "section": "A",
+      "learning_objectives": [
+        "C1 Apply Ohm's law to series circuits"
+      ],
+      "cognitive_level": "application",
+      "given": [
+        {
+          "symbol": "I",
+          "description": "current",
+          "value": 0.5,
+          "unit": "A"
+        },
+        {
+          "symbol": "R",
+          "description": "resistance",
+          "value": 12,
+          "unit": "ohm"
+        }
+      ],
+      "required_output": "potential difference V in V",
+      "constraints": [],
+      "options": [],
+      "parts": [],
+      "table": null,
+      "diagram_description": null,
+      "marking": {
+        "scheme_available": true,
+        "final_answer": "6.0 V",
+        "answer_key": null,
+        "worked_solution": "V = IR = 0.50 × 12 = 6.0 V",
+        "points": [
+          {
+            "description": "V = IR",
+            "marks": 1
+          },
+          {
+            "description": "6.0 V",
+            "marks": 1
+          }
+        ],
+        "accept_rule": null
+      },
+      "difficulty_features": null,
+      "extraction_confidence": "high",
+      "evidence": [
+        {
+          "document": "Synthetic Physics Paper 1",
+          "page": 1,
+          "quote": "A current of 0.50 A flows through a 12 Ω resistor. Calculate the potential difference across the resistor."
+        }
+      ],
+      "review_status": "unreviewed",
+      "provenance": {
+        "text": "explicit",
+        "subject": "explicit",
+        "topic": "inferred",
+        "subtopic": "inferred",
+        "question_type": "explicit",
+        "marks": "explicit",
+        "section": "explicit",
+        "learning_objectives": "inferred",
+        "cognitive_level": "inferred",
+        "given": "explicit",
+        "required_output": "explicit",
+        "marking": "explicit"
+      },
+      "missing_fields": [
+        "constraints"
+      ],
+      "security_flags": [],
+      "lineage": null,
+      "validation": null,
+      "extensions": {
+        "verification": {
+          "kind": "numeric",
+          "expression": "I*R",
+          "variables": {
+            "I": 0.5,
+            "R": 12
+          },
+          "claimed_value": 6.0,
+          "claimed_unit": "V",
+          "answer_uniqueness": "unique"
+        }
+      }
+    },
+    {
+      "id": "p1-b1",
+      "schema_version": "0.1.0",
+      "language": "en",
+      "source": {
+        "document": "Synthetic Physics Paper 1",
+        "page": 2,
+        "section": "B",
+        "position": 6,
+        "origin": "source"
+      },
+      "subject": "Introductory Physics",
+      "topic": "Kinematics",
+      "subtopic": "Stopping distance",
+      "text": "A car travelling at 20 m/s brakes with uniform deceleration and comes to rest in a distance of 50 m.",
+      "question_type": "mixed",
+      "marks": 7,
+      "section": "B",
+      "learning_objectives": [
+        "K1 Use the equations of uniformly accelerated motion",
+        "F3 Explain motion using Newton's first law"
+      ],
+      "cognitive_level": "multi_step_reasoning",
+      "given": [
+        {
+          "symbol": "u",
+          "description": "initial speed",
+          "value": 20,
+          "unit": "m/s"
+        },
+        {
+          "symbol": "s",
+          "description": "braking distance",
+          "value": 50,
+          "unit": "m"
+        }
+      ],
+      "required_output": null,
+      "constraints": [
+        {
+          "text": "deceleration is uniform",
+          "kind": "explicit"
+        },
+        {
+          "text": "the car comes to rest (v = 0)",
+          "kind": "boundary"
+        }
+      ],
+      "options": [],
+      "parts": [
+        {
+          "label": "a",
+          "text": "Calculate the magnitude of the deceleration of the car.",
+          "marks": 3
+        },
+        {
+          "label": "b",
+          "text": "Calculate the time taken for the car to stop.",
+          "marks": 2
+        },
+        {
+          "label": "c",
+          "text": "Explain why the braking distance would be larger on a wet road.",
+          "marks": 2
+        }
+      ],
+      "table": null,
+      "diagram_description": null,
+      "marking": {
+        "scheme_available": true,
+        "final_answer": "(a) 4.0 m/s² (b) 5.0 s (c) less friction, so smaller decelerating force",
+        "answer_key": null,
+        "worked_solution": "(a) v² = u² − 2as ⇒ a = u²/(2s) = 400/100 = 4.0 m/s². (b) t = u/a = 20/4.0 = 5.0 s. (c) Wet road reduces friction between tyres and road, so the maximum decelerating force and deceleration are smaller; the car travels further.",
+        "points": [
+          {
+            "description": "Selects v² = u² − 2as with v = 0",
+            "marks": 1,
+            "part": "a"
+          },
+          {
+            "description": "Rearranges for a",
+            "marks": 1,
+            "part": "a"
+          },
+          {
+            "description": "4.0 m/s²",
+            "marks": 1,
+            "part": "a"
+          },
+          {
+            "description": "t = u/a or equivalent",
+            "marks": 1,
+            "part": "b"
+          },
+          {
+            "description": "5.0 s",
+            "marks": 1,
+            "part": "b"
+          },
+          {
+            "description": "Less friction / grip on wet road",
+            "marks": 1,
+            "part": "c"
+          },
+          {
+            "description": "So smaller deceleration and greater distance",
+            "marks": 1,
+            "part": "c"
+          }
+        ],
+        "accept_rule": null
+      },
+      "difficulty_features": null,
+      "extraction_confidence": "high",
+      "evidence": [
+        {
+          "document": "Synthetic Physics Paper 1",
+          "page": 2,
+          "quote": "A car travelling at 20 m/s brakes with uniform deceleration and comes to rest in a distance of 50 m."
+        }
+      ],
+      "review_status": "unreviewed",
+      "provenance": {
+        "text": "explicit",
+        "subject": "explicit",
+        "topic": "inferred",
+        "subtopic": "inferred",
+        "question_type": "explicit",
+        "marks": "explicit",
+        "section": "explicit",
+        "learning_objectives": "inferred",
+        "cognitive_level": "inferred",
+        "given": "explicit",
+        "constraints": "explicit",
+        "marking": "explicit"
+      },
+      "missing_fields": [
+        "required_output"
+      ],
+      "security_flags": [],
+      "lineage": null,
+      "validation": null,
+      "extensions": {
+        "verification": {
+          "kind": "numeric",
+          "expression": "u**2/(2*s)",
+          "variables": {
+            "u": 20,
+            "s": 50
+          },
+          "claimed_value": 4.0,
+          "claimed_unit": "m/s^2",
+          "answer_uniqueness": "unique",
+          "domain": [
+            {
+              "var": "result",
+              "min": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "p1-b2",
+      "schema_version": "0.1.0",
+      "language": "en",
+      "source": {
+        "document": "Synthetic Physics Paper 1",
+        "page": 2,
+        "section": "B",
+        "position": 7,
+        "origin": "source"
+      },
+      "subject": "Introductory Physics",
+      "topic": "Energy",
+      "subtopic": "Energy conservation",
+      "text": "A ball of mass 0.50 kg is dropped from rest from a height of 3.2 m. Air resistance is negligible. Take g = 9.8 m/s².",
+      "question_type": "mixed",
+      "marks": 7,
+      "section": "B",
+      "learning_objectives": [
+        "E1 Calculate gravitational potential and kinetic energy"
+      ],
+      "cognitive_level": "multi_step_reasoning",
+      "given": [
+        {
+          "symbol": "m",
+          "description": "mass",
+          "value": 0.5,
+          "unit": "kg"
+        },
+        {
+          "symbol": "h",
+          "description": "height",
+          "value": 3.2,
+          "unit": "m"
+        },
+        {
+          "symbol": "g",
+          "description": "gravitational field strength",
+          "value": 9.8,
+          "unit": "m/s^2",
+          "role": "constant"
+        }
+      ],
+      "required_output": null,
+      "constraints": [
+        {
+          "text": "air resistance is negligible",
+          "kind": "explicit"
+        },
+        {
+          "text": "released from rest",
+          "kind": "boundary"
+        }
+      ],
+      "options": [],
+      "parts": [
+        {
+          "label": "a",
+          "text": "Calculate the gravitational potential energy lost by the ball as it falls to the ground.",
+          "marks": 2
+        },
+        {
+          "label": "b",
+          "text": "Calculate the speed of the ball just before it hits the ground.",
+          "marks": 3
+        },
+        {
+          "label": "c",
+          "text": "Explain how the speed just before impact would change if air resistance were not negligible.",
+          "marks": 2
+        }
+      ],
+      "table": null,
+      "diagram_description": null,
+      "marking": {
+        "scheme_available": true,
+        "final_answer": "(a) 15.7 J (b) 7.9 m/s (c) lower speed: some energy transferred to the surroundings",
+        "answer_key": null,
+        "worked_solution": "(a) ΔEp = mgh = 0.50 × 9.8 × 3.2 = 15.68 ≈ 15.7 J. (b) ½mv² = mgh ⇒ v = √(2gh) = √62.72 = 7.9 m/s. (c) Work done against air resistance transfers energy to the surroundings, so less kinetic energy and a lower speed.",
+        "points": [
+          {
+            "description": "ΔEp = mgh",
+            "marks": 1,
+            "part": "a"
+          },
+          {
+            "description": "15.7 J",
+            "marks": 1,
+            "part": "a"
+          },
+          {
+            "description": "Equates kinetic energy gained to potential energy lost",
+            "marks": 1,
+            "part": "b"
+          },
+          {
+            "description": "v = √(2gh)",
+            "marks": 1,
+            "part": "b"
+          },
+          {
+            "description": "7.9 m/s",
+            "marks": 1,
+            "part": "b"
+          },
+          {
+            "description": "Work done against air resistance",
+            "marks": 1,
+            "part": "c"
+          },
+          {
+            "description": "Less kinetic energy so lower speed",
+            "marks": 1,
+            "part": "c"
+          }
+        ],
+        "accept_rule": null
+      },
+      "difficulty_features": null,
+      "extraction_confidence": "high",
+      "evidence": [
+        {
+          "document": "Synthetic Physics Paper 1",
+          "page": 2,
+          "quote": "A ball of mass 0.50 kg is dropped from rest from a height of 3.2 m. Air resistance is negligible. Take g = 9.8 m/s²."
+        }
+      ],
+      "review_status": "unreviewed",
+      "provenance": {
+        "text": "explicit",
+        "subject": "explicit",
+        "topic": "inferred",
+        "subtopic": "inferred",
+        "question_type": "explicit",
+        "marks": "explicit",
+        "section": "explicit",
+        "learning_objectives": "inferred",
+        "cognitive_level": "inferred",
+        "given": "explicit",
+        "constraints": "explicit",
+        "marking": "explicit"
+      },
+      "missing_fields": [
+        "required_output"
+      ],
+      "security_flags": [],
+      "lineage": null,
+      "validation": null,
+      "extensions": {
+        "verification": {
+          "kind": "numeric",
+          "expression": "m*g*h",
+          "variables": {
+            "m": 0.5,
+            "g": 9.8,
+            "h": 3.2
+          },
+          "claimed_value": 15.68,
+          "claimed_unit": "J",
+          "answer_uniqueness": "unique"
+        }
+      }
+    },
+    {
+      "id": "p1-b3",
+      "schema_version": "0.1.0",
+      "language": "en",
+      "source": {
+        "document": "Synthetic Physics Paper 1",
+        "page": 2,
+        "section": "B",
+        "position": 8,
+        "origin": "source"
+      },
+      "subject": "Introductory Physics",
+      "topic": "Electricity",
+      "subtopic": "Series circuits",
+      "text": "A 4.0 Ω resistor and a 6.0 Ω resistor are connected in series with a 12 V battery of negligible internal resistance.",
+      "question_type": "calculation",
+      "marks": 6,
+      "section": "B",
+      "learning_objectives": [
+        "C1 Apply Ohm's law to series circuits"
+      ],
+      "cognitive_level": "multi_step_reasoning",
+      "given": [
+        {
+          "symbol": "R1",
+          "description": "first resistance",
+          "value": 4.0,
+          "unit": "ohm"
+        },
+        {
+          "symbol": "R2",
+          "description": "second resistance",
+          "value": 6.0,
+          "unit": "ohm"
+        },
+        {
+          "symbol": "V",
+          "description": "battery potential difference",
+          "value": 12,
+          "unit": "V"
+        }
+      ],
+      "required_output": null,
+      "constraints": [
+        {
+          "text": "battery has negligible internal resistance",
+          "kind": "explicit"
+        }
+      ],
+      "options": [],
+      "parts": [
+        {
+          "label": "a",
+          "text": "Calculate the total resistance of the circuit.",
+          "marks": 1
+        },
+        {
+          "label": "b",
+          "text": "Calculate the current in the circuit.",
+          "marks": 2
+        },
+        {
+          "label": "c",
+          "text": "Calculate the potential difference across the 6.0 Ω resistor.",
+          "marks": 3
+        }
+      ],
+      "table": null,
+      "diagram_description": null,
+      "marking": {
+        "scheme_available": true,
+        "final_answer": "(a) 10 Ω (b) 1.2 A (c) 7.2 V",
+        "answer_key": null,
+        "worked_solution": "(a) R = 4.0 + 6.0 = 10 Ω. (b) I = V/R = 12/10 = 1.2 A. (c) V2 = IR2 = 1.2 × 6.0 = 7.2 V.",
+        "points": [
+          {
+            "description": "10 Ω",
+            "marks": 1,
+            "part": "a"
+          },
+          {
+            "description": "I = V/R",
+            "marks": 1,
+            "part": "b"
+          },
+          {
+            "description": "1.2 A",
+            "marks": 1,
+            "part": "b"
+          },
+          {
+            "description": "Same current in series",
+            "marks": 1,
+            "part": "c"
+          },
+          {
+            "description": "V = IR2",
+            "marks": 1,
+            "part": "c"
+          },
+          {
+            "description": "7.2 V",
+            "marks": 1,
+            "part": "c"
+          }
+        ],
+        "accept_rule": null
+      },
+      "difficulty_features": null,
+      "extraction_confidence": "high",
+      "evidence": [
+        {
+          "document": "Synthetic Physics Paper 1",
+          "page": 2,
+          "quote": "A 4.0 Ω resistor and a 6.0 Ω resistor are connected in series with a 12 V battery of negligible internal resistance."
+        }
+      ],
+      "review_status": "unreviewed",
+      "provenance": {
+        "text": "explicit",
+        "subject": "explicit",
+        "topic": "inferred",
+        "subtopic": "inferred",
+        "question_type": "explicit",
+        "marks": "explicit",
+        "section": "explicit",
+        "learning_objectives": "inferred",
+        "cognitive_level": "inferred",
+        "given": "explicit",
+        "constraints": "explicit",
+        "marking": "explicit"
+      },
+      "missing_fields": [
+        "required_output"
+      ],
+      "security_flags": [],
+      "lineage": null,
+      "validation": null,
+      "extensions": {
+        "verification": {
+          "kind": "numeric",
+          "expression": "V*R2/(R1+R2)",
+          "variables": {
+            "V": 12,
+            "R1": 4.0,
+            "R2": 6.0
+          },
+          "claimed_value": 7.2,
+          "claimed_unit": "V",
+          "answer_uniqueness": "unique"
+        }
+      }
+    },
+    {
+      "id": "p2-a1",
+      "schema_version": "0.1.0",
+      "language": "en",
+      "source": {
+        "document": "Synthetic Physics Paper 2",
+        "page": 1,
+        "section": "A",
+        "position": 9,
+        "origin": "source"
+      },
+      "subject": "Introductory Physics",
+      "topic": "Momentum",
+      "subtopic": "Momentum",
+      "text": "Which of the following is a correct unit for momentum?",
+      "question_type": "multiple_choice",
+      "marks": 1,
+      "section": "A",
+      "learning_objectives": [
+        "U1 Distinguish scalar and vector quantities and use SI units",
+        "M1 Apply conservation of momentum"
+      ],
+      "cognitive_level": "recall",
+      "given": [],
+      "required_output": null,
+      "constraints": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "kg m/s"
+        },
+        {
+          "key": "B",
+          "text": "kg m/s²"
+        },
+        {
+          "key": "C",
+          "text": "N/s"
+        },
+        {
+          "key": "D",
+          "text": "J s"
+        }
+      ],
+      "parts": [],
+      "table": null,
+      "diagram_description": null,
+      "marking": {
+        "scheme_available": true,
+        "final_answer": "kg m/s",
+        "answer_key": "A",
+        "worked_solution": null,
+        "points": [
+          {
+            "description": "A",
+            "marks": 1
+          }
+        ],
+        "accept_rule": null
+      },
+      "difficulty_features": null,
+      "extraction_confidence": "high",
+      "evidence": [
+        {
+          "document": "Synthetic Physics Paper 2",
+          "page": 1,
+          "quote": "Which of the following is a correct unit for momentum?"
+        }
+      ],
+      "review_status": "unreviewed",
+      "provenance": {
+        "text": "explicit",
+        "subject": "explicit",
+        "topic": "inferred",
+        "subtopic": "inferred",
+        "question_type": "explicit",
+        "marks": "explicit",
+        "section": "explicit",
+        "learning_objectives": "inferred",
+        "cognitive_level": "inferred",
+        "marking": "explicit"
+      },
+      "missing_fields": [
+        "given",
+        "required_output",
+        "constraints"
+      ],
+      "security_flags": [],
+      "lineage": null,
+      "validation": null
+    },
+    {
+      "id": "p2-a2",
+      "schema_version": "0.1.0",
+      "language": "en",
+      "source": {
+        "document": "Synthetic Physics Paper 2",
+        "page": 1,
+        "section": "A",
+        "position": 10,
+        "origin": "source"
+      },
+      "subject": "Introductory Physics",
+      "topic": "Momentum",
+      "subtopic": "Momentum",
+      "text": "A car of mass 1200 kg is moving at 15 m/s. Calculate the momentum of the car.",
+      "question_type": "calculation",
+      "marks": 2,
+      "section": "A",
+      "learning_objectives": [
+        "M1 Apply conservation of momentum"
+      ],
+      "cognitive_level": "application",
+      "given": [
+        {
+          "symbol": "m",
+          "description": "mass",
+          "value": 1200,
+          "unit": "kg"
+        },
+        {
+          "symbol": "v",
+          "description": "velocity",
+          "value": 15,
+          "unit": "m/s"
+        }
+      ],
+      "required_output": "momentum p in kg m/s",
+      "constraints": [],
+      "options": [],
+      "parts": [],
+      "table": null,
+      "diagram_description": null,
+      "marking": {
+        "scheme_available": true,
+        "final_answer": "18000 kg m/s",
+        "answer_key": null,
+        "worked_solution": "p = mv = 1200 × 15 = 18 000 kg m/s",
+        "points": [
+          {
+            "description": "p = mv",
+            "marks": 1
+          },
+          {
+            "description": "18 000 kg m/s",
+            "marks": 1
+          }
+        ],
+        "accept_rule": null
+      },
+      "difficulty_features": null,
+      "extraction_confidence": "high",
+      "evidence": [
+        {
+          "document": "Synthetic Physics Paper 2",
+          "page": 1,
+          "quote": "A car of mass 1200 kg is moving at 15 m/s. Calculate the momentum of the car."
+        }
+      ],
+      "review_status": "unreviewed",
+      "provenance": {
+        "text": "explicit",
+        "subject": "explicit",
+        "topic": "inferred",
+        "subtopic": "inferred",
+        "question_type": "explicit",
+        "marks": "explicit",
+        "section": "explicit",
+        "learning_objectives": "inferred",
+        "cognitive_level": "inferred",
+        "given": "explicit",
+        "required_output": "explicit",
+        "marking": "explicit"
+      },
+      "missing_fields": [
+        "constraints"
+      ],
+      "security_flags": [],
+      "lineage": null,
+      "validation": null,
+      "extensions": {
+        "verification": {
+          "kind": "numeric",
+          "expression": "m*v",
+          "variables": {
+            "m": 1200,
+            "v": 15
+          },
+          "claimed_value": 18000,
+          "claimed_unit": "kg m/s",
+          "answer_uniqueness": "unique"
+        }
+      }
+    },
+    {
+      "id": "p2-a3",
+      "schema_version": "0.1.0",
+      "language": "en",
+      "source": {
+        "document": "Synthetic Physics Paper 2",
+        "page": 1,
+        "section": "A",
+        "position": 11,
+        "origin": "source"
+      },
+      "subject": "Introductory Physics",
+      "topic": "Forces",
+      "subtopic": "Hooke's law",
+      "text": "A spring with spring constant 40 N/m is extended by 0.15 m. Calculate the force applied to the spring.",
+      "question_type": "calculation",
+      "marks": 2,
+      "section": "A",
+      "learning_objectives": [
+        "F2 Apply Hooke's law F = kx"
+      ],
+      "cognitive_level": "application",
+      "given": [
+        {
+          "symbol": "k",
+          "description": "spring constant",
+          "value": 40,
+          "unit": "N/m"
+        },
+        {
+          "symbol": "x",
+          "description": "extension",
+          "value": 0.15,
+          "unit": "m"
+        }
+      ],
+      "required_output": "force F in N",
+      "constraints": [
+        {
+          "text": "the spring obeys Hooke's law (limit of proportionality not exceeded)",
+          "kind": "explicit"
+        }
+      ],
+      "options": [],
+      "parts": [],
+      "table": null,
+      "diagram_description": null,
+      "marking": {
+        "scheme_available": true,
+        "final_answer": "6.0 N",
+        "answer_key": null,
+        "worked_solution": "F = kx = 40 × 0.15 = 6.0 N",
+        "points": [
+          {
+            "description": "F = kx",
+            "marks": 1
+          },
+          {
+            "description": "6.0 N",
+            "marks": 1
+          }
+        ],
+        "accept_rule": null
+      },
+      "difficulty_features": null,
+      "extraction_confidence": "high",
+      "evidence": [
+        {
+          "document": "Synthetic Physics Paper 2",
+          "page": 1,
+          "quote": "A spring with spring constant 40 N/m is extended by 0.15 m. Calculate the force applied to the spring."
+        }
+      ],
+      "review_status": "unreviewed",
+      "provenance": {
+        "text": "explicit",
+        "subject": "explicit",
+        "topic": "inferred",
+        "subtopic": "inferred",
+        "question_type": "explicit",
+        "marks": "explicit",
+        "section": "explicit",
+        "learning_objectives": "inferred",
+        "cognitive_level": "inferred",
+        "given": "explicit",
+        "required_output": "explicit",
+        "constraints": "explicit",
+        "marking": "explicit"
+      },
+      "missing_fields": [],
+      "security_flags": [],
+      "lineage": null,
+      "validation": null,
+      "extensions": {
+        "verification": {
+          "kind": "numeric",
+          "expression": "k*x",
+          "variables": {
+            "k": 40,
+            "x": 0.15
+          },
+          "claimed_value": 6.0,
+          "claimed_unit": "N",
+          "answer_uniqueness": "unique"
+        }
+      }
+    },
+    {
+      "id": "p2-a4",
+      "schema_version": "0.1.0",
+      "language": "en",
+      "source": {
+        "document": "Synthetic Physics Paper 2",
+        "page": 1,
+        "section": "A",
+        "position": 12,
+        "origin": "source"
+      },
+      "subject": "Introductory Physics",
+      "topic": "Waves",
+      "subtopic": "Wave equation",
+      "text": "A sound wave travels at 340 m/s and has a frequency of 170 Hz. What is its wavelength?",
+      "question_type": "multiple_choice",
+      "marks": 1,
+      "section": "A",
+      "learning_objectives": [
+        "W1 Use the wave equation v = f λ"
+      ],
+      "cognitive_level": "application",
+      "given": [
+        {
+          "symbol": "v",
+          "description": "wave speed",
+          "value": 340,
+          "unit": "m/s"
+        },
+        {
+          "symbol": "f",
+          "description": "frequency",
+          "value": 170,
+          "unit": "Hz"
+        }
+      ],
+      "required_output": null,
+      "constraints": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "0.50 m"
+        },
+        {
+          "key": "B",
+          "text": "2.0 m"
+        },
+        {
+          "key": "C",
+          "text": "510 m"
+        },
+        {
+          "key": "D",
+          "text": "57 800 m"
+        }
+      ],
+      "parts": [],
+      "table": null,
+      "diagram_description": null,
+      "marking": {
+        "scheme_available": true,
+        "final_answer": "2.0 m",
+        "answer_key": "B",
+        "worked_solution": null,
+        "points": [
+          {
+            "description": "B",
+            "marks": 1
+          }
+        ],
+        "accept_rule": null
+      },
+      "difficulty_features": null,
+      "extraction_confidence": "high",
+      "evidence": [
+        {
+          "document": "Synthetic Physics Paper 2",
+          "page": 1,
+          "quote": "A sound wave travels at 340 m/s and has a frequency of 170 Hz. What is its wavelength?"
+        }
+      ],
+      "review_status": "unreviewed",
+      "provenance": {
+        "text": "explicit",
+        "subject": "explicit",
+        "topic": "inferred",
+        "subtopic": "inferred",
+        "question_type": "explicit",
+        "marks": "explicit",
+        "section": "explicit",
+        "learning_objectives": "inferred",
+        "cognitive_level": "inferred",
+        "given": "explicit",
+        "marking": "explicit"
+      },
+      "missing_fields": [
+        "required_output",
+        "constraints"
+      ],
+      "security_flags": [],
+      "lineage": null,
+      "validation": null,
+      "extensions": {
+        "verification": {
+          "kind": "numeric",
+          "expression": "v/f",
+          "variables": {
+            "v": 340,
+            "f": 170
+          },
+          "claimed_value": 2.0,
+          "claimed_unit": "m",
+          "answer_uniqueness": "unique"
+        }
+      }
+    },
+    {
+      "id": "p2-a5",
+      "schema_version": "0.1.0",
+      "language": "en",
+      "source": {
+        "document": "Synthetic Physics Paper 2",
+        "page": 1,
+        "section": "A",
+        "position": 13,
+        "origin": "source"
+      },
+      "subject": "Introductory Physics",
+      "topic": "Electricity",
+      "subtopic": "Current and charge",
+      "text": "A charge of 30 C flows through a lamp in 60 s. Calculate the current in the lamp.",
+      "question_type": "calculation",
+      "marks": 2,
+      "section": "A",
+      "learning_objectives": [
+        "C2 Relate charge, current, potential difference and power"
+      ],
+      "cognitive_level": "application",
+      "given": [
+        {
+          "symbol": "Q",
+          "description": "charge",
+          "value": 30,
+          "unit": "C"
+        },
+        {
+          "symbol": "t",
+          "description": "time",
+          "value": 60,
+          "unit": "s"
+        }
+      ],
+      "required_output": "current I in A",
+      "constraints": [],
+      "options": [],
+      "parts": [],
+      "table": null,
+      "diagram_description": null,
+      "marking": {
+        "scheme_available": true,
+        "final_answer": "0.50 A",
+        "answer_key": null,
+        "worked_solution": "I = Q/t = 30/60 = 0.50 A",
+        "points": [
+          {
+            "description": "I = Q/t",
+            "marks": 1
+          },
+          {
+            "description": "0.50 A",
+            "marks": 1
+          }
+        ],
+        "accept_rule": null
+      },
+      "difficulty_features": null,
+      "extraction_confidence": "high",
+      "evidence": [
+        {
+          "document": "Synthetic Physics Paper 2",
+          "page": 1,
+          "quote": "A charge of 30 C flows through a lamp in 60 s. Calculate the current in the lamp."
+        }
+      ],
+      "review_status": "unreviewed",
+      "provenance": {
+        "text": "explicit",
+        "subject": "explicit",
+        "topic": "inferred",
+        "subtopic": "inferred",
+        "question_type": "explicit",
+        "marks": "explicit",
+        "section": "explicit",
+        "learning_objectives": "inferred",
+        "cognitive_level": "inferred",
+        "given": "explicit",
+        "required_output": "explicit",
+        "marking": "explicit"
+      },
+      "missing_fields": [
+        "constraints"
+      ],
+      "security_flags": [],
+      "lineage": null,
+      "validation": null,
+      "extensions": {
+        "verification": {
+          "kind": "numeric",
+          "expression": "Q/t",
+          "variables": {
+            "Q": 30,
+            "t": 60
+          },
+          "claimed_value": 0.5,
+          "claimed_unit": "A",
+          "answer_uniqueness": "unique"
+        }
+      }
+    },
+    {
+      "id": "p2-a6",
+      "schema_version": "0.1.0",
+      "language": "en",
+      "source": {
+        "document": "Synthetic Physics Paper 2",
+        "page": 1,
+        "section": "A",
+        "position": 14,
+        "origin": "source"
+      },
+      "subject": "Introductory Physics",
+      "topic": "Forces",
+      "subtopic": "Newton's first law",
+      "text": "A puck slides across a frictionless horizontal surface. Explain why it continues to move at constant velocity.",
+      "question_type": "short_answer",
+      "marks": 2,
+      "section": "A",
+      "learning_objectives": [
+        "F3 Explain motion using Newton's first law"
+      ],
+      "cognitive_level": "interpretation",
+      "given": [],
+      "required_output": null,
+      "constraints": [
+        {
+          "text": "surface is frictionless",
+          "kind": "explicit"
+        }
+      ],
+      "options": [],
+      "parts": [],
+      "table": null,
+      "diagram_description": null,
+      "marking": {
+        "scheme_available": true,
+        "final_answer": "No resultant force acts, so by Newton's first law the velocity does not change.",
+        "answer_key": null,
+        "worked_solution": null,
+        "points": [
+          {
+            "description": "No resultant (unbalanced) force acts on the puck",
+            "marks": 1
+          },
+          {
+            "description": "So velocity is unchanged (Newton's first law)",
+            "marks": 1
+          }
+        ],
+        "accept_rule": null
+      },
+      "difficulty_features": null,
+      "extraction_confidence": "high",
+      "evidence": [
+        {
+          "document": "Synthetic Physics Paper 2",
+          "page": 1,
+          "quote": "A puck slides across a frictionless horizontal surface. Explain why it continues to move at constant velocity."
+        }
+      ],
+      "review_status": "unreviewed",
+      "provenance": {
+        "text": "explicit",
+        "subject": "explicit",
+        "topic": "inferred",
+        "subtopic": "inferred",
+        "question_type": "explicit",
+        "marks": "explicit",
+        "section": "explicit",
+        "learning_objectives": "inferred",
+        "cognitive_level": "inferred",
+        "constraints": "explicit",
+        "marking": "explicit"
+      },
+      "missing_fields": [
+        "given",
+        "required_output"
+      ],
+      "security_flags": [],
+      "lineage": null,
+      "validation": null
+    },
+    {
+      "id": "p2-b1",
+      "schema_version": "0.1.0",
+      "language": "en",
+      "source": {
+        "document": "Synthetic Physics Paper 2",
+        "page": 2,
+        "section": "B",
+        "position": 15,
+        "origin": "source"
+      },
+      "subject": "Introductory Physics",
+      "topic": "Momentum",
+      "subtopic": "Collisions",
+      "text": "A trolley of mass 2.0 kg moving at 3.0 m/s collides with a stationary trolley of mass 1.0 kg. The trolleys stick together.",
+      "question_type": "mixed",
+      "marks": 8,
+      "section": "B",
+      "learning_objectives": [
+        "M1 Apply conservation of momentum",
+        "E1 Calculate gravitational potential and kinetic energy"
+      ],
+      "cognitive_level": "multi_step_reasoning",
+      "given": [
+        {
+          "symbol": "m1",
+          "description": "mass of moving trolley",
+          "value": 2.0,
+          "unit": "kg"
+        },
+        {
+          "symbol": "u1",
+          "description": "initial velocity",
+          "value": 3.0,
+          "unit": "m/s"
+        },
+        {
+          "symbol": "m2",
+          "description": "mass of stationary trolley",
+          "value": 1.0,
+          "unit": "kg"
+        }
+      ],
+      "required_output": null,
+      "constraints": [
+        {
+          "text": "no external horizontal forces act",
+          "kind": "implicit"
+        },
+        {
+          "text": "trolleys stick together",
+          "kind": "explicit"
+        }
+      ],
+      "options": [],
+      "parts": [
+        {
+          "label": "a",
+          "text": "Calculate the total momentum before the collision.",
+          "marks": 2
+        },
+        {
+          "label": "b",
+          "text": "Calculate the velocity of the trolleys immediately after the collision.",
+          "marks": 3
+        },
+        {
+          "label": "c",
+          "text": "Calculate the kinetic energy lost in the collision.",
+          "marks": 3
+        }
+      ],
+      "table": null,
+      "diagram_description": null,
+      "marking": {
+        "scheme_available": true,
+        "final_answer": "(a) 6.0 kg m/s (b) 2.0 m/s (c) 3.0 J",
+        "answer_key": null,
+        "worked_solution": "(a) p = 2.0 × 3.0 = 6.0 kg m/s. (b) v = 6.0/3.0 = 2.0 m/s. (c) Ek before = ½ × 2.0 × 3.0² = 9.0 J; after = ½ × 3.0 × 2.0² = 6.0 J; lost 3.0 J.",
+        "points": [
+          {
+            "description": "p = mv",
+            "marks": 1,
+            "part": "a"
+          },
+          {
+            "description": "6.0 kg m/s",
+            "marks": 1,
+            "part": "a"
+          },
+          {
+            "description": "Momentum conserved",
+            "marks": 1,
+            "part": "b"
+          },
+          {
+            "description": "Combined mass 3.0 kg",
+            "marks": 1,
+            "part": "b"
+          },
+          {
+            "description": "2.0 m/s",
+            "marks": 1,
+            "part": "b"
+          },
+          {
+            "description": "Ek before 9.0 J",
+            "marks": 1,
+            "part": "c"
+          },
+          {
+            "description": "Ek after 6.0 J",
+            "marks": 1,
+            "part": "c"
+          },
+          {
+            "description": "3.0 J lost",
+            "marks": 1,
+            "part": "c"
+          }
+        ],
+        "accept_rule": null
+      },
+      "difficulty_features": null,
+      "extraction_confidence": "high",
+      "evidence": [
+        {
+          "document": "Synthetic Physics Paper 2",
+          "page": 2,
+          "quote": "A trolley of mass 2.0 kg moving at 3.0 m/s collides with a stationary trolley of mass 1.0 kg. The trolleys stick togethe"
+        }
+      ],
+      "review_status": "unreviewed",
+      "provenance": {
+        "text": "explicit",
+        "subject": "explicit",
+        "topic": "inferred",
+        "subtopic": "inferred",
+        "question_type": "explicit",
+        "marks": "explicit",
+        "section": "explicit",
+        "learning_objectives": "inferred",
+        "cognitive_level": "inferred",
+        "given": "explicit",
+        "constraints": "explicit",
+        "marking": "explicit"
+      },
+      "missing_fields": [
+        "required_output"
+      ],
+      "security_flags": [],
+      "lineage": null,
+      "validation": null,
+      "extensions": {
+        "verification": {
+          "kind": "numeric",
+          "expression": "m1*u1",
+          "variables": {
+            "m1": 2.0,
+            "u1": 3.0
+          },
+          "claimed_value": 6.0,
+          "claimed_unit": "kg m/s",
+          "answer_uniqueness": "unique"
+        }
+      }
+    },
+    {
+      "id": "p2-b2",
+      "schema_version": "0.1.0",
+      "language": "en",
+      "source": {
+        "document": "Synthetic Physics Paper 2",
+        "page": 2,
+        "section": "B",
+        "position": 16,
+        "origin": "source"
+      },
+      "subject": "Introductory Physics",
+      "topic": "Kinematics",
+      "subtopic": "Motion data",
+      "text": "The table shows the velocity of a sprinter at different times after the start of a race.",
+      "question_type": "data_interpretation",
+      "marks": 6,
+      "section": "B",
+      "learning_objectives": [
+        "K2 Interpret motion data in tables and graphs",
+        "K1 Use the equations of uniformly accelerated motion"
+      ],
+      "cognitive_level": "interpretation",
+      "given": [
+        {
+          "symbol": "v4",
+          "description": "velocity at 4.0 s",
+          "value": 6.0,
+          "unit": "m/s"
+        },
+        {
+          "symbol": "t4",
+          "description": "time of acceleration",
+          "value": 4.0,
+          "unit": "s"
+        },
+        {
+          "symbol": "t6",
+          "description": "total time",
+          "value": 6.0,
+          "unit": "s"
+        }
+      ],
+      "required_output": null,
+      "constraints": [],
+      "options": [],
+      "parts": [
+        {
+          "label": "a",
+          "text": "Calculate the acceleration of the sprinter during the first 4.0 s.",
+          "marks": 2
+        },
+        {
+          "label": "b",
+          "text": "Calculate the distance travelled in the first 6.0 s.",
+          "marks": 3
+        },
+        {
+          "label": "c",
+          "text": "Describe the motion of the sprinter between 4.0 s and 6.0 s.",
+          "marks": 1
+        }
+      ],
+      "table": {
+        "caption": "Velocity of the sprinter",
+        "columns": [
+          "t / s",
+          "v / m s⁻¹"
+        ],
+        "rows": [
+          [
+            0,
+            0
+          ],
+          [
+            2.0,
+            3.0
+          ],
+          [
+            4.0,
+            6.0
+          ],
+          [
+            6.0,
+            6.0
+          ]
+        ]
+      },
+      "diagram_description": null,
+      "marking": {
+        "scheme_available": true,
+        "final_answer": "(a) 1.5 m/s² (b) 24 m (c) constant velocity of 6.0 m/s",
+        "answer_key": null,
+        "worked_solution": "(a) a = 6.0/4.0 = 1.5 m/s². (b) Distance = ½ × 4.0 × 6.0 + 6.0 × 2.0 = 12 + 12 = 24 m. (c) Constant velocity (zero acceleration).",
+        "points": [
+          {
+            "description": "a = Δv/Δt",
+            "marks": 1,
+            "part": "a"
+          },
+          {
+            "description": "1.5 m/s²",
+            "marks": 1,
+            "part": "a"
+          },
+          {
+            "description": "Distance during acceleration 12 m",
+            "marks": 1,
+            "part": "b"
+          },
+          {
+            "description": "Distance at constant speed 12 m",
+            "marks": 1,
+            "part": "b"
+          },
+          {
+            "description": "24 m",
+            "marks": 1,
+            "part": "b"
+          },
+          {
+            "description": "Constant velocity",
+            "marks": 1,
+            "part": "c"
+          }
+        ],
+        "accept_rule": null
+      },
+      "difficulty_features": null,
+      "extraction_confidence": "high",
+      "evidence": [
+        {
+          "document": "Synthetic Physics Paper 2",
+          "page": 2,
+          "quote": "The table shows the velocity of a sprinter at different times after the start of a race."
+        }
+      ],
+      "review_status": "unreviewed",
+      "provenance": {
+        "text": "explicit",
+        "subject": "explicit",
+        "topic": "inferred",
+        "subtopic": "inferred",
+        "question_type": "explicit",
+        "marks": "explicit",
+        "section": "explicit",
+        "learning_objectives": "inferred",
+        "cognitive_level": "inferred",
+        "given": "explicit",
+        "marking": "explicit"
+      },
+      "missing_fields": [
+        "required_output",
+        "constraints"
+      ],
+      "security_flags": [],
+      "lineage": null,
+      "validation": null,
+      "extensions": {
+        "verification": {
+          "kind": "numeric",
+          "expression": "0.5*t4*v4 + v4*(t6-t4)",
+          "variables": {
+            "t4": 4.0,
+            "v4": 6.0,
+            "t6": 6.0
+          },
+          "claimed_value": 24,
+          "claimed_unit": "m",
+          "answer_uniqueness": "unique"
+        }
+      }
+    },
+    {
+      "id": "p2-b3",
+      "schema_version": "0.1.0",
+      "language": "en",
+      "source": {
+        "document": "Synthetic Physics Paper 2",
+        "page": 2,
+        "section": "B",
+        "position": 17,
+        "origin": "source"
+      },
+      "subject": "Introductory Physics",
+      "topic": "Electricity",
+      "subtopic": "Electrical power",
+      "text": "An electric kettle is connected to a 230 V mains supply and draws a current of 8.0 A.",
+      "question_type": "mixed",
+      "marks": 6,
+      "section": "B",
+      "learning_objectives": [
+        "C2 Relate charge, current, potential difference and power",
+        "E2 Calculate power and efficiency"
+      ],
+      "cognitive_level": "application",
+      "given": [
+        {
+          "symbol": "V",
+          "description": "supply voltage",
+          "value": 230,
+          "unit": "V"
+        },
+        {
+          "symbol": "I",
+          "description": "current",
+          "value": 8.0,
+          "unit": "A"
+        },
+        {
+          "symbol": "t",
+          "description": "heating time",
+          "value": 120,
+          "unit": "s"
+        }
+      ],
+      "required_output": null,
+      "constraints": [],
+      "options": [],
+      "parts": [
+        {
+          "label": "a",
+          "text": "Calculate the power of the kettle.",
+          "marks": 2
+        },
+        {
+          "label": "b",
+          "text": "Calculate the energy transferred by the kettle in 120 s.",
+          "marks": 2
+        },
+        {
+          "label": "c",
+          "text": "Suggest why the kettle cable is thicker than the cable for a lamp.",
+          "marks": 2
+        }
+      ],
+      "table": null,
+      "diagram_description": null,
+      "marking": {
+        "scheme_available": true,
+        "final_answer": "(a) 1840 W (b) 2.2 × 10^5 J (c) larger current; thicker cable has lower resistance so less heating",
+        "answer_key": null,
+        "worked_solution": "(a) P = VI = 230 × 8.0 = 1840 W. (b) E = Pt = 1840 × 120 = 220 800 J ≈ 2.2 × 10⁵ J. (c) Large current; thick cable has lower resistance so it does not overheat.",
+        "points": [
+          {
+            "description": "P = VI",
+            "marks": 1,
+            "part": "a"
+          },
+          {
+            "description": "1840 W",
+            "marks": 1,
+            "part": "a"
+          },
+          {
+            "description": "E = Pt",
+            "marks": 1,
+            "part": "b"
+          },
+          {
+            "description": "2.2 × 10⁵ J",
+            "marks": 1,
+            "part": "b"
+          },
+          {
+            "description": "Larger current",
+            "marks": 1,
+            "part": "c"
+          },
+          {
+            "description": "Lower resistance so less heating",
+            "marks": 1,
+            "part": "c"
+          }
+        ],
+        "accept_rule": null
+      },
+      "difficulty_features": null,
+      "extraction_confidence": "high",
+      "evidence": [
+        {
+          "document": "Synthetic Physics Paper 2",
+          "page": 2,
+          "quote": "An electric kettle is connected to a 230 V mains supply and draws a current of 8.0 A."
+        }
+      ],
+      "review_status": "unreviewed",
+      "provenance": {
+        "text": "explicit",
+        "subject": "explicit",
+        "topic": "inferred",
+        "subtopic": "inferred",
+        "question_type": "explicit",
+        "marks": "explicit",
+        "section": "explicit",
+        "learning_objectives": "inferred",
+        "cognitive_level": "inferred",
+        "given": "explicit",
+        "marking": "explicit"
+      },
+      "missing_fields": [
+        "required_output",
+        "constraints"
+      ],
+      "security_flags": [],
+      "lineage": null,
+      "validation": null,
+      "extensions": {
+        "verification": {
+          "kind": "numeric",
+          "expression": "V*I",
+          "variables": {
+            "V": 230,
+            "I": 8.0
+          },
+          "claimed_value": 1840,
+          "claimed_unit": "W",
+          "answer_uniqueness": "unique"
+        }
+      }
+    },
+    {
+      "id": "p3-a1",
+      "schema_version": "0.1.0",
+      "language": "en",
+      "source": {
+        "document": "Synthetic Physics Paper 3",
+        "page": 1,
+        "section": "A",
+        "position": 18,
+        "origin": "source"
+      },
+      "subject": "Introductory Physics",
+      "topic": "Energy",
+      "subtopic": "Power",
+      "text": "Which of the following is the SI unit of power?",
+      "question_type": "multiple_choice",
+      "marks": 1,
+      "section": "A",
+      "learning_objectives": [
+        "U1 Distinguish scalar and vector quantities and use SI units",
+        "E2 Calculate power and efficiency"
+      ],
+      "cognitive_level": "recall",
+      "given": [],
+      "required_output": null,
+      "constraints": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "joule"
+        },
+        {
+          "key": "B",
+          "text": "newton"
+        },
+        {
+          "key": "C",
+          "text": "watt"
+        },
+        {
+          "key": "D",
+          "text": "pascal"
+        }
+      ],
+      "parts": [],
+      "table": null,
+      "diagram_description": null,
+      "marking": {
+        "scheme_available": true,
+        "final_answer": "watt",
+        "answer_key": "C",
+        "worked_solution": null,
+        "points": [
+          {
+            "description": "C",
+            "marks": 1
+          }
+        ],
+        "accept_rule": null
+      },
+      "difficulty_features": null,
+      "extraction_confidence": "high",
+      "evidence": [
+        {
+          "document": "Synthetic Physics Paper 3",
+          "page": 1,
+          "quote": "Which of the following is the SI unit of power?"
+        }
+      ],
+      "review_status": "unreviewed",
+      "provenance": {
+        "text": "explicit",
+        "subject": "explicit",
+        "topic": "inferred",
+        "subtopic": "inferred",
+        "question_type": "explicit",
+        "marks": "explicit",
+        "section": "explicit",
+        "learning_objectives": "inferred",
+        "cognitive_level": "inferred",
+        "marking": "explicit"
+      },
+      "missing_fields": [
+        "given",
+        "required_output",
+        "constraints"
+      ],
+      "security_flags": [],
+      "lineage": null,
+      "validation": null
+    },
+    {
+      "id": "p3-a2",
+      "schema_version": "0.1.0",
+      "language": "en",
+      "source": {
+        "document": "Synthetic Physics Paper 3",
+        "page": 1,
+        "section": "A",
+        "position": 19,
+        "origin": "source"
+      },
+      "subject": "Introductory Physics",
+      "topic": "Energy",
+      "subtopic": "Gravitational potential energy",
+      "text": "A climber of mass 60 kg climbs a vertical height of 12 m. Calculate the gain in gravitational potential energy of the climber. Take g = 9.8 m/s².",
+      "question_type": "calculation",
+      "marks": 2,
+      "section": "A",
+      "learning_objectives": [
+        "E1 Calculate gravitational potential and kinetic energy"
+      ],
+      "cognitive_level": "application",
+      "given": [
+        {
+          "symbol": "m",
+          "description": "mass",
+          "value": 60,
+          "unit": "kg"
+        },
+        {
+          "symbol": "h",
+          "description": "height gained",
+          "value": 12,
+          "unit": "m"
+        },
+        {
+          "symbol": "g",
+          "description": "gravitational field strength",
+          "value": 9.8,
+          "unit": "m/s^2",
+          "role": "constant"
+        }
+      ],
+      "required_output": "gain in GPE in J",
+      "constraints": [],
+      "options": [],
+      "parts": [],
+      "table": null,
+      "diagram_description": null,
+      "marking": {
+        "scheme_available": true,
+        "final_answer": "7056 J (7.1 kJ)",
+        "answer_key": null,
+        "worked_solution": "ΔEp = mgh = 60 × 9.8 × 12 = 7056 J ≈ 7.1 kJ",
+        "points": [
+          {
+            "description": "ΔEp = mgh",
+            "marks": 1
+          },
+          {
+            "description": "7056 J / 7.1 kJ",
+            "marks": 1
+          }
+        ],
+        "accept_rule": null
+      },
+      "difficulty_features": null,
+      "extraction_confidence": "high",
+      "evidence": [
+        {
+          "document": "Synthetic Physics Paper 3",
+          "page": 1,
+          "quote": "A climber of mass 60 kg climbs a vertical height of 12 m. Calculate the gain in gravitational potential energy of the cl"
+        }
+      ],
+      "review_status": "unreviewed",
+      "provenance": {
+        "text": "explicit",
+        "subject": "explicit",
+        "topic": "inferred",
+        "subtopic": "inferred",
+        "question_type": "explicit",
+        "marks": "explicit",
+        "section": "explicit",
+        "learning_objectives": "inferred",
+        "cognitive_level": "inferred",
+        "given": "explicit",
+        "required_output": "explicit",
+        "marking": "explicit"
+      },
+      "missing_fields": [
+        "constraints"
+      ],
+      "security_flags": [],
+      "lineage": null,
+      "validation": null,
+      "extensions": {
+        "verification": {
+          "kind": "numeric",
+          "expression": "m*g*h",
+          "variables": {
+            "m": 60,
+            "g": 9.8,
+            "h": 12
+          },
+          "claimed_value": 7056,
+          "claimed_unit": "J",
+          "answer_uniqueness": "unique"
+        }
+      }
+    },
+    {
+      "id": "p3-a3",
+      "schema_version": "0.1.0",
+      "language": "en",
+      "source": {
+        "document": "Synthetic Physics Paper 3",
+        "page": 1,
+        "section": "A",
+        "position": 20,
+        "origin": "source"
+      },
+      "subject": "Introductory Physics",
+      "topic": "Kinematics",
+      "subtopic": "Projectile motion",
+      "text": "A ball rolls off the edge of a horizontal table 1.8 m above the floor. Air resistance is negligible. Calculate the time taken for the ball to reach the floor. Take g = 9.8 m/s².",
+      "question_type": "calculation",
+      "marks": 3,
+      "section": "A",
+      "learning_objectives": [
+        "K3 Analyse projectile motion with independent horizontal and vertical components",
+        "K1 Use the equations of uniformly accelerated motion"
+      ],
+      "cognitive_level": "multi_step_reasoning",
+      "given": [
+        {
+          "symbol": "h",
+          "description": "height of table",
+          "value": 1.8,
+          "unit": "m"
+        },
+        {
+          "symbol": "g",
+          "description": "gravitational field strength",
+          "value": 9.8,
+          "unit": "m/s^2",
+          "role": "constant"
+        }
+      ],
+      "required_output": "time t in s",
+      "constraints": [
+        {
+          "text": "air resistance is negligible",
+          "kind": "explicit"
+        },
+        {
+          "text": "initial vertical velocity is zero",
+          "kind": "boundary"
+        }
+      ],
+      "options": [],
+      "parts": [],
+      "table": null,
+      "diagram_description": null,
+      "marking": {
+        "scheme_available": true,
+        "final_answer": "0.61 s",
+        "answer_key": null,
+        "worked_solution": "Vertical motion independent: h = ½gt² ⇒ t = √(2h/g) = √(3.6/9.8) = 0.61 s",
+        "points": [
+          {
+            "description": "Vertical initial velocity is zero / motions independent",
+            "marks": 1
+          },
+          {
+            "description": "h = ½gt²",
+            "marks": 1
+          },
+          {
+            "description": "0.61 s",
+            "marks": 1
+          }
+        ],
+        "accept_rule": null
+      },
+      "difficulty_features": null,
+      "extraction_confidence": "high",
+      "evidence": [
+        {
+          "document": "Synthetic Physics Paper 3",
+          "page": 1,
+          "quote": "A ball rolls off the edge of a horizontal table 1.8 m above the floor. Air resistance is negligible. Calculate the time "
+        }
+      ],
+      "review_status": "unreviewed",
+      "provenance": {
+        "text": "explicit",
+        "subject": "explicit",
+        "topic": "inferred",
+        "subtopic": "inferred",
+        "question_type": "explicit",
+        "marks": "explicit",
+        "section": "explicit",
+        "learning_objectives": "inferred",
+        "cognitive_level": "inferred",
+        "given": "explicit",
+        "required_output": "explicit",
+        "constraints": "explicit",
+        "marking": "explicit"
+      },
+      "missing_fields": [],
+      "security_flags": [],
+      "lineage": null,
+      "validation": null,
+      "extensions": {
+        "verification": {
+          "kind": "numeric",
+          "expression": "sqrt(2*h/g)",
+          "variables": {
+            "h": 1.8,
+            "g": 9.8
+          },
+          "claimed_value": 0.606,
+          "claimed_unit": "s",
+          "answer_uniqueness": "unique"
+        }
+      }
+    },
+    {
+      "id": "p3-a4",
+      "schema_version": "0.1.0",
+      "language": "en",
+      "source": {
+        "document": "Synthetic Physics Paper 3",
+        "page": 1,
+        "section": "A",
+        "position": 21,
+        "origin": "source"
+      },
+      "subject": "Introductory Physics",
+      "topic": "Waves",
+      "subtopic": "Wave equation",
+      "text": "A wave on a stretched string travels at 12 m/s and has a wavelength of 0.40 m. Calculate the frequency of the wave.",
+      "question_type": "calculation",
+      "marks": 2,
+      "section": "A",
+      "learning_objectives": [
+        "W1 Use the wave equation v = f λ"
+      ],
+      "cognitive_level": "application",
+      "given": [
+        {
+          "symbol": "v",
+          "description": "wave speed",
+          "value": 12,
+          "unit": "m/s"
+        },
+        {
+          "symbol": "lam",
+          "description": "wavelength",
+          "value": 0.4,
+          "unit": "m"
+        }
+      ],
+      "required_output": "frequency f in Hz",
+      "constraints": [],
+      "options": [],
+      "parts": [],
+      "table": null,
+      "diagram_description": null,
+      "marking": {
+        "scheme_available": true,
+        "final_answer": "30 Hz",
+        "answer_key": null,
+        "worked_solution": "f = v/λ = 12/0.40 = 30 Hz",
+        "points": [
+          {
+            "description": "f = v/λ",
+            "marks": 1
+          },
+          {
+            "description": "30 Hz",
+            "marks": 1
+          }
+        ],
+        "accept_rule": null
+      },
+      "difficulty_features": null,
+      "extraction_confidence": "high",
+      "evidence": [
+        {
+          "document": "Synthetic Physics Paper 3",
+          "page": 1,
+          "quote": "A wave on a stretched string travels at 12 m/s and has a wavelength of 0.40 m. Calculate the frequency of the wave."
+        }
+      ],
+      "review_status": "unreviewed",
+      "provenance": {
+        "text": "explicit",
+        "subject": "explicit",
+        "topic": "inferred",
+        "subtopic": "inferred",
+        "question_type": "explicit",
+        "marks": "explicit",
+        "section": "explicit",
+        "learning_objectives": "inferred",
+        "cognitive_level": "inferred",
+        "given": "explicit",
+        "required_output": "explicit",
+        "marking": "explicit"
+      },
+      "missing_fields": [
+        "constraints"
+      ],
+      "security_flags": [],
+      "lineage": null,
+      "validation": null,
+      "extensions": {
+        "verification": {
+          "kind": "numeric",
+          "expression": "v/lam",
+          "variables": {
+            "v": 12,
+            "lam": 0.4
+          },
+          "claimed_value": 30,
+          "claimed_unit": "Hz",
+          "answer_uniqueness": "unique"
+        }
+      }
+    },
+    {
+      "id": "p3-a5",
+      "schema_version": "0.1.0",
+      "language": "en",
+      "source": {
+        "document": "Synthetic Physics Paper 3",
+        "page": 1,
+        "section": "A",
+        "position": 22,
+        "origin": "source"
+      },
+      "subject": "Introductory Physics",
+      "topic": "Electricity",
+      "subtopic": "Ohm's law",
+      "text": "The potential difference across a 220 Ω resistor is 11 V. Calculate the current in the resistor.",
+      "question_type": "calculation",
+      "marks": 2,
+      "section": "A",
+      "learning_objectives": [
+        "C1 Apply Ohm's law to series circuits"
+      ],
+      "cognitive_level": "application",
+      "given": [
+        {
+          "symbol": "V",
+          "description": "potential difference",
+          "value": 11,
+          "unit": "V"
+        },
+        {
+          "symbol": "R",
+          "description": "resistance",
+          "value": 220,
+          "unit": "ohm"
+        }
+      ],
+      "required_output": "current I in A",
+      "constraints": [],
+      "options": [],
+      "parts": [],
+      "table": null,
+      "diagram_description": null,
+      "marking": {
+        "scheme_available": true,
+        "final_answer": "0.050 A",
+        "answer_key": null,
+        "worked_solution": "I = V/R = 11/220 = 0.050 A",
+        "points": [
+          {
+            "description": "I = V/R",
+            "marks": 1
+          },
+          {
+            "description": "0.050 A",
+            "marks": 1
+          }
+        ],
+        "accept_rule": null
+      },
+      "difficulty_features": null,
+      "extraction_confidence": "high",
+      "evidence": [
+        {
+          "document": "Synthetic Physics Paper 3",
+          "page": 1,
+          "quote": "The potential difference across a 220 Ω resistor is 11 V. Calculate the current in the resistor."
+        }
+      ],
+      "review_status": "unreviewed",
+      "provenance": {
+        "text": "explicit",
+        "subject": "explicit",
+        "topic": "inferred",
+        "subtopic": "inferred",
+        "question_type": "explicit",
+        "marks": "explicit",
+        "section": "explicit",
+        "learning_objectives": "inferred",
+        "cognitive_level": "inferred",
+        "given": "explicit",
+        "required_output": "explicit",
+        "marking": "explicit"
+      },
+      "missing_fields": [
+        "constraints"
+      ],
+      "security_flags": [],
+      "lineage": null,
+      "validation": null,
+      "extensions": {
+        "verification": {
+          "kind": "numeric",
+          "expression": "V/R",
+          "variables": {
+            "V": 11,
+            "R": 220
+          },
+          "claimed_value": 0.05,
+          "claimed_unit": "A",
+          "answer_uniqueness": "unique"
+        }
+      }
+    },
+    {
+      "id": "p3-a6",
+      "schema_version": "0.1.0",
+      "language": "en",
+      "source": {
+        "document": "Synthetic Physics Paper 3",
+        "page": 1,
+        "section": "A",
+        "position": 23,
+        "origin": "source"
+      },
+      "subject": "Introductory Physics",
+      "topic": "Forces",
+      "subtopic": "Inclined planes",
+      "text": "A block slides down the slope shown in the diagram. Calculate its acceleration.",
+      "question_type": "calculation",
+      "marks": 2,
+      "section": "A",
+      "learning_objectives": [
+        "F1 Apply Newton's second law F = ma"
+      ],
+      "cognitive_level": "application",
+      "given": [
+        {
+          "symbol": "m",
+          "description": "mass of block",
+          "value": 3.0,
+          "unit": "kg"
+        }
+      ],
+      "required_output": "acceleration in m/s^2",
+      "constraints": [],
+      "options": [],
+      "parts": [],
+      "table": null,
+      "diagram_description": null,
+      "marking": {
+        "scheme_available": true,
+        "final_answer": null,
+        "answer_key": null,
+        "worked_solution": null,
+        "points": [
+          {
+            "description": "Resolves weight along slope",
+            "marks": 1
+          },
+          {
+            "description": "Correct acceleration",
+            "marks": 1
+          }
+        ],
+        "accept_rule": null
+      },
+      "difficulty_features": null,
+      "extraction_confidence": "high",
+      "evidence": [
+        {
+          "document": "Synthetic Physics Paper 3",
+          "page": 1,
+          "quote": "A block slides down the slope shown in the diagram. Calculate its acceleration."
+        }
+      ],
+      "review_status": "unreviewed",
+      "provenance": {
+        "text": "explicit",
+        "subject": "explicit",
+        "topic": "inferred",
+        "subtopic": "inferred",
+        "question_type": "explicit",
+        "marks": "explicit",
+        "section": "explicit",
+        "learning_objectives": "inferred",
+        "cognitive_level": "inferred",
+        "given": "explicit",
+        "required_output": "explicit",
+        "marking": "explicit"
+      },
+      "missing_fields": [
+        "constraints"
+      ],
+      "security_flags": [],
+      "lineage": null,
+      "validation": null,
+      "extensions": {
+        "verification": {
+          "kind": "numeric",
+          "expression": "g*sin(theta)",
+          "variables": {
+            "g": 9.8,
+            "theta": 0.52
+          },
+          "claimed_value": 4.9,
+          "claimed_unit": "m/s^2",
+          "answer_uniqueness": "unique"
+        }
+      }
+    },
+    {
+      "id": "p3-b1",
+      "schema_version": "0.1.0",
+      "language": "en",
+      "source": {
+        "document": "Synthetic Physics Paper 3",
+        "page": 2,
+        "section": "B",
+        "position": 24,
+        "origin": "source"
+      },
+      "subject": "Introductory Physics",
+      "topic": "Forces",
+      "subtopic": "Newton's second law",
+      "text": "A lift of total mass 900 kg accelerates upwards at 1.5 m/s². Take g = 9.8 m/s².",
+      "question_type": "mixed",
+      "marks": 7,
+      "section": "B",
+      "learning_objectives": [
+        "F1 Apply Newton's second law F = ma",
+        "F3 Explain motion using Newton's first law"
+      ],
+      "cognitive_level": "multi_step_reasoning",
+      "given": [
+        {
+          "symbol": "m",
+          "description": "mass of lift",
+          "value": 900,
+          "unit": "kg"
+        },
+        {
+          "symbol": "a",
+          "description": "upward acceleration",
+          "value": 1.5,
+          "unit": "m/s^2"
+        },
+        {
+          "symbol": "g",
+          "description": "gravitational field strength",
+          "value": 9.8,
+          "unit": "m/s^2",
+          "role": "constant"
+        }
+      ],
+      "required_output": null,
+      "constraints": [
+        {
+          "text": "acceleration is upward and uniform",
+          "kind": "explicit"
+        }
+      ],
+      "options": [],
+      "parts": [
+        {
+          "label": "a",
+          "text": "Calculate the weight of the lift.",
+          "marks": 1
+        },
+        {
+          "label": "b",
+          "text": "Calculate the tension in the lift cable.",
+          "marks": 3
+        },
+        {
+          "label": "c",
+          "text": "Explain why the tension is smaller when the lift moves upwards at constant speed.",
+          "marks": 3
+        }
+      ],
+      "table": null,
+      "diagram_description": null,
+      "marking": {
+        "scheme_available": true,
+        "final_answer": "(a) 8820 N (b) 1.0 × 10^4 N (10 170 N) (c) at constant speed the resultant force is zero, so tension equals weight",
+        "answer_key": null,
+        "worked_solution": "(a) W = mg = 900 × 9.8 = 8820 N. (b) T − mg = ma ⇒ T = m(g + a) = 900 × 11.3 = 10 170 N. (c) Constant speed ⇒ zero acceleration ⇒ zero resultant force ⇒ T = W = 8820 N, which is smaller.",
+        "points": [
+          {
+            "description": "8820 N",
+            "marks": 1,
+            "part": "a"
+          },
+          {
+            "description": "Resultant force T − mg = ma",
+            "marks": 1,
+            "part": "b"
+          },
+          {
+            "description": "T = m(g + a)",
+            "marks": 1,
+            "part": "b"
+          },
+          {
+            "description": "10 170 N",
+            "marks": 1,
+            "part": "b"
+          },
+          {
+            "description": "Constant speed means zero acceleration",
+            "marks": 1,
+            "part": "c"
+          },
+          {
+            "description": "Resultant force is zero",
+            "marks": 1,
+            "part": "c"
+          },
+          {
+            "description": "So tension equals weight, smaller than before",
+            "marks": 1,
+            "part": "c"
+          }
+        ],
+        "accept_rule": null
+      },
+      "difficulty_features": null,
+      "extraction_confidence": "high",
+      "evidence": [
+        {
+          "document": "Synthetic Physics Paper 3",
+          "page": 2,
+          "quote": "A lift of total mass 900 kg accelerates upwards at 1.5 m/s². Take g = 9.8 m/s²."
+        }
+      ],
+      "review_status": "unreviewed",
+      "provenance": {
+        "text": "explicit",
+        "subject": "explicit",
+        "topic": "inferred",
+        "subtopic": "inferred",
+        "question_type": "explicit",
+        "marks": "explicit",
+        "section": "explicit",
+        "learning_objectives": "inferred",
+        "cognitive_level": "inferred",
+        "given": "explicit",
+        "constraints": "explicit",
+        "marking": "explicit"
+      },
+      "missing_fields": [
+        "required_output"
+      ],
+      "security_flags": [],
+      "lineage": null,
+      "validation": null,
+      "extensions": {
+        "verification": {
+          "kind": "numeric",
+          "expression": "m*g",
+          "variables": {
+            "m": 900,
+            "g": 9.8
+          },
+          "claimed_value": 8820,
+          "claimed_unit": "N",
+          "answer_uniqueness": "unique"
+        }
+      }
+    },
+    {
+      "id": "p3-b2",
+      "schema_version": "0.1.0",
+      "language": "en",
+      "source": {
+        "document": "Synthetic Physics Paper 3",
+        "page": 2,
+        "section": "B",
+        "position": 25,
+        "origin": "source"
+      },
+      "subject": "Introductory Physics",
+      "topic": "Energy",
+      "subtopic": "Efficiency",
+      "text": "An electric motor lifts a load of mass 25 kg through a vertical height of 4.0 m in 8.0 s. The input power to the motor is 200 W. Take g = 9.8 m/s².",
+      "question_type": "calculation",
+      "marks": 7,
+      "section": "B",
+      "learning_objectives": [
+        "E1 Calculate gravitational potential and kinetic energy",
+        "E2 Calculate power and efficiency"
+      ],
+      "cognitive_level": "multi_step_reasoning",
+      "given": [
+        {
+          "symbol": "m",
+          "description": "mass of load",
+          "value": 25,
+          "unit": "kg"
+        },
+        {
+          "symbol": "h",
+          "description": "height",
+          "value": 4.0,
+          "unit": "m"
+        },
+        {
+          "symbol": "t",
+          "description": "time",
+          "value": 8.0,
+          "unit": "s"
+        },
+        {
+          "symbol": "P",
+          "description": "input power",
+          "value": 200,
+          "unit": "W"
+        },
+        {
+          "symbol": "g",
+          "description": "gravitational field strength",
+          "value": 9.8,
+          "unit": "m/s^2",
+          "role": "constant"
+        }
+      ],
+      "required_output": null,
+      "constraints": [],
+      "options": [],
+      "parts": [
+        {
+          "label": "a",
+          "text": "Calculate the useful energy transferred to the load.",
+          "marks": 2
+        },
+        {
+          "label": "b",
+          "text": "Calculate the total energy supplied to the motor.",
+          "marks": 2
+        },
+        {
+          "label": "c",
+          "text": "Calculate the efficiency of the motor.",
+          "marks": 3
+        }
+      ],
+      "table": null,
+      "diagram_description": null,
+      "marking": {
+        "scheme_available": true,
+        "final_answer": "(a) 980 J (b) 1600 J (c) 0.61 (61 %)",
+        "answer_key": null,
+        "worked_solution": "(a) ΔEp = mgh = 25 × 9.8 × 4.0 = 980 J. (b) E = Pt = 200 × 8.0 = 1600 J. (c) efficiency = 980/1600 = 0.61 (61 %).",
+        "points": [
+          {
+            "description": "mgh",
+            "marks": 1,
+            "part": "a"
+          },
+          {
+            "description": "980 J",
+            "marks": 1,
+            "part": "a"
+          },
+          {
+            "description": "E = Pt",
+            "marks": 1,
+            "part": "b"
+          },
+          {
+            "description": "1600 J",
+            "marks": 1,
+            "part": "b"
+          },
+          {
+            "description": "efficiency = useful/total",
+            "marks": 1,
+            "part": "c"
+          },
+          {
+            "description": "Uses 980 and 1600",
+            "marks": 1,
+            "part": "c"
+          },
+          {
+            "description": "0.61 or 61 %",
+            "marks": 1,
+            "part": "c"
+          }
+        ],
+        "accept_rule": null
+      },
+      "difficulty_features": null,
+      "extraction_confidence": "high",
+      "evidence": [
+        {
+          "document": "Synthetic Physics Paper 3",
+          "page": 2,
+          "quote": "An electric motor lifts a load of mass 25 kg through a vertical height of 4.0 m in 8.0 s. The input power to the motor i"
+        }
+      ],
+      "review_status": "unreviewed",
+      "provenance": {
+        "text": "explicit",
+        "subject": "explicit",
+        "topic": "inferred",
+        "subtopic": "inferred",
+        "question_type": "explicit",
+        "marks": "explicit",
+        "section": "explicit",
+        "learning_objectives": "inferred",
+        "cognitive_level": "inferred",
+        "given": "explicit",
+        "marking": "explicit"
+      },
+      "missing_fields": [
+        "required_output",
+        "constraints"
+      ],
+      "security_flags": [],
+      "lineage": null,
+      "validation": null,
+      "extensions": {
+        "verification": {
+          "kind": "numeric",
+          "expression": "m*g*h",
+          "variables": {
+            "m": 25,
+            "g": 9.8,
+            "h": 4.0
+          },
+          "claimed_value": 980,
+          "claimed_unit": "J",
+          "answer_uniqueness": "unique"
+        }
+      }
+    },
+    {
+      "id": "p3-b3",
+      "schema_version": "0.1.0",
+      "language": "en",
+      "source": {
+        "document": "Synthetic Physics Paper 3",
+        "page": 2,
+        "section": "B",
+        "position": 26,
+        "origin": "source"
+      },
+      "subject": "Introductory Physics",
+      "topic": "Waves",
+      "subtopic": "Refraction",
+      "text": "Light travels from air into a glass block of refractive index 1.5. The speed of light in air is 3.0 × 10^8 m/s.",
+      "question_type": "mixed",
+      "marks": 6,
+      "section": "B",
+      "learning_objectives": [
+        "W2 Describe and calculate refraction of light",
+        "W1 Use the wave equation v = f λ"
+      ],
+      "cognitive_level": "interpretation",
+      "given": [
+        {
+          "symbol": "c",
+          "description": "speed of light in air",
+          "value": 300000000.0,
+          "unit": "m/s"
+        },
+        {
+          "symbol": "n",
+          "description": "refractive index (dimensionless)",
+          "value": 1.5,
+          "unit": "1"
+        }
+      ],
+      "required_output": null,
+      "constraints": [],
+      "options": [],
+      "parts": [
+        {
+          "label": "a",
+          "text": "Calculate the speed of light in the glass.",
+          "marks": 2
+        },
+        {
+          "label": "b",
+          "text": "Explain why a ray entering the glass at an angle changes direction.",
+          "marks": 2
+        },
+        {
+          "label": "c",
+          "text": "State what happens to the frequency of the light as it enters the glass, and give a reason.",
+          "marks": 2
+        }
+      ],
+      "table": null,
+      "diagram_description": null,
+      "marking": {
+        "scheme_available": true,
+        "final_answer": "(a) 2.0 × 10^8 m/s (b) speed decreases on entering the denser medium (c) unchanged; set by the source",
+        "answer_key": null,
+        "worked_solution": "(a) v = c/n = 3.0 × 10⁸/1.5 = 2.0 × 10⁸ m/s. (b) The light slows down; one side of the wavefront slows first so the direction changes. (c) Frequency unchanged: it is determined by the source.",
+        "points": [
+          {
+            "description": "v = c/n",
+            "marks": 1,
+            "part": "a"
+          },
+          {
+            "description": "2.0 × 10⁸ m/s",
+            "marks": 1,
+            "part": "a"
+          },
+          {
+            "description": "Speed decreases in glass",
+            "marks": 1,
+            "part": "b"
+          },
+          {
+            "description": "Wavefront slows unevenly, so direction changes",
+            "marks": 1,
+            "part": "b"
+          },
+          {
+            "description": "Frequency unchanged",
+            "marks": 1,
+            "part": "c"
+          },
+          {
+            "description": "Determined by the source",
+            "marks": 1,
+            "part": "c"
+          }
+        ],
+        "accept_rule": null
+      },
+      "difficulty_features": null,
+      "extraction_confidence": "high",
+      "evidence": [
+        {
+          "document": "Synthetic Physics Paper 3",
+          "page": 2,
+          "quote": "Light travels from air into a glass block of refractive index 1.5. The speed of light in air is 3.0 × 10^8 m/s."
+        }
+      ],
+      "review_status": "unreviewed",
+      "provenance": {
+        "text": "explicit",
+        "subject": "explicit",
+        "topic": "inferred",
+        "subtopic": "inferred",
+        "question_type": "explicit",
+        "marks": "explicit",
+        "section": "explicit",
+        "learning_objectives": "inferred",
+        "cognitive_level": "inferred",
+        "given": "explicit",
+        "marking": "explicit"
+      },
+      "missing_fields": [
+        "required_output",
+        "constraints"
+      ],
+      "security_flags": [],
+      "lineage": null,
+      "validation": null,
+      "extensions": {
+        "verification": {
+          "kind": "numeric",
+          "expression": "c/n",
+          "variables": {
+            "c": 300000000.0,
+            "n": 1.5
+          },
+          "claimed_value": 200000000.0,
+          "claimed_unit": "m/s",
+          "answer_uniqueness": "unique"
+        }
+      }
+    }
+  ],
+  "normalization_report": {
+    "question_count": 27,
+    "issues": [],
+    "missing_marks": [],
+    "security_flagged": []
+  }
+}

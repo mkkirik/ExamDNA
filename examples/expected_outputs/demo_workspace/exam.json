@@ -1,0 +1,1642 @@
+{
+  "schema_version": "0.1.0",
+  "exam_id": "exam-1972aaf3e5",
+  "title": "Physics Practice Paper — Mechanics, Energy, Waves and Electricity",
+  "subject": "Introductory Physics",
+  "language": "en",
+  "total_marks": 30,
+  "question_count": 8,
+  "time_minutes": 45,
+  "instructions": [
+    "Answer all questions.",
+    "Show your working for calculation questions.",
+    "Marks for each question are shown in brackets."
+  ],
+  "seed": 7,
+  "config": {
+    "title": "Physics Practice Paper — Mechanics, Energy, Waves and Electricity",
+    "subject": "Introductory Physics",
+    "language": "en",
+    "total_marks": 30,
+    "time_minutes": 45,
+    "max_per_family": 1,
+    "include_review_required": false,
+    "include_source_questions": false,
+    "required_topics": [
+      "Kinematics",
+      "Electricity"
+    ],
+    "seed": 7
+  },
+  "sections": [
+    {
+      "label": "A",
+      "title": null,
+      "instructions": null,
+      "marks": 10,
+      "questions": [
+        {
+          "number": 1,
+          "id": "m-p2-a4-rev",
+          "marks": 1,
+          "validation_state": "PASS",
+          "difficulty_band": "foundation",
+          "lineage": {
+            "parent_id": "p2-a4",
+            "root_id": "p2-a4",
+            "operator": "reverse",
+            "spec_id": "spec-31dad5c71b",
+            "candidate_id": "c07",
+            "generation": 1,
+            "mutation_parameters": {
+              "new_unknown": "v",
+              "new_unknown_description": "wave speed",
+              "original_output": null
+            },
+            "preserved": [
+              "primary_concept",
+              "learning_objectives",
+              "topic"
+            ],
+            "changed": [
+              "reasoning_direction"
+            ],
+            "created": null
+          },
+          "question": {
+            "id": "m-p2-a4-rev",
+            "schema_version": "0.1.0",
+            "language": "en",
+            "source": {
+              "document": null,
+              "page": null,
+              "section": "A",
+              "position": 0,
+              "origin": "generated"
+            },
+            "subject": "Introductory Physics",
+            "topic": "Waves",
+            "subtopic": "Wave equation",
+            "text": "A sound wave of frequency 250 Hz has a wavelength of 1.36 m in air. What is the speed of sound in the air?",
+            "question_type": "multiple_choice",
+            "marks": 1,
+            "section": "A",
+            "learning_objectives": [
+              "W1 Use the wave equation v = f λ"
+            ],
+            "cognitive_level": "application",
+            "given": [
+              {
+                "symbol": "f",
+                "description": "frequency",
+                "value": 250,
+                "unit": "Hz"
+              },
+              {
+                "symbol": "lam",
+                "description": "wavelength",
+                "value": 1.36,
+                "unit": "m"
+              }
+            ],
+            "required_output": null,
+            "constraints": [],
+            "options": [
+              {
+                "key": "A",
+                "text": "184 m/s"
+              },
+              {
+                "key": "B",
+                "text": "340 m/s"
+              },
+              {
+                "key": "C",
+                "text": "0.0054 m/s"
+              },
+              {
+                "key": "D",
+                "text": "251 m/s"
+              }
+            ],
+            "parts": [],
+            "table": null,
+            "diagram_description": null,
+            "marking": {
+              "scheme_available": true,
+              "final_answer": "340 m/s",
+              "answer_key": "B",
+              "worked_solution": null,
+              "points": [
+                {
+                  "description": "B",
+                  "marks": 1
+                }
+              ],
+              "accept_rule": null
+            },
+            "difficulty_features": null,
+            "extraction_confidence": "medium",
+            "evidence": [],
+            "review_status": "unreviewed",
+            "provenance": {
+              "text": "inferred",
+              "subject": "inferred",
+              "topic": "inferred",
+              "subtopic": "inferred",
+              "question_type": "inferred",
+              "marks": "inferred",
+              "section": "inferred",
+              "learning_objectives": "inferred",
+              "cognitive_level": "inferred",
+              "given": "inferred",
+              "marking": "inferred"
+            },
+            "missing_fields": [
+              "required_output",
+              "constraints"
+            ],
+            "security_flags": [],
+            "lineage": {
+              "parent_id": "p2-a4",
+              "root_id": "p2-a4",
+              "operator": "reverse",
+              "spec_id": "spec-31dad5c71b",
+              "candidate_id": "c07",
+              "generation": 1,
+              "mutation_parameters": {
+                "new_unknown": "v",
+                "new_unknown_description": "wave speed",
+                "original_output": null
+              },
+              "preserved": [
+                "primary_concept",
+                "learning_objectives",
+                "topic"
+              ],
+              "changed": [
+                "reasoning_direction"
+              ],
+              "created": null
+            },
+            "validation": {
+              "state": "PASS",
+              "summary": "all checks passed",
+              "model_assisted": true,
+              "numeric_verified": true
+            },
+            "extensions": {
+              "verification": {
+                "kind": "numeric",
+                "expression": "f*lam",
+                "variables": {
+                  "f": 250,
+                  "lam": 1.36
+                },
+                "claimed_value": 340,
+                "claimed_unit": "m/s",
+                "answer_uniqueness": "unique"
+              }
+            }
+          }
+        },
+        {
+          "number": 2,
+          "id": "m-p1-a2-rep",
+          "marks": 2,
+          "validation_state": "PASS",
+          "difficulty_band": "standard",
+          "lineage": {
+            "parent_id": "p1-a2",
+            "root_id": "p1-a2",
+            "operator": "representation",
+            "spec_id": "spec-f69f5eba0d",
+            "candidate_id": "c01",
+            "generation": 1,
+            "mutation_parameters": {
+              "from": "verbal",
+              "to": "graph"
+            },
+            "preserved": [
+              "primary_concept",
+              "learning_objectives",
+              "topic",
+              "answer_type"
+            ],
+            "changed": [
+              "representation"
+            ],
+            "created": null
+          },
+          "question": {
+            "id": "m-p1-a2-rep",
+            "schema_version": "0.1.0",
+            "language": "en",
+            "source": {
+              "document": null,
+              "page": null,
+              "section": "A",
+              "position": 0,
+              "origin": "generated"
+            },
+            "subject": "Introductory Physics",
+            "topic": "Kinematics",
+            "subtopic": "Uniform acceleration",
+            "text": "The velocity–time graph for a skateboarder moving in a straight line is shown below. Use the graph to determine the acceleration of the skateboarder.",
+            "question_type": "calculation",
+            "marks": 2,
+            "section": "A",
+            "learning_objectives": [
+              "K1 Use the equations of uniformly accelerated motion",
+              "K2 Interpret motion data in tables and graphs"
+            ],
+            "cognitive_level": "application",
+            "given": [
+              {
+                "symbol": "v",
+                "description": "velocity at 5.0 s (read from graph)",
+                "value": 9.0,
+                "unit": "m/s"
+              },
+              {
+                "symbol": "t",
+                "description": "time (read from graph)",
+                "value": 5.0,
+                "unit": "s"
+              }
+            ],
+            "required_output": null,
+            "constraints": [],
+            "options": [],
+            "parts": [],
+            "table": null,
+            "diagram_description": "Velocity–time graph: velocity v / m s⁻¹ on the vertical axis (0 to 10), time t / s on the horizontal axis (0 to 6). A straight line runs from (0 s, 0 m/s) to (5.0 s, 9.0 m/s).",
+            "marking": {
+              "scheme_available": true,
+              "final_answer": "1.8 m/s²",
+              "answer_key": null,
+              "worked_solution": "a = gradient = Δv/Δt = 9.0/5.0 = 1.8 m/s²",
+              "points": [
+                {
+                  "description": "Acceleration = gradient of v–t graph",
+                  "marks": 1
+                },
+                {
+                  "description": "1.8 m/s²",
+                  "marks": 1
+                }
+              ],
+              "accept_rule": null
+            },
+            "difficulty_features": null,
+            "extraction_confidence": "medium",
+            "evidence": [],
+            "review_status": "unreviewed",
+            "provenance": {
+              "text": "inferred",
+              "subject": "inferred",
+              "topic": "inferred",
+              "subtopic": "inferred",
+              "question_type": "inferred",
+              "marks": "inferred",
+              "section": "inferred",
+              "learning_objectives": "inferred",
+              "cognitive_level": "inferred",
+              "given": "inferred",
+              "marking": "inferred"
+            },
+            "missing_fields": [
+              "required_output",
+              "constraints"
+            ],
+            "security_flags": [],
+            "lineage": {
+              "parent_id": "p1-a2",
+              "root_id": "p1-a2",
+              "operator": "representation",
+              "spec_id": "spec-f69f5eba0d",
+              "candidate_id": "c01",
+              "generation": 1,
+              "mutation_parameters": {
+                "from": "verbal",
+                "to": "graph"
+              },
+              "preserved": [
+                "primary_concept",
+                "learning_objectives",
+                "topic",
+                "answer_type"
+              ],
+              "changed": [
+                "representation"
+              ],
+              "created": null
+            },
+            "validation": {
+              "state": "PASS",
+              "summary": "all checks passed",
+              "model_assisted": true,
+              "numeric_verified": true
+            },
+            "extensions": {
+              "verification": {
+                "kind": "numeric",
+                "expression": "v/t",
+                "variables": {
+                  "v": 9.0,
+                  "t": 5.0
+                },
+                "claimed_value": 1.8,
+                "claimed_unit": "m/s^2",
+                "answer_uniqueness": "unique"
+              }
+            }
+          }
+        },
+        {
+          "number": 3,
+          "id": "m-p2-a3-par",
+          "marks": 2,
+          "validation_state": "PASS",
+          "difficulty_band": "standard",
+          "lineage": {
+            "parent_id": "p2-a3",
+            "root_id": "p2-a3",
+            "operator": "parameter",
+            "spec_id": "spec-247e52b245",
+            "candidate_id": "c06-try2",
+            "generation": 1,
+            "mutation_parameters": {
+              "changes": [
+                {
+                  "symbol": "x",
+                  "old": 0.15,
+                  "suggested": 0.19,
+                  "unit": "m"
+                }
+              ]
+            },
+            "preserved": [
+              "primary_concept",
+              "learning_objectives",
+              "topic",
+              "question_type",
+              "answer_type",
+              "marks",
+              "reasoning_structure",
+              "representation",
+              "constraints"
+            ],
+            "changed": [
+              "numeric_parameters"
+            ],
+            "created": null
+          },
+          "question": {
+            "id": "m-p2-a3-par",
+            "schema_version": "0.1.0",
+            "language": "en",
+            "source": {
+              "document": null,
+              "page": null,
+              "section": "A",
+              "position": 0,
+              "origin": "generated"
+            },
+            "subject": "Introductory Physics",
+            "topic": "Forces",
+            "subtopic": "Hooke's law",
+            "text": "When a student hangs a load on a spring of stiffness 40 N/m, it stretches by 0.19 m without passing its limit of proportionality. What force does the load exert on the spring?",
+            "question_type": "calculation",
+            "marks": 2,
+            "section": "A",
+            "learning_objectives": [
+              "F2 Apply Hooke's law F = kx"
+            ],
+            "cognitive_level": "application",
+            "given": [
+              {
+                "symbol": "k",
+                "description": "spring constant",
+                "value": 40,
+                "unit": "N/m"
+              },
+              {
+                "symbol": "x",
+                "description": "extension",
+                "value": 0.19,
+                "unit": "m"
+              }
+            ],
+            "required_output": null,
+            "constraints": [
+              {
+                "text": "the spring obeys Hooke's law (limit of proportionality not exceeded)",
+                "kind": "explicit"
+              }
+            ],
+            "options": [],
+            "parts": [],
+            "table": null,
+            "diagram_description": null,
+            "marking": {
+              "scheme_available": true,
+              "final_answer": "7.6 N",
+              "answer_key": null,
+              "worked_solution": "F = kx = 40 × 0.19 = 7.6 N",
+              "points": [
+                {
+                  "description": "F = kx",
+                  "marks": 1
+                },
+                {
+                  "description": "7.6 N",
+                  "marks": 1
+                }
+              ],
+              "accept_rule": null
+            },
+            "difficulty_features": null,
+            "extraction_confidence": "medium",
+            "evidence": [],
+            "review_status": "unreviewed",
+            "provenance": {
+              "text": "inferred",
+              "subject": "inferred",
+              "topic": "inferred",
+              "subtopic": "inferred",
+              "question_type": "inferred",
+              "marks": "inferred",
+              "section": "inferred",
+              "learning_objectives": "inferred",
+              "cognitive_level": "inferred",
+              "given": "inferred",
+              "constraints": "inferred",
+              "marking": "inferred"
+            },
+            "missing_fields": [
+              "required_output"
+            ],
+            "security_flags": [],
+            "lineage": {
+              "parent_id": "p2-a3",
+              "root_id": "p2-a3",
+              "operator": "parameter",
+              "spec_id": "spec-247e52b245",
+              "candidate_id": "c06-try2",
+              "generation": 1,
+              "mutation_parameters": {
+                "changes": [
+                  {
+                    "symbol": "x",
+                    "old": 0.15,
+                    "suggested": 0.19,
+                    "unit": "m"
+                  }
+                ]
+              },
+              "preserved": [
+                "primary_concept",
+                "learning_objectives",
+                "topic",
+                "question_type",
+                "answer_type",
+                "marks",
+                "reasoning_structure",
+                "representation",
+                "constraints"
+              ],
+              "changed": [
+                "numeric_parameters"
+              ],
+              "created": null
+            },
+            "validation": {
+              "state": "PASS",
+              "summary": "all checks passed",
+              "model_assisted": true,
+              "numeric_verified": true
+            },
+            "extensions": {
+              "verification": {
+                "kind": "numeric",
+                "expression": "k*x",
+                "variables": {
+                  "k": 40,
+                  "x": 0.19
+                },
+                "claimed_value": 7.6,
+                "claimed_unit": "N",
+                "answer_uniqueness": "unique"
+              }
+            }
+          }
+        },
+        {
+          "number": 4,
+          "id": "m-p2-a5-ctx",
+          "marks": 2,
+          "validation_state": "PASS",
+          "difficulty_band": "foundation",
+          "lineage": {
+            "parent_id": "p2-a5",
+            "root_id": "p2-a5",
+            "operator": "context_transfer",
+            "spec_id": "spec-4347c5eb2c",
+            "candidate_id": "c08",
+            "generation": 1,
+            "mutation_parameters": {
+              "from_context": "household lamp",
+              "to_context": "household appliances"
+            },
+            "preserved": [
+              "primary_concept",
+              "learning_objectives",
+              "topic",
+              "answer_type",
+              "reasoning_structure",
+              "question_type",
+              "marks"
+            ],
+            "changed": [
+              "context",
+              "wording"
+            ],
+            "created": null
+          },
+          "question": {
+            "id": "m-p2-a5-ctx",
+            "schema_version": "0.1.0",
+            "language": "en",
+            "source": {
+              "document": null,
+              "page": null,
+              "section": "A",
+              "position": 0,
+              "origin": "generated"
+            },
+            "subject": "Introductory Physics",
+            "topic": "Electricity",
+            "subtopic": "Current and charge",
+            "text": "The motor of a kitchen food mixer passes 2700 C of charge during 900 s of use. Calculate the average current in the motor.",
+            "question_type": "calculation",
+            "marks": 2,
+            "section": "A",
+            "learning_objectives": [
+              "C2 Relate charge, current, potential difference and power"
+            ],
+            "cognitive_level": "application",
+            "given": [
+              {
+                "symbol": "Q",
+                "description": "charge",
+                "value": 2700,
+                "unit": "C"
+              },
+              {
+                "symbol": "t",
+                "description": "time",
+                "value": 900,
+                "unit": "s"
+              }
+            ],
+            "required_output": null,
+            "constraints": [],
+            "options": [],
+            "parts": [],
+            "table": null,
+            "diagram_description": null,
+            "marking": {
+              "scheme_available": true,
+              "final_answer": "3.0 A",
+              "answer_key": null,
+              "worked_solution": "I = Q/t = 2700/900 = 3.0 A",
+              "points": [
+                {
+                  "description": "I = Q/t",
+                  "marks": 1
+                },
+                {
+                  "description": "3.0 A",
+                  "marks": 1
+                }
+              ],
+              "accept_rule": null
+            },
+            "difficulty_features": null,
+            "extraction_confidence": "medium",
+            "evidence": [],
+            "review_status": "unreviewed",
+            "provenance": {
+              "text": "inferred",
+              "subject": "inferred",
+              "topic": "inferred",
+              "subtopic": "inferred",
+              "question_type": "inferred",
+              "marks": "inferred",
+              "section": "inferred",
+              "learning_objectives": "inferred",
+              "cognitive_level": "inferred",
+              "given": "inferred",
+              "marking": "inferred"
+            },
+            "missing_fields": [
+              "required_output",
+              "constraints"
+            ],
+            "security_flags": [],
+            "lineage": {
+              "parent_id": "p2-a5",
+              "root_id": "p2-a5",
+              "operator": "context_transfer",
+              "spec_id": "spec-4347c5eb2c",
+              "candidate_id": "c08",
+              "generation": 1,
+              "mutation_parameters": {
+                "from_context": "household lamp",
+                "to_context": "household appliances"
+              },
+              "preserved": [
+                "primary_concept",
+                "learning_objectives",
+                "topic",
+                "answer_type",
+                "reasoning_structure",
+                "question_type",
+                "marks"
+              ],
+              "changed": [
+                "context",
+                "wording"
+              ],
+              "created": null
+            },
+            "validation": {
+              "state": "PASS",
+              "summary": "all checks passed",
+              "model_assisted": true,
+              "numeric_verified": true
+            },
+            "extensions": {
+              "verification": {
+                "kind": "numeric",
+                "expression": "Q/t",
+                "variables": {
+                  "Q": 2700,
+                  "t": 900
+                },
+                "claimed_value": 3.0,
+                "claimed_unit": "A",
+                "answer_uniqueness": "unique"
+              }
+            }
+          }
+        },
+        {
+          "number": 5,
+          "id": "m-p2-a2-diff",
+          "marks": 3,
+          "validation_state": "PASS",
+          "difficulty_band": "standard",
+          "lineage": {
+            "parent_id": "p2-a2",
+            "root_id": "p2-a2",
+            "operator": "difficulty",
+            "spec_id": "spec-5757edbca7",
+            "candidate_id": "c05",
+            "generation": 1,
+            "mutation_parameters": {
+              "direction": "up",
+              "adjustment": "require_interpretation",
+              "current_points": 7,
+              "minimum_point_change": 2
+            },
+            "preserved": [
+              "primary_concept",
+              "learning_objectives",
+              "topic"
+            ],
+            "changed": [
+              "difficulty_features"
+            ],
+            "created": null
+          },
+          "question": {
+            "id": "m-p2-a2-diff",
+            "schema_version": "0.1.0",
+            "language": "en",
+            "source": {
+              "document": null,
+              "page": null,
+              "section": "A",
+              "position": 0,
+              "origin": "generated"
+            },
+            "subject": "Introductory Physics",
+            "topic": "Momentum",
+            "subtopic": "Momentum",
+            "text": "A car of mass 1200 kg travels at 15 m/s. A lorry of mass 8000 kg travels at 2.5 m/s. Calculate the momentum of each vehicle and state which would need the larger average force to stop it in the same time.",
+            "question_type": "calculation",
+            "marks": 3,
+            "section": "A",
+            "learning_objectives": [
+              "M1 Apply conservation of momentum",
+              "F1 Apply Newton's second law F = ma"
+            ],
+            "cognitive_level": "multi_step_reasoning",
+            "given": [
+              {
+                "symbol": "m1",
+                "description": "car mass",
+                "value": 1200,
+                "unit": "kg"
+              },
+              {
+                "symbol": "v1",
+                "description": "car speed",
+                "value": 15,
+                "unit": "m/s"
+              },
+              {
+                "symbol": "m2",
+                "description": "lorry mass",
+                "value": 8000,
+                "unit": "kg"
+              },
+              {
+                "symbol": "v2",
+                "description": "lorry speed",
+                "value": 2.5,
+                "unit": "m/s"
+              }
+            ],
+            "required_output": null,
+            "constraints": [],
+            "options": [],
+            "parts": [],
+            "table": null,
+            "diagram_description": null,
+            "marking": {
+              "scheme_available": true,
+              "final_answer": "car 18 000 kg m/s; lorry 20 000 kg m/s; the lorry needs the larger force",
+              "answer_key": null,
+              "worked_solution": "p(car) = 1200 × 15 = 18 000 kg m/s; p(lorry) = 8000 × 2.5 = 20 000 kg m/s. Same stopping time ⇒ F = Δp/Δt is larger for the lorry.",
+              "points": [
+                {
+                  "description": "Car momentum 18 000 kg m/s",
+                  "marks": 1
+                },
+                {
+                  "description": "Lorry momentum 20 000 kg m/s",
+                  "marks": 1
+                },
+                {
+                  "description": "Lorry: larger change of momentum in same time needs larger force",
+                  "marks": 1
+                }
+              ],
+              "accept_rule": null
+            },
+            "difficulty_features": null,
+            "extraction_confidence": "medium",
+            "evidence": [],
+            "review_status": "unreviewed",
+            "provenance": {
+              "text": "inferred",
+              "subject": "inferred",
+              "topic": "inferred",
+              "subtopic": "inferred",
+              "question_type": "inferred",
+              "marks": "inferred",
+              "section": "inferred",
+              "learning_objectives": "inferred",
+              "cognitive_level": "inferred",
+              "given": "inferred",
+              "marking": "inferred"
+            },
+            "missing_fields": [
+              "required_output",
+              "constraints"
+            ],
+            "security_flags": [],
+            "lineage": {
+              "parent_id": "p2-a2",
+              "root_id": "p2-a2",
+              "operator": "difficulty",
+              "spec_id": "spec-5757edbca7",
+              "candidate_id": "c05",
+              "generation": 1,
+              "mutation_parameters": {
+                "direction": "up",
+                "adjustment": "require_interpretation",
+                "current_points": 7,
+                "minimum_point_change": 2
+              },
+              "preserved": [
+                "primary_concept",
+                "learning_objectives",
+                "topic"
+              ],
+              "changed": [
+                "difficulty_features"
+              ],
+              "created": null
+            },
+            "validation": {
+              "state": "PASS",
+              "summary": "all checks passed",
+              "model_assisted": true,
+              "numeric_verified": true
+            },
+            "extensions": {
+              "verification": {
+                "kind": "numeric",
+                "expression": "m2*v2",
+                "variables": {
+                  "m2": 8000,
+                  "v2": 2.5
+                },
+                "claimed_value": 20000,
+                "claimed_unit": "kg m/s",
+                "answer_uniqueness": "unique"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "label": "B",
+      "title": null,
+      "instructions": null,
+      "marks": 20,
+      "questions": [
+        {
+          "number": 6,
+          "id": "m-p2-b3-con",
+          "marks": 6,
+          "validation_state": "PASS",
+          "difficulty_band": "standard",
+          "lineage": {
+            "parent_id": "p2-b3",
+            "root_id": "p2-b3",
+            "operator": "constraint",
+            "spec_id": "spec-f5e687e9f0",
+            "candidate_id": "c16",
+            "generation": 1,
+            "mutation_parameters": {
+              "action": "add"
+            },
+            "preserved": [
+              "primary_concept",
+              "learning_objectives",
+              "topic",
+              "answer_type"
+            ],
+            "changed": [
+              "constraints"
+            ],
+            "created": null
+          },
+          "question": {
+            "id": "m-p2-b3-con",
+            "schema_version": "0.1.0",
+            "language": "en",
+            "source": {
+              "document": null,
+              "page": null,
+              "section": "B",
+              "position": 0,
+              "origin": "generated"
+            },
+            "subject": "Introductory Physics",
+            "topic": "Electricity",
+            "subtopic": "Electrical power",
+            "text": "A kettle connected to a 230 V supply draws a current of 8.0 A. The kettle and a toaster drawing 6.0 A are plugged into an adaptor protected by a 13 A fuse.",
+            "question_type": "mixed",
+            "marks": 6,
+            "section": "B",
+            "learning_objectives": [
+              "C2 Relate charge, current, potential difference and power",
+              "E2 Calculate power and efficiency"
+            ],
+            "cognitive_level": "application",
+            "given": [
+              {
+                "symbol": "V",
+                "description": "supply voltage",
+                "value": 230,
+                "unit": "V"
+              },
+              {
+                "symbol": "I",
+                "description": "kettle current",
+                "value": 8.0,
+                "unit": "A"
+              },
+              {
+                "symbol": "t",
+                "description": "heating time",
+                "value": 150,
+                "unit": "s"
+              },
+              {
+                "symbol": "I2",
+                "description": "toaster current",
+                "value": 6.0,
+                "unit": "A",
+                "role": "data"
+              }
+            ],
+            "required_output": null,
+            "constraints": [
+              {
+                "text": "the fuse melts if the total current exceeds 13 A",
+                "kind": "explicit"
+              }
+            ],
+            "options": [],
+            "parts": [
+              {
+                "label": "a",
+                "text": "Calculate the power of the kettle.",
+                "marks": 2
+              },
+              {
+                "label": "b",
+                "text": "Calculate the energy transferred by the kettle in 150 s.",
+                "marks": 2
+              },
+              {
+                "label": "c",
+                "text": "Determine whether the fuse melts when both appliances are switched on together.",
+                "marks": 2
+              }
+            ],
+            "table": null,
+            "diagram_description": null,
+            "marking": {
+              "scheme_available": true,
+              "final_answer": "(a) 1840 W (b) 2.8 × 10^5 J (c) yes: total current 14 A exceeds 13 A",
+              "answer_key": null,
+              "worked_solution": "(a) P = VI = 230 × 8.0 = 1840 W. (b) E = Pt = 1840 × 150 = 276 000 J ≈ 2.8 × 10⁵ J. (c) I_total = 8.0 + 6.0 = 14 A > 13 A, so the fuse melts.",
+              "points": [
+                {
+                  "description": "P = VI",
+                  "marks": 1,
+                  "part": "a"
+                },
+                {
+                  "description": "1840 W",
+                  "marks": 1,
+                  "part": "a"
+                },
+                {
+                  "description": "E = Pt",
+                  "marks": 1,
+                  "part": "b"
+                },
+                {
+                  "description": "2.8 × 10⁵ J",
+                  "marks": 1,
+                  "part": "b"
+                },
+                {
+                  "description": "Total current 14 A",
+                  "marks": 1,
+                  "part": "c"
+                },
+                {
+                  "description": "Exceeds 13 A so fuse melts",
+                  "marks": 1,
+                  "part": "c"
+                }
+              ],
+              "accept_rule": null
+            },
+            "difficulty_features": null,
+            "extraction_confidence": "medium",
+            "evidence": [],
+            "review_status": "unreviewed",
+            "provenance": {
+              "text": "inferred",
+              "subject": "inferred",
+              "topic": "inferred",
+              "subtopic": "inferred",
+              "question_type": "inferred",
+              "marks": "inferred",
+              "section": "inferred",
+              "learning_objectives": "inferred",
+              "cognitive_level": "inferred",
+              "given": "inferred",
+              "constraints": "inferred",
+              "marking": "inferred"
+            },
+            "missing_fields": [
+              "required_output"
+            ],
+            "security_flags": [],
+            "lineage": {
+              "parent_id": "p2-b3",
+              "root_id": "p2-b3",
+              "operator": "constraint",
+              "spec_id": "spec-f5e687e9f0",
+              "candidate_id": "c16",
+              "generation": 1,
+              "mutation_parameters": {
+                "action": "add"
+              },
+              "preserved": [
+                "primary_concept",
+                "learning_objectives",
+                "topic",
+                "answer_type"
+              ],
+              "changed": [
+                "constraints"
+              ],
+              "created": null
+            },
+            "validation": {
+              "state": "PASS",
+              "summary": "all checks passed",
+              "model_assisted": true,
+              "numeric_verified": true
+            },
+            "extensions": {
+              "verification": {
+                "kind": "numeric",
+                "expression": "V*I",
+                "variables": {
+                  "V": 230,
+                  "I": 8.0
+                },
+                "claimed_value": 1840,
+                "claimed_unit": "W",
+                "answer_uniqueness": "unique"
+              }
+            }
+          }
+        },
+        {
+          "number": 7,
+          "id": "m-p1-b1-par",
+          "marks": 7,
+          "validation_state": "PASS",
+          "difficulty_band": "challenging",
+          "lineage": {
+            "parent_id": "p1-b1",
+            "root_id": "p1-b1",
+            "operator": "parameter",
+            "spec_id": "spec-1dda8598d2",
+            "candidate_id": "c12-try2",
+            "generation": 1,
+            "mutation_parameters": {
+              "changes": [
+                {
+                  "symbol": "s",
+                  "old": 50,
+                  "suggested": 62,
+                  "unit": "m"
+                }
+              ]
+            },
+            "preserved": [
+              "primary_concept",
+              "learning_objectives",
+              "topic",
+              "question_type",
+              "answer_type",
+              "marks",
+              "reasoning_structure",
+              "representation",
+              "constraints"
+            ],
+            "changed": [
+              "numeric_parameters"
+            ],
+            "created": null
+          },
+          "question": {
+            "id": "m-p1-b1-par",
+            "schema_version": "0.1.0",
+            "language": "en",
+            "source": {
+              "document": null,
+              "page": null,
+              "section": "B",
+              "position": 0,
+              "origin": "generated"
+            },
+            "subject": "Introductory Physics",
+            "topic": "Kinematics",
+            "subtopic": "Stopping distance",
+            "text": "Travelling along a straight road at 20 m/s, a driver applies the brakes. The car decelerates uniformly and stops after covering 62 m.",
+            "question_type": "mixed",
+            "marks": 7,
+            "section": "B",
+            "learning_objectives": [
+              "K1 Use the equations of uniformly accelerated motion",
+              "F3 Explain motion using Newton's first law"
+            ],
+            "cognitive_level": "multi_step_reasoning",
+            "given": [
+              {
+                "symbol": "u",
+                "description": "initial speed",
+                "value": 20,
+                "unit": "m/s"
+              },
+              {
+                "symbol": "s",
+                "description": "braking distance",
+                "value": 62,
+                "unit": "m"
+              }
+            ],
+            "required_output": null,
+            "constraints": [
+              {
+                "text": "deceleration is uniform",
+                "kind": "explicit"
+              },
+              {
+                "text": "the car comes to rest (v = 0)",
+                "kind": "boundary"
+              }
+            ],
+            "options": [],
+            "parts": [
+              {
+                "label": "a",
+                "text": "Find the size of the car's deceleration.",
+                "marks": 3
+              },
+              {
+                "label": "b",
+                "text": "Find how long the car takes to stop.",
+                "marks": 2
+              },
+              {
+                "label": "c",
+                "text": "Explain how an icy road surface would affect the stopping distance.",
+                "marks": 2
+              }
+            ],
+            "table": null,
+            "diagram_description": null,
+            "marking": {
+              "scheme_available": true,
+              "final_answer": "(a) 3.2 m/s² (b) 6.2 s (c) less friction on ice, so smaller deceleration and longer distance",
+              "answer_key": null,
+              "worked_solution": "(a) a = u²/(2s) = 400/124 = 3.2 m/s² (b) t = u/a = 20/3.23 = 6.2 s (c) Ice reduces friction, so the maximum deceleration is smaller and the car travels further.",
+              "points": [
+                {
+                  "description": "Selects v² = u² − 2as with v = 0",
+                  "marks": 1,
+                  "part": "a"
+                },
+                {
+                  "description": "Rearranges for a",
+                  "marks": 1,
+                  "part": "a"
+                },
+                {
+                  "description": "3.2 m/s²",
+                  "marks": 1,
+                  "part": "a"
+                },
+                {
+                  "description": "t = u/a or equivalent",
+                  "marks": 1,
+                  "part": "b"
+                },
+                {
+                  "description": "Correct time",
+                  "marks": 1,
+                  "part": "b"
+                },
+                {
+                  "description": "Less friction / grip on ice",
+                  "marks": 1,
+                  "part": "c"
+                },
+                {
+                  "description": "Smaller deceleration so longer stopping distance",
+                  "marks": 1,
+                  "part": "c"
+                }
+              ],
+              "accept_rule": null
+            },
+            "difficulty_features": null,
+            "extraction_confidence": "medium",
+            "evidence": [],
+            "review_status": "unreviewed",
+            "provenance": {
+              "text": "inferred",
+              "subject": "inferred",
+              "topic": "inferred",
+              "subtopic": "inferred",
+              "question_type": "inferred",
+              "marks": "inferred",
+              "section": "inferred",
+              "learning_objectives": "inferred",
+              "cognitive_level": "inferred",
+              "given": "inferred",
+              "constraints": "inferred",
+              "marking": "inferred"
+            },
+            "missing_fields": [
+              "required_output"
+            ],
+            "security_flags": [],
+            "lineage": {
+              "parent_id": "p1-b1",
+              "root_id": "p1-b1",
+              "operator": "parameter",
+              "spec_id": "spec-1dda8598d2",
+              "candidate_id": "c12-try2",
+              "generation": 1,
+              "mutation_parameters": {
+                "changes": [
+                  {
+                    "symbol": "s",
+                    "old": 50,
+                    "suggested": 62,
+                    "unit": "m"
+                  }
+                ]
+              },
+              "preserved": [
+                "primary_concept",
+                "learning_objectives",
+                "topic",
+                "question_type",
+                "answer_type",
+                "marks",
+                "reasoning_structure",
+                "representation",
+                "constraints"
+              ],
+              "changed": [
+                "numeric_parameters"
+              ],
+              "created": null
+            },
+            "validation": {
+              "state": "PASS",
+              "summary": "all checks passed",
+              "model_assisted": true,
+              "numeric_verified": true
+            },
+            "extensions": {
+              "verification": {
+                "kind": "numeric",
+                "expression": "u**2/(2*s)",
+                "variables": {
+                  "u": 20,
+                  "s": 62
+                },
+                "claimed_value": 3.226,
+                "claimed_unit": "m/s^2",
+                "answer_uniqueness": "unique",
+                "domain": [
+                  {
+                    "var": "result",
+                    "min": 0
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "number": 8,
+          "id": "m-p3-b2-rep",
+          "marks": 7,
+          "validation_state": "PASS",
+          "difficulty_band": "challenging",
+          "lineage": {
+            "parent_id": "p3-b2",
+            "root_id": "p3-b2",
+            "operator": "representation",
+            "spec_id": "spec-c96ea599ae",
+            "candidate_id": "c18",
+            "generation": 1,
+            "mutation_parameters": {
+              "from": "verbal",
+              "to": "graph"
+            },
+            "preserved": [
+              "primary_concept",
+              "learning_objectives",
+              "topic",
+              "answer_type"
+            ],
+            "changed": [
+              "representation"
+            ],
+            "created": null
+          },
+          "question": {
+            "id": "m-p3-b2-rep",
+            "schema_version": "0.1.0",
+            "language": "en",
+            "source": {
+              "document": null,
+              "page": null,
+              "section": "B",
+              "position": 0,
+              "origin": "generated"
+            },
+            "subject": "Introductory Physics",
+            "topic": "Energy",
+            "subtopic": "Efficiency",
+            "text": "A motor lifts a 20 kg load through a vertical height of 5.0 m in 10 s. The graph shows the total energy supplied to the motor against time during the lift. Take g = 9.8 m/s².",
+            "question_type": "calculation",
+            "marks": 7,
+            "section": "B",
+            "learning_objectives": [
+              "E1 Calculate gravitational potential and kinetic energy",
+              "E2 Calculate power and efficiency",
+              "K2 Interpret motion data in tables and graphs"
+            ],
+            "cognitive_level": "multi_step_reasoning",
+            "given": [
+              {
+                "symbol": "m",
+                "description": "mass of load",
+                "value": 20,
+                "unit": "kg"
+              },
+              {
+                "symbol": "h",
+                "description": "height",
+                "value": 5.0,
+                "unit": "m"
+              },
+              {
+                "symbol": "Ein",
+                "description": "energy supplied in 10 s (read from graph)",
+                "value": 2000,
+                "unit": "J"
+              },
+              {
+                "symbol": "g",
+                "description": "gravitational field strength",
+                "value": 9.8,
+                "unit": "m/s^2",
+                "role": "constant"
+              },
+              {
+                "symbol": "t",
+                "description": "time",
+                "value": 10,
+                "unit": "s",
+                "role": "data"
+              }
+            ],
+            "required_output": null,
+            "constraints": [],
+            "options": [],
+            "parts": [
+              {
+                "label": "a",
+                "text": "Calculate the useful energy transferred to the load.",
+                "marks": 2
+              },
+              {
+                "label": "b",
+                "text": "Use the graph to determine the input power to the motor.",
+                "marks": 2
+              },
+              {
+                "label": "c",
+                "text": "Calculate the efficiency of the motor.",
+                "marks": 3
+              }
+            ],
+            "table": null,
+            "diagram_description": "Graph of energy supplied E / J (vertical axis, 0 to 2500) against time t / s (horizontal axis, 0 to 12): a straight line through the origin reaching 2000 J at 10 s.",
+            "marking": {
+              "scheme_available": true,
+              "final_answer": "(a) 980 J (b) 200 W (c) 0.49 (49 %)",
+              "answer_key": null,
+              "worked_solution": "(a) mgh = 20 × 9.8 × 5.0 = 980 J. (b) gradient = 2000/10 = 200 W. (c) efficiency = 980/2000 = 0.49.",
+              "points": [
+                {
+                  "description": "mgh",
+                  "marks": 1,
+                  "part": "a"
+                },
+                {
+                  "description": "980 J",
+                  "marks": 1,
+                  "part": "a"
+                },
+                {
+                  "description": "Power = gradient",
+                  "marks": 1,
+                  "part": "b"
+                },
+                {
+                  "description": "200 W",
+                  "marks": 1,
+                  "part": "b"
+                },
+                {
+                  "description": "efficiency = useful/total",
+                  "marks": 1,
+                  "part": "c"
+                },
+                {
+                  "description": "Uses 980 and 2000",
+                  "marks": 1,
+                  "part": "c"
+                },
+                {
+                  "description": "0.49 or 49 %",
+                  "marks": 1,
+                  "part": "c"
+                }
+              ],
+              "accept_rule": null
+            },
+            "difficulty_features": null,
+            "extraction_confidence": "medium",
+            "evidence": [],
+            "review_status": "unreviewed",
+            "provenance": {
+              "text": "inferred",
+              "subject": "inferred",
+              "topic": "inferred",
+              "subtopic": "inferred",
+              "question_type": "inferred",
+              "marks": "inferred",
+              "section": "inferred",
+              "learning_objectives": "inferred",
+              "cognitive_level": "inferred",
+              "given": "inferred",
+              "marking": "inferred"
+            },
+            "missing_fields": [
+              "required_output",
+              "constraints"
+            ],
+            "security_flags": [],
+            "lineage": {
+              "parent_id": "p3-b2",
+              "root_id": "p3-b2",
+              "operator": "representation",
+              "spec_id": "spec-c96ea599ae",
+              "candidate_id": "c18",
+              "generation": 1,
+              "mutation_parameters": {
+                "from": "verbal",
+                "to": "graph"
+              },
+              "preserved": [
+                "primary_concept",
+                "learning_objectives",
+                "topic",
+                "answer_type"
+              ],
+              "changed": [
+                "representation"
+              ],
+              "created": null
+            },
+            "validation": {
+              "state": "PASS",
+              "summary": "all checks passed",
+              "model_assisted": true,
+              "numeric_verified": true
+            },
+            "extensions": {
+              "verification": {
+                "kind": "numeric",
+                "expression": "m*g*h/Ein",
+                "variables": {
+                  "m": 20,
+                  "g": 9.8,
+                  "h": 5.0,
+                  "Ein": 2000
+                },
+                "claimed_value": 0.49,
+                "claimed_unit": "1",
+                "answer_uniqueness": "unique",
+                "domain": [
+                  {
+                    "var": "result",
+                    "min": 0,
+                    "max": 1
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "properties": {
+    "actual_mark_shares": {
+      "topic": {
+        "Waves": 0.0333,
+        "Kinematics": 0.3,
+        "Forces": 0.0667,
+        "Electricity": 0.2667,
+        "Momentum": 0.1,
+        "Energy": 0.2333
+      },
+      "cognitive": {
+        "application": 0.4333,
+        "multi_step_reasoning": 0.5667
+      },
+      "question_type": {
+        "multiple_choice": 0.0333,
+        "calculation": 0.5333,
+        "mixed": 0.4333
+      },
+      "difficulty": {
+        "foundation": 0.1,
+        "standard": 0.4333,
+        "challenging": 0.4667
+      }
+    },
+    "targets": {
+      "topic": {
+        "Kinematics": 0.2065,
+        "Forces": 0.163,
+        "Energy": 0.2065,
+        "Waves": 0.1087,
+        "Electricity": 0.1957,
+        "Momentum": 0.1196
+      },
+      "cognitive": {
+        "recall": 0.0326,
+        "application": 0.3261,
+        "multi_step_reasoning": 0.4891,
+        "interpretation": 0.1522
+      },
+      "question_type": {
+        "multiple_choice": 0.0543,
+        "calculation": 0.413,
+        "mixed": 0.4457,
+        "short_answer": 0.0217,
+        "data_interpretation": 0.0652
+      },
+      "difficulty": {
+        "foundation": 0.163,
+        "standard": 0.5109,
+        "challenging": 0.3261
+      },
+      "question_count": {
+        "n": 9.0
+      }
+    },
+    "deviation_total_variation": {
+      "topic": 0.1913,
+      "cognitive": 0.1848,
+      "difficulty": 0.1406,
+      "question_type": 0.1203,
+      "family_repeat": 0.0,
+      "question_count": 0.1111
+    },
+    "objective": 0.50485,
+    "review_required_questions": [],
+    "families_used": {
+      "p2-a4": 1,
+      "p1-a2": 1,
+      "p2-a3": 1,
+      "p2-a5": 1,
+      "p2-a2": 1,
+      "p2-b3": 1,
+      "p1-b1": 1,
+      "p3-b2": 1
+    }
+  },
+  "solver": {
+    "algorithm": "bounded depth-first branch-and-bound over exact-sum section combinations",
+    "nodes_explored": 1261,
+    "search_budget": 200000,
+    "combinations_per_section": [
+      90,
+      13
+    ],
+    "section_enumeration_truncated": false,
+    "exhaustive": true,
+    "optimality": "best possible under the stated objective",
+    "notes": [
+      "Sections derived from Exam DNA mark shares and scaled to 30 marks (largest-remainder rounding)."
+    ]
+  },
+  "provenance": {
+    "pool_id": "pool-1ffa75855f",
+    "dna_profile_id": "dna-c6bdd7fbd6",
+    "excluded": {
+      "review_required": 1
+    }
+  }
+}
