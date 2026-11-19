@@ -1,0 +1,26 @@
+name: ✨ Feature request
+description: Suggest a new operator, subject, check or output
+labels: [enhancement]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options: [Mutation operators, Validation, Exam DNA analysis, Compiler, Outputs / rendering, Skill instructions, Other]
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Proposed behaviour
+  - type: textarea
+    id: verify
+    attributes:
+      label: How could it be checked deterministically?
+      description: ExamDNA prefers features whose results can be verified rather than only generated.

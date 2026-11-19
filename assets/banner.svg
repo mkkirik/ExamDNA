@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320" role="img" aria-label="ExamDNA — Reverse-engineer exams. Mutate questions. Compile new assessments.">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#16171a"/>
+      <stop offset="0.55" stop-color="#1e1f23"/>
+      <stop offset="1" stop-color="#2a0d10"/>
+    </linearGradient>
+    <linearGradient id="red" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff5a5f"/>
+      <stop offset="1" stop-color="#e3141b"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.82" cy="0.5" r="0.45">
+      <stop offset="0" stop-color="#e3141b" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#e3141b" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#ffffff" stroke-opacity="0.035" stroke-width="1"/>
+    </pattern>
+    <clipPath id="card"><rect width="1280" height="320" rx="22"/></clipPath>
+  </defs>
+  <g clip-path="url(#card)">
+    <rect width="1280" height="320" fill="url(#bg)"/>
+    <rect width="1280" height="320" fill="url(#grid)"/>
+    <rect width="1280" height="320" fill="url(#glow)"/>
+    <g>
+    <line x1="940.0" y1="160.0" x2="940.0" y2="160.0" stroke="#ffffff" stroke-opacity="0.16" stroke-width="2.5" stroke-linecap="round"><animate attributeName="stroke-opacity" values="0.08;0.42;0.08" dur="2.8s" begin="0.00s" repeatCount="indefinite"/></line>
+    <circle cx="940.0" cy="160.0" r="6.5" fill="url(#red)"/>
+    <circle cx="940.0" cy="160.0" r="3.5" fill="#d4d4d8" fill-opacity="0.45"/>
+    <circle cx="949.9" cy="186.3" r="6.4" fill="url(#red)"/>
+    <circle cx="949.9" cy="133.7" r="3.6" fill="#d4d4d8" fill-opacity="0.46"/>
+    <line x1="959.7" y1="209.7" x2="959.7" y2="110.3" stroke="#ffffff" stroke-opacity="0.16" stroke-width="2.5" stroke-linecap="round"><animate attributeName="stroke-opacity" values="0.08;0.42;0.08" dur="2.8s" begin="0.18s" repeatCount="indefinite"/></line>
+    <circle cx="959.7" cy="209.7" r="6.2" fill="url(#red)"/>
+    <circle cx="959.7" cy="110.3" r="3.8" fill="#d4d4d8" fill-opacity="0.50"/>
+    <circle cx="969.6" cy="227.5" r="5.8" fill="url(#red)"/>
+    <circle cx="969.6" cy="92.5" r="4.2" fill="#d4d4d8" fill-opacity="0.57"/>
+    <line x1="979.5" y1="237.9" x2="979.5" y2="82.1" stroke="#ffffff" stroke-opacity="0.16" stroke-width="2.5" stroke-linecap="round"><animate attributeName="stroke-opacity" values="0.08;0.42;0.08" dur="2.8s" begin="0.36s" repeatCount="indefinite"/></line>
+    <circle cx="979.5" cy="237.9" r="5.3" fill="url(#red)"/>
+    <circle cx="979.5" cy="82.1" r="4.7" fill="#d4d4d8" fill-opacity="0.64"/>
+    <circle cx="989.3" cy="239.6" r="4.8" fill="url(#red)"/>
+    <circle cx="989.3" cy="80.4" r="5.2" fill="#d4d4d8" fill-opacity="0.73"/>
+    <line x1="999.2" y1="232.4" x2="999.2" y2="87.6" stroke="#ffffff" stroke-opacity="0.16" stroke-width="2.5" stroke-linecap="round"><animate attributeName="stroke-opacity" values="0.08;0.42;0.08" dur="2.8s" begin="0.54s" repeatCount="indefinite"/></line>
+    <circle cx="999.2" cy="232.4" r="4.4" fill="url(#red)"/>
+    <circle cx="999.2" cy="87.6" r="5.6" fill="#d4d4d8" fill-opacity="0.81"/>
+    <circle cx="1009.1" cy="217.2" r="4.0" fill="url(#red)"/>
+    <circle cx="1009.1" cy="102.8" r="6.0" fill="#d4d4d8" fill-opacity="0.87"/>
+    <line x1="1018.9" y1="195.6" x2="1018.9" y2="124.4" stroke="#ffffff" stroke-opacity="0.16" stroke-width="2.5" stroke-linecap="round"><animate attributeName="stroke-opacity" values="0.08;0.42;0.08" dur="2.8s" begin="0.72s" repeatCount="indefinite"/></line>
+    <circle cx="1018.9" cy="195.6" r="3.7" fill="url(#red)"/>
+    <circle cx="1018.9" cy="124.4" r="6.3" fill="#d4d4d8" fill-opacity="0.92"/>
+    <circle cx="1028.8" cy="170.0" r="3.5" fill="url(#red)"/>
+    <circle cx="1028.8" cy="150.0" r="6.5" fill="#d4d4d8" fill-opacity="0.95"/>
+    <line x1="1038.7" y1="143.4" x2="1038.7" y2="176.6" stroke="#ffffff" stroke-opacity="0.16" stroke-width="2.5" stroke-linecap="round"><animate attributeName="stroke-opacity" values="0.08;0.42;0.08" dur="2.8s" begin="0.90s" repeatCount="indefinite"/></line>
+    <circle cx="1038.7" cy="143.4" r="3.5" fill="url(#red)"/>
+    <circle cx="1038.7" cy="176.6" r="6.5" fill="#d4d4d8" fill-opacity="0.94"/>
+    <circle cx="1048.5" cy="118.6" r="3.7" fill="url(#red)"/>
+    <circle cx="1048.5" cy="201.4" r="6.3" fill="#d4d4d8" fill-opacity="0.91"/>
+    <line x1="1058.4" y1="98.4" x2="1058.4" y2="221.6" stroke="#ffffff" stroke-opacity="0.16" stroke-width="2.5" stroke-linecap="round"><animate attributeName="stroke-opacity" values="0.08;0.42;0.08" dur="2.8s" begin="1.08s" repeatCount="indefinite"/></line>
+    <circle cx="1058.4" cy="98.4" r="4.0" fill="url(#red)"/>
+    <circle cx="1058.4" cy="221.6" r="6.0" fill="#d4d4d8" fill-opacity="0.86"/>
+    <circle cx="1068.3" cy="85.0" r="4.5" fill="url(#red)"/>
+    <circle cx="1068.3" cy="235.0" r="5.5" fill="#d4d4d8" fill-opacity="0.79"/>
+    <line x1="1078.1" y1="80.0" x2="1078.1" y2="240.0" stroke="#ffffff" stroke-opacity="0.16" stroke-width="2.5" stroke-linecap="round"><animate attributeName="stroke-opacity" values="0.08;0.42;0.08" dur="2.8s" begin="1.26s" repeatCount="indefinite"/></line>
+    <circle cx="1078.1" cy="80.0" r="5.0" fill="url(#red)"/>
+    <circle cx="1078.1" cy="240.0" r="5.0" fill="#d4d4d8" fill-opacity="0.71"/>
+    <circle cx="1088.0" cy="83.9" r="5.5" fill="url(#red)"/>
+    <circle cx="1088.0" cy="236.1" r="4.5" fill="#d4d4d8" fill-opacity="0.62"/>
+    <line x1="1097.9" y1="96.3" x2="1097.9" y2="223.7" stroke="#ffffff" stroke-opacity="0.16" stroke-width="2.5" stroke-linecap="round"><animate attributeName="stroke-opacity" values="0.08;0.42;0.08" dur="2.8s" begin="1.44s" repeatCount="indefinite"/></line>
+    <circle cx="1097.9" cy="96.3" r="5.9" fill="url(#red)"/>
+    <circle cx="1097.9" cy="223.7" r="4.1" fill="#d4d4d8" fill-opacity="0.55"/>
+    <circle cx="1107.7" cy="115.7" r="6.2" fill="url(#red)"/>
+    <circle cx="1107.7" cy="204.3" r="3.8" fill="#d4d4d8" fill-opacity="0.49"/>
+    <line x1="1117.6" y1="140.1" x2="1117.6" y2="179.9" stroke="#ffffff" stroke-opacity="0.16" stroke-width="2.5" stroke-linecap="round"><animate attributeName="stroke-opacity" values="0.08;0.42;0.08" dur="2.8s" begin="1.62s" repeatCount="indefinite"/></line>
+    <circle cx="1117.6" cy="140.1" r="6.5" fill="url(#red)"/>
+    <circle cx="1117.6" cy="179.9" r="3.5" fill="#d4d4d8" fill-opacity="0.46"/>
+    <circle cx="1127.5" cy="166.7" r="6.5" fill="url(#red)"/>
+    <circle cx="1127.5" cy="153.3" r="3.5" fill="#d4d4d8" fill-opacity="0.45"/>
+    <line x1="1137.3" y1="192.5" x2="1137.3" y2="127.5" stroke="#ffffff" stroke-opacity="0.16" stroke-width="2.5" stroke-linecap="round"><animate attributeName="stroke-opacity" values="0.08;0.42;0.08" dur="2.8s" begin="1.80s" repeatCount="indefinite"/></line>
+    <circle cx="1137.3" cy="192.5" r="6.4" fill="url(#red)"/>
+    <circle cx="1137.3" cy="127.5" r="3.6" fill="#d4d4d8" fill-opacity="0.47"/>
+    <circle cx="1147.2" cy="214.8" r="6.1" fill="url(#red)"/>
+    <circle cx="1147.2" cy="105.2" r="3.9" fill="#d4d4d8" fill-opacity="0.52"/>
+    <line x1="1157.1" y1="230.9" x2="1157.1" y2="89.1" stroke="#ffffff" stroke-opacity="0.16" stroke-width="2.5" stroke-linecap="round"><animate attributeName="stroke-opacity" values="0.08;0.42;0.08" dur="2.8s" begin="1.98s" repeatCount="indefinite"/></line>
+    <circle cx="1157.1" cy="230.9" r="5.7" fill="url(#red)"/>
+    <circle cx="1157.1" cy="89.1" r="4.3" fill="#d4d4d8" fill-opacity="0.58"/>
+    <circle cx="1166.9" cy="239.1" r="5.2" fill="url(#red)"/>
+    <circle cx="1166.9" cy="80.9" r="4.8" fill="#d4d4d8" fill-opacity="0.66"/>
+    <line x1="1176.8" y1="238.6" x2="1176.8" y2="81.4" stroke="#ffffff" stroke-opacity="0.16" stroke-width="2.5" stroke-linecap="round"><animate attributeName="stroke-opacity" values="0.08;0.42;0.08" dur="2.8s" begin="2.16s" repeatCount="indefinite"/></line>
+    <circle cx="1176.8" cy="238.6" r="4.7" fill="url(#red)"/>
+    <circle cx="1176.8" cy="81.4" r="5.3" fill="#d4d4d8" fill-opacity="0.75"/>
+    <circle cx="1186.7" cy="229.3" r="4.2" fill="url(#red)"/>
+    <circle cx="1186.7" cy="90.7" r="5.8" fill="#d4d4d8" fill-opacity="0.83"/>
+    <line x1="1196.5" y1="212.3" x2="1196.5" y2="107.7" stroke="#ffffff" stroke-opacity="0.16" stroke-width="2.5" stroke-linecap="round"><animate attributeName="stroke-opacity" values="0.08;0.42;0.08" dur="2.8s" begin="2.34s" repeatCount="indefinite"/></line>
+    <circle cx="1196.5" cy="212.3" r="3.9" fill="url(#red)"/>
+    <circle cx="1196.5" cy="107.7" r="6.1" fill="#d4d4d8" fill-opacity="0.89"/>
+    <circle cx="1206.4" cy="189.4" r="3.6" fill="url(#red)"/>
+    <circle cx="1206.4" cy="130.6" r="6.4" fill="#d4d4d8" fill-opacity="0.93"/>
+    <line x1="1216.3" y1="163.4" x2="1216.3" y2="156.6" stroke="#ffffff" stroke-opacity="0.16" stroke-width="2.5" stroke-linecap="round"><animate attributeName="stroke-opacity" values="0.08;0.42;0.08" dur="2.8s" begin="2.52s" repeatCount="indefinite"/></line>
+    <circle cx="1216.3" cy="163.4" r="3.5" fill="url(#red)"/>
+    <circle cx="1216.3" cy="156.6" r="6.5" fill="#d4d4d8" fill-opacity="0.95"/>
+    <circle cx="1226.1" cy="136.9" r="3.6" fill="url(#red)"/>
+    <circle cx="1226.1" cy="183.1" r="6.4" fill="#d4d4d8" fill-opacity="0.94"/>
+    <line x1="1236.0" y1="113.0" x2="1236.0" y2="207.0" stroke="#ffffff" stroke-opacity="0.16" stroke-width="2.5" stroke-linecap="round"><animate attributeName="stroke-opacity" values="0.08;0.42;0.08" dur="2.8s" begin="2.70s" repeatCount="indefinite"/></line>
+    <circle cx="1236.0" cy="113.0" r="3.8" fill="url(#red)"/>
+    <circle cx="1236.0" cy="207.0" r="6.2" fill="#d4d4d8" fill-opacity="0.90"/>
+      <animateTransform attributeName="transform" type="translate" values="0 0; -6 0; 0 0" dur="6s" repeatCount="indefinite"/>
+    </g>
+    <g font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif">
+      <text x="72" y="150" font-size="92" font-weight="800" fill="#f5f5f7" letter-spacing="-2">Exam<tspan fill="url(#red)">DNA</tspan></text>
+      <text x="76" y="200" font-size="23" font-weight="500" fill="#a1a1aa">Reverse-engineer exams. Mutate questions. Compile new assessments.</text>
+      <g font-size="15" font-weight="600">
+        <rect x="76" y="232" width="176" height="34" rx="17" fill="#ffffff" fill-opacity="0.07" stroke="#ffffff" stroke-opacity="0.14"/>
+        <text x="164" y="254" text-anchor="middle" fill="#f5f5f7">Claude Agent Skill</text>
+        <rect x="264" y="232" width="206" height="34" rx="17" fill="#ffffff" fill-opacity="0.07" stroke="#ffffff" stroke-opacity="0.14"/>
+        <text x="367" y="254" text-anchor="middle" fill="#f5f5f7">9 mutation operators</text>
+        <rect x="482" y="232" width="202" height="34" rx="17" fill="#e3141b" fill-opacity="0.18" stroke="#e3141b" stroke-opacity="0.65"/>
+        <text x="583" y="254" text-anchor="middle" fill="#ffd6d7">Deterministic checks</text>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,43 @@
+name: 🐞 Bug report
+description: Something in ExamDNA does not work as documented
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! Please use **synthetic** example data only — never attach real exam papers, student data or copyrighted material.
+  - type: input
+    id: version
+    attributes:
+      label: ExamDNA version
+      placeholder: "0.1.0 (python -m examdna.cli --version)"
+    validations:
+      required: true
+  - type: dropdown
+    id: env
+    attributes:
+      label: Where did it happen?
+      options: [Claude Code, Claude.ai, CLI / Python only, Other]
+    validations:
+      required: true
+  - type: input
+    id: platform
+    attributes:
+      label: OS and Python version
+      placeholder: "Windows 11, Python 3.12"
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened, and what did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps / command to reproduce
+      render: shell
+  - type: textarea
+    id: logs
+    attributes:
+      label: Error output
+      render: text

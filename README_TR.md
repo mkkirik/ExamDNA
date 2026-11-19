@@ -1,4 +1,16 @@
-<p align="center"><img src="assets/examdna-logo.webp" alt="ExamDNA" width="260"></p>
+<p align="center">
+  <img src="assets/banner.svg" alt="ExamDNA" width="100%">
+</p>
+
+<p align="center">
+  <a href="https://github.com/mkkirik/ExamDNA/actions/workflows/tests.yml"><img src="https://github.com/mkkirik/ExamDNA/actions/workflows/tests.yml/badge.svg" alt="tests"></a>
+  <a href="https://github.com/mkkirik/ExamDNA/releases/latest"><img src="https://img.shields.io/github/v/release/mkkirik/ExamDNA?color=e3141b&label=s%C3%BCr%C3%BCm&logo=github" alt="son sürüm"></a>
+  <img src="https://img.shields.io/badge/python-3.9%E2%80%933.13-1e1f22?logo=python&logoColor=white" alt="Python 3.9–3.13">
+  <img src="https://img.shields.io/badge/API%20anahtar%C4%B1-gerekmez-1e1f22" alt="API anahtarı gerekmez">
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/mkkirik/ExamDNA?color=e3141b&label=lisans" alt="MIT lisansı"></a>
+</p>
+
+<p align="center"><a href="README.md">English</a> · <b>Türkçe</b> · <a href="https://github.com/mkkirik/ExamDNA/releases/latest">İndir</a></p>
 
 # ExamDNA
 
@@ -95,3 +107,7 @@ python -m unittest discover -s tests -t .
 ## Lisans ve uyarı
 
 MIT lisansı. Depodaki tüm örnek sorular ExamDNA için yazılmış özgün sentetik içeriktir. ExamDNA bağımsız bir açık kaynak projedir; hiçbir sınav kurumu veya yayıncıyla bağlantılı değildir. Üretilen materyal yalnızca alıştırma ve sınav tasarımı içindir.
+
+---
+
+<p align="center"><sub>Claude ile geliştirildi · İşine yaradıysa bir ⭐ bırakabilirsin</sub></p>
