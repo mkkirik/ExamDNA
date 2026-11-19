@@ -104,7 +104,7 @@ def write_json(path: os.PathLike | str, data: Any) -> Path:
     target = Path(path)
     target.parent.mkdir(parents=True, exist_ok=True)
     text = json.dumps(data, indent=2, ensure_ascii=False, allow_nan=False)
-    target.write_text(text + "\n", encoding="utf-8", newline="\n")
+    target.write_bytes((text + "\n").encode("utf-8"))  # LF on every OS; Path.write_text(newline=) needs 3.10+
     return target
 
 
@@ -113,7 +113,7 @@ def write_text(path: os.PathLike | str, text: str) -> Path:
     target.parent.mkdir(parents=True, exist_ok=True)
     if not text.endswith("\n"):
         text += "\n"
-    target.write_text(text, encoding="utf-8", newline="\n")
+    target.write_bytes(text.encode("utf-8"))
     return target
 
 

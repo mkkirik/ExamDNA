@@ -434,7 +434,7 @@ def main(argv):
         return index[(parent, op)]
 
     candidates = build(spec_for)
-    (ws / "candidates.json").write_text(json.dumps({"candidates": candidates}, indent=2, ensure_ascii=False) + "\n", encoding="utf-8", newline="\n")
+    (ws / "candidates.json").write_bytes((json.dumps({"candidates": candidates}, indent=2, ensure_ascii=False) + "\n").encode("utf-8"))
     print(f"wrote {len(candidates)} candidates")
     return 0
 

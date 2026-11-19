@@ -527,11 +527,11 @@ def main() -> int:
              {"name": "Mini syllabus", "kind": "syllabus"}, {"name": "Teaching notes", "kind": "notes"}],
         "questions": QUESTIONS,
     }
-    (OUT / "physics_bank.json").write_text(json.dumps(bank, indent=2, ensure_ascii=False) + "\n", encoding="utf-8", newline="\n")
-    (OUT / "annotations.json").write_text(json.dumps({"annotations": ANNOTATIONS}, indent=2, ensure_ascii=False) + "\n", encoding="utf-8", newline="\n")
+    (OUT / "physics_bank.json").write_bytes((json.dumps(bank, indent=2, ensure_ascii=False) + "\n").encode("utf-8"))
+    (OUT / "annotations.json").write_bytes((json.dumps({"annotations": ANNOTATIONS}, indent=2, ensure_ascii=False) + "\n").encode("utf-8"))
     for i in (1, 2, 3):
-        (OUT / f"paper{i}.md").write_text(render_paper(i) + "\n", encoding="utf-8", newline="\n")
-    (OUT / "markscheme_paper1.md").write_text(render_markscheme(1) + "\n", encoding="utf-8", newline="\n")
+        (OUT / f"paper{i}.md").write_bytes((render_paper(i) + "\n").encode("utf-8"))
+    (OUT / "markscheme_paper1.md").write_bytes((render_markscheme(1) + "\n").encode("utf-8"))
     print(f"wrote {len(QUESTIONS)} questions and {len(ANNOTATIONS)} annotations to {OUT.relative_to(ROOT)}")
     return 0
 

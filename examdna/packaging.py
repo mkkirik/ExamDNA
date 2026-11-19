@@ -204,6 +204,6 @@ def build(out_dir: Optional[Path] = None, root: Optional[Path] = None, verify: b
     if verify:
         result["verification"] = verify_archive(archive)
     sums = out_dir / "SHA256SUMS.txt"
-    sums.write_text(f"{result['sha256']}  {archive.name}\n", encoding="utf-8", newline="\n")
+    sums.write_bytes(f"{result['sha256']}  {archive.name}\n".encode("utf-8"))
     result["checksums"] = str(sums)
     return result
