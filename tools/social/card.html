@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8">
+<style>
+  html, body { margin: 0; width: 1200px; height: 627px; overflow: hidden; background: #16171a; }
+  body { font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif; color: #f5f5f7; }
+  .wrap { position: relative; width: 1200px; height: 627px;
+    background: radial-gradient(circle at 82% 45%, rgba(227,20,27,.38), rgba(227,20,27,0) 46%),
+                linear-gradient(135deg, #16171a 0%, #1e1f23 55%, #2a0d10 100%); }
+  .grid { position: absolute; inset: 0;
+    background-image: linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+    background-size: 32px 32px; }
+  .logo { position: absolute; left: 72px; top: 70px; width: 96px; height: 96px; border-radius: 22px; background: #f5f5f7; padding: 6px; box-sizing: border-box; }
+  .logo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 28%; border-radius: 16px; }
+  h1 { position: absolute; left: 68px; top: 170px; margin: 0; font-size: 118px; font-weight: 800; letter-spacing: -3px; }
+  h1 span { color: #ff2a31; }
+  .tag { position: absolute; left: 74px; top: 322px; font-size: 30px; color: #c4c4cc; font-weight: 500; }
+  .chips { position: absolute; left: 74px; top: 400px; display: flex; gap: 14px; }
+  .chip { padding: 10px 20px; border-radius: 999px; font-size: 21px; font-weight: 600; background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.16); }
+  .chip.red { background: rgba(227,20,27,.2); border-color: rgba(227,20,27,.7); color: #ffd6d7; }
+  .foot { position: absolute; left: 74px; bottom: 54px; font-size: 22px; color: #a1a1aa; }
+  .foot b { color: #f5f5f7; font-weight: 600; }
+  .helix { position: absolute; right: 40px; top: 70px; }
+</style></head>
+<body><div class="wrap"><div class="grid"></div>
+  <div class="logo"><img src="../../assets/examdna-logo.webp" alt=""></div>
+  <h1>Exam<span>DNA</span></h1>
+  <div class="tag">Sınavların yapısını çöz · Soruları dönüştür · Yeni sınav derle</div>
+  <div class="chips"><div class="chip">Claude Agent Skill</div><div class="chip">9 mutasyon operatörü</div><div class="chip red">Deterministik doğrulama</div></div>
+  <div class="foot">Açık kaynak · MIT · <b>github.com/mkkirik/ExamDNA</b></div>
+  <svg class="helix" width="300" height="490" viewBox="0 0 300 490" id="h"></svg>
+</div>
+<script>
+  const s = document.getElementById('h'); let out = '';
+  const n = 26, turns = 1.6;
+  for (let i = 0; i <= n; i++) {
+    const t = i / n, y = 20 + 450 * t, ph = 2 * Math.PI * turns * t;
+    const x1 = 150 + 105 * Math.sin(ph), x2 = 150 - 105 * Math.sin(ph), d = (Math.cos(ph) + 1) / 2;
+    if (i % 2 === 0) out += `<line x1="${x1}" y1="${y}" x2="${x2}" y2="${y}" stroke="#fff" stroke-opacity=".22" stroke-width="3" stroke-linecap="round"/>`;
+    out += `<circle cx="${x1}" cy="${y}" r="${5 + 4 * d}" fill="#ff2a31"/>`;
+    out += `<circle cx="${x2}" cy="${y}" r="${5 + 4 * (1 - d)}" fill="#d4d4d8" fill-opacity="${.45 + .5 * (1 - d)}"/>`;
+  }
+  s.innerHTML = out;
+</script>
+</body></html>
