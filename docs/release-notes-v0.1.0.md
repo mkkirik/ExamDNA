@@ -20,12 +20,13 @@ First public release of ExamDNA: an Agent Skill and dependency-free Python engin
 
 ## Verified
 
-- 110 automated tests passing on Windows 11 with Python 3.11, 3.12, 3.13, 3.14 (88 % line coverage of the package under pytest/coverage on 3.12).
-- Skill archive verified (structure, frontmatter, referenced files, no secrets/caches/absolute paths) and smoke-tested from a fresh extraction.
+- 110 automated tests passing in GitHub Actions on Linux (Python 3.10–3.13), macOS and Windows (Python 3.9–3.13), and locally on Windows 11 with Python 3.9 and 3.11–3.14 (88 % line coverage of the package).
+- Demo outputs reproduce byte-for-byte in CI on every platform.
+- Skill archive verified (structure, frontmatter, referenced files, no secrets/caches/absolute paths) and smoke-tested from a fresh extraction; the full workflow run from the extracted archive reproduces the demo exam exactly.
 
 ## Not yet verified
 
-- Linux/macOS and Python 3.9/3.10 (CI configured; results pending its first run).
+- Python 3.9 on Linux (no runner build available; passes on Windows and macOS).
 - Claude.ai upload and mobile usage.
 - Optional PDF extraction (`pypdf`) and PDF export (`weasyprint`).
 

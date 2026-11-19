@@ -2,9 +2,10 @@
 
 | Environment | Status | Evidence |
 | --- | --- | --- |
-| Windows 11, Python 3.11 / 3.12 / 3.13 / 3.14 | **Tested** — full test suite passes | Local runs during development |
-| Python 3.9, 3.10 | Expected to work (no newer syntax used); **pending CI** | `.github/workflows/tests.yml` |
-| Ubuntu (Linux), macOS | **Pending CI** — not run locally | `.github/workflows/tests.yml` matrix |
+| Windows 11, Python 3.9 / 3.11 / 3.12 / 3.13 / 3.14 | **Tested** — full test suite passes | Local runs during development |
+| GitHub Actions: Windows, macOS — Python 3.9–3.13 | **Tested** — tests, demo reproducibility and package build pass | CI run 44637038707 |
+| GitHub Actions: Ubuntu — Python 3.10–3.13 | **Tested** — tests, demo reproducibility and package build pass | CI run 44637038707 |
+| Ubuntu — Python 3.9 | Not run in CI: `setup-python` provides no 3.9 build for the current Ubuntu runner image (3.9 is end-of-life). The same code passes 3.9 on Windows and macOS. | — |
 | Claude Code — project Skill from this repository | Launcher and CLI tested via subprocess; end-to-end agent session **not recorded** | `tests/integration/test_workflows.py::test_module_invocation` |
 | Skill zip extracted to a fresh folder | **Tested** — smoke test runs `--version` and `operators` from the extracted archive with `python -I` | `examdna verify-package` / packaging test |
 | Claude.ai custom Skill upload | **Not tested** by the authors | — |
@@ -12,7 +13,7 @@
 | PDF text extraction (`pypdf`) | Code path present, **not tested** (optional dependency not installed in CI) | — |
 | PDF export (`weasyprint`) | Code path present, **not tested** | — |
 
-Results marked "pending CI" become verified only after the GitHub Actions workflow has actually run on those platforms.
+CI results refer to the workflow in `.github/workflows/tests.yml` on the `main` branch; see the repository's Actions tab for the latest runs.
 
 ## Known platform notes
 

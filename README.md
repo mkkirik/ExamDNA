@@ -2,6 +2,8 @@
 
 # ExamDNA
 
+[![tests](https://github.com/mkkirik/ExamDNA/actions/workflows/tests.yml/badge.svg)](https://github.com/mkkirik/ExamDNA/actions/workflows/tests.yml)
+
 **Reverse-engineer exams. Mutate questions. Compile new assessments.**
 
 ExamDNA is an open-source [Agent Skill](https://docs.claude.com/en/docs/claude-code/skills) plus a dependency-free Python engine. You give Claude past papers (and optionally mark schemes, a syllabus, notes); ExamDNA turns them into an explicit **assessment blueprint**, represents every question as a structured **question genome**, plans **controlled mutations** with named operators, **validates** every generated question with deterministic checks, and **compiles** a new exam that satisfies hard mark/section constraints — with an answer key, marking guide, lineage and honest reports.
@@ -113,7 +115,7 @@ python tools/run_demo.py
 python -m unittest discover -s tests -t .
 ```
 
-or `pytest`. 110 tests (unit, integration workflows A–G, security). Verified locally on Windows 11 with Python 3.11, 3.12, 3.13 and 3.14; CI is configured for Linux, macOS and Windows on Python 3.9–3.13 (see [docs/compatibility.md](docs/compatibility.md) for what has and has not been verified).
+or `pytest`. 110 tests (unit, integration workflows A–G, security). Passing in GitHub Actions on Linux (Python 3.10–3.13), macOS and Windows (Python 3.9–3.13), and locally on Windows 11 with Python 3.9 and 3.11–3.14 (see [docs/compatibility.md](docs/compatibility.md) for what has and has not been verified).
 
 ## Security and privacy
 
